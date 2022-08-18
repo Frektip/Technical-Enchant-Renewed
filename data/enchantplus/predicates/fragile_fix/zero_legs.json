@@ -1,0 +1,15 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "legs": {
+        "durability": {
+          "min": 0,
+          "max": 1
+        },
+        "nbt": "{CustomCurse:{Fragile:1}}"
+      }
+    }
+  }
+}

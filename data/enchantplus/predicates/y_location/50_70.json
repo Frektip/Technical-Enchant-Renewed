@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "stepping_on": {
+      "position": {
+        "y": {
+          "min": 51,
+          "max": 70
+        }
+      }
+    }
+  }
+}

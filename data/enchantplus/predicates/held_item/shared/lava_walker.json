@@ -1,0 +1,23 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "items": [
+          "minecraft:netherite_boots",
+          "minecraft:diamond_boots",
+          "minecraft:iron_boots",
+          "minecraft:golden_boots",
+          "minecraft:chainmail_boots",
+          "minecraft:leather_boots",
+
+          "minecraft:diamond_horse_armor",
+          "minecraft:iron_horse_armor",
+          "minecraft:golden_horse_armor",
+          "minecraft:leather_horse_armor"
+        ]
+      }
+    }
+  }
+}

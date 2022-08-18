@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "effects": {
+      "minecraft:slowness": {
+        "amplifier": {
+          "min": 3
+        }
+      },
+      "minecraft:resistance": {
+        "amplifier": {
+          "min": 2
+        }
+      }
+    }
+  }
+}
