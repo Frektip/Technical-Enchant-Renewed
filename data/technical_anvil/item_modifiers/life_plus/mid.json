@@ -1,0 +1,154 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 4,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 5,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "TCHA.Section1": 1
+        }
+      }
+    ]
+  },
+
+
+
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 5,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "TCHA.Section1": 2
+        }
+      }
+    ]
+  },
+
+
+
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 12,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 5,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "TCHA.Section1": 3
+        }
+      }
+    ]
+  },
+
+
+
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 16,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 5,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "TCHA.Section1": 4
+        }
+      }
+    ]
+  },
+
+
+
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 20,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 5,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "TCHA.Section1": 5
+        }
+      }
+    ]
+  }
+]
