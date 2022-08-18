@@ -1,0 +1,36 @@
+Technical Enchant +
+
+-----New World----
+
+When you are creating a new world go to datapacks and drag TE+ zip file into your world. Then move 
+the datapack into the "selected" section.
+
+Create your new world and enjoy! :)
+
+If for whatever reason that doesn´t work, type "/reload" or "datapack enable [name]" to enshure you
+installed correctly the datapack.
+
+
+---- Existing world----
+
+Go to your world´s folder, then go to datapacks and drag the zip file there. Then type "/reload" to
+fully implement TE+ datapack into your world
+
+If you are comming from a version previous to 6.1, you should unequip and equip back your items, because
+I change the syntax of how every echantment is detected in the datapack. Don't worry I also implement a 
+system that automatically update your items (a message will tell you when this happens). 
+
+
+---- Update datapack version -----
+
+If you had TE+ previously installed, use the uninstall command function first (/function enchantplus:uninstall),
+after that you can follow the steps as mentioned above to correctly install the datapack into your world.
+
+#### Potential Issues ######
+
+-When there are other datapacks or mods that aren´t compatible with TE+
+-When you use custom clients. Please check out if the datapack works with vanilla client, then you can
+confirm if the client you´re using is the cause of the problem
+-When you are using outdated minecraft versions duh! TE+ currently supports 1.17+ ; 1.18+ and 1.19+
+
+

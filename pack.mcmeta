@@ -1,0 +1,29 @@
+{
+	"pack":
+	{
+		"pack_format": 10,
+		"description": [
+            {
+                "text": "by ",
+                "color": "#9aa3a5"
+            },
+            {
+                "text": "Hardel ",
+                "color": "#3051BF"
+            },
+            {
+                "text": "and ",
+                "color": "#9aa3a5"
+            },
+            {
+                "text": "Frektip ",
+                "color": "#CF130C"
+            },
+            {
+                "text": "→ 1.19.X",
+                "color": "#DB9E4F"
+            }
+        ]
+
+	}
+}

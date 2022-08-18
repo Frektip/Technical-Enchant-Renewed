@@ -1,0 +1,48 @@
+Technical Enchant +
+
+Originally was made by Hardel and his collaborators. 
+Their last version was 4.3.2 of the pack for Minecraft 1.14. 
+
+Now I (Frektip) took the pack to update it for recent Minecraft versions, and making my own 
+changes and tweaks. 
+
+Also, IMPORTANT to mention the use of "Splatus" for his custom bow system, "Aeldrion" for her Iris raycasting
+datapack and randomizer system, and PauseKawa for his custom GUI detection system
+"Blue Commander" (https://www.youtube.com/c/BlueCommander) for the base to create a custom anvil functionality. 
+"Stoupy51" for helping me optimizing parts in the code
+
+This changes include:
+
+- Revamped Guide Book
+- Revamped enchanting and merging system
+- Supporting system to "complements" datapacks, to make modded items compatible with TE+ enchantments
+- Added a new block called "Technical Anvil" it has a unique UI that can be 
+  switched between merging and extracting mode
+- Added charged bookshelves and technical anvil Item
+- New Bow and Crossbow system
+- You need at least 10 lvls to merge enchantments on the technical anvil (can be modified with the Config Menu)
+- Add new loot-tables for chests and entityes
+- Updated some enchantments to match with the 1.17 and beyond features
+- A command that let you directly enchant any item while holding it
+- Added: Replant, Harvesting+, Grand Tilling, Big Path, Last Stand, Waterjet, Sniper, Fireball Wave,
+  Shock Fangs, Recovery, Marine Grace, Arachnid, Flaming Skin, Hardless+, Peaks, Multicolor, Armored,
+  Soul Reaper, Scyther, Transmission, Splatter, Striker, Turtle Stiffness and Dasher enchantments.
+- Added 3 Curses: Fragile, Sensitive and Slippery
+- Mining+ functionallity has been divided into Chopping and Excavator por the axe and shovel exclusively.
+- Removed the possibility to apply custom enchantments to the shears by throwing them on the enchanting table.
+- Added a disenchant system to remove custom and vanilla enchantments for items, but not the curses.
+- Now the enchantments are fully compatible with netherite.
+- Added the possibility to exceed vanilla level enchantment of: Efficiency, Fortune, Unbreaking, 
+  Looting, Sharpness, Power, Lure, Luck of the Sea, Impaling, Respiration, Protection and Feather Falling.
+- A configuration MENU to change the datapack settings has been added.
+- Advancements for the player to get
+- New enchanting animation and setup to get or apply enchantments
+- Compatibility with "TE+ complements", which are other datapacks designed for modded items to be
+  compatible with all of the custom enchantments and curses from this datapack
+- Added "addons" support, so other people can create/add their own custom enchantments! (1.19.x+ ONLY!!!)
+- A compatibility system with Custom Villagers Professions Datpack from "Sirloscus" (credit to him)
+  https://www.planetminecraft.com/data-pack/custom-villagers-professions-with-custom-buildable-workstations-for-survial-vanilla-friendly-quite-simple-capitalist-proof/
+- A lot of bug fixes.
+
+This covers the most relevant information of the changelog for the current datapack version 6.5.3, for
+more details visit the planet minecraft page of Technical Enchant+ for 1.19, 1.18 and 1.17
