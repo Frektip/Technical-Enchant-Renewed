@@ -1,0 +1,3 @@
+#If the player has Leaping enchantment, then check if the Game option is enabled
+execute if score #leap Enchopts matches 0 if block ~ ~-0.5 ~ #enchantplus:not_solid if block ~ ~-8 ~ #enchantplus:not_solid run function enchantplus:result/sky_walk/with_leaping 
+execute if score #leap Enchopts matches 1 if block ~ ~-0.5 ~ #enchantplus:not_solid if block ~ ~-4 ~ #enchantplus:not_solid run function enchantplus:result/sky_walk/normal 
