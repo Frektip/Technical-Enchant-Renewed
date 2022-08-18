@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "hit_poiaspt": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "#teplus_exten:mobs/with_custom_ench",
+            "equipment": {
+              "mainhand": {
+                "nbt": "{CustomEnchantments:[{id:\"PoisonAspect\",lvl:2}]}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "teplus_exten:mobs/has_ench/mainhand/when_hit_player/poison_aspect2"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "shipwreck_map": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/shipwreck_map"
+      }
+    },
+    "shipwreck_supply": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/shipwreck_supply"
+      }
+    },
+    "shipwreck_treasure": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/shipwreck_treasure"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shipwreck_map",
+      "shipwreck_supply",
+      "shipwreck_treasure"
+    ]
+  ],
+  "rewards": {
+    "function": "teplus_exten:chests/open_chest/shipwreck"
+  }
+}

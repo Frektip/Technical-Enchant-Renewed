@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "bastion_bridge": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/bastion_bridge"
+      }
+    },
+    "bastion_hoglin_stable": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/bastion_hoglin_stable"
+      }
+    },
+    "bastion_other": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/bastion_other"
+      }
+    },
+    "bastion_treasure": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/bastion_treasure"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bastion_bridge",
+      "bastion_hoglin_stable",
+      "bastion_other",
+      "bastion_treasure"
+    ]
+  ],
+  "rewards": {
+    "function": "teplus_exten:chests/open_chest/bastion"
+  }
+}

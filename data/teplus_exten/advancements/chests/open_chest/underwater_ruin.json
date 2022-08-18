@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "underwater_ruin_big": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/underwater_ruin_big"
+      }
+    },
+    "underwater_ruin_small": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/underwater_ruin_small"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "underwater_ruin_big",
+      "underwater_ruin_small"
+    ]
+  ],
+  "rewards": {
+    "function": "teplus_exten:chests/open_chest/underwater_ruin"
+  }
+}

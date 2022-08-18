@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "stronghold_corridor": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/stronghold_corridor"
+      }
+    },
+    "stronghold_crossing": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/stronghold_crossing"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "stronghold_corridor",
+      "stronghold_crossing"
+    ]
+  ],
+  "rewards": {
+    "function": "teplus_exten:chests/open_chest/stronghold"
+  }
+}
