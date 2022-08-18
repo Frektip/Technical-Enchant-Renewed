@@ -1,0 +1,31 @@
+{
+    "values": [
+        "minecraft:bedrock",
+        "minecraft:barrier",
+        "minecraft:structure_void",
+        "minecraft:command_block",
+        "minecraft:repeating_command_block",
+        "minecraft:chain_command_block",
+        "minecraft:structure_block",
+        "minecraft:jigsaw",
+        "minecraft:air",
+        "minecraft:cave_air",
+        "minecraft:void_air",
+        "minecraft:light",
+        "minecraft:ender_chest",
+        "minecraft:barrel",
+        "minecraft:chest",
+        "#minecraft:shulker_boxes",
+        "minecraft:trapped_chest",
+        "minecraft:end_portal_frame",
+        "minecraft:budding_amethyst",
+        "minecraft:spawner",
+        "minecraft:water",
+        "minecraft:lava",
+        "minecraft:powder_snow",
+        "minecraft:reinforced_deepslate",
+        "minecraft:nether_portal",
+        "minecraft:end_gateway",
+        "minecraft:end_portal"
+    ]
+}

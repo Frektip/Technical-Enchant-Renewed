@@ -1,0 +1,28 @@
+{
+    "values": [
+        "minecraft:pumpkin",
+        "minecraft:melon",
+        "minecraft:sponge",
+        "minecraft:wet_sponge",
+        "minecraft:target",
+        "minecraft:shroomlight",
+        "minecraft:hay_block",
+        "minecraft:dried_kelp_block",
+        "minecraft:moss_block",
+        "minecraft:nether_wart_block",
+        "minecraft:warped_wart_block",
+
+        "minecraft:nether_sprouts",
+        "minecraft:small_dripleaf",
+        "minecraft:oak_leaves",
+        "minecraft:spruce_leaves",
+        "minecraft:acacia_leaves",
+        "minecraft:birch_leaves",
+        "minecraft:jungle_leaves",
+        "minecraft:dark_oak_leaves",
+        "minecraft:azalea_leaves",
+        "minecraft:sculk",
+        "minecraft:sculk_catalyst",
+        "minecraft:sculk_shrieker"
+    ]
+}

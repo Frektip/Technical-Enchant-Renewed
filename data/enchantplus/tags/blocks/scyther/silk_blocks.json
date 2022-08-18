@@ -1,0 +1,15 @@
+{
+    "values": [
+        "minecraft:pumpkin",
+        "minecraft:melon",
+        "minecraft:sponge",
+        "minecraft:wet_sponge",
+        "minecraft:target",
+        "minecraft:shroomlight",
+        "minecraft:hay_block",
+        "minecraft:dried_kelp_block",
+        "minecraft:moss_block",
+        "minecraft:nether_wart_block",
+        "minecraft:warped_wart_block"
+    ]
+}

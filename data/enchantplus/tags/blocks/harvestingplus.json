@@ -1,0 +1,22 @@
+{
+    "values": [
+        "minecraft:moss_block",
+        "minecraft:nether_wart_block",
+        "minecraft:warped_wart_block",
+        "minecraft:shroomlight",
+        "minecraft:hay_block",
+        "minecraft:target",
+        "minecraft:dried_kelp_block",
+        "minecraft:sponge",
+        "minecraft:wet_sponge",
+
+        "minecraft:oak_leaves", 
+        "minecraft:spruce_leaves", 
+        "minecraft:birch_leaves",
+        "minecraft:jungle_leaves",
+        "minecraft:acacia_leaves",
+        "minecraft:dark_oak_leaves",
+        "minecraft:flowering_azalea_leaves",
+        "minecraft:azalea_leaves"
+    ]
+}

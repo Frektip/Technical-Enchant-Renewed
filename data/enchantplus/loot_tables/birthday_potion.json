@@ -1,0 +1,62 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:potion",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{OneBirthday:1b,HideFlags:32,CustomPotionColor:16768767}"
+			  },	
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+				  {
+					"translate": "Celebrate the best party,",
+					"color": "white",
+					"italic": false
+				  },
+				  {
+					"translate": "with cakes, candles, fireworks",
+					"color": "white",
+					"italic": false
+				  },
+				  [
+					{
+					  "translate": "and balloons!",
+					  "color": "white",
+					  "italic": false
+					},
+					{
+					  "text": " (2:00)",
+					  "color": "blue",
+					  "italic": false
+					}
+				  ],
+				  {
+					"translate": "Technical Enchant+",
+					"color": "#63C0E3",
+					"italic": true
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"translate": "1 Year Birthday Potion",
+					"color": "#FFD399",
+					"italic": false
+				  }
+				]
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

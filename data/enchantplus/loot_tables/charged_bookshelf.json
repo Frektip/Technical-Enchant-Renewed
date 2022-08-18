@@ -1,0 +1,50 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:bookshelf",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{TeplusChBf:1b,Enchantments:[{}]}"
+			  },	
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+				  {
+					"translate": "Place it down to increase the",
+					"color": "white",
+					"italic": false
+				  },
+				  {
+					"translate": "tier of an enchanting setup",
+					"color": "white",
+					"italic": false
+				  },
+				  {
+					"translate": "Technical Enchant+",
+					"color": "#63C0E3",
+					"italic": true
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"translate": "Charged Bookshelf",
+					"color": "aqua",
+					"italic": false
+				  }
+				]
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  
