@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+      {
+          "rolls": 1,
+          "entries": [
+              {
+                  "type": "minecraft:alternatives",
+                  "children": [
+                      {
+                        "type": "minecraft:item",
+                        "name": "minecraft:exposed_copper",
+                        "conditions": [
+                            {
+                                "condition": "minecraft:match_tool",
+                                "predicate": {
+                                    "nbt": "{CustomEnchantments:[{id:\"MiningPlus\"}]}"
+                                }
+                            }
+                        ],
+                        "functions": [
+                              {
+                                  "function": "set_nbt",
+                                  "tag": "{CustomEnchantments:{MiningPlusItembreak:1}}"
+                              }
+                          ] 
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:exposed_copper"
+                      }
+                  ]
+              }
+          ] 
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:survives_explosion"
+      }
+  ]
+}

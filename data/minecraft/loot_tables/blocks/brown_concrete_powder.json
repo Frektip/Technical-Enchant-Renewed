@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+      {
+          "rolls": 1,
+          "entries": [
+              {
+                  "type": "minecraft:alternatives",
+                  "children": [
+                      {
+                        "type": "minecraft:item",
+                        "name": "minecraft:brown_concrete_powder",
+                        "conditions": [
+                            {
+                                "condition": "minecraft:match_tool",
+                                "predicate": {
+                                    "nbt": "{CustomEnchantments:[{id:\"Excavator\"}]}"
+                                }
+                            }
+                        ],
+                        "functions": [
+                              {
+                                  "function": "set_nbt",
+                                  "tag": "{CustomEnchantments:{ExcavatorItembreak:1}}"
+                              }
+                          ] 
+                      },
+                      {
+                          "type": "minecraft:item",
+                          "name": "minecraft:brown_concrete_powder"
+                      }
+                  ]
+              }
+          ] 
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:survives_explosion"
+      }
+  ]
+}

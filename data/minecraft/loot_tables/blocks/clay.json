@@ -1,0 +1,147 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+             {
+              "type": "minecraft:item",
+              "name": "minecraft:clay",
+              "conditions": [
+                  {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                          "nbt": "{CustomEnchantments:[{id:\"Excavator\"},{id:\"AutoSmelt\"}]}",
+                          "enchantments": [
+                          {
+                            "enchantment": "minecraft:silk_touch",
+                            "levels": {
+                              "min": 1
+                            }
+                          }
+                        ]
+                      }
+                  }
+              ],
+              "functions": [
+                    {
+                        "function": "set_nbt",
+                        "tag": "{CustomEnchantments:{ExcavatorItembreak:1,ExcavatorSilk:1,CanAutoSmelt:1}}"
+                    }
+                ] 
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:clay",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "nbt": "{CustomEnchantments:[{id:\"Excavator\"}]}",
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "functions": [
+                    {
+                        "function": "set_nbt",
+                        "tag": "{CustomEnchantments:{ExcavatorItembreak:1,ExcavatorSilk:1}}"
+                    }
+                ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:clay",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "nbt": "{CustomEnchantments:[{id:\"AutoSmelt\"}]}",
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "functions": [
+                    {
+                        "function": "set_nbt",
+                        "tag": "{CustomEnchantments:{CanAutoSmelt:1}}"
+                    }
+                ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:clay_ball",
+              "conditions": [
+                  {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                          "nbt": "{CustomEnchantments:[{id:\"Excavator\"}]}"
+                      }
+                  }
+              ],
+              "functions": [
+                    {
+                        "function": "minecraft:set_count",
+                        "count": 4
+                    },
+                    {
+                        "function": "set_nbt",
+                        "tag": "{CustomEnchantments:{ExcavatorItembreak:1}}"
+                    }
+                ] 
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:clay",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 4
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "minecraft:clay_ball"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
