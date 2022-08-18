@@ -1,0 +1,3 @@
+execute if score #lvwk Enchopts matches 0 as @s[nbt={Inventory:[{Slot:100b,tag:{CustomEnchantments:[{id:"LavaWalker",lvl:1}]}}]}] at @s run function enchantplus:result/lavawalker
+execute if score #skwk Enchopts matches 0 as @s[nbt={Inventory:[{Slot:100b,tag:{CustomEnchantments:[{id:"SkyWalk",lvl:1}]}}]}] at @s run function enchantplus:result/sky_walk/ini
+execute if score #dasher Enchopts matches 0 as @s[nbt={Inventory:[{Slot:100b,tag:{CustomEnchantments:[{id:"Dasher"}]}}]}] at @s run function enchantplus:result/dasher/init
