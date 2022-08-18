@@ -1,0 +1,104 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:stone_hoe"
+    },
+    "title": {
+      "translate":"Technical Hoe",
+      "color":"#FFE2A8"
+    },
+    "description": {
+      "translate": "Get every custom enchantment book for the hoe",
+      "color": "green"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/tools/start",
+  "criteria": {
+    "got_grand_tilling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"GrandTilling\"}]}"
+          }
+        ]
+      }
+    },
+    "got_harvesting_plus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"HarvestingPlus\"}]}"
+          }
+        ]
+      }
+    },
+    "got_replant": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Replant\"}]}"
+          }
+        ]
+      }
+    },
+    "got_scyther": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Scyther\"}]}"
+          }
+        ]
+      }
+    },
+    "got_soul_reaper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"SoulReaper\"}]}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_grand_tilling"
+    ],
+    [
+      "got_harvesting_plus"
+    ],
+    [
+      "got_replant"
+    ],
+    [
+      "got_scyther"
+    ],
+    [
+      "got_soul_reaper"
+    ]
+  ]
+}

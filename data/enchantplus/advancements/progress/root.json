@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:enchanting_table",
+      "nbt": "{Enchantments:[{}]}"
+    },
+    "title": {
+      "translate":"Technical Enchant+"
+    },
+    "description": {
+      "translate": "Discover a new power of enchantments",
+      "color": "aqua"
+    },
+    "background": "minecraft:textures/block/quartz_block_side.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:enchanting_table"
+      }
+    }
+  }
+}

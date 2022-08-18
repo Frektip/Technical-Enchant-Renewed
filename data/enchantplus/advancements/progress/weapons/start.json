@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:red_wool"
+    },
+    "title": {
+      "translate":"Weapons +"
+    },
+    "description": {
+      "translate": "Over 16 more enchantments",
+      "color": "#D97652"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "enchantplus:progress/start/list",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

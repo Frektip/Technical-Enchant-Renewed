@@ -1,0 +1,136 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_sword"
+    },
+    "title": {
+      "translate":"Technical Sword",
+      "color":"#FFE2A8"
+    },
+    "description": {
+      "translate": "Get every custom enchantment book for the sword",
+      "color": "green"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/weapons/start",
+  "criteria": {
+    "got_anti_explosion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AntiExplosion\"}]}"
+          }
+        ]
+      }
+    },
+    "got_attack_speed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AttackSpeed\"}]}"
+          }
+        ]
+      }
+    },
+    "got_bloody_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"BloodyBlade\"}]}"
+          }
+        ]
+      }
+    },
+    "got_last_stand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"LastStand\"}]}"
+          }
+        ]
+      }
+    },
+    "got_life_steal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"LifeSteal\"}]}"
+          }
+        ]
+      }
+    },
+    "got_poison_aspect": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"PoisonAspect\"}]}"
+          }
+        ]
+      }
+    },
+    "got_xp_boost": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"XpBoost\"}]}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_anti_explosion"
+    ],
+    [
+      "got_attack_speed"
+    ],
+    [
+      "got_bloody_blade"
+    ],
+    [
+      "got_last_stand"
+    ],
+    [
+      "got_life_steal"
+    ],
+    [
+      "got_poison_aspect"
+    ],
+    [
+      "got_xp_boost"
+    ]
+  ]
+}

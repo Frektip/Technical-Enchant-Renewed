@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:yellow_wool"
+    },
+    "title": {
+      "translate":"Tools +"
+    },
+    "description": {
+      "translate": "Over 15 more enchantments",
+      "color": "#C4B96C"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "enchantplus:progress/start/list",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
