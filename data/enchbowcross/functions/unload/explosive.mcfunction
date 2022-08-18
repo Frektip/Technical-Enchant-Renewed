@@ -1,0 +1,1 @@
+execute at @s run summon tnt ~ ~ ~ {Tags:["no_aex"],Fuse:0} 
