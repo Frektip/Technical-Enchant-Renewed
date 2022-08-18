@@ -1,0 +1,12 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:unbreaking": {
+        "min": 1,
+        "max": 2
+      }
+    },
+    "add": false
+  }
+]
