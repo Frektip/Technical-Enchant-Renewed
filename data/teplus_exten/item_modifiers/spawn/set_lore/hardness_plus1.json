@@ -1,0 +1,65 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 2,
+        "operation": "addition",
+        "slot": "offhand"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 2,
+        "operation": "addition",
+        "slot": "mainhand"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:alternative",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:shield"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "offhand": {
+                  "items": [
+                    "minecraft:shield"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Hardness+ I",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

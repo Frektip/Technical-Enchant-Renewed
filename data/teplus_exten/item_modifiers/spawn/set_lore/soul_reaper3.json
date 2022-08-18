@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Soul Reaper III",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

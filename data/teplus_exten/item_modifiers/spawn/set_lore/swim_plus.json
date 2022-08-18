@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Swim+",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

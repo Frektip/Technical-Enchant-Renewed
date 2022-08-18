@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Mining+",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

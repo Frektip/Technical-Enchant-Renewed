@@ -1,0 +1,66 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.knockback_resistance",
+        "name": "",
+        "amount": 0.5,
+        "operation": "addition",
+        "slot": "offhand"
+      },
+      {
+        "attribute": "minecraft:generic.knockback_resistance",
+        "name": "",
+        "amount": 0.5,
+        "operation": "addition",
+        "slot": 
+          "mainhand"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:alternative",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:shield"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "offhand": {
+                  "items": [
+                    "minecraft:shield"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Anti-Knockback II",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Fireball Wave",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

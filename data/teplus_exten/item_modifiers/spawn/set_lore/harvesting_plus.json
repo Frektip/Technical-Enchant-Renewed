@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Harvesting+",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

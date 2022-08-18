@@ -1,0 +1,172 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "name": "",
+        "amount": 0.66,
+        "operation": "multiply_base",
+        "slot": "feet"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "feet"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "feet"
+      },
+      {
+        "attribute": "minecraft:generic.knockback_resistance",
+        "name": "",
+        "amount": 0.1,
+        "operation": "addition",
+        "slot": "feet"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "feet": {
+              "items": [
+                "minecraft:netherite_boots"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "name": "",
+        "amount": 0.66,
+        "operation": "multiply_base",
+        "slot": "feet"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 2,
+        "operation": "addition",
+        "slot": "feet"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "feet"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "feet": {
+              "items": [
+                "minecraft:diamond_boots"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "name": "",
+        "amount": 0.66,
+        "operation": "multiply_base",
+        "slot": "feet"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 2,
+        "operation": "addition",
+        "slot": "feet"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "feet": {
+              "items": [
+                "minecraft:iron_boots"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "name": "",
+        "amount": 0.66,
+        "operation": "multiply_base",
+        "slot": "feet"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 1,
+        "operation": "addition",
+        "slot": "feet"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "feet": {
+              "items": [
+                "minecraft:chainmail_boots",
+                "minecraft:golden_boots",
+                "minecraft:leather_boots"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Agility II",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

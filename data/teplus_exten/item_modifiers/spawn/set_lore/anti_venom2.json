@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Anti-Venom II",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

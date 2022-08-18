@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Flaming Skin",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Marine Grace I",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Big Path",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

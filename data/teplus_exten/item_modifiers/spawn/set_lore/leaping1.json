@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "Leaping I",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]
