@@ -1,0 +1,94 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "name": "teplus_exten:chests/set_enchanted_book/fireball_wave"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "teplus_exten:chests/set_enchanted_book/accuracy_shot"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "teplus_exten:chests/set_enchanted_book/haste"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "teplus_exten:chests/set_enchanted_book/bloody_blade"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "name": "teplus_exten:chests/set_enchanted_book/auto_smelt"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "teplus_exten:chests/set_enchanted_book/sky_walk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "teplus_exten:chests/set_enchanted_book/magnet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "teplus_exten:chests/set_enchanted_book/anti_knockback"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "teplus_exten:chests/set_enchanted_book/dasher"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "teplus_exten:chests/set_enchanted_book/poison_aspect"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "teplus_exten:chests/set_enchanted_book/bright_vision"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "name": "teplus_exten:chests/set_enchanted_book/harvesting_plus"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "name": "teplus_exten:chests/set_enchanted_book/flaming_skin"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "teplus_exten:chests/set_enchanted_book/last_stand"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "teplus_exten:chests/set_enchanted_book/transmission"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/rarity/custom_curses",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

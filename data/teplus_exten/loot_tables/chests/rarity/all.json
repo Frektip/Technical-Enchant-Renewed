@@ -1,0 +1,21 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/rarity/low"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/rarity/average"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/rarity/strong"
+        }
+      ]
+    }
+  ]
+}

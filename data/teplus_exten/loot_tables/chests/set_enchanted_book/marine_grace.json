@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{StoredCustomEnchantments:[{id:\"MarineGrace\",lvl:1}]}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Marine Grace I",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "► Trident",
+                  "color": "red"
+                }
+              ],
+              "replace": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{StoredCustomEnchantments:[{id:\"MarineGrace\",lvl:2}]}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Marine Grace II",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "► Trident",
+                  "color": "red"
+                }
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

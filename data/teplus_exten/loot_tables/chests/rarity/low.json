@@ -1,0 +1,83 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/anti_explosion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/poison_aspect"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/leaping"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/bright_vision"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/big_path"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/marine_grace"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/chopping"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/harvesting_plus"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/flaming_skin"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/last_stand"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/excavator"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/grand_tilling"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/swim_plus"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/agility"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/transmission"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/scyther"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/rarity/custom_curses",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

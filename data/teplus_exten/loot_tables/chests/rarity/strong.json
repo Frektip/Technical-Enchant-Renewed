@@ -1,0 +1,83 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/peaks"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/lava_walker"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/last_life"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/life_steal"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/timber"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/vein_miner"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/waterjet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/explosive"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/fireball_wave"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/replant"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/soul_reaper"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/time_breaker"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/anti_venom"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/xp_boost"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/attack_speed"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/life_plus"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/rarity/custom_curses",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

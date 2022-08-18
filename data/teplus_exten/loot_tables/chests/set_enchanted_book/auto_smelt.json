@@ -1,0 +1,34 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{StoredCustomEnchantments:[{id:\"AutoSmelt\",lvl:1}]}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Auto-Smelt",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "► Pickaxe-Axe-Shovel",
+                  "color": "yellow"
+                }
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

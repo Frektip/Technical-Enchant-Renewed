@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{StoredCustomEnchantments:[{id:\"Haste\",lvl:1}]}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Haste I",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "► Pickaxe-Axe-Shovel",
+                  "color": "yellow"
+                }
+              ],
+              "replace": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{StoredCustomEnchantments:[{id:\"Haste\",lvl:2}]}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Haste II",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "► Pickaxe-Axe-Shovel",
+                  "color": "yellow"
+                }
+              ],
+              "replace": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

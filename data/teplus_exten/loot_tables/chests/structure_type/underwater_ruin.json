@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "teplus_exten:chests/set_enchanted_book/anti_explosion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "teplus_exten:chests/set_enchanted_book/bright_vision"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "teplus_exten:chests/set_enchanted_book/marine_grace"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "teplus_exten:chests/set_enchanted_book/swim_plus"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "teplus_exten:chests/set_enchanted_book/agility"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "name": "teplus_exten:chests/set_enchanted_book/waterjet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "name": "teplus_exten:chests/set_enchanted_book/turtle_stiffness"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 10,
+          "name": "teplus_exten:chests/set_enchanted_book/splatter"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/rarity/custom_curses",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 20,
+          "name": "teplus_exten:chests/set_enchanted_book/multicolor"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "teplus_exten:chests/set_enchanted_book/replant"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "teplus_exten:chests/set_enchanted_book/mining_plus"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "teplus_exten:chests/set_enchanted_book/scyther"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "teplus_exten:chests/set_enchanted_book/harvesting_plus"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "teplus_exten:chests/set_enchanted_book/recovery"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "teplus_exten:chests/set_enchanted_book/striker"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "teplus_exten:chests/set_enchanted_book/vein_miner"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "teplus_exten:chests/set_enchanted_book/haste"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "teplus_exten:chests/set_enchanted_book/chopping"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "teplus_exten:chests/set_enchanted_book/auto_smelt"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "teplus_exten:chests/set_enchanted_book/grand_tilling"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "teplus_exten:chests/set_enchanted_book/big_path"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "teplus_exten:chests/set_enchanted_book/excavator"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/rarity/custom_curses",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
