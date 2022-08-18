@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "in_ground": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:player_head",
+        "item": {
+          "nbt": "{Teplus.anvil:1b}"
+        }
+      }
+    },
+    "in_wall": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:player_wall_head",
+        "item": {
+          "nbt": "{Teplus.anvil:1b}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_ground",
+      "in_wall"
+    ]
+  ],
+  "rewards": {
+    "function": "technical_anvil:place/init"
+  }
+}
