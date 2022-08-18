@@ -16,4 +16,4 @@ execute if score $Rotation tep.avl matches 135..225 run scoreboard players set $
 execute if score $Rotation tep.avl matches -225..-135 run scoreboard players set $Towards tep.avl 4 
 
 function technical_anvil:place/look_all_heads
-execute as @e[type=marker,tag=teplus.placed] at @s run function technical_anvil:place/in_ground
+execute as @e[type=marker,tag=teplus.placed] at @s align xyz run function technical_anvil:place/in_ground
