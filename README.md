@@ -1,5 +1,5 @@
 # Technical-Enchant-Renewed
-Technical Enchant+ is a Minecraft Datapack that was created originally by Hardel (original link: https://www.planetminecraft.com/data-pack/enchant-datapack-1-13/). I updated it adding new features and mechanics for recent Minecraft Versions. 
+Technical Enchant+ is a Minecraft Datapack that was created originally by Hardel (original link [here](https://www.planetminecraft.com/data-pack/enchant-datapack-1-13/)). I updated it adding new features and mechanics for recent Minecraft Versions. 
 
 At its current state, TE+ isn't the same as the original and some of the most important features include:
 
