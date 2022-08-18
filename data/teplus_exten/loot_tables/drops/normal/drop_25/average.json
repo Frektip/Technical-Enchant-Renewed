@@ -1,0 +1,86 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/sniper"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/accuracy_shot"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/arachnid"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/shock_fangs"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/haste"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/recovery"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/bloody_blade"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/auto_smelt"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/mining_plus"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/auto_feed"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/sky_walk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/magnet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/anti_knockback"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/turtle_stiffness"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/striker"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/dasher"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/multicolor"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ]
+    }
+  ]
+}
