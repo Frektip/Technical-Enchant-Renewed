@@ -1,0 +1,36 @@
+{
+	"values": [
+
+
+        "netherite_axe",
+        "netherite_hoe",
+        "netherite_pickaxe",
+        "netherite_shovel",
+
+        "diamond_axe",
+        "diamond_hoe",
+        "diamond_pickaxe",
+        "diamond_shovel",
+
+        "iron_axe",
+        "iron_hoe",
+        "iron_pickaxe",
+        "iron_shovel",
+
+        "golden_axe",
+        "golden_hoe",
+        "golden_pickaxe",
+        "golden_shovel",
+
+        "stone_axe",
+        "stone_hoe",
+        "stone_pickaxe",
+        "stone_shovel",
+
+        "wooden_axe",
+        "wooden_hoe",
+        "wooden_pickaxe",
+        "wooden_shovel"
+
+	]
+}

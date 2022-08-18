@@ -1,0 +1,6 @@
+{
+    "values": [
+        {"id":"technical_anvil:interaction/item_type/book", "required":false},
+        {"id":"teplus_exten:exceed/combine/book/core", "required":false}
+    ]
+}

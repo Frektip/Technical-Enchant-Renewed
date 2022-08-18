@@ -1,0 +1,15 @@
+{
+	"values": [
+        "red_stained_glass_pane",
+        "lime_stained_glass_pane",
+        "experience_bottle",
+        "black_stained_glass_pane",
+        "structure_void",
+        "enchanted_book",
+        "player_head",
+        "nether_star",
+        "#technical_anvil:additional",
+        "#technical_anvil:armor",
+        "#technical_anvil:tools"
+	]
+}

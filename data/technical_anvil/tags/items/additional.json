@@ -1,0 +1,25 @@
+{
+	"values": [
+
+        "netherite_sword",
+        "diamond_sword",
+        "iron_sword",
+        "stone_sword",
+        "golden_sword",
+        "wooden_sword",
+
+        "bow",
+        "crossbow",
+        "trident",
+
+        "shears",
+        "elytra",
+        "fishing_rod",
+
+        "diamond_horse_armor",
+        "iron_horse_armor",        
+        "leather_horse_armor",
+        "golden_horse_armor"
+
+	]
+}
