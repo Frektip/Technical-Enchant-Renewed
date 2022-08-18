@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:potion"
+          ],
+          "nbt": "{OneBirthday:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "enchantplus:potion_consumed"
+  }
+}

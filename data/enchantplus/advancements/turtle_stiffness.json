@@ -1,0 +1,61 @@
+{
+  "criteria": {
+    "mainhand_shield": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "flags": {
+                "is_sneaking": true
+              },
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{CustomEnchantments:[{id:\"TurtleStiffness\"}]}"
+                }
+              }
+            }
+          }
+        ],
+        "damage": {
+          "blocked": true
+        }
+      }
+    },
+    "offhand_shield": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "flags": {
+                "is_sneaking": true
+              },
+              "equipment": {
+                "offhand": {
+                  "nbt": "{CustomEnchantments:[{id:\"TurtleStiffness\"}]}"
+                }
+              }
+            }
+          }
+        ],
+        "damage": {
+          "blocked": true
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "mainhand_shield",
+      "offhand_shield"
+    ]
+  ],
+  "rewards": {
+    "function": "enchantplus:result/turtle_stiffness/init"
+  }
+}

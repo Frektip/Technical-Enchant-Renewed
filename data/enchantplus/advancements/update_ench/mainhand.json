@@ -1,0 +1,125 @@
+{
+  "criteria": {
+    "agility": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{CustomEnchantments:[{id:\"Agility\"}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "life_plus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{CustomEnchantments:[{id:\"LifePlus\"}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "attack_speed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{CustomEnchantments:[{id:\"AttackSpeed\"}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "hardness_plus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{CustomEnchantments:[{id:\"HardnessPlus\"}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "armored": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{CustomEnchantments:[{id:\"Armored\"}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "anti_knockback": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{CustomEnchantments:[{id:\"AntiKnockback\"}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "armored",
+      "attack_speed",
+      "agility",
+      "anti_knockback",
+      "life_plus",
+      "hardness_plus"
+    ]
+  ],
+  "rewards": {
+    "function": "enchantplus:update_ench/mainhand"
+  }
+}

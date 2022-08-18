@@ -1,0 +1,81 @@
+{
+  "criteria": {
+    "in_water": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "fluid": {
+                  "tag": "minecraft:water"
+                }
+              },
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{CustomEnchantments:[{\"id\":\"MarineGrace\"}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "while_raining": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{CustomEnchantments:[{\"id\":\"MarineGrace\"}]}"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:weather_check",
+            "raining": true
+          }
+        ]
+      }
+    },
+    "while_thundering": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{CustomEnchantments:[{\"id\":\"MarineGrace\"}]}"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:weather_check",
+            "thundering": true
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_water",
+      "while_raining",
+      "while_thundering"
+    ]
+  ],
+  "rewards": {
+    "function": "enchantplus:result/marine_grace/init"
+  }
+}

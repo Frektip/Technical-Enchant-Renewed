@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "using_main": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:trident"
+          ],
+          "nbt": "{CustomCurse:{Fragile:1}}"
+        }
+      }
+    }
+  }
+}

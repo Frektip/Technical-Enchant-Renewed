@@ -1,0 +1,49 @@
+{
+  "criteria": {
+    "life_plus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "chest": {
+                  "nbt": "{CustomEnchantments:[{id:\"LifePlus\"}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "armored": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "chest": {
+                  "nbt": "{CustomEnchantments:[{id:\"Armored\"}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "armored",
+      "life_plus"
+    ]
+  ],
+  "rewards": {
+    "function": "enchantplus:update_ench/chest"
+  }
+}

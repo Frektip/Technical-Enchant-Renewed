@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:enchanting_table"
+      }
+    }
+  },
+  "rewards": {
+    "function": "enchantplus:enchanting_table/place/init"
+  }
+}

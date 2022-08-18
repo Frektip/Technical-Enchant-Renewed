@@ -1,0 +1,55 @@
+{
+  "criteria": {
+    "blocked_mainhand": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{CustomEnchantments:[{id:\"Peaks\"}]}"
+                }
+              }
+            }
+          }
+        ],
+        "damage": {
+          "blocked": true
+        }
+      }
+    },
+    "blocked_offhand": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "offhand": {
+                  "nbt": "{CustomEnchantments:[{id:\"Peaks\"}]}"
+                }
+              }
+            }
+          }
+        ],
+        "damage": {
+          "blocked": true
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blocked_offhand",
+      "blocked_mainhand"
+    ]
+  ],
+  "rewards": {
+    "function": "enchantplus:result/peaks"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Trident:{tag:{CustomEnchantments:[{id:\"PoisonAspect\"}]}}}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "enchantplus:result/poison_aspect/trident/core"
+  }
+}
+

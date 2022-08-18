@@ -1,0 +1,95 @@
+{
+  "criteria": {
+    "strong_axe": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:netherite_axe"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"Striker\"}]}"
+                }
+              }
+            }
+          }
+        ],
+        "damage": {
+          "dealt": {
+            "min": 15
+          }
+        }
+      }
+    },
+    "normal_axe": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:diamond_axe",
+                    "minecraft:iron_axe",
+                    "minecraft:stone_axe"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"Striker\"}]}"
+                }
+              }
+            }
+          }
+        ],
+        "damage": {
+          "dealt": {
+            "min": 13.5
+          }
+        }
+      }
+    },
+    "low_axe": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:wooden_axe",
+                    "minecraft:golden_axe"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"Striker\"}]}"
+                }
+              }
+            }
+          }
+        ],
+        "damage": {
+          "dealt": {
+            "min": 10.5
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "strong_axe",
+      "normal_axe",
+      "low_axe"
+    ]
+  ],
+  "rewards": {
+    "function": "enchantplus:result/striker/init"
+  }
+}

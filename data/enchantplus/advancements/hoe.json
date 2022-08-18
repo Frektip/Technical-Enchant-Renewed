@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "nbt": "{CustomEnchantments:[{id:\"GrandTilling\",lvl:1}]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "enchantplus:result/grand_tilling/ini"
+  }
+}

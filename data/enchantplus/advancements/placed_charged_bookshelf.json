@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:bookshelf",
+        "item": {
+          "nbt": "{TeplusChBf:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "enchantplus:enchanting_table/charged_bookshelf/place/init"
+  }
+}

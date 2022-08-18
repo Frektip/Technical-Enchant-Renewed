@@ -1,0 +1,59 @@
+{
+  "criteria": {
+    "cursed_mainhand": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:shield"
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "item": {
+            "nbt": "{CustomCurse:{Sensitive:1}}"
+          }
+      }
+    },
+    "cursed_offhand": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "offhand": {
+                  "items": [
+                    "minecraft:shield"
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "item": {
+            "nbt": "{CustomCurse:{Sensitive:1}}"
+          }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cursed_mainhand",
+      "cursed_offhand"
+    ]
+  ],
+  "rewards": {
+    "function": "enchantplus:result/sensitive/shield"
+  }
+}
