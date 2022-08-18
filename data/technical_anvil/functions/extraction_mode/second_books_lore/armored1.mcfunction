@@ -1,0 +1,2 @@
+data modify entity @s Items[{Slot:13b}].tag.display.Lore insert 0 value "[{\"text\":\"✤ \",\"color\":\"light_purple\",\"italic\":false},{\"translate\":\"Armored I\",\"color\":\"dark_purple\",\"italic\":false},{\"text\":\" ✤\",\"color\":\"light_purple\",\"italic\":false}]"
+data modify entity @s Items[{Slot:13b}].tag.display.Lore append value "{\"translate\":\"► Elytra\",\"color\":\"green\"}"
