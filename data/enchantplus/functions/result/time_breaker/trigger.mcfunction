@@ -1,5 +1,5 @@
-playsound minecraft:entity.zombie_villager.cure ambient @a[distance=..10] ~ ~ ~ 5 1.5
-particle minecraft:flash ~ ~ ~ 0 0 0 0 5
+playsound entity.zombie_villager.cure ambient @a[distance=..10] ~ ~ ~ 5 1.5
+particle flash ~ ~ ~ 0 0 0 0 5
 
 #TimeBreaker I
 execute if entity @s[nbt={Inventory:[{Slot:103b,tag:{CustomEnchantments:[{id:"TimeBreaker",lvl:1}]}}]}] as @e[distance=0.5..8] at @s run function enchantplus:result/time_breaker/action1

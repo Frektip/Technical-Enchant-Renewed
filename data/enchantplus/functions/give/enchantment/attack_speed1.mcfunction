@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"AttackSpeed",lvl:1}],display:{Lore:["{\"translate\":\"Attack Speed I\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Sword-Trident\",\"color\":\"red\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"AttackSpeed",lvl:1}],display:{Lore:["{\"translate\":\"Attack Speed I\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Sword-Trident\",\"color\":\"red\"}"]}}

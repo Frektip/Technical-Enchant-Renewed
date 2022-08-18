@@ -14,9 +14,9 @@ summon armor_stand ~-1 ~-.5 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,
 scoreboard players operation @e[tag=turtle_shield,distance=..3,sort=nearest,limit=5] tep.plid = @s tep.plid
 
 #Give the player some things
-effect give @s minecraft:resistance 10 2
-effect give @s minecraft:slowness 5 1
-playsound minecraft:entity.turtle.death ambient @s ~ ~ ~ 5 1.3
-playsound minecraft:entity.turtle.death ambient @s ~ ~ ~ 5 1.3
+effect give @s resistance 10 2
+effect give @s slowness 5 1
+playsound entity.turtle.death ambient @s ~ ~ ~ 5 1.3
+playsound entity.turtle.death ambient @s ~ ~ ~ 5 1.3
 
 tag @s add trigger_protection

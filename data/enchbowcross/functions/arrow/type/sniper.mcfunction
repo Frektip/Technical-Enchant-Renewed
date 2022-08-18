@@ -24,5 +24,5 @@ execute if score @s TimerSniper matches 51..60 run data merge entity @s {damage:
 #If it lands, stop the scoreboard
 #Also, if it stays in a water or lava source block it will also stop the scoreboard
 execute if entity @s[nbt={OnGround:1b}] run scoreboard players set @s TimerSniper -1
-execute if block ~ ~ ~ minecraft:water[level=0] run scoreboard players set @s TimerSniper -1
-execute if block ~ ~ ~ minecraft:lava[level=0] run scoreboard players set @s TimerSniper -1
+execute if block ~ ~ ~ water[level=0] run scoreboard players set @s TimerSniper -1
+execute if block ~ ~ ~ lava[level=0] run scoreboard players set @s TimerSniper -1

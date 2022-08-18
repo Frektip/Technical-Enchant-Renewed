@@ -1,5 +1,5 @@
-playsound minecraft:block.anvil.use master @a[distance=..6] ~ ~ ~ 1 1 1
-execute if score #tslpm game.Opts matches 1 run particle minecraft:nautilus ~ ~1.5 ~ 0.0001 0.01 0.0001 5 1000 
+playsound block.anvil.use master @a[distance=..6] ~ ~ ~ 1 1 1
+execute if score #tslpm game.Opts matches 1 run particle nautilus ~ ~1.5 ~ 0.0001 0.01 0.0001 5 1000 
 execute if score #tslpm game.Opts matches 1 run particle block anvil ~ ~1 ~ 0.3 0 0.3 1 150
 
 scoreboard players operation @p[tag=TECHA.try] TCHA.plxp = #xprq game.Opts

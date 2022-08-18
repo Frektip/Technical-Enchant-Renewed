@@ -1,6 +1,6 @@
 #Check if the player is completelly in lava as well as in fire
 #Then check is it doesn't have a delay tag to trigger the enchantment
-execute if block ~ ~ ~ minecraft:lava if block ~ ~1 ~ minecraft:lava if predicate enchantplus:is_on_fire run tag @s[tag=!flsk.dly] add lv.vis 
+execute if block ~ ~ ~ lava if block ~ ~1 ~ lava if predicate enchantplus:is_on_fire run tag @s[tag=!flsk.dly] add lv.vis 
 execute if entity @s[tag=lv.vis,tag=!lv.spec,tag=!flsk.dly] if predicate enchantplus:is_sneaking run function enchantplus:result/flaming_skin/lock 
 
 #Once the marker is summoned, tp the correct player to it

@@ -1,6 +1,6 @@
 #If the item reaches 0 durability
-execute if predicate enchantplus:zero_soul run playsound minecraft:entity.item.break master @s ~ ~ ~ 2 1
-execute if predicate enchantplus:zero_soul run item replace entity @s weapon.offhand with minecraft:air
+execute if predicate enchantplus:zero_soul run playsound entity.item.break master @s ~ ~ ~ 2 1
+execute if predicate enchantplus:zero_soul run item replace entity @s weapon.offhand with air
 
 #Material type and random chance to lose durability
 # All hoes lose 6 durability each time the predicate is true, however

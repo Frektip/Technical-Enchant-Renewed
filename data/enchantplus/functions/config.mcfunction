@@ -8,6 +8,6 @@ tellraw @s ["",{"text":"[\u25b6\u25b6]","bold":true,"color":"#C1750F","clickEven
 tellraw @s {"text":"\n"}
 tellraw @s ["",{"text":"[\u25b6\u25b6]","bold":true,"color":"#409F57","clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu"},"hoverEvent":{"action":"show_text","contents":"Clic here to go"}},{"translate":" Extentions Manager:","color":"#74E18E"},{"translate":" Change the behaviour of extra features from the datapack adjusting to your needs.","color":"gray"}]
 tellraw @s {"text":"                                                                                ","color":"dark_aqua","strikethrough":true} 
-playsound minecraft:block.note_block.hat player @s ~ ~ ~ 3 0.8 
+playsound block.note_block.hat player @s ~ ~ ~ 3 0.8 
 
 execute if entity @s[advancements={enchantplus:progress/start/cheats=false}] run advancement grant @s only enchantplus:progress/start/cheats 

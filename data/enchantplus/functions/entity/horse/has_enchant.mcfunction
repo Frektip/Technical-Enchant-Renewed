@@ -1,5 +1,5 @@
 #Show particles
-execute if score #tslpm game.Opts matches 1 run particle minecraft:enchant ~ ~.2 ~ 0.5 0.5 0.5 .25 15
+execute if score #tslpm game.Opts matches 1 run particle enchant ~ ~.2 ~ 0.5 0.5 0.5 .25 15
 
 #Detect Enchantment
 execute if score #antexp Enchopts matches 0 as @s[nbt={ArmorItem:{tag:{CustomEnchantments:[{id:"AntiExplosion",lvl:1}]}}}] at @s run function enchantplus:result/anti-explosion

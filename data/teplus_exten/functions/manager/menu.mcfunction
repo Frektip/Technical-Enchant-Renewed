@@ -20,4 +20,4 @@ tellraw @s ["",{"translate":"- Open the Menu for:   ","color":"white"},{"text":"
 tellraw @s [{"text":"                                    ","color":"#67DE83","strikethrough":true},{"text":"(↔▎↔)","color":"#B5FFDC","strikethrough":false,"hoverEvent":{"action":"show_text","contents":[{"text":"Return to the main page"}]},"clickEvent":{"action":"run_command","value":"/function enchantplus:config"}},{"text":"                                    ","color":"#67DE83","strikethrough":true}] 
 
 
-playsound minecraft:ui.button.click player @s ~ ~ ~ 0.5 1.75
+playsound ui.button.click player @s ~ ~ ~ 0.5 1.75

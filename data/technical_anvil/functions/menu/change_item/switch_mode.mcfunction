@@ -13,8 +13,8 @@ tag @s add anv.extract
 tag @s remove anv.merge
 
 #Make some noice
-playsound minecraft:block.note_block.snare block @p ~ ~ ~ 3 2 
-playsound minecraft:block.note_block.snare block @p ~ ~ ~ 3 2 
+playsound block.note_block.snare block @p ~ ~ ~ 3 2 
+playsound block.note_block.snare block @p ~ ~ ~ 3 2 
 
 #Grant advancement to the nearest player
 execute as @p[advancements={enchantplus:progress/start/extracting_mode=false},distance=..6] run advancement grant @s only enchantplus:progress/start/extracting_mode 

@@ -3,11 +3,11 @@ scoreboard players set $max random 9
 function enchantplus:random_uniform
 
 #Randomly give leggins, NOT NETHERITE
-execute if score $out random matches 0..3 run item replace entity @s armor.legs with minecraft:leather_leggings{Enchantments:[{}]}
-execute if score $out random matches 4..5 run item replace entity @s armor.legs with minecraft:iron_leggings{Enchantments:[{}]}
-execute if score $out random matches 6 run item replace entity @s armor.legs with minecraft:chainmail_leggings{Enchantments:[{}]}
-execute if score $out random matches 7..8 run item replace entity @s armor.legs with minecraft:golden_leggings{Enchantments:[{}]}
-execute if score $out random matches 9 run item replace entity @s armor.legs with minecraft:diamond_leggings{Enchantments:[{}]}
+execute if score $out random matches 0..3 run item replace entity @s armor.legs with leather_leggings{Enchantments:[{}]}
+execute if score $out random matches 4..5 run item replace entity @s armor.legs with iron_leggings{Enchantments:[{}]}
+execute if score $out random matches 6 run item replace entity @s armor.legs with chainmail_leggings{Enchantments:[{}]}
+execute if score $out random matches 7..8 run item replace entity @s armor.legs with golden_leggings{Enchantments:[{}]}
+execute if score $out random matches 9 run item replace entity @s armor.legs with diamond_leggings{Enchantments:[{}]}
 
 #Give Custom Enchantments
 function teplus_exten:spawn/give/leggings/set_enchantments

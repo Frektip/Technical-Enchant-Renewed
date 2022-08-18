@@ -10,4 +10,4 @@ tellraw @s ["",{"text":"\n"}]
 tellraw @s ["",{"text":"[Return to the Menu?]","italic":true,"color":"#8EB67F","hoverEvent":{"action":"show_text","contents":[{"text":"Click here"}]},"clickEvent":{"action":"run_command","value":"/function enchantplus:settings/enchsett_pages/page2"}}]
 tellraw @s ["",{"text":"\n"}]
 
-playsound minecraft:ui.button.click ambient @a ~ ~ ~ 10 1.75
+playsound ui.button.click ambient @a ~ ~ ~ 10 1.75

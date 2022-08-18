@@ -1,1 +1,1 @@
-execute if entity @s[nbt={HurtTime:10s}] as @e[limit=1,distance=0.5..3,sort=nearest] at @s run effect give @s minecraft:wither 1 1 true
+execute if entity @s[nbt={HurtTime:10s}] as @e[limit=1,distance=0.5..3,sort=nearest] at @s run effect give @s wither 1 1 true

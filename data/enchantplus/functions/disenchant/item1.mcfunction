@@ -86,9 +86,9 @@ summon experience_orb ~ ~.1 ~ {Tags:["teplus.diench.orb"]}
 execute if predicate enchantplus:random_chance/70 run summon experience_orb ~-.1 ~ ~ {Tags:["teplus.diench.orb"]}
 execute if predicate enchantplus:random_chance/70 run summon experience_orb ~ ~ ~-.1 {Tags:["teplus.diench.orb"]}
 # Change the xp value for each xp orb according to the storage
-execute as @e[type=minecraft:experience_orb,tag=teplus.diench.orb,distance=..1] run data modify entity @s Value set from storage teplus:diench XpReward
+execute as @e[type=experience_orb,tag=teplus.diench.orb,distance=..1] run data modify entity @s Value set from storage teplus:diench XpReward
 # Clear the storage
 data remove storage teplus:diench XpReward
 #--------------------- Graphical ---------------------#
-playsound minecraft:block.grindstone.use master @a[distance=..10] ~ ~ ~ 100
-particle minecraft:electric_spark ~ ~ ~ 0.2 0.2 0.2 0.5 10
+playsound block.grindstone.use master @a[distance=..10] ~ ~ ~ 100
+particle electric_spark ~ ~ ~ 0.2 0.2 0.2 0.5 10

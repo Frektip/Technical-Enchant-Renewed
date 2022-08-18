@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"LavaWalker",lvl:1}],display:{Lore:["{\"translate\":\"Lava Walker\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Boots\",\"color\":\"blue\"}","{\"translate\":\"► Horse Armor\",\"color\":\"green\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"LavaWalker",lvl:1}],display:{Lore:["{\"translate\":\"Lava Walker\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Boots\",\"color\":\"blue\"}","{\"translate\":\"► Horse Armor\",\"color\":\"green\"}"]}}

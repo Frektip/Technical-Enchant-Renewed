@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"SwimPlus",lvl:1}],display:{Lore:["{\"translate\":\"Swim+\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Leggings\",\"color\":\"blue\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"SwimPlus",lvl:1}],display:{Lore:["{\"translate\":\"Swim+\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Leggings\",\"color\":\"blue\"}"]}}

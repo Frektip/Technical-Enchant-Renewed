@@ -27,5 +27,5 @@
 #	score #dz iris
 #		The z coordinate of the steering vector of the ray, represented by an integer between -1000000 and 1000000
 
-summon minecraft:marker ~ ~ ~ {Tags: ["iris", "iris.get_coordinates"]}
-execute as @e[type=minecraft:marker, tag=iris.get_coordinates, limit=1] run function iris:get_coordinates/as_marker
+summon marker ~ ~ ~ {Tags: ["iris", "iris.get_coordinates"]}
+execute as @e[type=marker, tag=iris.get_coordinates, limit=1] run function iris:get_coordinates/as_marker

@@ -11,4 +11,4 @@ execute if score #tslpm game.Opts matches 0 run scoreboard players reset @s[scor
 execute if score #tslpm game.Opts matches 0 if entity @a[distance=..15] run particle dust_color_transition 0.541 1.000 0.541 1 0.451 0.467 1.000 ~ ~.4 ~ 0.3 0.3 0.3 0 1
 
 #If the bookshelf is removed
-execute unless block ~ ~ ~ minecraft:bookshelf run function enchantplus:entity/marker/charged_bookshelf_remove
+execute unless block ~ ~ ~ bookshelf run function enchantplus:entity/marker/charged_bookshelf_remove

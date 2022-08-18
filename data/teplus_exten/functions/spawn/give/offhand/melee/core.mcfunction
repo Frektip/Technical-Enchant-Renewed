@@ -1,6 +1,6 @@
 #In case it is a Drowned
-execute if entity @s[type=minecraft:drowned] run function teplus_exten:spawn/give/offhand/melee/is_drowned
-execute unless entity @s[type=minecraft:drowned] run function teplus_exten:spawn/give/offhand/melee/other
+execute if entity @s[type=drowned] run function teplus_exten:spawn/give/offhand/melee/is_drowned
+execute unless entity @s[type=drowned] run function teplus_exten:spawn/give/offhand/melee/other
 
 #Set Lore
 function teplus_exten:spawn/give/offhand/set_lore

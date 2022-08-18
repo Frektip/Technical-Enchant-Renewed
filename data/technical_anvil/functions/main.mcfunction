@@ -4,6 +4,6 @@ execute as @e[type=area_effect_cloud,tag=teplus.technical_anvil_aec,predicate=!t
 # Prevent creeper explosions from breaking the decorative parts of the table if mobGreifing gamerule
 #  is set to false
 execute store result score $MobGriefing teplus.vgmrl run gamerule mobGriefing
-execute if score $MobGriefing teplus.vgmrl matches 0 as @e[type=minecraft:falling_block,tag=teplus.technical_anvil_decorative] run data merge entity @s {Motion:[0.0d,0.0d,0.0d]}
+execute if score $MobGriefing teplus.vgmrl matches 0 as @e[type=falling_block,tag=teplus.technical_anvil_decorative] run data merge entity @s {Motion:[0.0d,0.0d,0.0d]}
 
 schedule function technical_anvil:main 1t

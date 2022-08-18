@@ -6,6 +6,6 @@ execute as @e[distance=..6,type=arrow,tag=!tep.explosive,nbt=!{inGround:1b}] sto
 execute as @e[distance=..6,type=arrow,tag=!tep.explosive,nbt=!{inGround:1b}] store result score @s UUID3 run data get entity @s Owner[3] 
 
 
-execute as @e[distance=..6,type=arrow,tag=!tep.explosive] at @s if score @s UUID0 = #search UUID0 if score @s UUID1 = #search UUID1 if score @s UUID2 = #search UUID2 if score @s UUID3 = #search UUID3 run summon minecraft:area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tep.explosive_follow","tep.arrow_follow"]} 
+execute as @e[distance=..6,type=arrow,tag=!tep.explosive] at @s if score @s UUID0 = #search UUID0 if score @s UUID1 = #search UUID1 if score @s UUID2 = #search UUID2 if score @s UUID3 = #search UUID3 run summon area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["tep.explosive_follow","tep.arrow_follow"]} 
 execute as @e[distance=..6,type=arrow] at @s if score @s UUID0 = #search UUID0 if score @s UUID1 = #search UUID1 if score @s UUID2 = #search UUID2 if score @s UUID3 = #search UUID3 run tag @s add tep.explosive 
 execute as @e[distance=..6,type=arrow] at @s if score @s UUID0 = #search UUID0 if score @s UUID1 = #search UUID1 if score @s UUID2 = #search UUID2 if score @s UUID3 = #search UUID3 run tag @s add tep.custom_arrow 

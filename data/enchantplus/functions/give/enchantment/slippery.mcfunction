@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomCurse:[{id:"Slippery",lvl:1}],display:{Lore:["{\"translate\":\"Curse of Slippery\",\"color\":\"#FF4099\",\"italic\":false}","{\"translate\":\"► Tools - Weapons\",\"color\":\"white\"}"]}}
+give @s enchanted_book{StoredCustomCurse:[{id:"Slippery",lvl:1}],display:{Lore:["{\"translate\":\"Curse of Slippery\",\"color\":\"#FF4099\",\"italic\":false}","{\"translate\":\"► Tools - Weapons\",\"color\":\"white\"}"]}}

@@ -1,4 +1,4 @@
-playsound minecraft:block.grindstone.use master @p ~ ~ ~ 1 0.7 1
+playsound block.grindstone.use master @p ~ ~ ~ 1 0.7 1
 
 execute if score #tslpm game.Opts matches 1 run particle dust_color_transition 1.000 0.020 0.020 1 1.000 0.690 0.510 ~ ~1 ~ 0.1 0.2 0.1 2 350
 execute if score #tslpm game.Opts matches 1 run particle block anvil ~ ~1 ~ 0.3 0 0.3 1 150

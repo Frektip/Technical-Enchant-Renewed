@@ -3,11 +3,11 @@ scoreboard players set $max random 9
 function enchantplus:random_uniform
 
 #Randomly give boots, NOT NETHERITE
-execute if score $out random matches 0..3 run item replace entity @s armor.feet with minecraft:leather_boots{Enchantments:[{}]}
-execute if score $out random matches 4..5 run item replace entity @s armor.feet with minecraft:iron_boots{Enchantments:[{}]}
-execute if score $out random matches 6 run item replace entity @s armor.feet with minecraft:chainmail_boots{Enchantments:[{}]}
-execute if score $out random matches 7..8 run item replace entity @s armor.feet with minecraft:golden_boots{Enchantments:[{}]}
-execute if score $out random matches 9 run item replace entity @s armor.feet with minecraft:diamond_boots{Enchantments:[{}]}
+execute if score $out random matches 0..3 run item replace entity @s armor.feet with leather_boots{Enchantments:[{}]}
+execute if score $out random matches 4..5 run item replace entity @s armor.feet with iron_boots{Enchantments:[{}]}
+execute if score $out random matches 6 run item replace entity @s armor.feet with chainmail_boots{Enchantments:[{}]}
+execute if score $out random matches 7..8 run item replace entity @s armor.feet with golden_boots{Enchantments:[{}]}
+execute if score $out random matches 9 run item replace entity @s armor.feet with diamond_boots{Enchantments:[{}]}
 
 #Give Custom Enchantments
 function teplus_exten:spawn/give/boots/set_enchantments

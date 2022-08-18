@@ -14,5 +14,5 @@ execute store result entity @e[tag=slp.drop,limit=1] Motion[1] double 0.001 run 
 execute store result entity @e[tag=slp.drop,limit=1] Motion[2] double 0.001 run scoreboard players operation $pos_z2 tep.mot -= $pos_z1 tep.mot 
 
 data modify entity @e[type=item,sort=nearest,limit=1,tag=slp.drop] Item set from entity @s Inventory[{Slot:-106b}] 
-playsound minecraft:enchant.thorns.hit master @s ~ ~ ~ 3 .7 1 
+playsound enchant.thorns.hit master @s ~ ~ ~ 3 .7 1 
 item replace entity @s weapon.offhand with air 

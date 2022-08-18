@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"BrightVision",lvl:1}],display:{Lore:["{\"translate\":\"Bright Vision\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Helmet\",\"color\":\"blue\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"BrightVision",lvl:1}],display:{Lore:["{\"translate\":\"Bright Vision\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Helmet\",\"color\":\"blue\"}"]}}

@@ -1,2 +1,2 @@
-execute if block ~ ~ ~ minecraft:dirt_path run function enchantplus:result/big_path/at_block
-execute unless block ~ ~ ~ minecraft:dirt_path positioned ^ ^ ^1 run function enchantplus:result/big_path/core
+execute if block ~ ~ ~ dirt_path run function enchantplus:result/big_path/at_block
+execute unless block ~ ~ ~ dirt_path positioned ^ ^ ^1 run function enchantplus:result/big_path/core

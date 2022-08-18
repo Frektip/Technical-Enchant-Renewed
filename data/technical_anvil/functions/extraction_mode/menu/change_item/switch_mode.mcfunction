@@ -14,5 +14,5 @@ tag @s remove anv.extract
 
 
 #Make some noice
-playsound minecraft:block.note_block.snare block @p ~ ~ ~ 3 2 
-playsound minecraft:block.note_block.snare block @p ~ ~ ~ 3 2 
+playsound block.note_block.snare block @p ~ ~ ~ 3 2 
+playsound block.note_block.snare block @p ~ ~ ~ 3 2 

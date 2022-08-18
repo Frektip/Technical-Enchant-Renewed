@@ -2,9 +2,9 @@ tellraw @s[gamemode=survival] {"text":"\n\n\n\n\n"}
 tellraw @s[gamemode=survival] ["",{"text":"<TE+> ","color":"aqua"},{"translate":"You have merged all custom enchantments, curses and exceeded vanilla enchantments at thier Max Level in one single book!","color":"gold"},{"text":"\n\n"}] 
 
 effect give @s resistance 1 4 true
-execute at @s run playsound minecraft:entity.player.levelup ambient @a[distance=..10] ~ ~ ~ 3 .5 
-execute at @s run particle minecraft:nautilus ~ ~1.5 ~ 0.0001 0.01 0.0001 5 1000 
-execute at @s run particle minecraft:enchant ~ ~1 ~ 0.1 0.1 0.1 10 5000 
+execute at @s run playsound entity.player.levelup ambient @a[distance=..10] ~ ~ ~ 3 .5 
+execute at @s run particle nautilus ~ ~1.5 ~ 0.0001 0.01 0.0001 5 1000 
+execute at @s run particle enchant ~ ~1 ~ 0.1 0.1 0.1 10 5000 
 execute at @s run summon firework_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:4,Flicker:1b,Colors:[I;14233108,16755999],FadeColors:[I;8350719,2723327]}]}}}} 
 
 ##I'm still thinking that the reward is good enough
