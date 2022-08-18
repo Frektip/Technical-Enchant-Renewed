@@ -1,0 +1,1 @@
+execute at @s[nbt={HurtTime:10s}] if predicate enchantplus:random_chance/70 run summon creeper ~ ~ ~ {ExplosionRadius:1b,Fuse:0,ignited:1b,Tags:["no_aex"]}
