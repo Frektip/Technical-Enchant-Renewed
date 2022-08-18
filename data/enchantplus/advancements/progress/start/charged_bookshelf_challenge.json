@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bookshelf",
+      "nbt": "{Enchantments:[{}]}"
+    },
+    "title": {
+      "translate":"Full enchanting power"
+    },
+    "description": {
+      "translate": "Create a Tier 3 enchanting setup",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/start/charged_bookshelf",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

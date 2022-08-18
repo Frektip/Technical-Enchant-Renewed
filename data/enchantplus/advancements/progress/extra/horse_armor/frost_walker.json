@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:ice"
+    },
+    "title": {
+      "translate":"Frost Walker for horse armor",
+      "color":"#40E6FF"
+    },
+    "description": {
+      "translate": "A bit different from vanilla",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/extra/horse_armor/base",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredEnchantments:[{id:\"minecraft:frost_walker\"}]}"
+          }
+        ]
+      }
+    }
+  }
+}

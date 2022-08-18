@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:blue_wool"
+    },
+    "title": {
+      "translate":"Armor +"
+    },
+    "description": {
+      "translate": "Over 18 enchantments",
+      "color": "#57BBD9"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "enchantplus:progress/start/list",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

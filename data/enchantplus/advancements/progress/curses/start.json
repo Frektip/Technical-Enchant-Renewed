@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:pink_wool"
+    },
+    "title": {
+      "translate":"Better luck next time"
+    },
+    "description": {
+      "translate": "3 more custom curses",
+      "color": "#BD4B93"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "enchantplus:progress/start/list",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

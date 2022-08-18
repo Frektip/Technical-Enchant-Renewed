@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+    "title": {
+      "translate":"Leaping",
+      "color":"#40E6FF"
+    },
+    "description": {
+      "translate": "Become the expert mountain climber",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/armor/leggings/last_life",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Leaping\"}]}"
+          }
+        ]
+      }
+    }
+  }
+}

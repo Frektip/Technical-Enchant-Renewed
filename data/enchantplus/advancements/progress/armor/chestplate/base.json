@@ -1,0 +1,88 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_chestplate"
+    },
+    "title": {
+      "translate":"Technical Chestplate",
+      "color":"#FFE2A8"
+    },
+    "description": {
+      "translate": "Get every custom enchantment book for the chestplate",
+      "color": "green"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/armor/start",
+  "criteria": {
+    "got_anti_venom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AntiVenom\"}]}"
+          }
+        ]
+      }
+    },
+    "got_auto_feed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AutoFeed\"}]}"
+          }
+        ]
+      }
+    },
+    "got_flaming_skin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"FlamingSkin\"}]}"
+          }
+        ]
+      }
+    },
+    "got_life_plus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"LifePlus\"}]}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_anti_venom"
+    ],
+    [
+      "got_auto_feed"
+    ],
+    [
+      "got_flaming_skin"
+    ],
+    [
+      "got_life_plus"
+    ]
+  ]
+}

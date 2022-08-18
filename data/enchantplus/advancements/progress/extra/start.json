@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:lime_wool"
+    },
+    "title": {
+      "translate":"Extra items"
+    },
+    "description": {
+      "translate": "3 more enchantments",
+      "color": "#ADD955"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "enchantplus:progress/start/list",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

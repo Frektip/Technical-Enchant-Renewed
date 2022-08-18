@@ -1,0 +1,88 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:shield"
+    },
+    "title": {
+      "translate":"Technical Shield",
+      "color":"#FFE2A8"
+    },
+    "description": {
+      "translate": "Get every custom enchantment book for the shield",
+      "color": "green"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/armor/start",
+  "criteria": {
+    "got_anti_knockback": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AntiKnockback\"}]}"
+          }
+        ]
+      }
+    },
+    "got_hardness_plus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"HardnessPlus\"}]}"
+          }
+        ]
+      }
+    },
+    "got_last_life": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"LastLife\"}]}"
+          }
+        ]
+      }
+    },
+    "got_peaks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Peaks\"}]}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_anti_knockback"
+    ],
+    [
+      "got_hardness_plus"
+    ],
+    [
+      "got_last_life"
+    ],
+    [
+      "got_peaks"
+    ]
+  ]
+}

@@ -1,0 +1,903 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:experience_bottle"
+    },
+    "title": {
+      "translate":"Feeling overpowered"
+    },
+    "description": {
+      "translate": "Get every custom enchantment and curse",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/start/birthday_enchant",
+  "criteria": {
+    "got_accuracy_shot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AccuracyShot\"}]}"
+          }
+        ]
+      }
+    },
+    "got_agility": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Agility\"}]}"
+          }
+        ]
+      }
+    },
+    "got_anti_explosion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AntiExplosion\"}]}"
+          }
+        ]
+      }
+    },
+    "got_anti_knockback": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AntiKnockback\"}]}"
+          }
+        ]
+      }
+    },
+    "got_anti_venom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AntiVenom\"}]}"
+          }
+        ]
+      }
+    },
+    "got_arachnid": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Arachnid\"}]}"
+          }
+        ]
+      }
+    },
+    "got_armored": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Armored\"}]}"
+          }
+        ]
+      }
+    },
+    "got_attack_speed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AttackSpeed\"}]}"
+          }
+        ]
+      }
+    },
+    "got_auto_feed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AutoFeed\"}]}"
+          }
+        ]
+      }
+    },
+    "got_auto_smelt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AutoSmelt\"}]}"
+          }
+        ]
+      }
+    },
+    "got_big_path": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"BigPath\"}]}"
+          }
+        ]
+      }
+    },
+    "got_dasher": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Dasher\"}]}"
+          }
+        ]
+      }
+    },
+    "got_bloody_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"BloodyBlade\"}]}"
+          }
+        ]
+      }
+    },
+    "got_bright_vision": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"BrightVision\"}]}"
+          }
+        ]
+      }
+    },
+    "got_chopping": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Chopping\"}]}"
+          }
+        ]
+      }
+    },
+    "got_excavator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Excavator\"}]}"
+          }
+        ]
+      }
+    },
+    "got_explosive": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Explosive\"}]}"
+          }
+        ]
+      }
+    },
+    "got_fireball_wave": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"FireballWave\"}]}"
+          }
+        ]
+      }
+    },
+    "got_flaming_skin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"FlamingSkin\"}]}"
+          }
+        ]
+      }
+    },
+    "got_grand_tilling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"GrandTilling\"}]}"
+          }
+        ]
+      }
+    },
+    "got_hardness_plus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"HardnessPlus\"}]}"
+          }
+        ]
+      }
+    },
+    "got_harvesting_plus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"HarvestingPlus\"}]}"
+          }
+        ]
+      }
+    },
+    "got_haste": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Haste\"}]}"
+          }
+        ]
+      }
+    },
+    "got_last_life": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"LastLife\"}]}"
+          }
+        ]
+      }
+    },
+    "got_last_stand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"LastStand\"}]}"
+          }
+        ]
+      }
+    },
+    "got_lava_walker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"LavaWalker\"}]}"
+          }
+        ]
+      }
+    },
+    "got_leaping": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Leaping\"}]}"
+          }
+        ]
+      }
+    },
+    "got_life_steal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"LifeSteal\"}]}"
+          }
+        ]
+      }
+    },
+    "got_life_plus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"LifePlus\"}]}"
+          }
+        ]
+      }
+    },
+    "got_magnet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Magnet\"}]}"
+          }
+        ]
+      }
+    },
+    "got_marine_grace": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"MarineGrace\"}]}"
+          }
+        ]
+      }
+    },
+    "got_mining_plus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"MiningPlus\"}]}"
+          }
+        ]
+      }
+    },
+    "got_multicolor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Multicolor\"}]}"
+          }
+        ]
+      }
+    },
+    "got_peaks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Peaks\"}]}"
+          }
+        ]
+      }
+    },
+    "got_poison_aspect": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"PoisonAspect\"}]}"
+          }
+        ]
+      }
+    },
+    "got_recovery": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Recovery\"}]}"
+          }
+        ]
+      }
+    },
+    "got_replant": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Replant\"}]}"
+          }
+        ]
+      }
+    },
+    "got_scyther": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Scyther\"}]}"
+          }
+        ]
+      }
+    },
+    "got_shock_fangs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"ShockFangs\"}]}"
+          }
+        ]
+      }
+    },
+    "got_sky_walk": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"SkyWalk\"}]}"
+          }
+        ]
+      }
+    },
+    "got_sniper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Sniper\"}]}"
+          }
+        ]
+      }
+    },
+    "got_soul_reaper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"SoulReaper\"}]}"
+          }
+        ]
+      }
+    },
+    "got_splatter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Splatter\"}]}"
+          }
+        ]
+      }
+    },
+    "got_striker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Striker\"}]}"
+          }
+        ]
+      }
+    },
+    "got_swim_plus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"SwimPlus\"}]}"
+          }
+        ]
+      }
+    },
+    "got_timber": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Timber\"}]}"
+          }
+        ]
+      }
+    },
+    "got_time_breaker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"TimeBreaker\"}]}"
+          }
+        ]
+      }
+    },
+    "got_turtle_stiffness": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"TurtleStiffness\"}]}"
+          }
+        ]
+      }
+    },
+    "got_transmission": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Transmission\"}]}"
+          }
+        ]
+      }
+    },
+    "got_vein_miner": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"VeinMiner\"}]}"
+          }
+        ]
+      }
+    },
+    "got_waterjet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Waterjet\"}]}"
+          }
+        ]
+      }
+    },
+    "got_xp_boost": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"XpBoost\"}]}"
+          }
+        ]
+      }
+    },
+    "got_fragile": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomCurse:[{id:\"Fragile\",lvl:1}]}"
+          }
+        ]
+      }
+    },
+    "got_sensitive": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomCurse:[{id:\"Sensitive\",lvl:1}]}"
+          }
+        ]
+      }
+    },
+    "got_slippery": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomCurse:[{id:\"Slippery\",lvl:1}]}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_accuracy_shot"
+    ],
+    [
+      "got_agility"
+    ],
+    [
+      "got_anti_explosion"
+    ],
+    [
+      "got_anti_knockback"
+    ],
+    [
+      "got_anti_venom"
+    ],
+    [
+      "got_arachnid"
+    ],
+    [
+      "got_armored"
+    ],
+    [
+      "got_attack_speed"
+    ],
+    [
+      "got_auto_feed"
+    ],
+    [
+      "got_auto_smelt"
+    ],
+    [
+      "got_big_path"
+    ],
+    [
+      "got_dasher"
+    ],
+    [
+      "got_bloody_blade"
+    ],
+    [
+      "got_bright_vision"
+    ],
+    [
+      "got_chopping"
+    ],
+    [
+      "got_excavator"
+    ],
+    [
+      "got_explosive"
+    ],
+    [
+      "got_fireball_wave"
+    ],
+    [
+      "got_flaming_skin"
+    ],
+    [
+      "got_grand_tilling"
+    ],
+    [
+      "got_hardness_plus"
+    ],
+    [
+      "got_harvesting_plus"
+    ],
+    [
+      "got_haste"
+    ],
+    [
+      "got_last_life"
+    ],
+    [
+      "got_last_stand"
+    ],
+    [
+      "got_lava_walker"
+    ],
+    [
+      "got_leaping"
+    ],
+    [
+      "got_life_steal"
+    ],
+    [
+      "got_life_plus"
+    ],
+    [
+      "got_magnet"
+    ],
+    [
+      "got_marine_grace"
+    ],
+    [
+      "got_mining_plus"
+    ],
+    [
+      "got_multicolor"
+    ],
+    [
+      "got_peaks"
+    ],
+    [
+      "got_poison_aspect"
+    ],
+    [
+      "got_recovery"
+    ],
+    [
+      "got_replant"
+    ],
+    [
+      "got_scyther"
+    ],
+    [
+      "got_shock_fangs"
+    ],
+    [
+      "got_sky_walk"
+    ],
+    [
+      "got_sniper"
+    ],
+    [
+      "got_soul_reaper"
+    ],
+    [
+      "got_splatter"
+    ],
+    [
+      "got_striker"
+    ],
+    [
+      "got_swim_plus"
+    ],
+    [
+      "got_timber"
+    ],
+    [
+      "got_time_breaker"
+    ],
+    [
+      "got_turtle_stiffness"
+    ],
+    [
+      "got_transmission"
+    ],
+    [
+      "got_vein_miner"
+    ],
+    [
+      "got_waterjet"
+    ],
+    [
+      "got_xp_boost"
+    ],
+    [
+      "got_fragile"
+    ],
+    [
+      "got_sensitive"
+    ],
+    [
+      "got_slippery"
+    ]
+  ]
+}

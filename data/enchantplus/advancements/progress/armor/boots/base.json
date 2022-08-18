@@ -1,0 +1,88 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:chainmail_boots"
+    },
+    "title": {
+      "translate":"Technical Boots",
+      "color":"#FFE2A8"
+    },
+    "description": {
+      "translate": "Get every custom enchantment book for the boots",
+      "color": "green"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/armor/start",
+  "criteria": {
+    "got_agility": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Agility\"}]}"
+          }
+        ]
+      }
+    },
+    "got_lava_walker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"LavaWalker\"}]}"
+          }
+        ]
+      }
+    },
+    "got_sky_walk": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"SkyWalk\"}]}"
+          }
+        ]
+      }
+    },
+    "got_dasher": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Dasher\"}]}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_agility"
+    ],
+    [
+      "got_lava_walker"
+    ],
+    [
+      "got_sky_walk"
+    ],
+    [
+      "got_dasher"
+    ]
+  ]
+}

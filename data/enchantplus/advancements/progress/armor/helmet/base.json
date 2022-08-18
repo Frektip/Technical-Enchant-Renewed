@@ -1,0 +1,88 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:turtle_helmet"
+    },
+    "title": {
+      "translate":"Technical Helmet",
+      "color":"#FFE2A8"
+    },
+    "description": {
+      "translate": "Get every custom enchantment book for the helmet",
+      "color": "green"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/armor/start",
+  "criteria": {
+    "got_anti_explosion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AntiExplosion\"}]}"
+          }
+        ]
+      }
+    },
+    "got_bright_vision": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"BrightVision\"}]}"
+          }
+        ]
+      }
+    },
+    "got_magnet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Magnet\"}]}"
+          }
+        ]
+      }
+    },
+    "got_time_breaker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"TimeBreaker\"}]}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_anti_explosion"
+    ],
+    [
+      "got_bright_vision"
+    ],
+    [
+      "got_magnet"
+    ],
+    [
+      "got_time_breaker"
+    ]
+  ]
+}

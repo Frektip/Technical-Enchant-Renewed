@@ -1,0 +1,104 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_horse_armor"
+    },
+    "title": {
+      "translate":"Technical Horse Armor",
+      "color":"#FFE2A8"
+    },
+    "description": {
+      "translate": "Get every custom and vanilla enchantment book for any horse armor",
+      "color": "green"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/extra/start",
+  "criteria": {
+    "got_anti_explosion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AntiExplosion\"}]}"
+          }
+        ]
+      }
+    },
+    "got_anti_venom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"AntiVenom\"}]}"
+          }
+        ]
+      }
+    },
+    "got_lava_walker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"LavaWalker\"}]}"
+          }
+        ]
+      }
+    },
+    "got_recovery": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Recovery\"}]}"
+          }
+        ]
+      }
+    },
+    "got_frost_walker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredEnchantments:[{id:\"minecraft:frost_walker\"}]}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_anti_venom"
+    ],
+    [
+      "got_anti_explosion"
+    ],
+    [
+      "got_lava_walker"
+    ],
+    [
+      "got_recovery"
+    ],
+    [
+      "got_frost_walker"
+    ]
+  ]
+}

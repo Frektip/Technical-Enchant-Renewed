@@ -1,0 +1,88 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_leggings"
+    },
+    "title": {
+      "translate":"Technical Leggings",
+      "color":"#FFE2A8"
+    },
+    "description": {
+      "translate": "Get every custom enchantment book for the leggings",
+      "color": "green"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/armor/start",
+  "criteria": {
+    "got_last_life": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"LastLife\"}]}"
+          }
+        ]
+      }
+    },
+    "got_leaping": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Leaping\"}]}"
+          }
+        ]
+      }
+    },
+    "got_recovery": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"Recovery\"}]}"
+          }
+        ]
+      }
+    },
+    "got_swim_plus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomEnchantments:[{id:\"SwimPlus\"}]}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_last_life"
+    ],
+    [
+      "got_leaping"
+    ],
+    [
+      "got_recovery"
+    ],
+    [
+      "got_swim_plus"
+    ]
+  ]
+}
