@@ -16,6 +16,7 @@ At its current state, TE+ isn't the same as the original and some of the most im
     - Certain mobs can spawn with TE+ enchanted gear
     - Find custom enchantments in any Minecraft vanilla chest
     - Almost any mob can spawn with custom enchanted books as a drop
+    - Exceed the enchantment level from 20 vanilla enchantments
 
 
 # Getting started
