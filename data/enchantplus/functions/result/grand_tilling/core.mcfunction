@@ -1,0 +1,2 @@
+execute if block ~ ~ ~ minecraft:farmland run function enchantplus:result/grand_tilling/at_block
+execute unless block ~ ~ ~ minecraft:farmland positioned ^ ^ ^1 run function enchantplus:result/grand_tilling/core

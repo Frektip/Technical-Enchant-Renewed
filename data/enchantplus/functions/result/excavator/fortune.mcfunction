@@ -1,0 +1,1 @@
+data merge entity @s[nbt={Item:{id:"minecraft:gravel"}}] {Item:{id:"minecraft:flint"}} 

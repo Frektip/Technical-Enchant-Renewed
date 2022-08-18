@@ -1,0 +1,16 @@
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:white_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:orange_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:magenta_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:light_blue_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:yellow_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:lime_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:pink_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:gray_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:light_gray_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:cyan_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:purple_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:blue_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:brown_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:green_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:red_wool"}}] run function enchantplus:result/multicolor/give 
+execute as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:black_wool"}}] run function enchantplus:result/multicolor/give 

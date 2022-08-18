@@ -1,0 +1,15 @@
+execute if score #birthday_firework FireworkYear matches 1 run summon firework_rocket ~ ~ ~ {LifeTime:60,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:2,Flicker:1,Colors:[I;1973019,11743532],FadeColors:[I;2437522,14188952]}],Flight:3}}}}
+execute if score #birthday_firework FireworkYear matches 2 run summon firework_rocket ~ ~ ~ {LifeTime:20,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Flicker:1,Trail:1,Colors:[I;4312372,6719955],FadeColors:[I;14188952]}],Flight:1}}}}
+execute if score #birthday_firework FireworkYear matches 3 run summon firework_rocket ~ ~ ~ {LifeTime:40,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:2,Flicker:1,Trail:1,Colors:[I;11743532,2437522,4312372,14602026],FadeColors:[I;14188952,15435844]}],Flight:2}}}}
+execute if score #birthday_firework FireworkYear matches 5 run summon firework_rocket ~ ~ ~ {LifeTime:60,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Colors:[I;3887386,4312372],FadeColors:[I;8073150,12801229]}],Flight:3}}}}
+execute if score #birthday_firework FireworkYear matches 6 run summon firework_rocket ~ ~ ~ {LifeTime:20,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:4,Trail:1,Colors:[I;1973019,11743532,14188952],FadeColors:[I;2437522,2651799,6719955]}],Flight:1}}}}
+execute if score #birthday_firework FireworkYear matches 8 run summon firework_rocket ~ ~ ~ {LifeTime:20,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:2,Flicker:1,Colors:[I;1973019,11743532,14188952,4312372],FadeColors:[I;2437522,6719955,15435844,15790320]}],Flight:1}}}}
+execute if score #birthday_firework FireworkYear matches 9 run summon firework_rocket ~ ~ ~ {LifeTime:40,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Trail:1,Colors:[I;11743532],FadeColors:[I;14602026,15435844]}],Flight:2}}}}
+execute if score #birthday_firework FireworkYear matches 11 run summon firework_rocket ~ ~ ~ {LifeTime:60,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Trail:1,Colors:[I;11743532,2437522,8073150,2651799,4312372,15435844,15790320],FadeColors:[I;15435844]}],Flight:3}}}}
+execute if score #birthday_firework FireworkYear matches 12 run summon firework_rocket ~ ~ ~ {LifeTime:20,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Flicker:1,Colors:[I;15790320],FadeColors:[I;1973019]}],Flight:1}}}}
+execute if score #birthday_firework FireworkYear matches 13 run summon firework_rocket ~ ~ ~ {LifeTime:40,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:2,Flicker:1,Trail:1,Colors:[I;15790320],FadeColors:[I;8073150,4408131,14188952,4312372,12801229]}],Flight:2}}}}
+
+# Reset
+scoreboard players set @s TimerYearsBirth 0
+scoreboard players add #birthday_firework FireworkYear 1
+execute if score #birthday_firework FireworkYear matches 14.. run scoreboard players set #birthday_firework FireworkYear 0
