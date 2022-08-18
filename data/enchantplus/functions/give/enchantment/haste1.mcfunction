@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"Haste",lvl:1}],display:{Lore:["{\"translate\":\"Haste I\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Pickaxe-Axe-Shovel\",\"color\":\"yellow\"}"]}}

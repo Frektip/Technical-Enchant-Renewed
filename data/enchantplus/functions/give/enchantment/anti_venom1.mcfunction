@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"AntiVenom",lvl:1}],display:{Lore:["{\"translate\":\"Anti-Venom I\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Chestplate\",\"color\":\"blue\"}","{\"translate\":\"► Horse Armor\",\"color\":\"green\"}"]}}

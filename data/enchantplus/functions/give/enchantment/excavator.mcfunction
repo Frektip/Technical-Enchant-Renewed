@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"Excavator",lvl:1}],display:{Lore:["{\"translate\":\"Excavator\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Shovel\",\"color\":\"yellow\"}"]}}

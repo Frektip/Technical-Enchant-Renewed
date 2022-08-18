@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"Replant",lvl:1}],display:{Lore:["{\"translate\":\"Replant\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Hoe\",\"color\":\"yellow\"}"]}}

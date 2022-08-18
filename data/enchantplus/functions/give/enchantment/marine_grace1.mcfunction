@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"MarineGrace",lvl:1}],display:{Lore:["{\"translate\":\"Marine Grace I\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Trident\",\"color\":\"red\"}"]}}

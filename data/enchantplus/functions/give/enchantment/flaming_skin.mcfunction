@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"FlamingSkin",lvl:1}],display:{Lore:["{\"translate\":\"Flaming Skin\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Chestplate\",\"color\":\"blue\"}"]}}

@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"LastLife",lvl:1}],display:{Lore:["{\"translate\":\"Last Life\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Leggings\",\"color\":\"blue\"}"]}}

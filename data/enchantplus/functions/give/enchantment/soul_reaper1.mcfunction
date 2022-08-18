@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"SoulReaper",lvl:1}],display:{Lore:["{\"translate\":\"Soul Reaper I\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Hoe\",\"color\":\"yellow\"}"]}}

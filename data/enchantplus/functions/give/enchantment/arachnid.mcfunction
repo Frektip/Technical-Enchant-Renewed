@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"Arachnid",lvl:1}],display:{Lore:["{\"translate\":\"Arachnid\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Bow\",\"color\":\"red\"}"]}}

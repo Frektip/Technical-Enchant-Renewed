@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"Peaks",lvl:1}],display:{Lore:["{\"translate\":\"Peaks\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Shield\",\"color\":\"blue\"}"]}}

@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"Dasher",lvl:2}],display:{Lore:["{\"translate\":\"Dasher II\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Boots\",\"color\":\"blue\"}"]}}

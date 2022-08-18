@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"PoisonAspect",lvl:3}],display:{Lore:["{\"translate\":\"Poison Aspect III\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Sword-Trident\",\"color\":\"red\"}"]}}

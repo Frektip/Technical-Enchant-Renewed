@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"BloodyBlade",lvl:1}],display:{Lore:["{\"translate\":\"Bloody Blade\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Sword\",\"color\":\"red\"}"]}}

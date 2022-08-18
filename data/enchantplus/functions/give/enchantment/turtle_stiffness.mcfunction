@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"TurtleStiffness",lvl:1}],display:{Lore:["{\"translate\":\"Turtle Stiffness\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Shield\",\"color\":\"blue\"}"]}}
