@@ -19,7 +19,7 @@ At its current state, TE+ isn't the same as the original and some of the most im
 
 
 # Getting started
-When you place your first enchanting table you will get an advancement, you should follow the steps that are displayed there. Try getting a guide book (which supports other languages if you have the resource pack installed). You can also check out the wiki to get more detailed information about the datapack.
+When you place your first enchanting table you will get an advancement, you should follow the steps that are displayed there. Try getting a guide book (which supports other languages if you have the resource pack installed). You can also check out the [wiki](https://github.com/Frektip/Technical-Enchant-Renewed/wiki) to get more detailed information about the datapack.
 
 # Useful commads
 
