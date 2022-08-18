@@ -1,0 +1,33 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Attributes:[{Modifiers:[{Name:\"TepDrop.MaxHealth\"}]}]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Attributes:[{Modifiers:[{Name:\"TepDrop.Speed\"}]}]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Attributes:[{Modifiers:[{Name:\"TepDrop.Damage\"}]}]}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Attributes:[{Modifiers:[{Name:\"TepDrop.Toughness\"}]}]}"
+      }
+    }
+  ]
+}

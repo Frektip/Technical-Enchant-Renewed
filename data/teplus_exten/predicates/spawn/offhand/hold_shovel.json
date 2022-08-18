@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "offhand": {
+        "items": [
+          "minecraft:netherite_shovel",
+          "minecraft:diamond_shovel",
+          "minecraft:iron_shovel",
+          "minecraft:golden_shovel",
+          "minecraft:stone_shovel",
+          "minecraft:wooden_shovel"
+        ]
+      }
+    }
+  }
+}

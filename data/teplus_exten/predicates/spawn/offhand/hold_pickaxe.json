@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "offhand": {
+        "items": [
+          "minecraft:netherite_pickaxe",
+          "minecraft:diamond_pickaxe",
+          "minecraft:iron_pickaxe",
+          "minecraft:golden_pickaxe",
+          "minecraft:stone_pickaxe",
+          "minecraft:wooden_pickaxe"
+        ]
+      }
+    }
+  }
+}
