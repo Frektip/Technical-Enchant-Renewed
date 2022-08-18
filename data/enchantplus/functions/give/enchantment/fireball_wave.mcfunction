@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"FireballWave",lvl:1}],display:{Lore:["{\"translate\":\"Fireball Wave\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Crossbow\",\"color\":\"red\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"FireballWave",lvl:1}],display:{Lore:["{\"translate\":\"Fireball Wave\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Crossbow\",\"color\":\"red\"}"]}}

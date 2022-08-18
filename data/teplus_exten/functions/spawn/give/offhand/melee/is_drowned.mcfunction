@@ -3,8 +3,8 @@ scoreboard players set $max random 5
 function enchantplus:random_uniform
 
 #Randomly give an item (fishing rod or trident)
-execute if score $out random matches 0..3 run item replace entity @s weapon.offhand with minecraft:trident{Enchantments:[{}]}
-execute if score $out random matches 4..5 run item replace entity @s weapon.offhand with minecraft:fishing_rod{Enchantments:[{}]}
+execute if score $out random matches 0..3 run item replace entity @s weapon.offhand with trident{Enchantments:[{}]}
+execute if score $out random matches 4..5 run item replace entity @s weapon.offhand with fishing_rod{Enchantments:[{}]}
 
 #Give Custom Enchantments
 execute if predicate teplus_exten:spawn/offhand/hold_fishing_rod run function teplus_exten:spawn/give/mainhand/melee/set_enchantments/fishing_rod

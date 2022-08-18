@@ -4,7 +4,7 @@ advancement revoke @s only enchantplus:placed_charged_bookshelf
 execute at @s anchored eyes positioned ^ ^ ^ run function iris:get_target
 
 #This Iris marker is where we placed the block (in theory) 
-execute as @e[type=minecraft:marker,tag=iris.ray] at @s run function enchantplus:enchanting_table/charged_bookshelf/place/set_bookshelf
+execute as @e[type=marker,tag=iris.ray] at @s run function enchantplus:enchanting_table/charged_bookshelf/place/set_bookshelf
 
 #Schedule this function, so the game has time to correctly detect the minimum Tier 3
 # enchanting setup

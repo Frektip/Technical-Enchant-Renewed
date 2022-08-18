@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"Striker",lvl:3}],display:{Lore:["{\"translate\":\"Striker III\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Axe\",\"color\":\"yellow\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"Striker",lvl:3}],display:{Lore:["{\"translate\":\"Striker III\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Axe\",\"color\":\"yellow\"}"]}}

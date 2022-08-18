@@ -1,3 +1,4 @@
+
 advancement revoke @s only technical_anvil:placed 
 
 execute store result score $Rotation tep.avl run data get entity @s Rotation[0] 
@@ -14,5 +15,5 @@ execute if score $Rotation tep.avl matches -315..-225 run scoreboard players set
 execute if score $Rotation tep.avl matches 135..225 run scoreboard players set $Towards tep.avl 4 
 execute if score $Rotation tep.avl matches -225..-135 run scoreboard players set $Towards tep.avl 4 
 
-execute at @s anchored eyes positioned ^ ^ ^ run function iris:get_target 
-execute as @e[type=minecraft:marker,tag=iris.ray] at @s run function technical_anvil:place/in_ground
+function technical_anvil:place/look_all_heads
+execute as @e[type=marker,tag=teplus.placed] at @s align xyz run function technical_anvil:place/in_ground

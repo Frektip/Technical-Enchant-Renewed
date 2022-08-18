@@ -393,4 +393,4 @@ tellraw @s[scores={TellrawEnch=83}] ["",{"text":"\n"},{"translate":"Enchantment"
 
 execute as @s[scores={TellrawEnch=200}] run function enchantplus:give/birthday_potion
 scoreboard players set @a[scores={TellrawEnch=1..}] TellrawEnch 0 
-playsound minecraft:block.note_block.hat player @s ~ ~ ~ 3 0.8 
+playsound block.note_block.hat player @s ~ ~ ~ 3 0.8 

@@ -1,1 +1,1 @@
-execute as @e[type=minecraft:trident,distance=1..,nbt={Trident:{id:"minecraft:trident",tag:{CustomEnchantments:[{id:"PoisonAspect"}]}}}] at @s run function enchantplus:result/poison_aspect/trident/ini 
+execute as @e[type=trident,distance=1..,nbt={Trident:{id:"minecraft:trident",tag:{CustomEnchantments:[{id:"PoisonAspect"}]}}}] at @s run function enchantplus:result/poison_aspect/trident/ini 

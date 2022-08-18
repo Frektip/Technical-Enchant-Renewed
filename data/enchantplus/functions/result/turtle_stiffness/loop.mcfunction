@@ -11,6 +11,6 @@ execute positioned ~ ~1.35 ~ as @e[type=#enchantplus:anti_turtle,distance=1..5,n
 execute positioned ~ ~1.35 ~ as @e[type=#enchantplus:anti_turtle_extra,distance=1..5] at @s run function enchantplus:result/turtle_stiffness/no_projectiles
 
 
-execute if score @s TimerTurtle matches 195 run playsound minecraft:entity.turtle.death ambient @s ~ ~ ~ 5 0.8
+execute if score @s TimerTurtle matches 195 run playsound entity.turtle.death ambient @s ~ ~ ~ 5 0.8
 #End the timer
 execute if score @s TimerTurtle matches 200.. run function enchantplus:result/turtle_stiffness/clear

@@ -97,7 +97,7 @@ kill @e[type=item,nbt={Item:{tag:{Teplus:{ui:1b}}}}]
 
 #Uninstall message 
 tellraw @a ["",{"text":" \u0020[","color":"gold"},{"text":"Technical Enchant+","color":"aqua"},{"text":"]","color":"gold"},{"translate":" has been","color":"#B23735"},{"translate":" uninstalled","bold":true,"color":"dark_red"},{"translate":" successfully.","color":"#B23735"},{"text":"\n"},{"translate":"Be sure to remove it from your datapack folder!","color":"gold"},{"text":"\n"},{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}] 
-playsound minecraft:block.note_block.hat player @a ~ ~ ~ 2 0.5 
+playsound block.note_block.hat player @a ~ ~ ~ 2 0.5 
 
 #acutally disable the pack xd
 datapack disable "file/technical-enchant-v7-0-0.zip"

@@ -3,7 +3,7 @@
 # Teleports the executing entity at a given position from six scores.
 # Meant to be executed as the ray marker after raycasting, scores are then set to the player's targeted position:
 #	execute as @p at @s anchored eyes positioned ^ ^ ^ run function iris:get_target
-#	execute as @e[type=minecraft:marker, tag=iris.ray] run function iris:set_coordinates
+#	execute as @e[type=marker, tag=iris.ray] run function iris:set_coordinates
 #
 # @public
 # @context an entity other than a player

@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"ShockFangs",lvl:1}],display:{Lore:["{\"translate\":\"Shock Fangs\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Crossbow\",\"color\":\"red\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"ShockFangs",lvl:1}],display:{Lore:["{\"translate\":\"Shock Fangs\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Crossbow\",\"color\":\"red\"}"]}}

@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"Explosive",lvl:1}],display:{Lore:["{\"translate\":\"Explosive\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Bow\",\"color\":\"red\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"Explosive",lvl:1}],display:{Lore:["{\"translate\":\"Explosive\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Bow\",\"color\":\"red\"}"]}}

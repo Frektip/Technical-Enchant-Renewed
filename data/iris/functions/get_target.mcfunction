@@ -33,7 +33,7 @@
 #			The integer coordinates of the block before the ray hits something (i.e. where a block would be placed, if a player were to place a block). Unset if the ray hits an entity or if no block is found.
 
 # Reset tags, scores and storage
-kill @e[type=minecraft:marker, tag=iris.ray]
+kill @e[type=marker, tag=iris.ray]
 tag @e[type=!#iris:ignore] remove iris.target
 data modify storage iris:output Target set value "NONE"
 data remove storage iris:output Distance
@@ -50,10 +50,10 @@ scoreboard players set $ray_hits_surface iris 0
 
 # Get coordinates and rotation of the initial position
 function iris:get_coordinates/main
-summon minecraft:marker ~ ~ ~ {Tags: ["iris", "iris.ray"]}
+summon marker ~ ~ ~ {Tags: ["iris", "iris.ray"]}
 
 # Start the loop
 tag @s add iris.executing
 execute store result score $max_depth iris run data get storage iris:input MaxRecursionDepth
-execute as @e[type=minecraft:marker, tag=iris.ray] at @s run function iris:raycast/loop
+execute as @e[type=marker, tag=iris.ray] at @s run function iris:raycast/loop
 tag @s remove iris.executing

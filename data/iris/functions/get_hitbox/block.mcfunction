@@ -34,11 +34,11 @@ execute if score $block_found iris matches 0 store success score $block_found ir
 execute if score $block.is_bed iris matches 1 run function iris:get_hitbox/block/beds
 
 # Beetroots
-execute if score $block_found iris matches 0 store success score $block_found iris store success score $block.is_beetroots iris if block ~ ~ ~ minecraft:beetroots
+execute if score $block_found iris matches 0 store success score $block_found iris store success score $block.is_beetroots iris if block ~ ~ ~ beetroots
 execute if score $block.is_beetroots iris matches 1 run function iris:get_hitbox/block/beetroots
 
 # Brewing stands
-execute if score $block_found iris matches 0 store success score $block_found iris store success score $block.is_brewing_stand iris if block ~ ~ ~ minecraft:brewing_stand
+execute if score $block_found iris matches 0 store success score $block_found iris store success score $block.is_brewing_stand iris if block ~ ~ ~ brewing_stand
 execute if score $block.is_brewing_stand iris matches 1 run function iris:get_hitbox/block/brewing_stand
 
 # Buttons
@@ -57,7 +57,7 @@ execute if score $block.is_campfire iris matches 1 run function iris:get_hitbox/
 execute if score $block_found iris matches 0 store success score $block_found iris store success score $block.is_carpet iris if block ~ ~ ~ #minecraft:wool_carpets
 execute if score $block.is_carpet iris matches 1 run function iris:get_hitbox/block/carpets
 
-execute if score $block_found iris matches 0 store success score $block_found iris store success score $block.is_moss_carpet iris if block ~ ~ ~ minecraft:moss_carpet
+execute if score $block_found iris matches 0 store success score $block_found iris store success score $block.is_moss_carpet iris if block ~ ~ ~ moss_carpet
 execute if score $block.is_moss_carpet iris matches 1 run function iris:get_hitbox/block/carpets
 
 # Cauldrons
@@ -69,11 +69,11 @@ execute if score $block_found iris matches 0 store success score $block_found ir
 execute if score $block.is_chest iris matches 1 run function iris:get_hitbox/block/chest
 
 # Composters
-execute if score $block_found iris matches 0 store success score $block_found iris store success score $block.is_composter iris if block ~ ~ ~ minecraft:composter
+execute if score $block_found iris matches 0 store success score $block_found iris store success score $block.is_composter iris if block ~ ~ ~ composter
 execute if score $block.is_composter iris matches 1 run function iris:get_hitbox/block/composter
 
 # Conduits
-execute if score $block_found iris matches 0 store success score $block_found iris store success score $block.is_conduit iris if block ~ ~ ~ minecraft:conduit
+execute if score $block_found iris matches 0 store success score $block_found iris store success score $block.is_conduit iris if block ~ ~ ~ conduit
 execute if score $block.is_conduit iris matches 1 run function iris:get_hitbox/block/conduit
 
 # Doors

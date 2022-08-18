@@ -47,4 +47,4 @@ tellraw @s [{"text":"\n"},{"translate":"[← Return]","italic":true,"color":"#ED
 tellraw @s {"text":"                                                                                ","color":"#67DE83","strikethrough":true}
 
 
-playsound minecraft:ui.button.click player @s ~ ~ ~ 0.5 1.75
+playsound ui.button.click player @s ~ ~ ~ 0.5 1.75

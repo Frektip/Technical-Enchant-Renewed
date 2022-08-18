@@ -4,6 +4,6 @@ execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{CustomEnchantments:[{id:"S
 execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{CustomEnchantments:[{id:"Splatter",lvl:3}]}}]}] at @s anchored eyes positioned ^ ^ ^ run function enchantplus:result/splatter/raycast3 
 #Removing the fishing rod :(
 item replace entity @s weapon.offhand with air 
-playsound minecraft:entity.item.break master @s ~ ~ ~ 2 1 
+playsound entity.item.break master @s ~ ~ ~ 2 1 
 particle item fishing_rod ^ ^1.7 ^0.1 0.1 0.1 0.1 0 7 
 scoreboard players reset .dmg tep.rc 

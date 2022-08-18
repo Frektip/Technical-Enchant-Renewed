@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"TimeBreaker",lvl:2}],display:{Lore:["{\"translate\":\"Time Breaker II\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Helmet\",\"color\":\"blue\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"TimeBreaker",lvl:2}],display:{Lore:["{\"translate\":\"Time Breaker II\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Helmet\",\"color\":\"blue\"}"]}}

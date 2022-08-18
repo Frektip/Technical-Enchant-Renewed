@@ -30,4 +30,4 @@ execute if score #mrgit game.Opts matches 1 run tellraw @s ["",{"text":"[\u2714]
 tellraw @s [{"text":"                                    ","color":"dark_purple","strikethrough":true},{"text":"(↔▎↔)","color":"#B5FFDC","strikethrough":false,"hoverEvent":{"action":"show_text","contents":[{"text":"Return to the main page"}]},"clickEvent":{"action":"run_command","value":"/function enchantplus:config"}},{"text":"                               ","color":"dark_purple","strikethrough":true},{"text":" (","color":"#7A1DA2","strikethrough":false},{"text":"→","color":"#7A1DA2","strikethrough":false,"hoverEvent":{"action":"show_text","contents":[{"text":"Next page"}]},"clickEvent":{"action":"run_command","value":"/function enchantplus:settings/gameplay_settings/page2"}},{"text":")","color":"#7A1DA2","strikethrough":false}] 
 
 
-playsound minecraft:ui.button.click player @s ~ ~ ~ 0.5 1.75 
+playsound ui.button.click player @s ~ ~ ~ 0.5 1.75 

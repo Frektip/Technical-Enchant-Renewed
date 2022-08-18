@@ -18,4 +18,4 @@ execute if score @s[tag=teplus.tier2] tep.CbBf.qnty matches ..11 run tag @s remo
 execute if score @s[tag=teplus.tier3] tep.CbBf.qnty matches ..17 run tag @s remove teplus.tier3
 
 #If the enchanting table is removed
-execute unless block ~ ~ ~ minecraft:enchanting_table run function enchantplus:entity/marker/enchanting_table_clear
+execute unless block ~ ~ ~ enchanting_table run function enchantplus:entity/marker/enchanting_table_clear

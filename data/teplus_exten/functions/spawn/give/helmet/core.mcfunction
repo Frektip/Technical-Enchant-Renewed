@@ -3,11 +3,11 @@ scoreboard players set $max random 9
 function enchantplus:random_uniform
 
 #Randomly give a helmet, NOT NETHERITE OR TURTLE HELMET
-execute if score $out random matches 0..3 run item replace entity @s armor.head with minecraft:leather_helmet{Enchantments:[{}]}
-execute if score $out random matches 4..5 run item replace entity @s armor.head with minecraft:iron_helmet{Enchantments:[{}]}
-execute if score $out random matches 6 run item replace entity @s armor.head with minecraft:chainmail_helmet{Enchantments:[{}]}
-execute if score $out random matches 7..8 run item replace entity @s armor.head with minecraft:golden_helmet{Enchantments:[{}]}
-execute if score $out random matches 9 run item replace entity @s armor.head with minecraft:diamond_helmet{Enchantments:[{}]}
+execute if score $out random matches 0..3 run item replace entity @s armor.head with leather_helmet{Enchantments:[{}]}
+execute if score $out random matches 4..5 run item replace entity @s armor.head with iron_helmet{Enchantments:[{}]}
+execute if score $out random matches 6 run item replace entity @s armor.head with chainmail_helmet{Enchantments:[{}]}
+execute if score $out random matches 7..8 run item replace entity @s armor.head with golden_helmet{Enchantments:[{}]}
+execute if score $out random matches 9 run item replace entity @s armor.head with diamond_helmet{Enchantments:[{}]}
 
 #Give Custom Enchantments
 function teplus_exten:spawn/give/helmet/set_enchantments

@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"LastStand",lvl:1}],display:{Lore:["{\"translate\":\"Last Stand\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Sword\",\"color\":\"red\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"LastStand",lvl:1}],display:{Lore:["{\"translate\":\"Last Stand\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Sword\",\"color\":\"red\"}"]}}

@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"Waterjet",lvl:1}],display:{Lore:["{\"translate\":\"Waterjet\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Trident\",\"color\":\"red\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"Waterjet",lvl:1}],display:{Lore:["{\"translate\":\"Waterjet\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Trident\",\"color\":\"red\"}"]}}

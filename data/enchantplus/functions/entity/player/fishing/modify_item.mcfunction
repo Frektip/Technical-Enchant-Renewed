@@ -37,8 +37,8 @@ data modify entity @s[nbt={Item:{tag:{StoredCustomEnchantments:[{id:"Splatter"}]
 
 
 #Particles and Sounds
-particle minecraft:bubble ~ ~.5 ~ .5 1 .5 1 100 force
-particle minecraft:bubble ~ ~.5 ~ .5 1 .5 1 100 force
+particle bubble ~ ~.5 ~ .5 1 .5 1 100 force
+particle bubble ~ ~.5 ~ .5 1 .5 1 100 force
 
-playsound minecraft:entity.zombie.converted_to_drowned ambient @a[distance=..25] ~ ~ ~ 5 1.5
-playsound minecraft:entity.zombie.converted_to_drowned ambient @a[distance=..25] ~ ~ ~ 5 1.5
+playsound entity.zombie.converted_to_drowned ambient @a[distance=..25] ~ ~ ~ 5 1.5
+playsound entity.zombie.converted_to_drowned ambient @a[distance=..25] ~ ~ ~ 5 1.5

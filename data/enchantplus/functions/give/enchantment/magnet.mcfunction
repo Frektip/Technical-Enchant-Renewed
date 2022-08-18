@@ -1,1 +1,1 @@
-give @s minecraft:enchanted_book{StoredCustomEnchantments:[{id:"Magnet",lvl:1}],display:{Lore:["{\"translate\":\"Magnet\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Helmet\",\"color\":\"blue\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"Magnet",lvl:1}],display:{Lore:["{\"translate\":\"Magnet\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Helmet\",\"color\":\"blue\"}"]}}

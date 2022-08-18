@@ -1,7 +1,7 @@
-particle minecraft:sneeze ~ ~.5 ~ 0.2 0.5 0.2 0.02 50
+particle sneeze ~ ~.5 ~ 0.2 0.5 0.2 0.02 50
 
-execute if entity @s[type=#enchantplus:undead] run effect give @s minecraft:wither 3 1
-execute unless entity @s[type=#enchantplus:undead] run effect give @s minecraft:poison 3 1
+execute if entity @s[type=#enchantplus:undead] run effect give @s wither 3 1
+execute unless entity @s[type=#enchantplus:undead] run effect give @s poison 3 1
 
 tag @s add poisoned
 

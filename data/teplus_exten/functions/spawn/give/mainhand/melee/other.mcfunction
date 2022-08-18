@@ -6,7 +6,7 @@ function enchantplus:random_uniform
 execute if score $out random matches 0 run function teplus_exten:spawn/give/mainhand/melee/set_item/axe
 execute if score $out random matches 1 run function teplus_exten:spawn/give/mainhand/melee/set_item/hoe
 execute if score $out random matches 2 run function teplus_exten:spawn/give/mainhand/melee/set_item/pickaxe
-execute if score $out random matches 3 run item replace entity @s weapon.mainhand with minecraft:shield{Enchantments:[{}]}
+execute if score $out random matches 3 run item replace entity @s weapon.mainhand with shield{Enchantments:[{}]}
 execute if score $out random matches 4 run function teplus_exten:spawn/give/mainhand/melee/set_item/shovel
 execute if score $out random matches 5 run function teplus_exten:spawn/give/mainhand/melee/set_item/sword
 
