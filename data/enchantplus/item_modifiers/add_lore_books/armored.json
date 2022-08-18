@@ -1,0 +1,85 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      [
+        {
+          "text": "✤ ",
+          "color": "light_purple",
+          "italic": false
+        },
+        {
+          "translate": "Armored I",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "text": " ✤",
+          "color": "light_purple",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Item:{tag:{StoredCustomEnchantments:[{id:\"Armored\",lvl:1}]}}}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      [
+        {
+          "text": "✤ ",
+          "color": "light_purple",
+          "italic": false
+        },
+        {
+          "translate": "Armored II",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "text": " ✤",
+          "color": "light_purple",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Item:{tag:{StoredCustomEnchantments:[{id:\"Armored\",lvl:2}]}}}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "► Elytra",
+        "color": "green"
+      }
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"teplus.loot_1ench\"]}"
+        }
+      }
+    ]
+  }
+]

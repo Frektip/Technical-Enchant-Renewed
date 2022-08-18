@@ -1,0 +1,79 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      [
+        {
+          "translate": "M",
+          "color": "#E61F09",
+          "italic": false
+        },
+        {
+          "translate": "u",
+          "color": "#E6630C",
+          "italic": false
+        },
+        {
+          "translate": "l",
+          "color": "#F2EB0F",
+          "italic": false
+        },
+        {
+          "translate": "t",
+          "color": "#8DE815",
+          "italic": false
+        },
+        {
+          "translate": "i",
+          "color": "#13CF45",
+          "italic": false
+        },
+        {
+          "translate": "c",
+          "color": "#19CFB1",
+          "italic": false
+        },
+        {
+          "translate": "o",
+          "color": "#2689ED",
+          "italic": false
+        },
+        {
+          "translate": "l",
+          "color": "#2923CF",
+          "italic": false
+        },
+        {
+          "translate": "o",
+          "color": "#9125CF",
+          "italic": false
+        },
+        {
+          "translate": "r",
+          "color": "#CF2EC4",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "► Shears",
+        "color": "green"
+      }
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"teplus.loot_1ench\"]}"
+        }
+      }
+    ]
+  }
+]

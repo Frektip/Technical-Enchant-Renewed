@@ -1,0 +1,1122 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 4,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.knockback_resistance",
+        "name": "",
+        "amount": 0.1,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:netherite_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:1}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.knockback_resistance",
+        "name": "",
+        "amount": 0.1,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:netherite_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:2}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 12,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.knockback_resistance",
+        "name": "",
+        "amount": 0.1,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:netherite_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:3}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 16,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.knockback_resistance",
+        "name": "",
+        "amount": 0.1,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:netherite_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:4}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 20,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.knockback_resistance",
+        "name": "",
+        "amount": 0.1,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:netherite_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:5}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 4,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 2,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:diamond_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:1}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 2,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:diamond_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:2}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 12,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 2,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:diamond_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:3}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 16,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 2,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:diamond_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:4}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 20,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor_toughness",
+        "name": "",
+        "amount": 2,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:diamond_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:5}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 4,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 6,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:iron_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:1}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 6,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:iron_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:2}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 12,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 6,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:iron_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:3}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 16,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 6,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:iron_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:4}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 20,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 6,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:iron_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:5}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 4,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:leather_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:1}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:leather_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:2}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 12,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:leather_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:3}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 16,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:leather_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:4}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 20,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 3,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:leather_chestplate"
+              ],
+              "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:5}]}"
+            }
+          }
+        }
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 4,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 5,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:alternative",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:golden_chestplate"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:1}]}"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:chainmail_chestplate"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:1}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 8,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 5,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:alternative",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:golden_chestplate"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:2}]}"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:chainmail_chestplate"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:2}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 12,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 5,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:alternative",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:golden_chestplate"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:3}]}"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:chainmail_chestplate"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:3}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 16,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 5,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:alternative",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:golden_chestplate"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:4}]}"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:chainmail_chestplate"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:4}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 20,
+        "operation": "addition",
+        "slot": "chest"
+      },
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 5,
+        "operation": "addition",
+        "slot": "chest"
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:alternative",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:golden_chestplate"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:5}]}"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:chainmail_chestplate"
+                  ],
+                  "nbt": "{CustomEnchantments:[{id:\"LifePlus\",lvl:5}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
