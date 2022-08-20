@@ -28,7 +28,7 @@ execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:rand
 #If it has Attack Speed add default attributes
 execute if data entity @s Item.tag.CustomEnchantments[{id:"AttackSpeed"}] run item modify entity @s container.0 enchantplus:set_attributes/loot/attack_speed
 #In case it has sharpness enchantment
-execute if data entity @s Item.tag.Enchantments[{id:"minecraft:sharpness"}] run function enchantplus:loot/loot_system/sharpness_damage
+execute if data entity @s Item.tag.CustomEnchantments[{id:"AttackSpeed"}] if data entity @s Item.tag.Enchantments[{id:"minecraft:sharpness"}] run function enchantplus:loot/loot_system/sharpness_damage
 
 
 #Set new Lore
