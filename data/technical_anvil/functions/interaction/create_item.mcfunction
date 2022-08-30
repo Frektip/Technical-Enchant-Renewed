@@ -3,7 +3,7 @@ data merge storage teplus:tech_anvil.ui {ResultItem:{Slot:22b,id:"minecraft:air"
 data modify storage teplus:tech_anvil.ui ResultItem.id set from storage teplus:tech_anvil.ui CurrentItems[{Slot:2b}].id
 data modify storage teplus:tech_anvil.ui ResultItem.tag set from storage teplus:tech_anvil.ui CurrentItems[{Slot:2b}].tag
 #-------CHECK WHAT ITEMS ARE COMBINED------#
-function technical_anvil:interaction/item_check/item_with_book
+function #technical_anvil:interaction/check_item_with_book
 function technical_anvil:interaction/item_check/item_with_item
 function technical_anvil:interaction/item_check/book_with_book
 
