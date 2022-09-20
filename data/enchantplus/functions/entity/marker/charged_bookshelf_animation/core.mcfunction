@@ -1,3 +1,7 @@
+###Debug Message###
+tellraw @a[tag=teplus.pydbgm,distance=..15,scores={Teplus.Report=1..}] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"Charged Bookshelf showing cool particle animation","color":"gray","italic":true,"bold":false}]
+particle electric_spark ~ ~ ~ 0 3 0 0 100 force @a[tag=teplus.pydbgm,distance=..15,scores={Teplus.Report=1..}]
+
 #scoreboard players add @s tep.CbBf.animt 1
 scoreboard players add @s tep.CbBf.animt 1
 

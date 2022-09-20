@@ -17,4 +17,7 @@ execute if score $out random matches 5 unless data entity @s[tag=!tepspw_hsofh] 
 
 tag @s add tepspw_cenit
 
+###Debug Message###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"A hostile mob has received TE+ enchanted gear","color":"gray","italic":true,"bold":false}]
+
 execute if predicate enchantplus:random_chance/25 run function teplus_exten:spawn/modify_items

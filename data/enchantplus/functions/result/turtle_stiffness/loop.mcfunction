@@ -1,5 +1,7 @@
 #Init the timer
 scoreboard players add @s TimerTurtle 1
+### Debug Message ###
+execute if score @s TimerTurtle matches 1 run tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"Turtle Stiffness active","color":"gray","italic":true,"bold":false}]
 
 #Tp central marker for turtle animation
 execute if score @s TimerTurtle matches 1.. as @e[type=marker,tag=ts.center] if score @s tep.plid = @p tep.plid run tp @s ~ ~ ~

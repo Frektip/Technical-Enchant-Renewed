@@ -1,3 +1,9 @@
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Enchanting): ","color":"#24E3F9","italic":true,"bold":false},{"text":"Average Setup detected","color":"gray","italic":true,"bold":false}]
+
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Enchanting): ","color":"#24E3F9","italic":true,"bold":false},{"text":"Average Setup detected","color":"gray","italic":true,"bold":false}]
+
 #Set the enchanting tier rarity
 scoreboard players set #teplus.rarity teplus.data 2
 

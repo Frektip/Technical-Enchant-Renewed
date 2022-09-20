@@ -1,3 +1,6 @@
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"Conditions met to fish a custom enchanted book!","color":"gray","italic":true,"bold":false}]
+
 #Insert Water Related Enchantments into the item
 scoreboard players set $min random 0
 scoreboard players set $max random 9
@@ -20,3 +23,6 @@ execute if score #sptr Enchopts matches 0 if score $out random matches 9 run dat
 
 #Check if the item has Custom Enchantments
 execute if data entity @s Item.tag.StoredCustomEnchantments run function enchantplus:entity/player/fishing/success
+
+### Debug Message ###
+execute unless data entity @s Item.tag.StoredCustomEnchantments run tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"Fail! ","color":"red","italic":true,"bold":false},{"text":"The enchantment is disabled, so it couldn't change into an enchanted book","color":"gray","italic":true,"bold":false}]

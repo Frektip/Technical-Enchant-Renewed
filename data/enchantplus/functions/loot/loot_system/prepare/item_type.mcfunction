@@ -1,3 +1,6 @@
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Enchanting★): ","color":"#24E3F9","italic":true,"bold":false},{"text":"Summoned a dummy item frame","color":"gray","italic":true,"bold":false}]
+
 #Give a Global tag if it is an item
 tag @s add teplus.loot_is_item
 

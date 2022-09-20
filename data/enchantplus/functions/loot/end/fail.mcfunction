@@ -1,3 +1,7 @@
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Enchanting★): ","color":"#24E3F9","italic":true,"bold":false},{"text":"Fail! ","color":"red","italic":true,"bold":false},{"text":"Maybe you disabled all custom enchantments and enchant with vanilla enchantments?","color":"gray","italic":true,"bold":false}]
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Enchanting★): ","color":"#24E3F9","italic":true,"bold":false},{"text":"Fail! ","color":"red","italic":true,"bold":false},{"text":"Seriously, what you were thinkng?","color":"gray","italic":true,"bold":false}]
+
 #Remove nbt data
 data remove entity @s Item.tag.Enchantments
 data remove entity @s Item.tag.CustomArrow

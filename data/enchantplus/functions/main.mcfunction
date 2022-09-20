@@ -12,16 +12,8 @@ execute as @e[type=armor_stand,tag=teplus.armor_stand] at @s run function enchan
 
 #Entity with marine grace
 execute as @e[type=!#enchantplus:antisoul,tag=ma.graced] at @s run function enchantplus:result/marine_grace/turn
-#execute as @e[type=!#enchantplus:antisoul,tag=marine.carried] at @s run function enchantplus:result/marine_grace/carried
 
 #Player Only
 execute as @a at @s run function enchantplus:entity/player/core
-
-scoreboard players enable @a TellrawEnch 
-##-----#-----#-----#-----# Disenchanting System #-----#-----#-----#-----#-----#
-#Separated from the rest due to some things:
-# -Tell the difference between Custom and Vanilla enchantments
-# -Not remove Custom and Vanilla curses
-execute if score #diench game.Opts matches 0 as @a at @s run function enchantplus:disenchant/core
 
 schedule function enchantplus:main 1t 

@@ -1,3 +1,7 @@
+###Debug Message###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(TechnAnvEx): ","color":"gold","italic":true,"bold":false},{"text":"Copying the Lore from the input item","color":"gray","italic":true,"bold":false}]
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(TechnAnvEx): ","color":"gold","italic":true,"bold":false},{"text":"Removing the first nbt enchantment","color":"gray","italic":true,"bold":false}]
+
 playsound block.grindstone.use master @p ~ ~ ~ 1 0.7 1
 
 execute if score #tslpm game.Opts matches 1 run particle dust_color_transition 1.000 0.020 0.020 1 1.000 0.690 0.510 ~ ~1 ~ 0.1 0.2 0.1 2 350
@@ -11,6 +15,10 @@ function #technical_anvil:extraction_mode/remove_custom_lore
 # -Removing the first custom enchantment nbt from the input item
 execute if data entity @s Items[{Slot:10b}].tag.CustomEnchantments[0] run function technical_anvil:extraction_mode/interaction/update_input/remove_enchantments
 
+###Debug Message###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(TechnAnvEx): ","color":"gold","italic":true,"bold":false},{"text":"Check conditions to maintain or remove the enchantment glint","color":"gray","italic":true,"bold":false}]
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(TechnAnvEx): ","color":"gold","italic":true,"bold":false},{"text":"Updating the input item Lore","color":"gray","italic":true,"bold":false}]
+
 # -Removing CustomEnchantments nbt tag and Enchantments nbt tag if neccessary
 execute unless data entity @s Items[{Slot:10b}].tag.CustomEnchantments[0] run data remove entity @s Items[{Slot:10b}].tag.CustomEnchantments
 
@@ -23,6 +31,8 @@ execute unless data entity @s Items[{Slot:10b}].tag.CustomEnchantments[0] unless
 function technical_anvil:extraction_mode/edit_input_item_lore
 
 #Remove 1 single book from the chest minecart
+###Debug Message###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(TechnAnvEx): ","color":"gold","italic":true,"bold":false},{"text":"Removing 1 book from the UI","color":"gray","italic":true,"bold":false}]
 
 function technical_anvil:extraction_mode/interaction/update_input/remove_book
 

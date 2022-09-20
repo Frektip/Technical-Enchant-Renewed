@@ -4,6 +4,11 @@
 
 scoreboard players operation #type teplus.arrow = @s teplus.arrow
 
+##Debug Message###
+execute if score #type teplus.arrow matches 1 run tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"The arrow was shot by a player with a custom enchanted bow","color":"gray","italic":true,"bold":false}]
+execute if score #type teplus.arrow matches 1 run tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"Validating enchantments","color":"gray","italic":true,"bold":false}]
+
+
 #Accuracy Shot
 scoreboard players set #trigger teplus.accst 0
 scoreboard players operation #trigger teplus.accst = @s teplus.accst

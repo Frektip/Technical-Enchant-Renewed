@@ -1,3 +1,6 @@
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"Success! ","color":"green","italic":true,"bold":false},{"text":"Changing the loot nbt","color":"gray","italic":true,"bold":false}]
+
 #Change the item into a book
 data modify entity @s Item.id set value "minecraft:enchanted_book"
 

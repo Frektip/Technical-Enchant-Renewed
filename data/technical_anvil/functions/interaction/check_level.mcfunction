@@ -1,3 +1,6 @@
+###Debug Message###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(TechnAnv): ","color":"yellow","italic":true,"bold":false},{"text":"Getting levels from the nearest player","color":"gray","italic":true,"bold":false}]
+
 execute if score @s tep.plid = @p tep.plid run tag @p add TECHA.try
 
 execute as @p[tag=TECHA.try] store result score @p TCHA.plxp run xp query @s levels

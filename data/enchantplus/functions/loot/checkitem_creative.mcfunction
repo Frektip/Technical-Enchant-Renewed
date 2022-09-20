@@ -1,3 +1,6 @@
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Enchanting): ","color":"#24E3F9","italic":true,"bold":false},{"text":"Check for a valid item to enchant...","color":"gray","italic":true,"bold":false}]
+
 execute if entity @s[nbt={Item:{id:"minecraft:turtle_helmet"}}] run function enchantplus:loot/loot_system/item_creative
 #Pioche
 execute if entity @s[nbt={Item:{id:"minecraft:netherite_pickaxe"}}] run function enchantplus:loot/loot_system/item_creative

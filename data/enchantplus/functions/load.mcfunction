@@ -1,5 +1,5 @@
 #Datapack Version
-scoreboard players set #teplus.version load.status 700
+scoreboard players set #teplus.version load.status 701
 
 #Load constants
 scoreboard objectives add teplus.data dummy
@@ -83,9 +83,11 @@ scoreboard players set #lcg_a random 1630111353
 scoreboard players set #lcg_c random 1623164762
 scoreboard players set #lcg_m random 2147483647
 
-#Guide Book navegation
-scoreboard objectives add TellrawEnch trigger 
+#Guide Book navegation and Report command
+scoreboard objectives add TellrawEnch trigger
 scoreboard players enable @a TellrawEnch 
+scoreboard objectives add Teplus.Report trigger
+scoreboard players enable @a[tag=teplus.pydbgm] TellrawEnch
 
 #Settings scoreboards
 scoreboard objectives add game.Opts dummy 

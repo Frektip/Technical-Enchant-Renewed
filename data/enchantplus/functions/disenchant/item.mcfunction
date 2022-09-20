@@ -1,4 +1,7 @@
 ##=====================GET XP OUTPUT SYSTEM=====================##
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Disenchant): ","color":"light_purple","bold":false},{"text":"Item without Custom Curses detected","color":"gray","italic":true,"bold":false}]
+
 #1.Get custom enchantments quantity
 execute store result score @s teplus.diench run data get entity @s Item.tag.CustomEnchantments
 scoreboard players operation $tep.diench teplus.diench = @s teplus.diench
@@ -23,7 +26,12 @@ scoreboard players operation $tep.diench teplus.diench *= #2const teplus.data
 
 #5. Store the final value from the scoreboard to a storage
 execute store result storage teplus:diench XpReward short 1 run scoreboard players get $tep.diench teplus.diench
+
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Disenchant): ","color":"light_purple","bold":false},{"text":"Setting the xp reward value into an storage","color":"gray","italic":true,"bold":false}]
 ##==============================================================##
+
+
 
 
 ##=====================REMOVE ENCHANTMENTS SYSTEM=====================##
@@ -33,6 +41,8 @@ execute store result storage teplus:diench XpReward short 1 run scoreboard playe
 data modify storage teplus:diench VanillaEnch set from entity @s Item.tag.Enchantments
 #   -Remove all the enchantments from the item
 data remove entity @s Item.tag.Enchantments
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Disenchant): ","color":"light_purple","bold":false},{"text":"Removing Vanilla enchantments","color":"gray","italic":true,"bold":false}]
 #   -Run a function to add the curses again
 function enchantplus:disenchant/add_vanilla_curse
 
@@ -45,6 +55,9 @@ function #enchantplus:disenchant/remove_custom_lore
 data remove entity @s Item.tag.display.Lore
 #   -In case the Item has anther custom Lore, append it from the "DienchLore" storage
 data modify entity @s Item.tag.display.Lore append from storage teplus:item_lore DienchLore[]
+
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Disenchant): ","color":"light_purple","bold":false},{"text":"Processing Lore...","color":"gray","italic":true,"bold":false}]
 ##====================================================================##
 
 
@@ -64,11 +77,16 @@ data remove entity @s Item.tag.CustomEnchantments
 # Remove the storage that contains the previous Lore and Enchantments
 data remove storage teplus:diench VanillaEnch
 data remove storage teplus:item_lore DienchLore
+
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Disenchant): ","color":"light_purple","bold":false},{"text":"Removing nbt tags","color":"gray","italic":true,"bold":false}]
 ##================================================================##
 
 
 
 ##=====================GIVE XP=====================##
+### Debug Message ###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Disenchant): ","color":"light_purple","bold":false},{"text":"Success! ","color":"green","italic":true,"bold":false},{"text":"generating xp orbs as reward","color":"gray","italic":true,"bold":false}]
 # Summon xp orbs (4 by default)
 summon experience_orb ~ ~ ~ {Tags:["teplus.diench.orb"]}
 summon experience_orb ~.1 ~ ~ {Tags:["teplus.diench.orb"]}

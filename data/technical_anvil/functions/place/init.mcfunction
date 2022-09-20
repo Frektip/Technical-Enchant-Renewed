@@ -1,5 +1,7 @@
 
 advancement revoke @s only technical_anvil:placed 
+###Debug Message###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"Get player current rotation","color":"gray","italic":true,"bold":false}]
 
 execute store result score $Rotation tep.avl run data get entity @s Rotation[0] 
 # EAST

@@ -1,3 +1,7 @@
+###Debug Message###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(TechnAnv): ","color":"yellow","italic":true,"bold":false},{"text":"Enough levels! Giving output item","color":"gray","italic":true,"bold":false}]
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(TechnAnv): ","color":"yellow","italic":true,"bold":false},{"text":"Taking xp levels","color":"gray","italic":true,"bold":false}]
+
 playsound block.anvil.use master @a[distance=..6] ~ ~ ~ 1 1 1
 execute if score #tslpm game.Opts matches 1 run particle nautilus ~ ~1.5 ~ 0.0001 0.01 0.0001 5 1000 
 execute if score #tslpm game.Opts matches 1 run particle block anvil ~ ~1 ~ 0.3 0 0.3 1 150

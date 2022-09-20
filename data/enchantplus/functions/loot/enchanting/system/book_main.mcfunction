@@ -1,3 +1,6 @@
+### Debug Message ###
+execute unless data entity @s Item.tag.CustomEnchantments run tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Enchanting★★): ","color":"#24E3F9","italic":true,"bold":false},{"text":"Setting an storage depending on all available custom enchantments, this message may repeat","color":"gray","italic":true,"bold":false}]
+
 #Prepare the storage that will select enchantments, including levels
 # Check compatible enchantments using a tag
 function #enchantplus:enchanting/loot_select/book

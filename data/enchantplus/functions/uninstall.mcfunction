@@ -77,6 +77,7 @@ scoreboard objectives remove tep.exten
 scoreboard objectives remove teplus.data
 scoreboard objectives remove teplus.antkbk
 scoreboard objectives remove teplus.hrds
+scoreboard objectives remove Teplus.Report
 
 #I don't remove scoreboards related to Lantern Load or Iris because they may be used
 # alongside with other datapacks. In that case they should do a reload, but meh, I
@@ -100,7 +101,7 @@ tellraw @a ["",{"text":" \u0020[","color":"gold"},{"text":"Technical Enchant+","
 playsound block.note_block.hat player @a ~ ~ ~ 2 0.5 
 
 #acutally disable the pack xd
-datapack disable "file/technical-enchant-v7-0-0.zip"
+datapack disable "file/technical-enchant-v7-0-1.zip"
 
 #Remove player tags, just in case
 tag @a remove teplus.uuid
