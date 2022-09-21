@@ -4,11 +4,7 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "items": [
-          "minecraft:bow",
-          "minecraft:crossbow"
-        ],
-        "nbt": "{CustomEnchantments:[{}]}"
+        "nbt": "{CustomArrow:1}"
       }
     }
   }

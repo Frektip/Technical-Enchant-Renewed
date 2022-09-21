@@ -27,7 +27,7 @@ execute if entity @s[tag=teplus.heldench] unless data storage teplus:heldench Ma
 #2.- Check if the item doesn't have this enchantment previously
 execute if entity @s[tag=teplus.heldench] unless data storage teplus:heldench Mainhand.tag.CustomEnchantments[{id:"FireballWave",lvl:1}] run data modify storage teplus:heldench Mainhand.tag.CustomEnchantments append value {id:"FireballWave",lvl:1}
 #2.1.- Check for "CustomArrow" nbt tag ONLY for crossbow/crosscrossbow
-execute if entity @s[tag=teplus.heldench] unless data storage teplus:heldench Mainhand.tag.CustomArrow run data modify storage teplus:heldench Mainhand.tag.CustomArrow append value 1
+execute if entity @s[tag=teplus.heldench] unless data storage teplus:heldench Mainhand.tag.CustomArrow run data modify storage teplus:heldench Mainhand.tag.CustomArrow set value 1
 
 #3.- Add the Lore to the storage
 execute if entity @s[tag=teplus.heldench,tag=!teplus.heldench_error] run data remove storage teplus:heldench Mainhand.tag.display.Lore

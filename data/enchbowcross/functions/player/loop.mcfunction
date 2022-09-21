@@ -9,7 +9,7 @@ execute if score #predicate teplus.data matches 1 run function #enchbowcross:cus
 # CustomEnchantments{} nbt tag in his offhand.
 #A predicate checks this condition, if it is true run a function that serves as an extra
 # step before storing the value from his offhand 
-execute if score @s teplus.arrow matches 0 if entity @s[predicate=enchbowcross:offhand_bowcross] run function #enchbowcross:custom_arrow/offhand_arrow
+execute if score @s teplus.arrow matches 0 if entity @s[predicate=enchbowcross:offhand_bowcross] run function enchbowcross:player/offarrow
 
 #If the bow score is greater than 1 the player has a custom arrow, so we proceed to 
 # identify what enchantment he has
