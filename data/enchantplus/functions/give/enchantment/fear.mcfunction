@@ -1,0 +1,1 @@
+give @s enchanted_book{StoredCustomCurse:[{id:"Fear",lvl:1}],display:{Lore:["{\"translate\":\"Curse of Fear\",\"color\":\"#FF4099\",\"italic\":false}","{\"translate\":\"► Weapons\",\"color\":\"white\"}"]}}

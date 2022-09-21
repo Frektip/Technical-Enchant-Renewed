@@ -56,3 +56,5 @@ execute if data entity @s Item.tag.StoredCustomEnchantments[{id:"XpBoost"}] run 
 execute if data entity @s Item.tag.StoredCustomCurse[{id:"Fragile"}] run item modify entity @s container.0 enchantplus:add_lore_books/fragile
 execute if data entity @s Item.tag.StoredCustomCurse[{id:"Sensitive"}] run item modify entity @s container.0 enchantplus:add_lore_books/sensitive
 execute if data entity @s Item.tag.StoredCustomCurse[{id:"Slippery"}] run item modify entity @s container.0 enchantplus:add_lore_books/slippery
+execute if data entity @s Item.tag.StoredCustomCurse[{id:"Fear"}] run item modify entity @s container.0 enchantplus:add_lore_books/fear
+execute if data entity @s Item.tag.StoredCustomCurse[{id:"Exhaustion"}] run item modify entity @s container.0 enchantplus:add_lore_books/exhaustion

@@ -15,3 +15,7 @@ execute if score #lstnd Enchopts matches 0 as @s[nbt={SelectedItem:{tag:{CustomE
 
 #Bow
 execute if score #antexp Enchopts matches 0 as @s[nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"AntiExplosion",lvl:1}]}}}] at @s run function enchantplus:result/anti-explosion
+
+
+#Curse
+execute if entity @s[nbt={SelectedItem:{tag:{CustomCurse:{Fear:1}}}}] run function enchantplus:result/fear/init

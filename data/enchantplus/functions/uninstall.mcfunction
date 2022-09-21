@@ -5,7 +5,6 @@ kill @e[type=chest_minecart,tag=teplus.technical_anvil]
 #Stop tick functions
 schedule clear enchbowcross:main
 schedule clear enchantplus:main
-schedule clear enchantplus:entity/remove
 schedule clear technical_anvil:main
 
 #remove scoreboards
@@ -78,6 +77,9 @@ scoreboard objectives remove teplus.data
 scoreboard objectives remove teplus.antkbk
 scoreboard objectives remove teplus.hrds
 scoreboard objectives remove Teplus.Report
+scoreboard objectives remove TimerExha
+scoreboard objectives remove teplus.htlct
+scoreboard objectives remove teplus.scared
 
 #I don't remove scoreboards related to Lantern Load or Iris because they may be used
 # alongside with other datapacks. In that case they should do a reload, but meh, I
@@ -101,7 +103,7 @@ tellraw @a ["",{"text":" \u0020[","color":"gold"},{"text":"Technical Enchant+","
 playsound block.note_block.hat player @a ~ ~ ~ 2 0.5 
 
 #acutally disable the pack xd
-datapack disable "file/technical-enchant-v7-0-1.zip"
+datapack disable "file/technical-enchant-v7-1-0.zip"
 
 #Remove player tags, just in case
 tag @a remove teplus.uuid
@@ -115,3 +117,5 @@ tag @a remove trigger_protection
 tag @a remove tibr.active
 tag @a remove ma.graced
 tag @a remove marine.carried
+tag @a remove teplus.exhausted
+tag @a remove teplus.fearatt

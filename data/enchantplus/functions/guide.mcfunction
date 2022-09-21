@@ -168,7 +168,9 @@ tellraw @s[scores={TellrawEnch=90}] ["",{"text":"*--*---*-----*---*---*--*-----*
 
 
 ##==========================FUTURE==========================##
-#tellraw @s[scores={TellrawEnch=87}] ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}]
+tellraw @s[scores={TellrawEnch=89}] ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}]
+tellraw @s[scores={TellrawEnch=89}] ["",{"text":"hmmmmmm","color":"green"}]
+tellraw @s[scores={TellrawEnch=89}] ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}]
 #---------------------------------------------------------------------------<#
 
 
@@ -188,7 +190,7 @@ tellraw @s[scores={TellrawEnch=8}] ["",{"text":"Crédits :","bold":true,"italic"
 #>------------------------Enchantments Description--------------------------<#
 ##================================ENCHANTMENT LIST PER ITEM================================##
 #Curses display
-tellraw @s[scores={TellrawEnch=28}] ["",{"translate":"===>> Custom Curses <<===","color":"#BD4B93","bold":true,"italic":false},{"text":"\n"},{"translate":"These curses can only be obtained from the enchanting table with more than 10 levels. As vanilla curses, these custom curses","color":"#E6FCFF"},{"translate":" can't be disenchanted!","color":"red"},{"text":"\n\n"},{"translate":"- Fragile","color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"Click for more info"}]},"clickEvent":{"action":"run_command","value":"/trigger TellrawEnch set 29"}},{"text":"\n\n"},{"translate":"- Sensitive","color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"Click for more info"}]},"clickEvent":{"action":"run_command","value":"/trigger TellrawEnch set 30"}},{"text":"\n\n"},{"translate":"- Slippery","color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"Click for more info"}]},"clickEvent":{"action":"run_command","value":"/trigger TellrawEnch set 31"}},{"text":"                                           "},{"text":"[←]","color":"dark_red","hoverEvent":{"action":"show_text","contents":[{"text":"Return"}]},"clickEvent":{"action":"run_command","value":"/trigger TellrawEnch set 4"}}]
+tellraw @s[scores={TellrawEnch=28}] ["",{"translate":"===>> Custom Curses <<===","color":"#BD4B93","bold":true,"italic":false},{"text":"\n"},{"translate":"These curses can only be obtained from the enchanting table with more than 10 levels. As vanilla curses, these custom curses","color":"#E6FCFF"},{"translate":" can't be disenchanted!","color":"red"},{"text":"\n\n"},{"translate":"- Exhaustion","color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"Click for more info"}]},"clickEvent":{"action":"run_command","value":"/trigger TellrawEnch set 87"}},{"text":"\n\n"},{"translate":"- Fear","color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"Click for more info"}]},"clickEvent":{"action":"run_command","value":"/trigger TellrawEnch set 88"}},{"text":"\n\n"},{"translate":"- Fragile","color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"Click for more info"}]},"clickEvent":{"action":"run_command","value":"/trigger TellrawEnch set 29"}},{"text":"\n\n"},{"translate":"- Sensitive","color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"Click for more info"}]},"clickEvent":{"action":"run_command","value":"/trigger TellrawEnch set 30"}},{"text":"\n\n"},{"translate":"- Slippery","color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"Click for more info"}]},"clickEvent":{"action":"run_command","value":"/trigger TellrawEnch set 31"}},{"text":"                                           "},{"text":"[←]","color":"dark_red","hoverEvent":{"action":"show_text","contents":[{"text":"Return"}]},"clickEvent":{"action":"run_command","value":"/trigger TellrawEnch set 4"}}]
 
 
 #Sword display
@@ -278,10 +280,12 @@ tellraw @s[scores={TellrawEnch=26}] ["",{"translate":"===>> Horse Armor Custom E
 
 
 ##=================================ENCHANTMENT DESCRIPTION=================================##
-# - CUSTOM CURSES (3)
+# - CUSTOM CURSES (5)
 tellraw @s[scores={TellrawEnch=29}] ["",{"text":"\n"},{"translate":"Curse","color":"#89D6B5"},{"text":" "},{"translate":"Fragile :","color":"gold"},{"text":"\n"},{"translate":"Every item is going to lose more durability each time you use the item. Unbreaking enchantment may counter this curse.","color":"#B59576"}] 
 tellraw @s[scores={TellrawEnch=30}] ["",{"text":"\n"},{"translate":"Curse","color":"#89D6B5"},{"text":" "},{"translate":"Sensitive :","color":"gold"},{"text":"\n"},{"translate":"Each time you take damage, you have a small probability to explode. This curse is cumulative, be careful when wearing more than one armor piece.","color":"#B59576"},{"text":"\n\n"},{"translate":"Also, if you use a shield with this curse, each time it loses durability you have a chance to explode.","color":"#B59576"}] 
 tellraw @s[scores={TellrawEnch=31}] ["",{"text":"\n"},{"translate":"Curse","color":"#89D6B5"},{"text":" "},{"translate":"Slippery :","color":"gold"},{"text":"\n"},{"translate":"When using an item, you'll have a small chance to drop it in front of you. A sound is going to play when this happens.","color":"#B59576"}]
+tellraw @s[scores={TellrawEnch=87}] ["",{"text":"\n"},{"translate":"Curse","color":"#89D6B5"},{"text":" "},{"translate":"Exhaustion :","color":"gold"},{"text":"\n"},{"translate":"When using any tool there is a chance to make you feel really exhausted. During that state you won't be able to break any block, move correctly or even jump! Don't worry the effects disappear after 5 seconds.","color":"#B59576"}]
+tellraw @s[scores={TellrawEnch=88}] ["",{"text":"\n"},{"translate":"Curse","color":"#89D6B5"},{"text":" "},{"translate":"Fear :","color":"gold"},{"text":"\n"},{"translate":"While holding this weapon, you will get weaker (less attack damage, attack speed and movement speed) depending on how many hostile mobs are around you within a 25 block radious. Stronger mobs will scare you more.","color":"#B59576"}]
 
 
 # - CUSTOM ENCHANTMENTS (52)

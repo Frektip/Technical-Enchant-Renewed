@@ -113,4 +113,6 @@ execute if data storage teplus:item_lore {CurrentLore:['{"translate":"Turtle Sti
 execute if data storage teplus:item_lore {CurrentLore:['{"translate":"Curse of Fragile","color":"#FF4099","italic":false}']} run data remove storage teplus:item_lore CurrentLore[0]
 execute if data storage teplus:item_lore {CurrentLore:['{"translate":"Curse of Sensitive","color":"#FF4099","italic":false}']} run data remove storage teplus:item_lore CurrentLore[0]
 execute if data storage teplus:item_lore {CurrentLore:['{"translate":"Curse of Slippery","color":"#FF4099","italic":false}']} run data remove storage teplus:item_lore CurrentLore[0]
+execute if data storage teplus:item_lore {CurrentLore:['{"translate":"Curse of Fear","color":"#FF4099","italic":false}']} run data remove storage teplus:item_lore CurrentLore[0]
+execute if data storage teplus:item_lore {CurrentLore:['{"translate":"Curse of Exhaustion","color":"#FF4099","italic":false}']} run data remove storage teplus:item_lore CurrentLore[0]
 

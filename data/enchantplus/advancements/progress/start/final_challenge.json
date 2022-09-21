@@ -731,6 +731,32 @@
           }
         ]
       }
+    },
+    "got_fear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomCurse:[{id:\"Fear\",lvl:1}]}"
+          }
+        ]
+      }
+    },
+    "got_exhaustion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredCustomCurse:[{id:\"Exhaustion\",lvl:1}]}"
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -898,6 +924,12 @@
     ],
     [
       "got_slippery"
+    ],
+    [
+      "got_fear"
+    ],
+    [
+      "got_exhaustion"
     ]
   ]
 }

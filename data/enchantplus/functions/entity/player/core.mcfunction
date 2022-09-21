@@ -5,6 +5,8 @@ execute if predicate enchantplus:has_ench/general run function enchantplus:encha
 
 execute if entity @s[tag=trigger_protection] run function enchantplus:result/turtle_stiffness/loop
 execute if entity @s[tag=teplus.celebrate] run function enchantplus:result/birthday/init
+execute if entity @s[tag=teplus.exhausted] run function enchantplus:result/exhaustion/effects
+execute if entity @s[tag=teplus.fearatt,predicate=!enchantplus:has_fear] run function enchantplus:result/fear/reset_player
 ##-----#-----#-----#-----# When Fishing #-----#-----#-----#-----#-----#
 execute if entity @s[tag=teplus.fishing] run function enchantplus:entity/player/fishing/find_item
 ##-----#-----#-----#-----# Enchantments System #-----#-----#-----#-----#-----#

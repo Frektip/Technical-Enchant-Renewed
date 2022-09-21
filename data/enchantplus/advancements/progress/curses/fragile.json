@@ -16,7 +16,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "enchantplus:progress/curses/start",
+  "parent": "enchantplus:progress/curses/fear",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:blaze",
+    "minecraft:enderman",
+    "minecraft:evoker",
+    "minecraft:guardian",
+    "minecraft:illusioner",
+    "minecraft:piglin_brute",
+    "minecraft:ravager",
+    "minecraft:vex",
+    "minecraft:vindicator",
+    "minecraft:wither_skeleton"
+  ]
+}

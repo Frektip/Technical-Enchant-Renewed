@@ -15,3 +15,4 @@ function technical_anvil:interaction/item_type/shared_enchantments/shared_anti_e
 function technical_anvil:interaction/item_type/shared_enchantments/shared_accuracy_shot
 function technical_anvil:interaction/item_type/shared_enchantments/shared_fragile
 function technical_anvil:interaction/item_type/shared_enchantments/shared_slippery
+function technical_anvil:interaction/item_type/shared_enchantments/shared_fear

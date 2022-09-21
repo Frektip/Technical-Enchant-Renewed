@@ -8,3 +8,4 @@ execute if score #sptr Enchopts matches 0 if data storage teplus:tech_anvil.ui C
 
 function technical_anvil:interaction/item_with_item/shared_enchantments/shared_fragile
 function technical_anvil:interaction/item_with_item/shared_enchantments/shared_slippery
+function technical_anvil:interaction/item_with_item/shared_enchantments/shared_exhaustion

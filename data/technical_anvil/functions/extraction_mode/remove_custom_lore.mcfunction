@@ -79,3 +79,5 @@ execute if data entity @s Items[{Slot:10b}].tag.CustomEnchantments[{id:"TurtleSt
 execute if data entity @s Items[{Slot:10b}].tag.CustomCurse.Fragile run data remove storage teplus:item_lore ExtractLore[0]
 execute if data entity @s Items[{Slot:10b}].tag.CustomCurse.Sensitive run data remove storage teplus:item_lore ExtractLore[0]
 execute if data entity @s Items[{Slot:10b}].tag.CustomCurse.Slippery run data remove storage teplus:item_lore ExtractLore[0]
+execute if data entity @s Items[{Slot:10b}].tag.CustomCurse.Fear run data remove storage teplus:item_lore ExtractLore[0]
+execute if data entity @s Items[{Slot:10b}].tag.CustomCurse.Exhaustion run data remove storage teplus:item_lore ExtractLore[0]

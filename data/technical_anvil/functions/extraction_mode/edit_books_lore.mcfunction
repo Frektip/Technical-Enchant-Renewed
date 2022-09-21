@@ -150,3 +150,5 @@ execute if entity @s[nbt={Items:[{Slot:13b,tag:{StoredCustomEnchantments:[{id:"W
 execute if entity @s[nbt={Items:[{Slot:13b,tag:{StoredCustomCurse:[{id:"Fragile",lvl:1}]}}]}] run function technical_anvil:extraction_mode/second_books_lore/fragile
 execute if entity @s[nbt={Items:[{Slot:13b,tag:{StoredCustomCurse:[{id:"Sensitive",lvl:1}]}}]}] run function technical_anvil:extraction_mode/second_books_lore/sensitive
 execute if entity @s[nbt={Items:[{Slot:13b,tag:{StoredCustomCurse:[{id:"Slippery",lvl:1}]}}]}] run function technical_anvil:extraction_mode/second_books_lore/slippery
+execute if entity @s[nbt={Items:[{Slot:13b,tag:{StoredCustomCurse:[{id:"Fear",lvl:1}]}}]}] run function technical_anvil:extraction_mode/second_books_lore/fear
+execute if entity @s[nbt={Items:[{Slot:13b,tag:{StoredCustomCurse:[{id:"Exhaustion",lvl:1}]}}]}] run function technical_anvil:extraction_mode/second_books_lore/exhaustion

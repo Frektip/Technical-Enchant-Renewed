@@ -14,3 +14,4 @@ function technical_anvil:interaction/item_type/shared_enchantments/shared_auto_s
 function technical_anvil:interaction/item_type/shared_enchantments/shared_haste
 function technical_anvil:interaction/item_type/shared_enchantments/shared_fragile
 function technical_anvil:interaction/item_type/shared_enchantments/shared_slippery
+function technical_anvil:interaction/item_type/shared_enchantments/shared_exhaustion

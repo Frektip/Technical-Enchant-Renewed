@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "#enchantplus:boss",
+    "#enchantplus:strong_mob",
+    "minecraft:cave_spider",
+    "minecraft:creeper",
+    "minecraft:drowned",
+    "minecraft:endermite",
+    "minecraft:ghast",
+    "minecraft:giant",
+    "minecraft:hoglin",
+    "minecraft:husk",
+    "minecraft:magma_cube",
+    "minecraft:phantom",
+    "minecraft:pillager",
+    "minecraft:shulker",
+    "minecraft:silverfish",
+    "minecraft:skeleton",
+    "minecraft:slime",
+    "minecraft:spider",
+    "minecraft:stray",
+    "minecraft:witch",
+    "minecraft:zoglin",
+    "minecraft:zombie",
+    "minecraft:zombie_villager"
+  ]
+}

@@ -57,3 +57,5 @@ execute if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredC
 execute if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomCurse[{id:"Fragile"}] run function technical_anvil:interaction/merge/enchanted_books/fragile
 execute if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomCurse[{id:"Sensitive"}] run function technical_anvil:interaction/merge/enchanted_books/sensitive
 execute if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomCurse[{id:"Slippery"}] run function technical_anvil:interaction/merge/enchanted_books/slippery
+execute if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomCurse[{id:"Fear"}] run function technical_anvil:interaction/merge/enchanted_books/fear
+execute if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomCurse[{id:"Exhaustion"}] run function technical_anvil:interaction/merge/enchanted_books/exhaustion

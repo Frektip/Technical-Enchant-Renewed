@@ -111,6 +111,8 @@ data modify entity @s[nbt={Items:[{Slot:22b,tag:{StoredCustomEnchantments:[{id:"
 data modify entity @s[nbt={Items:[{Slot:22b,tag:{StoredCustomEnchantments:[{id:"TurtleStiffness",lvl:1}]}}]}] Items[{Slot:22b}].tag.display.Lore insert 0 value "{\"translate\":\"Turtle Stiffness\",\"color\":\"gray\",\"italic\":false}" 
 
 
-data modify entity @s[nbt={Items:[{Slot:22b,tag:{StoredCustomCurse:[{id:"Fragile",lvl:1}]}}]}] Items[{Slot:22b}].tag.display.Lore insert 0 value "{\"translate\":\"Curse of Fragile\",\"color\":\"#FF4099\",\"italic\":false}" 
-data modify entity @s[nbt={Items:[{Slot:22b,tag:{StoredCustomCurse:[{id:"Sensitive",lvl:1}]}}]}] Items[{Slot:22b}].tag.display.Lore insert 0 value "{\"translate\":\"Curse of Sensitive\",\"color\":\"#FF4099\",\"italic\":false}" 
-data modify entity @s[nbt={Items:[{Slot:22b,tag:{StoredCustomCurse:[{id:"Slippery",lvl:1}]}}]}] Items[{Slot:22b}].tag.display.Lore insert 0 value "{\"translate\":\"Curse of Slippery\",\"color\":\"#FF4099\",\"italic\":false}" 
+data modify entity @s[nbt={Items:[{Slot:22b,tag:{StoredCustomCurse:[{id:"Fragile",lvl:1}]}}]}] Items[{Slot:22b}].tag.display.Lore insert 0 value "{\"translate\":\"Curse of Fragile\",\"color\":\"#FF4099\",\"italic\":false}"
+data modify entity @s[nbt={Items:[{Slot:22b,tag:{StoredCustomCurse:[{id:"Sensitive",lvl:1}]}}]}] Items[{Slot:22b}].tag.display.Lore insert 0 value "{\"translate\":\"Curse of Sensitive\",\"color\":\"#FF4099\",\"italic\":false}"
+data modify entity @s[nbt={Items:[{Slot:22b,tag:{StoredCustomCurse:[{id:"Slippery",lvl:1}]}}]}] Items[{Slot:22b}].tag.display.Lore insert 0 value "{\"translate\":\"Curse of Slippery\",\"color\":\"#FF4099\",\"italic\":false}"
+data modify entity @s[nbt={Items:[{Slot:22b,tag:{StoredCustomCurse:[{id:"Fear",lvl:1}]}}]}] Items[{Slot:22b}].tag.display.Lore insert 0 value "{\"translate\":\"Curse of Fear\",\"color\":\"#FF4099\",\"italic\":false}"
+data modify entity @s[nbt={Items:[{Slot:22b,tag:{StoredCustomCurse:[{id:"Exhaustion",lvl:1}]}}]}] Items[{Slot:22b}].tag.display.Lore insert 0 value "{\"translate\":\"Curse of Exhaustion\",\"color\":\"#FF4099\",\"italic\":false}"

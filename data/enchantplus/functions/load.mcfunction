@@ -1,5 +1,5 @@
 #Datapack Version
-scoreboard players set #teplus.version load.status 701
+scoreboard players set #teplus.version load.status 710
 
 #Load constants
 scoreboard objectives add teplus.data dummy
@@ -52,6 +52,8 @@ scoreboard objectives add tep.mot dummy
 scoreboard objectives add BalloonYear dummy
 scoreboard objectives add tep.count dummy
 scoreboard objectives add tep.horse dummy
+scoreboard objectives add teplus.htlct dummy
+scoreboard objectives add teplus.scared dummy
 
 #Timers
 scoreboard objectives add TimerFeed dummy
@@ -73,6 +75,7 @@ scoreboard objectives add MasterCelebrate dummy
 scoreboard objectives add MarineCarry dummy
 scoreboard objectives add CobwebGroup dummy
 scoreboard objectives add InLiqdTime dummy
+scoreboard objectives add TimerExha dummy
 
 #Randomizer - Uniform (By Aeldrion)
 scoreboard objectives add random dummy

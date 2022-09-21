@@ -12,7 +12,7 @@ function enchantplus:loot/enchanting/check_type
 
 #--------Adding Custom Curses to the book--------#
 #5% chance
-execute if predicate enchantplus:random_chance/5 run function enchantplus:loot/enchanting/curse_book_only
+execute if predicate enchantplus:random_chance/5 run function enchantplus:loot/enchanting/set_curse/book_only
 #------------------------------------------------#
 
 #------------------Update the Lore------------------

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "offhand": {
+              "nbt": "{CustomCurse:{Exhaustion:1}}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "enchantplus:result/exhaustion/try"
+  }
+}

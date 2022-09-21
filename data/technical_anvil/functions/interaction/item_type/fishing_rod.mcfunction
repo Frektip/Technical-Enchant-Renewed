@@ -12,3 +12,4 @@ execute if score $Exceed tepext.manager matches 0 run function technical_anvil:i
 
 function technical_anvil:interaction/item_type/shared_enchantments/shared_fragile
 function technical_anvil:interaction/item_type/shared_enchantments/shared_slippery
+function technical_anvil:interaction/item_type/shared_enchantments/shared_exhaustion

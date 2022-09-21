@@ -27,7 +27,7 @@ tag @s add teplus.loot_trident
 function enchantplus:loot/enchanting/check_type
 
 #Small chance to add a custom Curse
-execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:random_chance/10 run function enchantplus:loot/enchanting/curse_item
+execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:random_chance/10 run function enchantplus:loot/enchanting/set_curse/weapons
 
 #------------------Set new attributes (Attack Speed)------------------#
 #If it has Attack Speed add default attributes

@@ -14,6 +14,14 @@
         {
           "type": "minecraft:loot_table",
           "name": "teplus_exten:chests/set_enchanted_book/slippery"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/fear"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "teplus_exten:chests/set_enchanted_book/exhaustion"
         }
       ]
     }

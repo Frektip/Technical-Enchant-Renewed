@@ -14,3 +14,4 @@ function technical_anvil:interaction/item_with_item/shared_enchantments/shared_p
 function technical_anvil:interaction/item_with_item/shared_enchantments/shared_xp_boost
 function technical_anvil:interaction/item_with_item/shared_enchantments/shared_fragile
 function technical_anvil:interaction/item_with_item/shared_enchantments/shared_slippery
+function technical_anvil:interaction/item_with_item/shared_enchantments/shared_fear
