@@ -1,6 +1,6 @@
-#Two different types of markers, one for the bookshelf, 
-#and another one for the enchantingtable
+#Marker for the charged bookshelf
 execute if entity @s[tag=teplus.charged_bookshelf] at @s run function enchantplus:entity/marker/charged_bookshelf_loop
+#Marker for the enchanting table
 execute if entity @s[tag=teplus.enchanting_table] at @s run function enchantplus:entity/marker/enchanting_table_loop
 
 #An extra marker for Turtle Stiffness enchantment shells animation
@@ -20,3 +20,7 @@ execute if entity @s[tag=teplus.LavaWalk] at @s run function enchantplus:entity/
 
 #Marker for Frost Walker FOR HORSE ARMOR
 execute if entity @s[tag=teplus.FrostWalk] at @s run function enchantplus:entity/marker/frost_walker/level
+
+#Marker for bow/crossbow enchantments
+# this is used when the arrow hits a mob
+execute if entity @s[tag=tep.arrow_follow] at @s unless entity @e[type=arrow,tag=tep.custom_arrow,distance=..1] run function #enchbowcross:marker_select 
