@@ -6,3 +6,4 @@ scoreboard players set @s teplus.explo 0
 scoreboard players set @s teplus.frbwv 0
 scoreboard players set @s teplus.shfng 0
 scoreboard players set @s teplus.snpr 0
+scoreboard players set @s teplus.fear 0

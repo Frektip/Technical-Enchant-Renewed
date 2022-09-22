@@ -7,4 +7,5 @@ execute store result score @s teplus.arach run data get entity @s Inventory[{Slo
 execute store result score @s teplus.explo run data get entity @s Inventory[{Slot:-106b}].tag.CustomEnchantments[{id:"Explosive"}].lvl
 execute store result score @s teplus.frbwv run data get entity @s Inventory[{Slot:-106b}].tag.CustomEnchantments[{id:"FireballWave"}].lvl
 execute store result score @s teplus.shfng run data get entity @s Inventory[{Slot:-106b}].tag.CustomEnchantments[{id:"ShockFangs"}].lvl
- execute store result score @s teplus.snpr run data get entity @s Inventory[{Slot:-106b}].tag.CustomEnchantments[{id:"Sniper"}].lvl
+execute store result score @s teplus.snpr run data get entity @s Inventory[{Slot:-106b}].tag.CustomEnchantments[{id:"Sniper"}].lvl
+execute store result score @s teplus.fear run data get entity @s Inventory[{Slot:-106b}].tag.CustomCurse.Fear

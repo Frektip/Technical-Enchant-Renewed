@@ -1,12 +1,16 @@
 #Get the owner of the nearest arrow
 execute as @e[distance=..6,type=arrow,tag=!tep.arrow_owner,nbt=!{inGround:1b}] at @s run function enchbowcross:load/get_owner
 
+
+##Special case for Curse of Fear##
+execute if score @s[scores={teplus.htlct=6..}] teplus.fear matches 1 if score #trigger teplus.fear matches 1.. as @e[type=arrow,tag=tep.arrow_valid_owner,tag=!tep.cursefear,distance=..6,sort=nearest] at @s run function enchbowcross:load/fear
+
 #Modify the arrow depending on the 
 # Check for:
 # - the enchantments using a scoreboard
 # - if that enchantment is enabled
 # - debuged arrow with "#trigger" fake player on each enchantment
-# - as the nearest arrow that has the same owner UUID as the player
+# - as the nearest arrow that has the same owner UUID as the player = "tep.arrow_valid_owner" tag
 execute if score @s teplus.accst matches 1 if score #accshot Enchopts matches 0 if score #trigger teplus.accst matches 1.. as @e[type=arrow,tag=tep.arrow_valid_owner,tag=!tep.accuracy,distance=..6,sort=nearest] at @s run function enchbowcross:load/accuracy_shot
 execute if score @s teplus.snpr matches 1 if score #snp Enchopts matches 0 if score #trigger teplus.snpr matches 1.. as @e[type=arrow,tag=tep.arrow_valid_owner,tag=!tep.sniper,distance=..6,sort=nearest] at @s run function enchbowcross:load/sniper
 execute if score @s teplus.arach matches 1 if score #arch Enchopts matches 0 if score #trigger teplus.arach matches 1.. as @e[type=arrow,tag=tep.arrow_valid_owner,tag=!tep.arachnid,distance=..6,sort=nearest] at @s run function enchbowcross:load/arachnid

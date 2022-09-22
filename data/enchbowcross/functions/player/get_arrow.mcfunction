@@ -6,3 +6,4 @@ execute store result score @s teplus.explo run data get entity @s SelectedItem.t
 execute store result score @s teplus.frbwv run data get entity @s SelectedItem.tag.CustomEnchantments[{id:"FireballWave"}].lvl
 execute store result score @s teplus.shfng run data get entity @s SelectedItem.tag.CustomEnchantments[{id:"ShockFangs"}].lvl
 execute store result score @s teplus.snpr run data get entity @s SelectedItem.tag.CustomEnchantments[{id:"Sniper"}].lvl
+execute store result score @s teplus.fear run data get entity @s SelectedItem.tag.CustomCurse.Fear

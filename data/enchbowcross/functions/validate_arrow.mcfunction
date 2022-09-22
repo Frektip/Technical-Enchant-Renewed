@@ -38,3 +38,7 @@ scoreboard players operation #trigger teplus.shfng = @s teplus.shfng
 #Fireball Wave
 scoreboard players set #trigger teplus.frbwv 0
 scoreboard players operation #trigger teplus.frbwv = @s teplus.frbwv
+
+#Curse of Fear
+scoreboard players set #trigger teplus.fear 0
+scoreboard players operation #trigger teplus.fear = @s teplus.fear

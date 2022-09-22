@@ -30,6 +30,7 @@ scoreboard objectives remove teplus.explo
 scoreboard objectives remove teplus.frbwv
 scoreboard objectives remove teplus.shfng
 scoreboard objectives remove teplus.snpr
+scoreboard objectives remove teplus.fear
 scoreboard objectives remove teplus.motX
 scoreboard objectives remove teplus.motY
 scoreboard objectives remove teplus.motZ
@@ -91,7 +92,6 @@ kill @e[type=armor_stand,tag=teplus.armor_stand]
 kill @e[type=marker,tag=teplus.marker]
 kill @e[type=item_frame,tag=teplus.enchanted]
 kill @e[tag=turtle_shield]
-kill @e[type=area_effect_cloud,tag=tep.arrow_follow]
 kill @e[type=arrow,tag=tep.custom_arrow]
 kill @e[tag=teplus.technical_anvil_decorative]
 kill @e[type=item,nbt={Item:{tag:{Teplus:{ui:1b}}}}]

@@ -28,6 +28,7 @@ scoreboard objectives add teplus.explo dummy
 scoreboard objectives add teplus.frbwv dummy
 scoreboard objectives add teplus.shfng dummy
 scoreboard objectives add teplus.snpr dummy
+scoreboard objectives add teplus.fear dummy
 
 scoreboard objectives add teplus.motX dummy
 scoreboard objectives add teplus.motY dummy

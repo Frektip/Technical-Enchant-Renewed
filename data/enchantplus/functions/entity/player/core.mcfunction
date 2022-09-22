@@ -2,6 +2,7 @@
 clear @s #technical_anvil:ui{Teplus:{ui:1b}}
 ##-----#-----#-----#-----# Enchantments #-----#-----#-----#-----#-----#
 execute if predicate enchantplus:has_ench/general run function enchantplus:enchantments/core 
+function enchbowcross:player/loop
 
 execute if entity @s[tag=trigger_protection] run function enchantplus:result/turtle_stiffness/loop
 execute if entity @s[tag=teplus.celebrate] run function enchantplus:result/birthday/init
