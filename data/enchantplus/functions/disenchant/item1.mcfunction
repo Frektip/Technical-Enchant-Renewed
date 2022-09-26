@@ -54,7 +54,7 @@ function #enchantplus:disenchant/remove_custom_lore
 #   -Remove all the item's Lore
 data remove entity @s Item.tag.display.Lore
 # -Run another function to add Custom Curse Lore
-function enchantplus:disenchant/not_curses
+function #enchantplus:disenchant/apply_custom_curse
 #   -In case the Item has anther custom Lore, append it from the "DienchLore" storage
 data modify entity @s Item.tag.display.Lore append from storage teplus:item_lore DienchLore[]
 

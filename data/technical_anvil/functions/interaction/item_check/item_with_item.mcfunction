@@ -1,3 +1,4 @@
+tag @s add TCHA.ItwIt
 execute if data storage teplus:tech_anvil.ui {CurrentItems:[{Slot:6b,tag:{Teplus:{item_type:"HELMET"}}}]} if data storage teplus:tech_anvil.ui {ResultItem:{tag:{Teplus:{item_type:"HELMET"}}}} run function #technical_anvil:interaction/item_with_item/helmet
 execute if data storage teplus:tech_anvil.ui {CurrentItems:[{Slot:6b,tag:{Teplus:{item_type:"CHESTPLATE"}}}]} if data storage teplus:tech_anvil.ui {ResultItem:{tag:{Teplus:{item_type:"CHESTPLATE"}}}} run function #technical_anvil:interaction/item_with_item/chestplate
 execute if data storage teplus:tech_anvil.ui {CurrentItems:[{Slot:6b,tag:{Teplus:{item_type:"LEGGINGS"}}}]} if data storage teplus:tech_anvil.ui {ResultItem:{tag:{Teplus:{item_type:"LEGGINGS"}}}} run function #technical_anvil:interaction/item_with_item/leggings

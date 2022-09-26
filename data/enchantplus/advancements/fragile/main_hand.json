@@ -6,7 +6,7 @@
         "player": {
           "equipment": {
             "mainhand": {
-              "nbt": "{CustomCurse:{Fragile:1}}"
+              "nbt": "{CustomCurse:[{id:\"Fragile\",lvl:1}]}"
             }
           }
         }

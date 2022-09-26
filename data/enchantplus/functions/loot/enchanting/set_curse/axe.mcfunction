@@ -1,18 +1,29 @@
 ### Debug Message ###
 tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Enchanting★): ","color":"#24E3F9","italic":true,"bold":false},{"text":"Bad luck! Adding a custom curse","color":"#EE639C","italic":true,"bold":false}]
 
+#Prepare the storage that will select the curses
+# Addon support
+function enchantplus:loot/enchanting/set_curse/system/axe_select
+
+#Copy into a CTemp storage the curses available
+data modify storage teplus:loot CTemp set from storage teplus:loot Curses
+
+# There is no way to have more than one curse per interaction, so we
+#  don't need to clear the storage to not get dupes
+
+#Preapare RNG based on the Temp storage
 scoreboard players set $min random 0
-scoreboard players set $max random 3
+execute store result score $max random run data get storage teplus:loot CTemp
+execute unless score $max random matches ..0 run scoreboard players remove $max random 1
 function enchantplus:random_uniform
 
-#Randomly enchant the item based on predicates
-execute if score $out random matches 0 unless entity @s[nbt={Item:{tag:{CustomCurse:{Fragile:1}}}}] run data modify entity @s Item.tag.CustomCurse.Fragile set value 1
+#Loop the curses randomly
+scoreboard players operation $curse.loop teplus.data = $out random
+function enchantplus:loot/enchanting/set_curse/system/loop_curse
 
-execute if score $out random matches 1 unless entity @s[nbt={Item:{tag:{CustomCurse:{Slippery:1}}}}] run data modify entity @s Item.tag.CustomCurse.Slippery set value 1
+#Add the nbt tag curse to the book based on Temp Storage
+data modify entity @s Item.tag.CustomCurse append from storage teplus:loot CTemp[0]
 
-execute if score $out random matches 2 unless entity @s[nbt={Item:{tag:{CustomCurse:{Fear:1}}}}] run data modify entity @s Item.tag.CustomCurse.Fear set value 1
-
-execute if score $out random matches 3 unless entity @s[nbt={Item:{tag:{CustomCurse:{Exhaustion:1}}}}] run data modify entity @s Item.tag.CustomCurse.Exhaustion set value 1
-
-#In case it doesn't has Enchantment glint (for whatever reason) add it
-execute unless data entity @s Item.tag.Enchantments run data modify entity @s Item.tag.Enchantments set value [{}]
+#Clear the storages
+data remove storage teplus:loot Curses
+data remove storage teplus:loot CTemp

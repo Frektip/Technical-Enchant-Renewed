@@ -10,7 +10,7 @@
             "predicate": {
               "equipment": {
                 "head": {
-                  "nbt": "{CustomCurse:{Sensitive:1}}"
+                  "nbt": "{CustomCurse:[{id:\"Sensitive\",lvl:1}]}"
                 }
               }
             }

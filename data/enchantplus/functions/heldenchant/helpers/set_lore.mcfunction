@@ -112,8 +112,8 @@ execute if data storage teplus:heldench Mainhand.tag.CustomEnchantments[{id:"Mul
 execute if data storage teplus:heldench Mainhand.tag.CustomEnchantments[{id:"TurtleStiffness"}] run data modify storage teplus:heldench Mainhand.tag.display.Lore insert 0 value "{\"translate\":\"Turtle Stiffness\",\"color\":\"gray\",\"italic\":false}"
 
 
-execute if data storage teplus:heldench Mainhand.tag.CustomCurse.Fragile run data modify storage teplus:heldench Mainhand.tag.display.Lore insert 0 value "{\"translate\":\"Curse of Fragile\",\"color\":\"#FF4099\",\"italic\":false}"
-execute if data storage teplus:heldench Mainhand.tag.CustomCurse.Sensitive run data modify storage teplus:heldench Mainhand.tag.display.Lore insert 0 value "{\"translate\":\"Curse of Sensitive\",\"color\":\"#FF4099\",\"italic\":false}"
-execute if data storage teplus:heldench Mainhand.tag.CustomCurse.Slippery run data modify storage teplus:heldench Mainhand.tag.display.Lore insert 0 value "{\"translate\":\"Curse of Slippery\",\"color\":\"#FF4099\",\"italic\":false}"
-execute if data storage teplus:heldench Mainhand.tag.CustomCurse.Fear run data modify storage teplus:heldench Mainhand.tag.display.Lore insert 0 value "{\"translate\":\"Curse of Fear\",\"color\":\"#FF4099\",\"italic\":false}"
-execute if data storage teplus:heldench Mainhand.tag.CustomCurse.Exhaustion run data modify storage teplus:heldench Mainhand.tag.display.Lore insert 0 value "{\"translate\":\"Curse of Exhaustion\",\"color\":\"#FF4099\",\"italic\":false}"
+execute if data storage teplus:heldench Mainhand.tag.CustomCurse[{id:"Fragile"}] run data modify storage teplus:heldench Mainhand.tag.display.Lore insert 0 value "{\"translate\":\"Curse of Fragile\",\"color\":\"#FF4099\",\"italic\":false}"
+execute if data storage teplus:heldench Mainhand.tag.CustomCurse[{id:"Sensitive"}] run data modify storage teplus:heldench Mainhand.tag.display.Lore insert 0 value "{\"translate\":\"Curse of Sensitive\",\"color\":\"#FF4099\",\"italic\":false}"
+execute if data storage teplus:heldench Mainhand.tag.CustomCurse[{id:"Slippery"}] run data modify storage teplus:heldench Mainhand.tag.display.Lore insert 0 value "{\"translate\":\"Curse of Slippery\",\"color\":\"#FF4099\",\"italic\":false}"
+execute if data storage teplus:heldench Mainhand.tag.CustomCurse[{id:"Fear"}] run data modify storage teplus:heldench Mainhand.tag.display.Lore insert 0 value "{\"translate\":\"Curse of Fear\",\"color\":\"#FF4099\",\"italic\":false}"
+execute if data storage teplus:heldench Mainhand.tag.CustomCurse[{id:"Exhaustion"}] run data modify storage teplus:heldench Mainhand.tag.display.Lore insert 0 value "{\"translate\":\"Curse of Exhaustion\",\"color\":\"#FF4099\",\"italic\":false}"

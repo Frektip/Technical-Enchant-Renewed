@@ -19,7 +19,7 @@
           }
         ],
         "item": {
-            "nbt": "{CustomCurse:{Sensitive:1}}"
+            "nbt": "{CustomCurse:[{id:\"Sensitive\",lvl:1}]}"
           }
       }
     },
@@ -42,7 +42,7 @@
           }
         ],
         "item": {
-            "nbt": "{CustomCurse:{Sensitive:1}}"
+            "nbt": "{CustomCurse:[{id:\"Sensitive\",lvl:1}]}"
           }
       }
     }

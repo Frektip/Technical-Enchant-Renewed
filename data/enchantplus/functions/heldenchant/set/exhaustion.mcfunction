@@ -12,7 +12,7 @@ execute if predicate enchantplus:held_item/shared/exhaustion run summon armor_st
 
 
 ##FIRST check if the item already has this enchantment
-execute if data storage teplus:heldench Mainhand.tag.CustomCurse.Exhaustion run tag @s add teplus.heldench_error
+execute if data storage teplus:heldench Mainhand.tag.CustomCurse[{id:"Exhaustion",lvl:1}] run tag @s add teplus.heldench_error
 execute if entity @s[tag=teplus.heldench_error] run tag @s remove teplus.heldench
 execute if entity @s[tag=teplus.heldench_error] run tellraw @s [{"text":"\n\n\n"},{"translate":"Error! ","color":"dark_red","bold":true},{"translate":"This enchantment is already present in this item","color":"red","bold":false},{"text":"\n\n\n"}]
 #-------------------------------------------------------------------------------#
@@ -25,7 +25,7 @@ execute if entity @s[tag=teplus.heldench_error] run tellraw @s [{"text":"\n\n\n"
 execute if entity @s[tag=teplus.heldench] unless data storage teplus:heldench Mainhand.tag.Enchantments run data modify storage teplus:heldench Mainhand.tag.Enchantments append value {}
 
 #2.- Check if the item doesn't have this enchantment previously
-execute if entity @s[tag=teplus.heldench] unless data storage teplus:heldench Mainhand.tag.CustomCurse.Exhaustion run data modify storage teplus:heldench Mainhand.tag.CustomCurse.Exhaustion set value 1
+execute if entity @s[tag=teplus.heldench] unless data storage teplus:heldench Mainhand.tag.CustomCurse[{id:"Exhaustion",lvl:1}] run data modify storage teplus:heldench Mainhand.tag.CustomCurse append value {id:"Exhaustion",lvl:1}
 
 #3.- Add the Lore to the storage
 execute if entity @s[tag=teplus.heldench,tag=!teplus.heldench_error] run data remove storage teplus:heldench Mainhand.tag.display.Lore

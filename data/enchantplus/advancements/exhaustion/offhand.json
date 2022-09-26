@@ -6,7 +6,7 @@
         "player": {
           "equipment": {
             "offhand": {
-              "nbt": "{CustomCurse:{Exhaustion:1}}"
+              "nbt": "{CustomCurse:[{id:\"Exhaustion\",lvl:1}]}"
             }
           }
         }

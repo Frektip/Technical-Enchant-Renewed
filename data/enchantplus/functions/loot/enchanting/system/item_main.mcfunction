@@ -33,7 +33,7 @@ scoreboard players operation $ench.loop teplus.data = $out random
 function enchantplus:loot/enchanting/system/loop_ench
 
 
-#Add the nbt tag nchant the item based on Temp Storage
+#Add the nbt tag enchant to the item based on Temp Storage
 data modify entity @s Item.tag.CustomEnchantments append from storage teplus:loot Temp[0]
 
 

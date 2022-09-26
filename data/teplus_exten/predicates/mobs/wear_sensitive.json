@@ -7,7 +7,7 @@
 			"predicate": {
 				"equipment": {
 					"head": {
-						"nbt": "{CustomCurse:{Sensitive:1}}"
+						"nbt": "{CustomCurse:[{id:\"Sensitive\",lvl:1}]}"
 					}
 				}
 			}
@@ -18,7 +18,7 @@
 			"predicate": {
 				"equipment": {
 					"chest": {
-						"nbt": "{CustomCurse:{Sensitive:1}}"
+						"nbt": "{CustomCurse:[{id:\"Sensitive\",lvl:1}]}"
 					}
 				}
 			}
@@ -29,7 +29,7 @@
 			"predicate": {
 				"equipment": {
 					"legs": {
-						"nbt": "{CustomCurse:{Sensitive:1}}"
+						"nbt": "{CustomCurse:[{id:\"Sensitive\",lvl:1}]}"
 					}
 				}
 			}
@@ -40,7 +40,7 @@
 			"predicate": {
 				"equipment": {
 					"feet": {
-						"nbt": "{CustomCurse:{Sensitive:1}}"
+						"nbt": "{CustomCurse:[{id:\"Sensitive\",lvl:1}]}"
 					}
 				}
 			}

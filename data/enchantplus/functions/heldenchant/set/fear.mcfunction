@@ -12,7 +12,7 @@ execute if predicate enchantplus:held_item/shared/fear run summon armor_stand ~ 
 
 
 ##FIRST check if the item already has this enchantment
-execute if data storage teplus:heldench Mainhand.tag.CustomCurse.Fear run tag @s add teplus.heldench_error
+execute if data storage teplus:heldench Mainhand.tag.CustomCurse[{id:"Fear",lvl:1}] run tag @s add teplus.heldench_error
 execute if entity @s[tag=teplus.heldench_error] run tag @s remove teplus.heldench
 execute if entity @s[tag=teplus.heldench_error] run tellraw @s [{"text":"\n\n\n"},{"translate":"Error! ","color":"dark_red","bold":true},{"translate":"This enchantment is already present in this item","color":"red","bold":false},{"text":"\n\n\n"}]
 #-------------------------------------------------------------------------------#
@@ -25,7 +25,7 @@ execute if entity @s[tag=teplus.heldench_error] run tellraw @s [{"text":"\n\n\n"
 execute if entity @s[tag=teplus.heldench] unless data storage teplus:heldench Mainhand.tag.Enchantments run data modify storage teplus:heldench Mainhand.tag.Enchantments append value {}
 
 #2.- Check if the item doesn't have this enchantment previously
-execute if entity @s[tag=teplus.heldench] unless data storage teplus:heldench Mainhand.tag.CustomCurse.Fear run data modify storage teplus:heldench Mainhand.tag.CustomCurse.Fear set value 1
+execute if entity @s[tag=teplus.heldench] unless data storage teplus:heldench Mainhand.tag.CustomCurse[{id:"Fear",lvl:1}] run data modify storage teplus:heldench Mainhand.tag.CustomCurse append value {id:"Fear",lvl:1}
 #2.1.- Check for "CustomArrow" nbt tag ONLY for bow/crossbow
 execute if entity @s[tag=teplus.heldench,predicate=enchantplus:held_item/have_bowcross] unless data storage teplus:heldench Mainhand.tag.CustomArrow run data modify storage teplus:heldench Mainhand.tag.CustomArrow set value 1
 

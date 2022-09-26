@@ -10,7 +10,7 @@
             "predicate": {
               "equipment": {
                 "offhand": {
-                  "nbt": "{CustomCurse:{Slippery:1}}"
+                  "nbt": "{CustomCurse:[{id:\"Slippery\",lvl:1}]}"
                 }
               }
             }

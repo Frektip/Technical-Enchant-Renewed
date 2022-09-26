@@ -76,9 +76,9 @@ execute if data entity @s Item.tag.CustomEnchantments[{id:"Peaks"}] run data rem
 execute if data entity @s Item.tag.CustomEnchantments[{id:"TurtleStiffness"}] run data remove storage teplus:item_lore DienchLore[0]
 
 
-execute if data entity @s Item.tag.CustomCurse.Fragile run data remove storage teplus:item_lore DienchLore[0]
-execute if data entity @s Item.tag.CustomCurse.Sensitive run data remove storage teplus:item_lore DienchLore[0]
-execute if data entity @s Item.tag.CustomCurse.Slippery run data remove storage teplus:item_lore DienchLore[0]
-execute if data entity @s Item.tag.CustomCurse.Fear run data remove storage teplus:item_lore DienchLore[0]
-execute if data entity @s Item.tag.CustomCurse.Exhaustion run data remove storage teplus:item_lore DienchLore[0]
+execute if data entity @s Item.tag.CustomCurse[{id:"Fragile"}] run data remove storage teplus:item_lore DienchLore[0]
+execute if data entity @s Item.tag.CustomCurse.[{id:"Sensitive"}] run data remove storage teplus:item_lore DienchLore[0]
+execute if data entity @s Item.tag.CustomCurse.[{id:"Slippery"}] run data remove storage teplus:item_lore DienchLore[0]
+execute if data entity @s Item.tag.CustomCurse.[{id:"Fear"}] run data remove storage teplus:item_lore DienchLore[0]
+execute if data entity @s Item.tag.CustomCurse.[{id:"Exhaustion"}] run data remove storage teplus:item_lore DienchLore[0]
 

@@ -10,7 +10,7 @@
             "predicate": {
               "equipment": {
                 "feet": {
-                  "nbt": "{CustomCurse:{Fragile:1}}"
+                  "nbt": "{CustomCurse:[{id:\"Fragile\",lvl:1}]}"
                 }
               }
             }

@@ -37,4 +37,4 @@ execute if score #antexp Enchopts matches 0 as @s[nbt={SelectedItem:{tag:{Custom
 
 
 #Curse
-execute if entity @s[nbt={SelectedItem:{tag:{CustomCurse:{Fear:1}}}}] run function enchantplus:result/fear/init
+execute if entity @s[nbt={SelectedItem:{tag:{CustomCurse:[{id:"Fear"}]}}}] run function enchantplus:result/fear/init

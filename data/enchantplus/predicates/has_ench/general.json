@@ -73,7 +73,7 @@
 			"predicate": {
 				"equipment": {
 					"offhand": {
-						"nbt": "{CustomCurse:{}}"
+						"nbt": "{CustomCurse:[{}]}"
 					}
 				}
 			}
@@ -84,7 +84,7 @@
 			"predicate": {
 				"equipment": {
 					"mainhand": {
-						"nbt": "{CustomCurse:{}}"
+						"nbt": "{CustomCurse:[{}]}"
 					}
 				}
 			}
