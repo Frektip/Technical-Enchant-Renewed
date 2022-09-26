@@ -1,0 +1,5 @@
+{
+    "values": [
+        {"id":"enchantplus:entity/player/break_scores", "required":false}
+    ]
+}

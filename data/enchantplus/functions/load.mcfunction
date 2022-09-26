@@ -1,5 +1,5 @@
 #Datapack Version
-scoreboard players set #teplus.version load.status 710
+scoreboard players set #teplus.version load.status 711
 
 #Load constants
 scoreboard objectives add teplus.data dummy
@@ -33,6 +33,31 @@ scoreboard objectives add teplus.fear dummy
 scoreboard objectives add teplus.motX dummy
 scoreboard objectives add teplus.motY dummy
 scoreboard objectives add teplus.motZ dummy
+
+#Scoreboards when using any mining tool
+scoreboard objectives add teplus.pick dummy
+scoreboard objectives add tep.use_npick minecraft.used:minecraft.netherite_pickaxe
+scoreboard objectives add tep.use_dpick minecraft.used:minecraft.diamond_pickaxe
+scoreboard objectives add tep.use_ipick minecraft.used:minecraft.iron_pickaxe
+scoreboard objectives add tep.use_gpick minecraft.used:minecraft.golden_pickaxe
+scoreboard objectives add tep.use_spick minecraft.used:minecraft.stone_pickaxe
+scoreboard objectives add tep.use_wpick minecraft.used:minecraft.wooden_pickaxe
+
+scoreboard objectives add teplus.shov dummy
+scoreboard objectives add tep.use_nshov minecraft.used:minecraft.netherite_shovel
+scoreboard objectives add tep.use_dshov minecraft.used:minecraft.diamond_shovel
+scoreboard objectives add tep.use_ishov minecraft.used:minecraft.iron_shovel
+scoreboard objectives add tep.use_gshov minecraft.used:minecraft.golden_shovel
+scoreboard objectives add tep.use_sshov minecraft.used:minecraft.stone_shovel
+scoreboard objectives add tep.use_wshov minecraft.used:minecraft.wooden_shovel
+
+scoreboard objectives add teplus.axe dummy
+scoreboard objectives add tep.use_naxe minecraft.used:minecraft.netherite_axe
+scoreboard objectives add tep.use_daxe minecraft.used:minecraft.diamond_axe
+scoreboard objectives add tep.use_iaxe minecraft.used:minecraft.iron_axe
+scoreboard objectives add tep.use_gaxe minecraft.used:minecraft.golden_axe
+scoreboard objectives add tep.use_saxe minecraft.used:minecraft.stone_axe
+scoreboard objectives add tep.use_waxe minecraft.used:minecraft.wooden_axe
 
 
 #More enchantments scoreboards

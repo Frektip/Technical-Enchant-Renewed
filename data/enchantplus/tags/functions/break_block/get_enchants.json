@@ -1,0 +1,5 @@
+{
+    "values": [
+        {"id":"enchantplus:entity/player/get_enchants", "required":false}
+    ]
+}

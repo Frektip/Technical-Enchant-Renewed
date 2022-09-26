@@ -82,6 +82,30 @@ scoreboard objectives remove TimerExha
 scoreboard objectives remove teplus.htlct
 scoreboard objectives remove teplus.scared
 
+scoreboard objectives remove teplus.pick
+scoreboard objectives remove teplus.npick
+scoreboard objectives remove teplus.dpick
+scoreboard objectives remove teplus.ipick
+scoreboard objectives remove teplus.gpick
+scoreboard objectives remove teplus.spick
+scoreboard objectives remove teplus.wpick
+
+scoreboard objectives remove teplus.axe
+scoreboard objectives remove teplus.naxe
+scoreboard objectives remove teplus.daxe
+scoreboard objectives remove teplus.iaxe
+scoreboard objectives remove teplus.gaxe
+scoreboard objectives remove teplus.saxe
+scoreboard objectives remove teplus.waxe
+
+scoreboard objectives remove teplus.shov
+scoreboard objectives remove teplus.nshov
+scoreboard objectives remove teplus.dshov
+scoreboard objectives remove teplus.ishov
+scoreboard objectives remove teplus.gshov
+scoreboard objectives remove teplus.sshov
+scoreboard objectives remove teplus.wshov
+
 #I don't remove scoreboards related to Lantern Load or Iris because they may be used
 # alongside with other datapacks. In that case they should do a reload, but meh, I
 # preffer avoiding problems
@@ -103,7 +127,7 @@ tellraw @a ["",{"text":" \u0020[","color":"gold"},{"text":"Technical Enchant+","
 playsound block.note_block.hat player @a ~ ~ ~ 2 0.5 
 
 #acutally disable the pack xd
-datapack disable "file/technical-enchant-v7-1-0.zip"
+datapack disable "file/technical-enchant-v7-1-1.zip"
 
 #Remove player tags, just in case
 tag @a remove teplus.uuid

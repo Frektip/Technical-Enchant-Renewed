@@ -1,3 +1,6 @@
+#Marker for Mining+ when breaking ores
+execute if entity @s[tag=teplus.break_block] run function enchantplus:entity/marker/area_break
+
 #Marker for the charged bookshelf
 execute if entity @s[tag=teplus.charged_bookshelf] at @s run function enchantplus:entity/marker/charged_bookshelf_loop
 #Marker for the enchanting table

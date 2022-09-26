@@ -4,8 +4,8 @@
 #Marker is for the charged bookshelf and enchanting table
 #Armor Stand is for the "decorative" part of the enchanting table
 #Player, well is the player hahaha
+execute as @e[tag=teplus.ench_block,tag=!teplus.item_checked] at @s run function enchantplus:entity/item/load_item
 
-execute as @e[type=item,tag=!teplus.item_checked] at @s run function enchantplus:entity/item/core
 execute as @e[type=horse] at @s run function enchantplus:entity/horse/core
 execute as @e[type=marker,tag=teplus.marker] at @s run function enchantplus:entity/marker/core
 execute as @e[type=armor_stand,tag=teplus.armor_stand] at @s run function enchantplus:entity/armor_stand/group
