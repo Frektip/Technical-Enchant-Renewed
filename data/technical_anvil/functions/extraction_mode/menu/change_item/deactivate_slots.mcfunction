@@ -18,4 +18,5 @@ tag @s add Error1
 data remove entity @s Items[{Slot:13b}]
 data modify entity @s Items prepend value {Slot: 13b, id: "structure_void", Count:1b, tag: {Teplus:{ui:1b},CustomModelData:70139, display: {Lore:['{"text":"You cannot extract enchantments from those items!","color":"gray","italic":false}'],Name: '{"text":"Error!","color":"red","italic":false}'}}}
 data remove storage teplus:item_lore ExtractLore
+data remove storage teplus:tech_extract ResultItem
 #------------------------------------------#

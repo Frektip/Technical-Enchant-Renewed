@@ -1,5 +1,6 @@
 
-execute if entity @s[tag=CanExtract] run function technical_anvil:extraction_mode/interaction/extraction_succeed
+execute if entity @s[tag=CanExtract,tag=!techanv.vanilla] run function technical_anvil:extraction_mode/interaction/extraction_succeed
+execute if entity @s[tag=CanExtract,tag=techanv.vanilla] run function technical_anvil:extraction_mode/interaction/extraction_vanilla
 
 
 tag @s remove CanExtract

@@ -139,6 +139,7 @@ function enchantplus:extention_detect/tech_villager_check
 
 #Detect Addons
 function enchantplus:extention_detect/addons_check
+function enchantplus:extention_detect/complements_check
 
 
 #Tellraw
@@ -151,4 +152,6 @@ execute if score $Villager tep.exten matches 1 run tellraw @a ["",{"translate":"
 
 execute if score $Addon tep.exten matches 0 run tellraw @a ["",{"translate":"Custom Addons:","color":"yellow"},{"translate":" Not detected","color":"dark_red"}]
 execute if score $Addon tep.exten matches 1 run tellraw @a ["",{"translate":"Custom Addons:","color":"yellow"},{"translate":" Were detected","color":"dark_green"}]
+execute if score $Complement tep.exten matches 0 run tellraw @a ["",{"translate":"TE+ Complements:","color":"yellow"},{"translate":" Not detected","color":"dark_red"}]
+execute if score $Complement tep.exten matches 1 run tellraw @a ["",{"translate":"TE+ Complements:","color":"yellow"},{"translate":" Were detected","color":"dark_green"}]
 tellraw @a ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}]
