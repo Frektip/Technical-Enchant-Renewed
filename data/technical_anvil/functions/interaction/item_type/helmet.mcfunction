@@ -1,12 +1,12 @@
 #----GIVE ERROR BY DEFAULT----#
 tag @s add ComError
 #-------------EXCLUSIVE FOR HELMET-------------#
-execute if score #brvis Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"BrightVision"}] run function technical_anvil:interaction/merge/item_with_book/bright_vision
-execute if score #mgnt Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"Magnet"}] run function technical_anvil:interaction/merge/item_with_book/magnet
-execute if score #tmbrk Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"TimeBreaker"}] run function technical_anvil:interaction/merge/item_with_book/time_breaker
+execute if score #brvis Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"BrightVision"}] run function technical_anvil:interaction/merge/enchanted_items/bright_vision
+execute if score #mgnt Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"Magnet"}] run function technical_anvil:interaction/merge/enchanted_items/magnet
+execute if score #tmbrk Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"TimeBreaker"}] run function technical_anvil:interaction/merge/enchanted_items/time_breaker
 
 
-execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredEnchantments[{id:"minecraft:respiration"}] run function teplus_exten:exceed/combine/item_book/respiration
+execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ench TeplusVanilla[{id:"minecraft:respiration"}] run function teplus_exten:exceed/combine/items/respiration
 
 
 #-------------SHARED ENCHANTMENTS-------------#

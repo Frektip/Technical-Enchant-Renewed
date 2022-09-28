@@ -3,7 +3,7 @@ tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true
 
 #Prepare the storage that will select the curses
 # Addon support
-function enchantplus:loot/enchanting/set_curse/system/armor_select
+function #enchantplus:enchanting/apply_curse/armor
 
 #Copy into a CTemp storage the curses available
 data modify storage teplus:loot CTemp set from storage teplus:loot Curses

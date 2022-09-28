@@ -2,10 +2,10 @@
 tag @s add ComError
 #-------------EXCLUSIVE FOR AXE-------------#
 
-execute if score #chop Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"Chopping"}] run function technical_anvil:interaction/merge/item_with_book/chopping
-execute if score #tmbr Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"Timber"}] run function technical_anvil:interaction/merge/item_with_book/timber
-execute if score #trms Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"Transmission"}] run function technical_anvil:interaction/merge/item_with_book/transmission
-execute if score #strk Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"Striker"}] run function technical_anvil:interaction/merge/item_with_book/striker
+execute if score #chop Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"Chopping"}] run function technical_anvil:interaction/merge/enchanted_items/chopping
+execute if score #tmbr Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"Timber"}] run function technical_anvil:interaction/merge/enchanted_items/timber
+execute if score #trms Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"Transmission"}] run function technical_anvil:interaction/merge/enchanted_items/transmission
+execute if score #strk Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"Striker"}] run function technical_anvil:interaction/merge/enchanted_items/striker
 
 #-------------SHARED ENCHANTMENTS-------------#
 execute if score $Exceed tepext.manager matches 0 run function technical_anvil:interaction/item_type/shared_enchantments/vanilla/shared_efficiency

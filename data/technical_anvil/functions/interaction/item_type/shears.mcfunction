@@ -2,7 +2,7 @@
 tag @s add ComError
 #-------------EXCLUSIVE FOR SHEARS-------------#
 
-execute if score #mlcl Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"Multicolor"}] run function technical_anvil:interaction/merge/item_with_book/multicolor
+execute if score #mlcl Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"Multicolor"}] run function technical_anvil:interaction/merge/enchanted_items/multicolor
 
 #-------------SHARED ENCHANTMENTS-------------#
 execute if score $Exceed tepext.manager matches 0 run function technical_anvil:interaction/item_type/shared_enchantments/vanilla/shared_efficiency

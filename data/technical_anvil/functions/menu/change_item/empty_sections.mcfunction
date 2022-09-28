@@ -28,3 +28,5 @@ data modify entity @e[type=item,sort=nearest,tag=tcha.merge,distance=..6,limit=1
 
 data remove storage teplus:tech_anvil.ui CurrentOutput
 data remove storage teplus:item_lore CurrentLore
+data remove storage teplus:tech_anvil.ench TeplusEnchantments
+data remove storage teplus:tech_anvil.ench TeplusCurses

@@ -2,5 +2,5 @@
 # -For trident
 # -For sword
 #-------------ENCHANT-------------#
-execute if score #aksp Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"AttackSpeed"}] run function technical_anvil:interaction/merge/item_with_book/attack_speed
+execute if score #aksp Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"AttackSpeed"}] run function technical_anvil:interaction/merge/enchanted_items/attack_speed
 

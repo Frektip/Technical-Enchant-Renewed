@@ -1,3 +1,6 @@
+#Copy the custom enchantments from the book into a storage:
+function technical_anvil:interaction/item_check/find_enchantments
+
 execute if data storage teplus:tech_anvil.ui {CurrentItems:[{Slot:6b,id:"minecraft:enchanted_book"}]} if data storage teplus:tech_anvil.ui {ResultItem:{tag:{Teplus:{item_type:"HELMET"}}}} run function #technical_anvil:interaction/item_type/helmet
 execute if data storage teplus:tech_anvil.ui {CurrentItems:[{Slot:6b,id:"minecraft:enchanted_book"}]} if data storage teplus:tech_anvil.ui {ResultItem:{tag:{Teplus:{item_type:"CHESTPLATE"}}}} run function #technical_anvil:interaction/item_type/chestplate
 execute if data storage teplus:tech_anvil.ui {CurrentItems:[{Slot:6b,id:"minecraft:enchanted_book"}]} if data storage teplus:tech_anvil.ui {ResultItem:{tag:{Teplus:{item_type:"LEGGINGS"}}}} run function #technical_anvil:interaction/item_type/leggings

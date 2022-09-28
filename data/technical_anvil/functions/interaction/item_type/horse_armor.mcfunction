@@ -3,11 +3,11 @@ tag @s add ComError
 #---- NO EXCLUSIVE ENCHANTMENTS?? ----#
 # ¯\_( ͡o ͜ʖ ͡O)_/¯
 #But at least you can combine it with frost walker :)
-execute if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredEnchantments[{id:"minecraft:frost_walker"}] run function technical_anvil:interaction/merge/item_with_book/frost_walker
+execute if data storage teplus:tech_anvil.ench TeplusVanilla[{id:"minecraft:frost_walker"}] run function technical_anvil:interaction/merge/enchanted_items/frost_walker
 
 #And with feather falling, respiration and thorns if Exceed enchantments
 # option is enabled
-execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredEnchantments[{id:"minecraft:feather_falling"}] run function teplus_exten:exceed/combine/item_book/feather_falling
+execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ench TeplusVanilla[{id:"minecraft:feather_falling"}] run function teplus_exten:exceed/combine/items/feather_falling
 execute if score $Exceed tepext.manager matches 0 run function technical_anvil:interaction/item_type/shared_enchantments/vanilla/shared_thorns
 
 #-------------SHARED ENCHANTMENTS-------------#

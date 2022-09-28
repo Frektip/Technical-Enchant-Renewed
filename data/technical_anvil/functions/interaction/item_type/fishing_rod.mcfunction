@@ -2,10 +2,10 @@
 tag @s add ComError
 #-------------EXCLUSIVE FOR FISHING ROD-------------#
 
-execute if score #sptr Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"Splatter"}] run function technical_anvil:interaction/merge/item_with_book/splatter
+execute if score #sptr Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"Splatter"}] run function technical_anvil:interaction/merge/enchanted_items/splatter
 
-execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredEnchantments[{id:"minecraft:luck_of_the_sea"}] run function teplus_exten:exceed/combine/item_book/luck_of_the_sea
-execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredEnchantments[{id:"minecraft:lure"}] run function teplus_exten:exceed/combine/item_book/lure
+execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ench TeplusVanilla[{id:"minecraft:luck_of_the_sea"}] run function teplus_exten:exceed/combine/items/luck_of_the_sea
+execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ench TeplusVanilla[{id:"minecraft:lure"}] run function teplus_exten:exceed/combine/items/lure
 
 #-------------SHARED ENCHANTMENTS-------------#
 execute if score $Exceed tepext.manager matches 0 run function technical_anvil:interaction/item_type/shared_enchantments/vanilla/shared_unbreaking

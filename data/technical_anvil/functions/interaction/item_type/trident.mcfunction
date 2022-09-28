@@ -2,11 +2,11 @@
 tag @s add ComError
 #-------------EXCLUSIVE FOR TRIDENT-------------#
 
-execute if score #mrgc Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"MarineGrace"}] run function technical_anvil:interaction/merge/item_with_book/marine_grace
-execute if score #wtjt Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"Waterjet"}] run function technical_anvil:interaction/merge/item_with_book/waterjet
+execute if score #mrgc Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"MarineGrace"}] run function technical_anvil:interaction/merge/enchanted_items/marine_grace
+execute if score #wtjt Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"Waterjet"}] run function technical_anvil:interaction/merge/enchanted_items/waterjet
 
-execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredEnchantments[{id:"minecraft:impaling"}] run function teplus_exten:exceed/combine/item_book/impaling
-execute if score $Exceed tepext.manager matches 0 unless data storage teplus:tech_anvil.ui {ResultItem:{tag:{Enchantments:[{id:"minecraft:loyalty"}]}}} unless data storage teplus:tech_anvil.ui {ResultItem:{tag:{Enchantments:[{id:"minecraft:channeling"}]}}} if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredEnchantments[{id:"minecraft:riptide"}] run function teplus_exten:exceed/combine/item_book/riptide
+execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ench TeplusVanilla[{id:"minecraft:impaling"}] run function teplus_exten:exceed/combine/items/impaling
+execute if score $Exceed tepext.manager matches 0 unless data storage teplus:tech_anvil.ui {ResultItem:{tag:{Enchantments:[{id:"minecraft:loyalty"}]}}} unless data storage teplus:tech_anvil.ui {ResultItem:{tag:{Enchantments:[{id:"minecraft:channeling"}]}}} if data storage teplus:tech_anvil.ench TeplusVanilla[{id:"minecraft:riptide"}] run function teplus_exten:exceed/combine/items/riptide
 
 #-------------SHARED ENCHANTMENTS-------------#
 execute if score $Exceed tepext.manager matches 0 run function technical_anvil:interaction/item_type/shared_enchantments/vanilla/shared_sharpness

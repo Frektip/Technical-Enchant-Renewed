@@ -2,14 +2,14 @@
 tag @s add ComError
 #-------------EXCLUSIVE FOR SWORD-------------#
 
-execute if score #bobl Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"BloodyBlade"}] run function technical_anvil:interaction/merge/item_with_book/bloody_blade
-execute if score #lstnd Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"LastStand"}] run function technical_anvil:interaction/merge/item_with_book/last_stand
-execute if score #lfstl Enchopts matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomEnchantments[{id:"LifeSteal"}] run function technical_anvil:interaction/merge/item_with_book/life_steal
+execute if score #bobl Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"BloodyBlade"}] run function technical_anvil:interaction/merge/enchanted_items/bloody_blade
+execute if score #lstnd Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"LastStand"}] run function technical_anvil:interaction/merge/enchanted_items/last_stand
+execute if score #lfstl Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"LifeSteal"}] run function technical_anvil:interaction/merge/enchanted_items/life_steal
 
-execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredEnchantments[{id:"minecraft:fire_aspect"}] run function teplus_exten:exceed/combine/item_book/fire_aspect
-execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredEnchantments[{id:"minecraft:knockback"}] run function teplus_exten:exceed/combine/item_book/knockback
-execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredEnchantments[{id:"minecraft:looting"}] run function teplus_exten:exceed/combine/item_book/looting
-execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredEnchantments[{id:"minecraft:sweeping"}] run function teplus_exten:exceed/combine/item_book/sweeping
+execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ench TeplusVanilla[{id:"minecraft:fire_aspect"}] run function teplus_exten:exceed/combine/items/fire_aspect
+execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ench TeplusVanilla[{id:"minecraft:knockback"}] run function teplus_exten:exceed/combine/items/knockback
+execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ench TeplusVanilla[{id:"minecraft:looting"}] run function teplus_exten:exceed/combine/items/looting
+execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_anvil.ench TeplusVanilla[{id:"minecraft:sweeping"}] run function teplus_exten:exceed/combine/items/sweeping
 
 
 #-------------SHARED ENCHANTMENTS-------------#

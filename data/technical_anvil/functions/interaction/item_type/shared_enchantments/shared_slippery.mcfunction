@@ -1,5 +1,5 @@
 #----ITEMS LIST----#
 # -All tools and weapons
 #-------------ENCHANT-------------#
-execute if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.StoredCustomCurse[{id:"Slippery"}] run function technical_anvil:interaction/merge/item_with_book/slippery
+execute if data storage teplus:tech_anvil.ench TeplusCurses[{id:"Slippery"}] run function technical_anvil:interaction/merge/enchanted_items/slippery
 
