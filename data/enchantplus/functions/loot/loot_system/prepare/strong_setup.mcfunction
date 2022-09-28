@@ -10,7 +10,7 @@ tag @e[type=marker,tag=teplus.enchanting_table,tag=!is_enchanting,distance=..1] 
 data modify entity @e[type=item_frame,tag=teplus.enchanted,tag=!teplus.loot_is_item,limit=1,distance=..1] Item set from entity @s Item
 
 #Set the enchatment in the item frame
-execute as @e[type=item_frame,tag=teplus.enchanted,distance=..1] run function enchantplus:loot/loot_system/prepare/item_type
+execute as @e[type=item_frame,tag=teplus.enchanted,distance=..1] run function #enchantplus:enchanting/items/item_type
 
 #Grafical things
 function enchantplus:loot/end/strong
