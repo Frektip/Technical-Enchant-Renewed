@@ -33,9 +33,9 @@ function enchantplus:loot/enchanting/check_type
 execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:random_chance/10 run function enchantplus:loot/enchanting/set_curse/armor
 
 #Set new attributes (Anti Knockback)
-execute if data entity @s Item.tag.CustomEnchantments[{id:"AntiKnockback"}] run item modify entity @s container.0 enchantplus:set_attributes/loot/anti_knockback
+execute if data entity @s Item.tag.CustomEnchantments[{id:"AntiKnockback"}] run function enchantplus:loot/loot_system/attributes/anti_knockback
 #Set new attributes (Hardness+)
-execute if data entity @s Item.tag.CustomEnchantments[{id:"HardnessPlus"}] run item modify entity @s container.0 enchantplus:set_attributes/loot/hardness_plus
+execute if data entity @s Item.tag.CustomEnchantments[{id:"HardnessPlus"}] run function enchantplus:loot/loot_system/attributes/hardness_plus
 
 #Set new Lore
 function #enchantplus:set_lore_item

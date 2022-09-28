@@ -1,0 +1,5 @@
+{
+    "values": [
+        {"id":"enchantplus:loot/loot_system/attributes/attack_speed_type", "required":false}
+    ]
+}
