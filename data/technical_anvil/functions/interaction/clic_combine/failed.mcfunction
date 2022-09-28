@@ -1,0 +1,2 @@
+playsound entity.enderman.teleport master @p ~ ~ ~ 1 0 1
+tellraw @p ["",{"translate":"You don't have at least ","color":"red"},{"score":{"name":"#xprq","objective":"game.Opts"},"color":"dark_red"},{"translate":" Experience Levels!","color":"red"}]
