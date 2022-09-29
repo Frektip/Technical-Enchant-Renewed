@@ -5,6 +5,7 @@ execute if entity @s[tag=teplus.loot_bow] run function #enchantplus:enchanting/l
 execute if entity @s[tag=teplus.loot_chestplate] run function #enchantplus:enchanting/loot_select/chestplate
 execute if entity @s[tag=teplus.loot_crossbow] run function #enchantplus:enchanting/loot_select/crossbow
 execute if entity @s[tag=teplus.loot_helmet] run function #enchantplus:enchanting/loot_select/helmet
+execute if entity @s[tag=teplus.loot_hoe] run function #enchantplus:enchanting/loot_select/hoe
 execute if entity @s[tag=teplus.loot_leggings] run function #enchantplus:enchanting/loot_select/leggings
 execute if entity @s[tag=teplus.loot_pickaxe] run function #enchantplus:enchanting/loot_select/pickaxe
 execute if entity @s[tag=teplus.loot_shield] run function #enchantplus:enchanting/loot_select/shield
