@@ -2,7 +2,6 @@ scoreboard objectives add tep.avl dummy
 
 scoreboard objectives add TCHA.Value dummy
 scoreboard objectives add TCHA.plxp dummy
-scoreboard objectives add TCHA.book dummy
 
 scoreboard objectives add attb.armor dummy
 scoreboard objectives add attb.knbrs dummy

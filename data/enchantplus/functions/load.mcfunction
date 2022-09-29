@@ -1,5 +1,5 @@
 #Datapack Version
-scoreboard players set #teplus.version load.status 711
+scoreboard players set #teplus.version load.status 720
 
 #Load constants
 scoreboard objectives add teplus.data dummy

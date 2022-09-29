@@ -25,7 +25,7 @@ execute unless data entity @s Items[{Slot:10b}].tag.CustomEnchantments[0] unless
 ###Debug Message###
 tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(TechnAnvEx): ","color":"gold","italic":true,"bold":false},{"text":"Removing 1 book from the UI","color":"gray","italic":true,"bold":false}]
 
-function technical_anvil:extraction_mode/interaction/update_input/remove_book
+item modify entity @s container.16 technical_anvil:reduce_count1
 
 
 data modify storage teplus:tech_extract CurrentItems set from entity @s Items
