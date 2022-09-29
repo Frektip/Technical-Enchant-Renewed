@@ -35,6 +35,9 @@ scoreboard objectives add teplus.motY dummy
 scoreboard objectives add teplus.motZ dummy
 
 #Scoreboards when using any mining tool
+
+scoreboard objectives add teplus.firod dummy
+
 scoreboard objectives add teplus.pick dummy
 scoreboard objectives add tep.use_npick minecraft.used:minecraft.netherite_pickaxe
 scoreboard objectives add tep.use_dpick minecraft.used:minecraft.diamond_pickaxe

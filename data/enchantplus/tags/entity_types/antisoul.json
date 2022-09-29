@@ -38,7 +38,7 @@
     "minecraft:spawner_minecart",
     "minecraft:tnt",
     "minecraft:tnt_minecart",
-    "minecraft:trident",
+    "#enchantplus:trident",
     "minecraft:wither_skull"
   ]
 }

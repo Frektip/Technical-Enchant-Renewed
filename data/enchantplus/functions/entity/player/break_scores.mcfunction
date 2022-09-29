@@ -1,5 +1,8 @@
 ##If the player use any pickaxe, axe or shovel, add that value to
 ## the general scoreboard
+#Fishing Rod
+scoreboard players operation @s teplus.firod += @s[scores={Splatter.Shoot=1..}] Splatter.Shoot
+
 #Pickaxe
 scoreboard players operation @s teplus.pick += @s[scores={tep.use_npick=1..}] tep.use_npick
 scoreboard players operation @s teplus.pick += @s[scores={tep.use_dpick=1..}] tep.use_dpick
@@ -25,6 +28,9 @@ scoreboard players operation @s teplus.shov += @s[scores={tep.use_sshov=1..}] te
 scoreboard players operation @s teplus.shov += @s[scores={tep.use_wshov=1..}] tep.use_wshov
 
 ##Reset the scores
+#Fishing Rod
+scoreboard players reset @s[scores={Splatter.Shoot=1..}] Splatter.Shoot
+
 #Pickaxe
 scoreboard players reset @s[scores={tep.use_npick=1..}] tep.use_npick
 scoreboard players reset @s[scores={tep.use_dpick=1..}] tep.use_dpick

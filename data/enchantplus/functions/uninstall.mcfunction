@@ -82,6 +82,8 @@ scoreboard objectives remove TimerExha
 scoreboard objectives remove teplus.htlct
 scoreboard objectives remove teplus.scared
 
+scoreboard objectives remove teplus.firod
+
 scoreboard objectives remove teplus.pick
 scoreboard objectives remove teplus.npick
 scoreboard objectives remove teplus.dpick

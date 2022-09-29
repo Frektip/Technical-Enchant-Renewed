@@ -25,6 +25,7 @@ execute if entity @s[scores={Drop=1..}] run function enchantplus:entity/player/w
 scoreboard players set @s teplus.pick 0
 scoreboard players set @s teplus.shov 0
 scoreboard players set @s teplus.axe 0
+scoreboard players set @s teplus.firod 0
 function #enchantplus:break_block/use_tools
 
 #Enable /trigger commands
