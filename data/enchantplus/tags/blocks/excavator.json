@@ -1,21 +1,13 @@
 {
     "values": [
         "minecraft:clay",
-        "minecraft:farmland",
-        "minecraft:grass_block",
-        "minecraft:dirt_path",
-        "minecraft:dirt",
-        "minecraft:coarse_dirt",
-        "minecraft:podzol",
-        "minecraft:rooted_dirt",
-        "minecraft:mycelium",
+        "#minecraft:dirt",
         "#minecraft:sand",
         "minecraft:soul_sand",
         "minecraft:soul_soil",
         "minecraft:snow_block",
         "minecraft:snow",
         "minecraft:gravel",
-        "minecraft:mud",
 
         "minecraft:white_concrete_powder",
         "minecraft:orange_concrete_powder",
