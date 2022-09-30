@@ -153,8 +153,8 @@ tellraw @a ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*"
 execute if score $Villager tep.exten matches 0 run tellraw @a ["",{"translate":"Custom Villagers Module:","color":"yellow"},{"translate":" Not installed","color":"dark_red"}]
 execute if score $Villager tep.exten matches 1 run tellraw @a ["",{"translate":"Custom Villagers Module:","color":"yellow"},{"translate":" Installed","color":"dark_green"}]
 
-execute if score $Addon tep.exten matches 0 run tellraw @a ["",{"translate":"Custom Addons:","color":"yellow"},{"translate":" Not detected","color":"dark_red"}]
-execute if score $Addon tep.exten matches 1 run tellraw @a ["",{"translate":"Custom Addons:","color":"yellow"},{"translate":" Were detected","color":"dark_green"}]
+execute if score $Addon tep.exten matches 0 run tellraw @a ["",{"translate":"TE+ Addons:","color":"yellow"},{"translate":" Not detected","color":"dark_red"}]
+execute if score $Addon tep.exten matches 1 run tellraw @a ["",{"translate":"TE+ Addons:","color":"yellow"},{"translate":" Were detected","color":"dark_green"}]
 execute if score $Complement tep.exten matches 0 run tellraw @a ["",{"translate":"TE+ Complements:","color":"yellow"},{"translate":" Not detected","color":"dark_red"}]
 execute if score $Complement tep.exten matches 1 run tellraw @a ["",{"translate":"TE+ Complements:","color":"yellow"},{"translate":" Were detected","color":"dark_green"}]
 tellraw @a ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}]
