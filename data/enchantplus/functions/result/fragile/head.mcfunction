@@ -1,2 +1,4 @@
 advancement revoke @s only enchantplus:fragile/head
-execute unless predicate enchantplus:fragile_fix/zero_head run item modify entity @s armor.head enchantplus:fragile
+
+scoreboard players set #durability teplus.data 7
+function enchantplus:durability_change/head

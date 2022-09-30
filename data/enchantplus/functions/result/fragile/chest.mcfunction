@@ -1,2 +1,4 @@
 advancement revoke @s only enchantplus:fragile/chest 
-execute unless predicate enchantplus:fragile_fix/zero_chest run item modify entity @s armor.chest enchantplus:fragile
+
+scoreboard players set #durability teplus.data 7
+function enchantplus:durability_change/chest

@@ -1,13 +1,17 @@
-#If the item reaches 0 durability
-execute if predicate enchantplus:zero_soul run playsound entity.item.break master @s ~ ~ ~ 2 1
-execute if predicate enchantplus:zero_soul run item replace entity @s weapon.offhand with air
+# The vlaue in "#durability teplus.data" will additive when the item
+#  loses durability, maning that it will damage the item by that number
+#By default set it to 5 for netherite and diamond
+scoreboard players set #durability teplus.data 5
+#For iron materials set it to 3
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_hoe"}]}] run scoreboard players set #durability teplus.data 3
+#For stone materials set it to 2
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:stone_hoe"}]}] run scoreboard players set #durability teplus.data 1
+#For other materials set it to 1
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:golden_hoe"}]}] run scoreboard players set #durability teplus.data 1
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:wooden_hoe"}]}] run scoreboard players set #durability teplus.data 1
 
-#Material type and random chance to lose durability
-# All hoes lose 6 durability each time the predicate is true, however
-# the lowest durability, the less chance to lose durability (this is to balance things)
-execute if predicate enchantplus:random_chance/25 if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:netherite_hoe"}]}] run item modify entity @s weapon.offhand enchantplus:lose_soul_type/netherite
-execute if predicate enchantplus:random_chance/20 if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:diamond_hoe"}]}] run item modify entity @s weapon.offhand enchantplus:lose_soul_type/diamond
-execute if predicate enchantplus:random_chance/15 if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_hoe"}]}] run item modify entity @s weapon.offhand enchantplus:lose_soul_type/iron
-execute if predicate enchantplus:random_chance/5 if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:golden_hoe"}]}] run item modify entity @s weapon.offhand enchantplus:lose_soul_type/low
-execute if predicate enchantplus:random_chance/10 if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:stone_hoe"}]}] run item modify entity @s weapon.offhand enchantplus:lose_soul_type/low
-execute if predicate enchantplus:random_chance/10 if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:wooden_hoe"}]}] run item modify entity @s weapon.offhand enchantplus:lose_soul_type/low
+#Check in case the item has Unbreaking enchantment
+#Set the method to always true = "#lose.dura teplus.data 0"
+scoreboard players set #lose.dura teplus.data 0
+execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{Enchantments:[{id:"minecraft:unbreaking"}]}}]}] run function enchantplus:durability_change/unbreaking/get/offhand
+execute if score #lose.dura teplus.data matches 0 run function enchantplus:durability_change/offhand

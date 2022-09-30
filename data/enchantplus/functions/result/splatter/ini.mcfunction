@@ -6,8 +6,7 @@ kill @e[type=fishing_bobber,sort=nearest,limit=1]
 tag @s add splt.raycast
 
 #Check if the player is in creative, so it doesn't break the rod accidentally
-execute unless entity @s[gamemode=creative] run function enchantplus:result/splatter/check_damage 
-
+execute unless entity @s[gamemode=creative] run function enchantplus:result/splatter/check_damage
 
 # Anchor to the eyes and position with vector coordinates (Remove if not running from eyes of entity)
 

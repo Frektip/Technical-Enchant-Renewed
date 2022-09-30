@@ -1,2 +1,4 @@
 advancement revoke @s only enchantplus:fragile/legs
-execute unless predicate enchantplus:fragile_fix/zero_legs run item modify entity @s armor.legs enchantplus:fragile
+
+scoreboard players set #durability teplus.data 7
+function enchantplus:durability_change/legs

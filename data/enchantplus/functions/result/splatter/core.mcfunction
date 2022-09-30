@@ -1,1 +1,0 @@
-execute if score @s[tag=!splt.raycast] Splatter.Shoot matches 1.. at @s run function enchantplus:result/splatter/start_raycast 
