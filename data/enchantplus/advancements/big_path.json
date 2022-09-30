@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "nbt": "{CustomEnchantments:[{id:\"BigPath\"}]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "enchantplus:result/big_path/ini"
+  }
+}

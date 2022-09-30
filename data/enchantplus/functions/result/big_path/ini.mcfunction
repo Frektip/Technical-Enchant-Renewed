@@ -1,2 +1,2 @@
-advancement revoke @s only enchantplus:shovel
-execute if score #bgpt Enchopts matches 0 run execute at @s anchored eyes run function enchantplus:result/big_path/core
+advancement revoke @s only enchantplus:big_path
+execute if score #bgpt Enchopts matches 0 at @s anchored eyes positioned ^ ^ ^ run function enchantplus:result/big_path/core

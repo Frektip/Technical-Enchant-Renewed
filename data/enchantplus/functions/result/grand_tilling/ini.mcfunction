@@ -1,2 +1,2 @@
-advancement revoke @s only enchantplus:hoe
-execute if score #gndtl Enchopts matches 0 run execute at @s anchored eyes run function enchantplus:result/grand_tilling/core
+advancement revoke @s only enchantplus:grand_tilling
+execute if score #gndtl Enchopts matches 0 at @s anchored eyes positioned ^ ^ ^ run function enchantplus:result/grand_tilling/core
