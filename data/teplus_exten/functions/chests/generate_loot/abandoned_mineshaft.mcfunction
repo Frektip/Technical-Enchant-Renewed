@@ -1,12 +1,9 @@
-#Init Iris raycast
-#Change the settings to detect the chest minecart
-data modify storage iris:input TargetEntities set value true
-
 #Run the raycast
-execute at @s anchored eyes positioned ^ ^ ^ run function iris:get_target 
-execute at @e[type=marker,tag=iris.ray] as @e[type=chest_minecart,limit=1,sort=nearest] run function teplus_exten:chests/insert_book/abandoned_mineshaft
+execute at @s anchored eyes positioned ^ ^ ^ run function teplus_exten:chests/raycast_chest_minecart
 
-kill @e[type=marker,tag=iris.ray,limit=1,sort=nearest]
+execute at @e[type=marker,tag=teplus.ray] as @e[type=chest_minecart,tag=teplus.found,limit=1,sort=nearest] run function teplus_exten:chests/insert_book/abandoned_mineshaft
 
-#Revert the settings so IRIS will ignore entities
-data modify storage iris:input TargetEntities set value false
+#End
+kill @e[type=marker,tag=teplus.ray,limit=1,sort=nearest]
+
+scoreboard players reset .distance tep.rc

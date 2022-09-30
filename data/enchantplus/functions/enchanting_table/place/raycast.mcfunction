@@ -1,0 +1,2 @@
+execute if block ~ ~ ~ enchanting_table align xyz run summon marker ~ ~ ~ {Tags:["teplus.ray"]}
+execute unless block ~ ~ ~ enchanting_table positioned ^ ^ ^0.1 run function enchantplus:enchanting_table/place/raycast

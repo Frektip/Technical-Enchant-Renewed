@@ -3,7 +3,6 @@
         "enchbowcross:main",
         "enchantplus:main",
         "enchantplus:load",
-        "technical_anvil:load",
-        "iris:setup/load"
+        "technical_anvil:load"
     ]
 }

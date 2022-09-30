@@ -6,8 +6,7 @@ Their last version was 4.3.2 of the pack for Minecraft 1.14.
 Now I (Frektip) took the pack to update it for recent Minecraft versions, and making my own 
 changes and tweaks. 
 
-Also, IMPORTANT to mention the use of "Splatus" for his custom bow system, "Aeldrion" for her Iris raycasting
-datapack and randomizer system, and PauseKawa for his custom GUI detection system
+Also, IMPORTANT to mention the use of "Splatus" for his custom bow system, "Aeldrion" for her randomizer system, and PauseKawa for his custom GUI detection system
 "Blue Commander" (https://www.youtube.com/c/BlueCommander) for the base to create a custom anvil functionality. 
 "Stoupy51" for helping me optimizing parts in the code
 
