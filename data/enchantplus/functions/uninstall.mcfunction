@@ -108,6 +108,19 @@ scoreboard objectives remove teplus.gshov
 scoreboard objectives remove teplus.sshov
 scoreboard objectives remove teplus.wshov
 
+scoreboard objectives remove tep.avl
+scoreboard objectives remove TCHA.Value
+scoreboard objectives remove TCHA.plxp
+scoreboard objectives remove attb.armor
+scoreboard objectives remove attb.knbrs
+scoreboard objectives remove attb.toug
+scoreboard objectives remove attb.dmg
+scoreboard objectives remove TCHA.Section1
+scoreboard objectives remove TCHA.Section2
+scoreboard objectives remove teplus.vgmrl
+scoreboard objectives remove teplus.antkbk
+scoreboard objectives remove teplus.hrds
+
 #I don't remove scoreboards related to Lantern Load or Iris because they may be used
 # alongside with other datapacks. In that case they should do a reload, but meh, I
 # preffer avoiding problems

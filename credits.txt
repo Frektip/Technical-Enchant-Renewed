@@ -43,5 +43,5 @@ This changes include:
   https://www.planetminecraft.com/data-pack/custom-villagers-professions-with-custom-buildable-workstations-for-survial-vanilla-friendly-quite-simple-capitalist-proof/
 - A lot of bug fixes.
 
-This covers the most relevant information of the changelog for the current datapack version 7.1.0, for
+This covers the most relevant information of the changelog for the current datapack version 7.2.0, for
 more details visit the planet minecraft page of Technical Enchant+ for 1.19, 1.18 and 1.17
