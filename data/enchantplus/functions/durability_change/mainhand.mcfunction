@@ -1,3 +1,6 @@
+###Debug Message###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"Changing the durability from the player's ","color":"gray","italic":true,"bold":false},{"text":"mainhand","color":"dark_aqua","italic":true,"bold":false}]
+
 ##---Copy the Item from the offhand into an storage---##
 data remove storage teplus:item_dura item
 data modify storage teplus:item_dura item set from entity @s SelectedItem

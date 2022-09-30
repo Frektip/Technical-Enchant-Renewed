@@ -1,3 +1,7 @@
+###Debug Message###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"Player break a block with a Custom Enchantment","color":"gray","italic":true,"bold":false}]
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"Getting player's rotation","color":"gray","italic":true,"bold":false}]
+
 #including facing up and down
 execute store result score $Plyrot teplus.data run data get entity @s Rotation[0]
 

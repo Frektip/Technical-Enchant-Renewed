@@ -1,3 +1,6 @@
+###Debug Message###
+tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"Getting player's enchantments (mainhand)","color":"gray","italic":true,"bold":false}]
+
 #Detect other enchantments that the player may have
 scoreboard players set #fortune teplus.data 0
 scoreboard players set #silk teplus.data 0
