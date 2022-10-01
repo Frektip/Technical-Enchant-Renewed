@@ -14,13 +14,7 @@
 
         "minecraft:nether_sprouts",
         "minecraft:small_dripleaf",
-        "minecraft:oak_leaves",
-        "minecraft:spruce_leaves",
-        "minecraft:acacia_leaves",
-        "minecraft:birch_leaves",
-        "minecraft:jungle_leaves",
-        "minecraft:dark_oak_leaves",
-        "minecraft:azalea_leaves",
+        "#minecraft:leaves",
         "minecraft:sculk",
         "minecraft:sculk_catalyst",
         "minecraft:sculk_shrieker"
