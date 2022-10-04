@@ -10,6 +10,7 @@ scoreboard players set #veinmin teplus.data 0
 scoreboard players set #excavat teplus.data 0
 scoreboard players set #chopping teplus.data 0
 scoreboard players set #timber teplus.data 0
+scoreboard players set #scyther teplus.data 0
 
 #Test the values
 #Vanilla enchantments
@@ -23,3 +24,4 @@ execute store success score #veinmin teplus.data run execute if data entity @s S
 execute store success score #excavat teplus.data run execute if data entity @s SelectedItem.tag.CustomEnchantments[{id:"Excavator"}]
 execute store success score #chopping teplus.data run execute if data entity @s SelectedItem.tag.CustomEnchantments[{id:"Chopping"}]
 execute store success score #timber teplus.data run execute if data entity @s SelectedItem.tag.CustomEnchantments[{id:"Timber"}]
+execute store result score #scyther teplus.data run data get entity @s SelectedItem.tag.CustomEnchantments[{id:"Scyther"}].lvl

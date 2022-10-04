@@ -1,1 +1,0 @@
-execute as @e[type=item,distance=..7,nbt={Age:0s}] at @s run function enchantplus:result/scyther/without_silk_touch/marker2 

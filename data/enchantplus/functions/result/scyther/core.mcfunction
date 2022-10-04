@@ -1,2 +1,0 @@
-execute as @s[nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"Scyther",lvl:1}]}}}] at @s run function enchantplus:result/scyther/has_silktouch1 
-execute as @s[nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"Scyther",lvl:2}]}}}] at @s run function enchantplus:result/scyther/has_silktouch2

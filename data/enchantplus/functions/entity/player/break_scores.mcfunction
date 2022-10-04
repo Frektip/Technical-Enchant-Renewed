@@ -1,4 +1,5 @@
-##If the player use any pickaxe, axe or shovel, add that value to
+##If the player use any tool: pickaxe, axe, shovel, hoe or
+#  fishing rod, add that value to
 ## the general scoreboard
 #Fishing Rod
 scoreboard players operation @s teplus.firod += @s[scores={Splatter.Shoot=1..}] Splatter.Shoot
@@ -27,6 +28,14 @@ scoreboard players operation @s teplus.shov += @s[scores={tep.use_gshov=1..}] te
 scoreboard players operation @s teplus.shov += @s[scores={tep.use_sshov=1..}] tep.use_sshov
 scoreboard players operation @s teplus.shov += @s[scores={tep.use_wshov=1..}] tep.use_wshov
 
+#Hoe
+scoreboard players operation @s teplus.hoe += @s[scores={tep.use_nhoe=1..}] tep.use_nhoe
+scoreboard players operation @s teplus.hoe += @s[scores={tep.use_dhoe=1..}] tep.use_dhoe
+scoreboard players operation @s teplus.hoe += @s[scores={tep.use_ihoe=1..}] tep.use_ihoe
+scoreboard players operation @s teplus.hoe += @s[scores={tep.use_ghoe=1..}] tep.use_ghoe
+scoreboard players operation @s teplus.hoe += @s[scores={tep.use_shoe=1..}] tep.use_shoe
+scoreboard players operation @s teplus.hoe += @s[scores={tep.use_whoe=1..}] tep.use_whoe
+
 ##Reset the scores
 #Fishing Rod
 scoreboard players reset @s[scores={Splatter.Shoot=1..}] Splatter.Shoot
@@ -54,3 +63,11 @@ scoreboard players reset @s[scores={tep.use_ishov=1..}] tep.use_ishov
 scoreboard players reset @s[scores={tep.use_gshov=1..}] tep.use_gshov
 scoreboard players reset @s[scores={tep.use_sshov=1..}] tep.use_sshov
 scoreboard players reset @s[scores={tep.use_wshov=1..}] tep.use_wshov
+
+#Hoe
+scoreboard players reset @s[scores={tep.use_nhoe=1..}] tep.use_nhoe
+scoreboard players reset @s[scores={tep.use_dhoe=1..}] tep.use_dhoe
+scoreboard players reset @s[scores={tep.use_ihoe=1..}] tep.use_ihoe
+scoreboard players reset @s[scores={tep.use_ghoe=1..}] tep.use_ghoe
+scoreboard players reset @s[scores={tep.use_shoe=1..}] tep.use_shoe
+scoreboard players reset @s[scores={tep.use_whoe=1..}] tep.use_whoe

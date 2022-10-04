@@ -1,5 +1,5 @@
 #Datapack Version
-scoreboard players set #teplus.version load.status 720
+scoreboard players set #teplus.version load.status 721
 
 #Load constants
 scoreboard objectives add teplus.data dummy
@@ -61,6 +61,14 @@ scoreboard objectives add tep.use_iaxe minecraft.used:minecraft.iron_axe
 scoreboard objectives add tep.use_gaxe minecraft.used:minecraft.golden_axe
 scoreboard objectives add tep.use_saxe minecraft.used:minecraft.stone_axe
 scoreboard objectives add tep.use_waxe minecraft.used:minecraft.wooden_axe
+
+scoreboard objectives add teplus.hoe dummy
+scoreboard objectives add tep.use_nhoe minecraft.used:minecraft.netherite_hoe
+scoreboard objectives add tep.use_dhoe minecraft.used:minecraft.diamond_hoe
+scoreboard objectives add tep.use_ihoe minecraft.used:minecraft.iron_hoe
+scoreboard objectives add tep.use_ghoe minecraft.used:minecraft.golden_hoe
+scoreboard objectives add tep.use_shoe minecraft.used:minecraft.stone_hoe
+scoreboard objectives add tep.use_whoe minecraft.used:minecraft.wooden_hoe
 
 
 #More enchantments scoreboards

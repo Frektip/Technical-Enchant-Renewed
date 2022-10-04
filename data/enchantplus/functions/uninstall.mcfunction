@@ -108,6 +108,14 @@ scoreboard objectives remove teplus.gshov
 scoreboard objectives remove teplus.sshov
 scoreboard objectives remove teplus.wshov
 
+scoreboard objectives remove teplus.hoe
+scoreboard objectives remove teplus.nhoe
+scoreboard objectives remove teplus.dhoe
+scoreboard objectives remove teplus.ihoe
+scoreboard objectives remove teplus.ghoe
+scoreboard objectives remove teplus.shoe
+scoreboard objectives remove teplus.whoe
+
 scoreboard objectives remove tep.avl
 scoreboard objectives remove TCHA.Value
 scoreboard objectives remove TCHA.plxp
@@ -142,7 +150,7 @@ tellraw @a ["",{"text":" \u0020[","color":"gold"},{"text":"Technical Enchant+","
 playsound block.note_block.hat player @a ~ ~ ~ 2 0.5 
 
 #acutally disable the pack xd
-datapack disable "file/technical-enchant-v7-2-0.zip"
+datapack disable "file/technical-enchant-v7-2-1.zip"
 
 #Remove player tags, just in case
 tag @a remove teplus.uuid

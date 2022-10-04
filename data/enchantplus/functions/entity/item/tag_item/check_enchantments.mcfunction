@@ -11,3 +11,5 @@ execute if score #excavat teplus.data matches 1.. run tag @s add teplus.item_exc
 
 execute if score #chopping teplus.data matches 1.. run tag @s add teplus.item_chopp
 execute if score #timber teplus.data matches 1.. run function enchantplus:entity/item/tag_item/timber
+
+execute if score #scyther teplus.data matches 1.. run function enchantplus:entity/item/tag_item/scyther

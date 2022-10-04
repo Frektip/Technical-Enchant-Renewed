@@ -3,7 +3,7 @@
     "function": "minecraft:set_lore",
     "lore": [
       {
-        "translate": "Timbe Breaker I",
+        "translate": "Time Breaker I",
         "color": "gray",
         "italic": false
       }
@@ -23,7 +23,7 @@
     "function": "minecraft:set_lore",
     "lore": [
       {
-        "translate": "Timbe Breaker II",
+        "translate": "Time Breaker II",
         "color": "gray",
         "italic": false
       }
