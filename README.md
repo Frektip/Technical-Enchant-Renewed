@@ -4,7 +4,7 @@ Technical Enchant+ is a Minecraft Datapack that was created originally by Hardel
 At its current state, TE+ isn't the same as the original and some of the most important features include:
 
 - 52 new custom enchantments for any gear and item
-- 3 new custom curses for any gear and item
+- 5 new custom curses for any armor, tool or weapon
 - Custom enchanting system with Minecraft's vanilla enchanting table
 - A Custom Anvil to merge custom enchanted books and items
 - Extract custom enchantments from items using the Custom Anvil
