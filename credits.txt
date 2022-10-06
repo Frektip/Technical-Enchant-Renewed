@@ -6,15 +6,19 @@ Their last version was 4.3.2 of the pack for Minecraft 1.14.
 Now I (Frektip) took the pack to update it for recent Minecraft versions, and making my own 
 changes and tweaks. 
 
-Also, IMPORTANT to mention the use of "Splatus" for his custom bow system, "Aeldrion" for her randomizer system, and PauseKawa for his custom GUI detection system
-"Blue Commander" (https://www.youtube.com/c/BlueCommander) for the base to create a custom anvil functionality. 
-"Stoupy51" for helping me optimizing parts in the code
+Also, IMPORTANT to mention that this datapack has:
+- "Splatus" custom bow system
+- "Aeldrion's" randomizer system
+- "PauseKawa's" custom GUI detection system
+- "Blue Commander's" (https://www.youtube.com/c/BlueCommander) base to create a custom anvil 
+- "Stoupy51" for helping me optimizing parts in the code
+- "Jaro" for creating the textures
 
-This changes include:
+This RENEWED version include:
 
 - Revamped Guide Book
 - Revamped enchanting and merging system
-- Supporting system to "complements" datapacks, to make modded items compatible with TE+ enchantments
+- Supporting system to "complements" datapacks, to make modded items and blocks compatible with TE+ enchantments
 - Added a new block called "Technical Anvil" it has a unique UI that can be 
   switched between merging and extracting mode
 - Added charged bookshelves and technical anvil Item
@@ -31,17 +35,19 @@ This changes include:
 - Removed the possibility to apply custom enchantments to the shears by throwing them on the enchanting table.
 - Added a disenchant system to remove custom and vanilla enchantments for items, but not the curses.
 - Now the enchantments are fully compatible with netherite.
-- Added the possibility to exceed vanilla level enchantment of: Efficiency, Fortune, Unbreaking, 
-  Looting, Sharpness, Power, Lure, Luck of the Sea, Impaling, Respiration, Protection and Feather Falling.
+- Added the possibility to exceed vanilla level enchantment of: 
+  Efficiency, Feather Falling, Fire Aspect, Fortune , Impaling, Knockback, Looting, Lure, Luck of the Sea,
+  Piercing, Power, Protection, Punch, Respiration, Riptide, Sharpness, Sweeping edge, Swift sneak,
+  Thorns and Unbreaking.
 - A configuration MENU to change the datapack settings has been added.
 - Advancements for the player to get
 - New enchanting animation and setup to get or apply enchantments
 - Compatibility with "TE+ complements", which are other datapacks designed for modded items to be
   compatible with all of the custom enchantments and curses from this datapack
-- Added "addons" support, so other people can create/add their own custom enchantments!
+- Added "addons" support, so other people can create/add their own custom enchantments or curses!
 - A compatibility system with Custom Villagers Professions Datpack from "Sirloscus" (credit to him)
   https://www.planetminecraft.com/data-pack/custom-villagers-professions-with-custom-buildable-workstations-for-survial-vanilla-friendly-quite-simple-capitalist-proof/
 - A lot of bug fixes.
 
-This covers the most relevant information of the changelog for the current datapack version 7.2.0, for
+This covers the most relevant information of the changelog for the current datapack version 7.2.1, for
 more details visit the planet minecraft page of Technical Enchant+ for 1.19, 1.18 and 1.17

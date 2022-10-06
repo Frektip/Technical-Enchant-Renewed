@@ -1,1 +1,1 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"FlamingSkin",lvl:1}],display:{Lore:["{\"translate\":\"Flaming Skin\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Chestplate\",\"color\":\"blue\"}"]}}
+give @s enchanted_book{StoredCustomEnchantments:[{id:"FlamingSkin",lvl:1}],display:{Lore:["{\"translate\":\"Flaming Skin\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Chestplate\",\"color\":\"blue\"}","{\"translate\":\"► Horse Armor\",\"color\":\"green\"}"]}}

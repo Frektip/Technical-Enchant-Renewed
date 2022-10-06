@@ -21,6 +21,12 @@ execute if entity @s[scores={Drop=1..}] run function enchantplus:entity/player/w
 
 
 ##-----#-----#-----#-----# Scoreboard Stuff #-----#-----#-----#-----#-----#
+# Take damage - Allows to always use an updated score
+scoreboard players reset @s[scores={TakeDamage=1..}] TakeDamage
+scoreboard players add @s[scores={teplus.facdmg=1..}] TimerHurt 1
+scoreboard players reset @s[scores={TimerHurt=60..}] teplus.facdmg
+scoreboard players reset @s[scores={TimerHurt=60..}] TimerHurt
+
 #Use "tool" scoreboards
 scoreboard players set @s teplus.pick 0
 scoreboard players set @s teplus.shov 0

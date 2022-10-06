@@ -1,0 +1,26 @@
+{
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:entity_hurt_player",
+		"conditions": {
+		  "player": [
+			{
+			  "condition": "minecraft:entity_properties",
+			  "entity": "this",
+			  "predicate": {
+				"equipment": {
+				  "chest": {
+					"nbt": "{CustomEnchantments:[{id:\"FlamingSkin\"}]}"
+				  }
+				}
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"rewards": {
+	  "function": "enchantplus:result/flaming_skin/hurt"
+	}
+  }
+  

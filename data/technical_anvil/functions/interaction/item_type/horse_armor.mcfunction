@@ -11,6 +11,7 @@ execute if score $Exceed tepext.manager matches 0 if data storage teplus:tech_an
 execute if score $Exceed tepext.manager matches 0 run function technical_anvil:interaction/item_type/shared_enchantments/vanilla/shared_thorns
 
 #-------------SHARED ENCHANTMENTS-------------#
+execute if score #flskn Enchopts matches 0 if data storage teplus:tech_anvil.ench TeplusEnchantments[{id:"FlamingSkin"}] run function technical_anvil:interaction/merge/enchanted_items/flaming_skin
 function technical_anvil:interaction/item_type/shared_enchantments/shared_anti_explosion
 function technical_anvil:interaction/item_type/shared_enchantments/shared_anti_venom
 function technical_anvil:interaction/item_type/shared_enchantments/shared_lava_walker

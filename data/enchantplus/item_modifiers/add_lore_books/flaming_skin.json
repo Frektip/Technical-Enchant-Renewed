@@ -16,6 +16,10 @@
       {
         "translate": "► Chestplate",
         "color": "blue"
+      },
+      {
+        "translate": "► Horse Armor",
+        "color": "green"
       }
     ],
     "replace": false,

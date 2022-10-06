@@ -11,6 +11,8 @@ execute if score #mgnt Enchopts matches 0 if data entity @s ArmorItems[3].tag.Cu
 #CHESTPLATE
 #Anti-Venom
 execute if score #antvn Enchopts matches 0 if data entity @s ArmorItems[2].tag.CustomEnchantments[{id:"AntiVenom"}] run function teplus_exten:mobs/has_ench/armor/anti_venom
+#Flaming Skin
+execute if score #flskn Enchopts matches 0 if data entity @s[predicate=enchantplus:random_chance/15,nbt={HurtTime:10s}] ArmorItems[2].tag.CustomEnchantments[{id:"FlamingSkin"}] run function enchantplus:result/flaming_skin/trigger
 
 #LEGGINGS
 #Last Life

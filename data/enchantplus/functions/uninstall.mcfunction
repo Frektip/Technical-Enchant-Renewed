@@ -7,6 +7,31 @@ schedule clear enchbowcross:main
 schedule clear enchantplus:main
 schedule clear technical_anvil:main
 
+#Clear data storages
+data remove storage teplus:item_dura item
+data remove storage teplus:tech_anvil.ench TeplusVanilla
+data remove storage teplus:tech_anvil.ench TeplusEnchantments
+data remove storage teplus:tech_anvil.ench TeplusCurses
+
+data remove storage teplus:tech_anvil.ui Setup
+data remove storage teplus:tech_anvil.ui Setup_extract
+data remove storage teplus:tech_anvil.ui CurrentItems
+data remove storage teplus:tech_anvil.ui ResultItem
+data remove storage teplus:tech_anvil.ui CurrentUI
+data remove storage teplus:tech_anvil.ui ChangedItems
+data remove storage teplus:tech_anvil.ui CurrentUICheckChange
+data remove storage teplus:tech_anvil.ui SectionChange1
+data remove storage teplus:tech_anvil.ui SectionChange2
+
+data remove storage teplus:tech_extract CurrentItems
+data remove storage teplus:tech_extract ResultItem
+data remove storage teplus:tech_extract CurrentUI
+data remove storage teplus:tech_extract ChangedItems
+data remove storage teplus:tech_extract CurrentUICheckChange
+data remove storage teplus:tech_extract SectionChange1
+data remove storage teplus:tech_extract SectionChange2
+data remove storage teplus:tech_extract FromItem
+
 #remove scoreboards
 scoreboard objectives remove teplus.diench
 scoreboard objectives remove Drop
@@ -34,6 +59,7 @@ scoreboard objectives remove teplus.fear
 scoreboard objectives remove teplus.motX
 scoreboard objectives remove teplus.motY
 scoreboard objectives remove teplus.motZ
+scoreboard objectives remove TimerHurt
 scoreboard objectives remove TimerFeed
 scoreboard objectives remove TimerYearsBirth
 scoreboard objectives remove TimerBloodyBlade

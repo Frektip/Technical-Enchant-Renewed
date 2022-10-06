@@ -7,9 +7,9 @@
     },
     "ops": [
       {
-        "source": "item.tag",
-        "target": "{}",
-        "op": "merge"
+        "source": "item.Damage[0]",
+        "target": "Damage",
+        "op": "replace"
       }
     ]
   }

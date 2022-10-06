@@ -91,8 +91,11 @@ scoreboard objectives add tep.count dummy
 scoreboard objectives add tep.horse dummy
 scoreboard objectives add teplus.htlct dummy
 scoreboard objectives add teplus.scared dummy
+scoreboard objectives add teplus.facdmg dummy
+scoreboard objectives add teplus.racdmg dummy
 
 #Timers
+scoreboard objectives add TimerHurt dummy
 scoreboard objectives add TimerFeed dummy
 scoreboard objectives add TimerYearsBirth dummy
 scoreboard objectives add TimerBloodyBlade dummy
@@ -101,8 +104,6 @@ scoreboard objectives add TimerKill dummy
 scoreboard objectives add TimerDrop dummy
 scoreboard objectives add TimerSniper dummy
 scoreboard objectives add TimerHarvest dummy
-scoreboard objectives add TimerinLava dummy
-scoreboard objectives add TimerFlame dummy
 scoreboard objectives add TimerTurtle dummy
 scoreboard objectives add TimerTimeBreak dummy
 scoreboard objectives add WaitTimeBreak dummy

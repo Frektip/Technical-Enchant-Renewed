@@ -16,7 +16,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "enchantplus:progress/extra/horse_armor/anti_venom",
+  "parent": "enchantplus:progress/extra/horse_armor/flaming_skin",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
