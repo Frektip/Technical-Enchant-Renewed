@@ -1,4 +1,5 @@
-advancement revoke @s only technical_anvil:interacted 
+advancement revoke @s only technical_anvil:interacted
+scoreboard players reset .distance tep.rc
 execute at @s anchored eyes positioned ^ ^ ^ run function teplus_exten:chests/raycast_chest_minecart
 
 #Linked the technical anvil ID with the player ID
