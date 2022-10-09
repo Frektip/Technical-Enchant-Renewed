@@ -1,7 +1,8 @@
 #Store the base attribute amount
-execute store result score #teplus.attib.amnt teplus.data run data get entity @s Item.tag.AttributeModifiers[{AttributeName:"minecraft:generic.attack_damage"}].Amount
-#Scale it by 10
-scoreboard players operation #teplus.attib.amnt teplus.data *= #10const teplus.data
+execute store result storage teplus:shrpatt Amount double 0.001 run data get entity @s Item.tag.AttributeModifiers[{AttributeName:"minecraft:generic.attack_damage"}].Amount 10000
+
+#Compy it into an storage
+execute store result score #teplus.attib.amnt teplus.data run data get storage teplus:shrpatt Amount
 
 #Store the current sharpness level
 execute store result score #teplus.sharp.lvl teplus.data run data get entity @s Item.tag.Enchantments[{id:"minecraft:sharpness"}].lvl
@@ -21,3 +22,6 @@ scoreboard players operation #teplus.attib.out teplus.data = #teplus.attib.amnt 
 
 #Set the new damage value in the item
 execute store result entity @s Item.tag.AttributeModifiers[{AttributeName:"minecraft:generic.attack_damage"}].Amount double 0.1 run scoreboard players get #teplus.attib.out teplus.data
+
+#Clear the storage
+data remove storage teplus:shrpatt Amount
