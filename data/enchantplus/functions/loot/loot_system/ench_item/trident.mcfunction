@@ -7,11 +7,11 @@ execute if score #vanench game.Opts matches 1 run tellraw @a[tag=teplus.pydbgm] 
 #Add normal vanilla enchantments to this item based
 # on the Enchanting Tier
 #-Strong
-execute if score #vanench game.Opts matches 0 if score #teplus.rarity teplus.data matches 3 unless data entity @s Item.tag.Enchantments run item modify entity @s container.0 enchantplus:vanilla_strong
+execute if score #vanench game.Opts matches 0 if score #teplus.rarity teplus.data matches 3 unless data entity @s Item.tag.Enchantments[0].id run item modify entity @s container.0 enchantplus:vanilla_strong
 #-Average
-execute if score #vanench game.Opts matches 0 if score #teplus.rarity teplus.data matches 2 unless data entity @s Item.tag.Enchantments run item modify entity @s container.0 enchantplus:vanilla_average
+execute if score #vanench game.Opts matches 0 if score #teplus.rarity teplus.data matches 2 unless data entity @s Item.tag.Enchantments[0].id run item modify entity @s container.0 enchantplus:vanilla_average
 #-Low
-execute if score #vanench game.Opts matches 0 if score #teplus.rarity teplus.data matches 1 unless data entity @s Item.tag.Enchantments run item modify entity @s container.0 enchantplus:vanilla_low
+execute if score #vanench game.Opts matches 0 if score #teplus.rarity teplus.data matches 1 unless data entity @s Item.tag.Enchantments[0].id run item modify entity @s container.0 enchantplus:vanilla_low
 #--------------------------------------------------------------#
 #In case "enchant with vanilla" is disabled, add enchantment Glint to it
 execute if score #vanench game.Opts matches 1 run data modify entity @s Item.tag.Enchantments set value [{}]

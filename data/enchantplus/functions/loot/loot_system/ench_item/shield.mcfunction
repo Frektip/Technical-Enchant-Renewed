@@ -7,11 +7,11 @@ execute if score #vanench game.Opts matches 1 run tellraw @a[tag=teplus.pydbgm] 
 #Add normal vanilla enchantments to this item based
 # on the Enchanting Tier
 #-Strong
-execute if score #vanench game.Opts matches 0 if score #teplus.rarity teplus.data matches 3 unless data entity @s Item.tag.Enchantments if predicate enchantplus:random_chance/30 run item modify entity @s container.0 enchantplus:shield_strong
+execute if score #vanench game.Opts matches 0 if score #teplus.rarity teplus.data matches 3 unless data entity @s Item.tag.Enchantments[0].id if predicate enchantplus:random_chance/30 run item modify entity @s container.0 enchantplus:shield_strong
 #-Average
-execute if score #vanench game.Opts matches 0 if score #teplus.rarity teplus.data matches 2 unless data entity @s Item.tag.Enchantments if predicate enchantplus:random_chance/30 run item modify entity @s container.0 enchantplus:shield_average
+execute if score #vanench game.Opts matches 0 if score #teplus.rarity teplus.data matches 2 unless data entity @s Item.tag.Enchantments[0].id if predicate enchantplus:random_chance/30 run item modify entity @s container.0 enchantplus:shield_average
 #-Low
-execute if score #vanench game.Opts matches 0 if score #teplus.rarity teplus.data matches 1 unless data entity @s Item.tag.Enchantments if predicate enchantplus:random_chance/30 run data modify entity @s Item.tag.Enchantments append value {id:"minecraft:unbreaking",lvl:1s}
+execute if score #vanench game.Opts matches 0 if score #teplus.rarity teplus.data matches 1 unless data entity @s Item.tag.Enchantments[0].id if predicate enchantplus:random_chance/30 run data modify entity @s Item.tag.Enchantments append value {id:"minecraft:unbreaking",lvl:1s}
 
 #In case it doesn't have any Vanilla Enchantments, add enchanting glint to this item
 execute if score #vanench game.Opts matches 0 unless data entity @s Item.tag.Enchantments run data modify entity @s Item.tag.Enchantments set value [{}]
