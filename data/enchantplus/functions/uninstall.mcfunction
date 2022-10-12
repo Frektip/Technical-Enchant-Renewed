@@ -176,7 +176,7 @@ tellraw @a ["",{"text":" \u0020[","color":"gold"},{"text":"Technical Enchant+","
 playsound block.note_block.hat player @a ~ ~ ~ 2 0.5 
 
 #acutally disable the pack xd
-datapack disable "file/technical-enchant-v7-2-1.zip"
+datapack disable "file/technical-enchant-v7-2-2.zip"
 
 #Remove player tags, just in case
 tag @a remove teplus.uuid
