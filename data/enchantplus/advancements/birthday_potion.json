@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "enchantplus:potion_consumed"
+    "function": "enchantplus:result/birthday/potion_consumed"
   }
 }
