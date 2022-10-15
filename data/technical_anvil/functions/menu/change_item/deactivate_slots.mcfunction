@@ -18,6 +18,6 @@ data modify entity @s Items[{Slot:13b}].tag.SectionChange2 set from storage tepl
 
 tag @s add Error1
 data remove entity @s Items[{Slot:22b}]
-data modify entity @s Items prepend value {Slot: 22b, id: "structure_void", Count:1b, tag: {Teplus:{ui:1b},CustomModelData:70139, display: {Lore:['{"translate":"You cannot combine those items!","color":"gray","italic":false}'],Name: '{"translate":"Error!","color":"red","italic":false}'}}}
+data modify entity @s Items prepend value {Slot: 22b, id: "structure_void", Count:1b, tag: {Teplus:{ui:1b},CustomModelData:7340003, display: {Lore:['{"translate":"You cannot combine those items!","color":"gray","italic":false}'],Name: '{"translate":"Error!","color":"red","italic":false}'}}}
 data remove storage teplus:item_lore CurrentLore
 #------------------------------------------#

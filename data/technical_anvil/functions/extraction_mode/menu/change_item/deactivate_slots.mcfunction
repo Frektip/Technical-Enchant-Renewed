@@ -16,8 +16,8 @@ data modify entity @s Items[{Slot:22b}].tag.SectionChange2 set from storage tepl
 
 tag @s add Error1
 data remove entity @s Items[{Slot:13b}]
-execute if score #extrmd game.Opts matches 0 run data modify entity @s Items prepend value {Slot: 13b, id: "structure_void", Count:1b, tag: {Teplus:{ui:1b},CustomModelData:70139, display: {Lore:['{"translate":"You can not extract enchantments from those items!","color":"gray","italic":false}'],Name: '{"translate":"Error!","color":"red","italic":false}'}}}
-execute if score #extrmd game.Opts matches 1 run data modify entity @s Items prepend value {Slot: 13b, id: "structure_void", Count:1b, tag: {Teplus:{ui:1b},CustomModelData:70139, display: {Lore:['{"translate":"This feature is currently disabled!","color":"gray","italic":false}'],Name: '{"translate":"Error!","color":"red","italic":false}'}}}
+execute if score #extrmd game.Opts matches 0 run data modify entity @s Items prepend value {Slot: 13b, id: "structure_void", Count:1b, tag: {Teplus:{ui:1b},CustomModelData:7340003, display: {Lore:['{"translate":"You can not extract enchantments from those items!","color":"gray","italic":false}'],Name: '{"translate":"Error!","color":"red","italic":false}'}}}
+execute if score #extrmd game.Opts matches 1 run data modify entity @s Items prepend value {Slot: 13b, id: "structure_void", Count:1b, tag: {Teplus:{ui:1b},CustomModelData:7340003, display: {Lore:['{"translate":"This feature is currently disabled!","color":"gray","italic":false}'],Name: '{"translate":"Error!","color":"red","italic":false}'}}}
 data remove storage teplus:item_lore ExtractLore
 data remove storage teplus:tech_extract ResultItem
 #------------------------------------------#
