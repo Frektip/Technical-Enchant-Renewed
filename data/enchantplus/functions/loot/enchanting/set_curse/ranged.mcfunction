@@ -5,7 +5,7 @@ scoreboard players set #enchant.rarity teplus.data -1
 
 #Prepare the storage that will select the curses
 # Addon support
-function #enchantplus:enchanting/apply_curse/armor
+function #enchantplus:enchanting/apply_curse/ranged
 
 #Copy into a CTemp storage the curses available
 data modify storage teplus:loot CTemp set from storage teplus:loot Curses

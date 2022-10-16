@@ -3,3 +3,4 @@
 schedule clear enchantplus:entity/armor_stand/speed_animation
 scoreboard players reset #Lspn.Duration tep.spd_animt
 tag @e[type=armor_stand,tag=speed_enchanted] remove speed_enchanted
+tag @e[type=marker,tag=speed_enchanted] remove speed_enchanted

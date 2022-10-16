@@ -1,5 +1,7 @@
 ### Debug Message ###
 tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Enchanting★): ","color":"#24E3F9","italic":true,"bold":false},{"text":"Bad luck! Adding a custom curse","color":"#EE639C","italic":true,"bold":false}]
+#Set the rarity for the charged bookshelf
+scoreboard players set #enchant.rarity teplus.data -1
 
 #Prepare the storage that will select the curses
 # Addon support

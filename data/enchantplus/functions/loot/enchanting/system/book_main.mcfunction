@@ -25,10 +25,13 @@ function enchantplus:loot/enchanting/system/loop_ench
 #Add the nbt tag nchant the item based on Temp Storage
 data modify entity @s Item.tag.StoredCustomEnchantments append from storage teplus:loot Temp[0]
 
+#A function to set the rarity of the enchantment (Visual)
+function enchantplus:loot/enchanting/rarity
 
 #Clear the storages
 data remove storage teplus:loot Enchantments
 data remove storage teplus:loot Temp
+data remove storage teplus:loot Rarity
 
 #Add another enchantment again acording the enchanting setup
 #Kept it at 3 or 2 enchantments maximum

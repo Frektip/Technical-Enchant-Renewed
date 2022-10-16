@@ -1,5 +1,5 @@
 #Datapack Version
-scoreboard players set #teplus.version load.status 722
+scoreboard players set #teplus.version load.status 723
 
 #Load constants
 scoreboard objectives add teplus.data dummy
@@ -14,6 +14,7 @@ scoreboard objectives add teplus.diench dummy
 scoreboard objectives add tep.CbBf.qnty dummy
 scoreboard objectives add tep.CbBf.animt dummy
 scoreboard objectives add tep.spd_animt dummy
+scoreboard objectives add tep.hover dummy
 
 #Bow and crossbow enchantments system
 scoreboard objectives add UUID0 dummy 

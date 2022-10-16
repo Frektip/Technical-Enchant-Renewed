@@ -83,6 +83,7 @@ scoreboard objectives remove tep.count
 scoreboard objectives remove tep.horse
 scoreboard objectives remove tep.CbBf.qnty
 scoreboard objectives remove tep.spd_animt
+scoreboard objectives remove tep.hover
 scoreboard objectives remove tep.avl
 scoreboard objectives remove TCHA.Value
 scoreboard objectives remove TCHA.plxp
@@ -173,10 +174,7 @@ kill @e[type=item,nbt={Item:{tag:{Teplus:{ui:1b}}}}]
 
 #Uninstall message 
 tellraw @a ["",{"text":" \u0020[","color":"gold"},{"text":"Technical Enchant+","color":"aqua"},{"text":"]","color":"gold"},{"translate":" has been","color":"#B23735"},{"translate":" uninstalled","bold":true,"color":"dark_red"},{"translate":" successfully.","color":"#B23735"},{"text":"\n"},{"translate":"Be sure to remove it from your datapack folder!","color":"gold"},{"text":"\n"},{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}] 
-playsound block.note_block.hat player @a ~ ~ ~ 2 0.5 
-
-#acutally disable the pack xd
-datapack disable "file/technical-enchant-v7-2-2.zip"
+playsound block.note_block.hat player @a ~ ~ ~ 2 0.5
 
 #Remove player tags, just in case
 tag @a remove teplus.uuid
