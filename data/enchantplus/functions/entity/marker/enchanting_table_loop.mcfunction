@@ -1,7 +1,6 @@
 #Store the number of charged bookshelf if it detects any nearby
 #The area is 2 and 3, so the bookshelfs must need to be one block away from the
 # enchanting table
-scoreboard players set @s tep.CbBf.qnty 0
 execute store result score @s tep.CbBf.qnty if entity @e[tag=teplus.charged_bookshelf,distance=2..5]
 
 #Add a tag per each enchanting tier
