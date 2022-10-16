@@ -1,6 +1,6 @@
 tellraw @s {"text":"\n"} 
 tellraw @s {"text":"                                                                                ","color":"#67DE83","strikethrough":true} 
-tellraw @s ["",{"translate":"                        EXTENTIONS MANAGER","color":"#47EFAD"}] 
+tellraw @s ["",{"translate":"                        EXTENSIONS MANAGER","color":"#47EFAD"}] 
 tellraw @s {"text":"                                                                                ","color":"#67DE83","strikethrough":true}
 tellraw @s ["",{"translate":"Select a category:","color":"#CDEADF","bold":true},{"text":"\n"}]
 
