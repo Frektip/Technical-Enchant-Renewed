@@ -15,4 +15,7 @@ execute if score #hardblock teplus.data matches 0 unless block ~ ~ ~ #enchantplu
 #Detect autosmelt
 execute if score #autsml Enchopts matches 0 if entity @e[tag=teplus.item_smelt,distance=..2] as @e[type=item,distance=...5,nbt={Age:0s}] run function enchantplus:result/autosmelt
 
+#Tag the generated items (so they don't count for other interactions)
+tag @e[type=item,tag=!teplus.ench_block,distance=...5,nbt={Age:0s}] add teplus.ench_block
+
 kill @s

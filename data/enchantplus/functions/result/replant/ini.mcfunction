@@ -1,2 +1,5 @@
-execute unless entity @s[nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"Scyther"}]}}}] run function enchantplus:result/replant/only_replant
-execute if entity @s[nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"Scyther"}]}}}] run function enchantplus:result/replant/wscyther
+execute as @e[type=item,distance=..7,nbt={Age:0s,Item:{id:"minecraft:potato"}}] at @s run function enchantplus:result/replant/potato 
+execute as @e[type=item,distance=..7,nbt={Age:0s,Item:{id:"minecraft:carrot"}}] at @s run function enchantplus:result/replant/carrot 
+execute as @e[type=item,distance=..7,nbt={Age:0s,Item:{id:"minecraft:beetroot_seeds"}}] at @s run function enchantplus:result/replant/beetroot 
+execute as @e[type=item,distance=..7,nbt={Age:0s,Item:{id:"minecraft:wheat_seeds"}}] at @s run function enchantplus:result/replant/wheat 
+execute as @e[type=item,distance=..7,nbt={Age:0s,Item:{id:"minecraft:nether_wart"}}] at @s run function enchantplus:result/replant/wart 

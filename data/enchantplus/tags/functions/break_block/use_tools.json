@@ -1,5 +1,5 @@
 {
     "values": [
-        {"id":"enchantplus:entity/player/break_scores", "required":false}
+        {"id":"enchantplus:entity/player/when_mined_block/check_scores", "required":false}
     ]
 }

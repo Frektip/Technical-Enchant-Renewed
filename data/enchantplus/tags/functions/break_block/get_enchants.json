@@ -1,5 +1,5 @@
 {
     "values": [
-        {"id":"enchantplus:entity/player/get_enchants", "required":false}
+        {"id":"enchantplus:entity/player/when_mined_block/get_enchants", "required":false}
     ]
 }

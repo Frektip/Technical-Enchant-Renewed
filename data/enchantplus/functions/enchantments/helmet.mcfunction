@@ -1,4 +1,4 @@
 execute if score #brvis Enchopts matches 0 as @s[nbt={Inventory:[{Slot:103b,tag:{CustomEnchantments:[{id:"BrightVision",lvl:1}]}}]}] run effect give @s night_vision 15 0 true
 execute if score #tmbrk Enchopts matches 0 as @s[nbt={Inventory:[{Slot:103b,tag:{CustomEnchantments:[{id:"TimeBreaker"}]}}]}] at @s run function enchantplus:result/time_breaker/init
 execute if score #antexp Enchopts matches 0 as @s[nbt={Inventory:[{Slot:103b,tag:{CustomEnchantments:[{id:"AntiExplosion",lvl:1}]}}]}] at @s run function enchantplus:result/anti-explosion
-execute if score #mgnt Enchopts matches 0 as @s[nbt={Inventory:[{Slot:103b,tag:{CustomEnchantments:[{id:"Magnet",lvl:1}]}}]}] at @s run tp @e[type=item,distance=..7,nbt=!{Age:0s},nbt=!{Age:1s}] @s
+execute if score #mgnt Enchopts matches 0 as @s[nbt={Inventory:[{Slot:103b,tag:{CustomEnchantments:[{id:"Magnet",lvl:1}]}}]}] at @s run tp @e[type=item,distance=..7,nbt=!{Age:0s}] @s
