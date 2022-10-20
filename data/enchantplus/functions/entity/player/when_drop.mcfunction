@@ -2,7 +2,7 @@
 #Separated from the rest due to some things:
 # -Tell the difference between Custom and Vanilla enchantments
 # -Not remove Custom and Vanilla curses
-execute if score #diench game.Opts matches 0 as @e[type=item,distance=..3,nbt={Item:{tag:{CustomEnchantments:[{}]}}},limit=1] at @s if block ~ ~-1 ~ grindstone run function enchantplus:disenchant/core
+execute if score #diench game.Opts matches 0 as @e[type=item,distance=..3,limit=1] at @s if block ~ ~-1 ~ grindstone run function enchantplus:disenchant/core
 ##-----#-----#-----#-----#-----#-----#-----#-----#-----#-----#-----#-----#-----#-----#-----#
 #Get the Guide Book
 execute as @e[nbt={Item:{id:"minecraft:writable_book"}},sort=nearest,limit=1] at @s if block ~ ~-.5 ~ enchanting_table run function enchantplus:give/guide_book

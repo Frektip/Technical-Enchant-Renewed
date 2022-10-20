@@ -1,7 +1,0 @@
-### Debug Message ###
-execute if data storage teplus:diench VanillaEnch[{id:"minecraft:vanishing_curse"}] run tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Disenchant): ","color":"light_purple","bold":false},{"text":"Vanilla curses detected! ","color":"red","italic":true,"bold":false},{"text":"adding them again","color":"gray","italic":true,"bold":false}]
-execute if data storage teplus:diench VanillaEnch[{id:"minecraft:binding_curse"}] run tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Disenchant): ","color":"light_purple","bold":false},{"text":"Vanilla curses detected! ","color":"red","italic":true,"bold":false},{"text":"adding them again","color":"gray","italic":true,"bold":false}]
-
-# Check from the storage if the item had curses and add them if it's true
-execute if data storage teplus:diench VanillaEnch[{id:"minecraft:vanishing_curse"}] run data modify entity @s Item.tag.Enchantments append value {id:"minecraft:vanishing_curse",lvl:1s}
-execute if data storage teplus:diench VanillaEnch[{id:"minecraft:binding_curse"}] run data modify entity @s Item.tag.Enchantments append value {id:"minecraft:binding_curse",lvl:1s}
