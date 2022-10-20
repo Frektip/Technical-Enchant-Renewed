@@ -23,7 +23,7 @@ tag @s add teplus.loot_1ench
 execute if data entity @s Item.tag.StoredCustomEnchantments[1] run tag @s remove teplus.loot_1ench
 execute if data entity @s Item.tag.StoredCustomEnchantments if data entity @s Item.tag.StoredCustomCurse run tag @s remove teplus.loot_1ench
 
-function #enchantplus:set_lore_book
+function enchantplus:loot/set_lore/book
 #---------------------------------------------------#
 ##==================================================================##
 

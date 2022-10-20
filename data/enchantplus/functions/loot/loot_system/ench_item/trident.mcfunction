@@ -31,13 +31,13 @@ execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:rand
 
 #------------------Set new attributes (Attack Speed)------------------#
 #If it has Attack Speed add default attributes
-execute if data entity @s Item.tag.CustomEnchantments[{id:"AttackSpeed"}] run function #enchantplus:enchanting/set_attributes/attack_speed
+execute if entity @s[nbt={Item:{tag:{CustomEnchantments:[{id:"AttackSpeed"}]}}}] run function #enchantplus:enchanting/set_attributes/attack_speed
 #In case it has sharpness enchantment
-execute if data entity @s Item.tag.Enchantments[{id:"minecraft:sharpness"}] run function enchantplus:loot/loot_system/sharpness_damage
+execute if data entity @s[nbt={Item:{tag:{CustomEnchantments:[{id:"AttackSpeed"}]}}}] Item.tag.Enchantments[{id:"minecraft:sharpness"}] run function enchantplus:loot/loot_system/sharpness_damage
 
 
 #Set new Lore
-function #enchantplus:set_lore_item
+function enchantplus:loot/set_lore/items
 ##==================================================================##
 
 #In case all fails: No Custom Enchantments, Curses and Vanilla enchantaments

@@ -1,2 +1,0 @@
-data modify entity @s Items[{Slot:13b}].tag.display.Lore insert 0 value "[{\"text\":\"<≈≈| \",\"color\":\"dark_aqua\",\"bold\":true,\"italic\":false},{\"translate\":\"Splatter I\",\"color\":\"aqua\",\"bold\":false,\"italic\":false},{\"text\":\" |≈≈>\",\"color\":\"dark_aqua\",\"bold\":true,\"italic\":false}]"
-data modify entity @s Items[{Slot:13b}].tag.display.Lore append value "{\"translate\":\"► Fishing Rod\",\"color\":\"green\"}"

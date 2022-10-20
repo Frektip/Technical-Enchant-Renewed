@@ -1,0 +1,53 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "Time Breaker",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "nbt": "Level",
+          "storage": "teplus:item_lore",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        [
+          {
+            "text": "► ",
+            "color": "blue"
+          },
+          {
+            "translate": "Helmet",
+            "color": "blue"
+          }
+        ]
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"teplus.loot_1ench\"]}"
+        }
+      }
+    ]
+  }
+]

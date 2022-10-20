@@ -7,7 +7,9 @@ tag @s remove Error2
 data modify storage teplus:tech_extract ResultItem.tag.Teplus.ui set value 1b
 data modify entity @s Items[{Slot:13b}] set from storage teplus:tech_extract ResultItem
 #---------------UPDATE LORE----------------#
-function #technical_anvil:extraction_mode/edit_books_lore
+# Only for Custom Enchanted books
+data modify storage teplus:item_lore TempEnch set value []
+execute unless data storage teplus:tech_extract ResultItem.tag.StoredEnchantments run function technical_anvil:extraction_mode/edit_lore/books
 
 #------------UPDATE OTHER ITEM-------------#
 data modify storage teplus:tech_extract SectionChange1 set from entity @s Items[{Slot:22b}].tag.SectionChange1

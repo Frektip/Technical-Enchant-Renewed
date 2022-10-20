@@ -1,0 +1,107 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "Splatter",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "nbt": "Level",
+          "storage": "teplus:item_lore",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"at_item\"]}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "<≈≈| ",
+          "color": "dark_aqua",
+          "bold": true,
+          "italic": false
+        },
+        {
+          "translate": "Splatter",
+          "color": "aqua",
+          "bold": false,
+          "italic": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "nbt": "Level",
+          "storage": "teplus:item_lore",
+          "color": "dark_purple",
+          "italic": false
+        },
+        {
+          "text": " |≈≈>",
+          "color": "dark_aqua",
+          "bold": true,
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"at_book\"]}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        [
+          {
+            "text": "► ",
+            "color": "green"
+          },
+          {
+            "translate": "item.minecraft.fishing_rod",
+            "color": "green"
+          }
+        ]
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"teplus.loot_1ench\"]}"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "Curse of Sensitive",
+          "color": "#FF4099",
+          "italic": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "nbt": "Level",
+          "storage": "teplus:item_lore",
+          "color": "#FF4099",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        [
+          {
+            "text": "► ",
+            "color": "white"
+          },
+          {
+            "translate": "Armor",
+            "color": "white"
+          },
+          {
+            "text": " - ",
+            "color": "white"
+          },
+          {
+            "translate": "item.minecraft.elytra",
+            "color": "white"
+          },
+          {
+            "text": " - ",
+            "color": "white"
+          },
+          {
+            "translate": "item.minecraft.shield",
+            "color": "white"
+          }
+        ]
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"teplus.loot_1ench\"]}"
+        }
+      }
+    ]
+  }
+]

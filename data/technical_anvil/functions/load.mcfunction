@@ -16,6 +16,14 @@ scoreboard objectives add teplus.vgmrl dummy
 scoreboard objectives add teplus.antkbk dummy
 scoreboard objectives add teplus.hrds dummy
 
+scoreboard objectives add teplus.lore dummy
+scoreboard objectives add teplus.cslore dummy
+
+scoreboard objectives add teplus.cencnt dummy
+scoreboard objectives add teplus.tmplvl dummy
+
+scoreboard objectives add teplus.single dummy
+
 #Run other important functions
 function technical_anvil:prepare_ui
 function technical_anvil:main

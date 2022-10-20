@@ -30,7 +30,7 @@ function enchantplus:loot/enchanting/check_type
 execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:random_chance/10 run function enchantplus:loot/enchanting/set_curse/axe
 
 #Set new Lore
-function #enchantplus:set_lore_item
+function enchantplus:loot/set_lore/items
 ##==================================================================##
 
 #In case all fails: No Custom Enchantments, Curses and Vanilla enchantaments

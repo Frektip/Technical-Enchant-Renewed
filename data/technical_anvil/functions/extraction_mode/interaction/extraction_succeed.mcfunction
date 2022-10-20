@@ -28,7 +28,7 @@ execute unless data entity @s Items[{Slot:10b}].tag.CustomEnchantments[0] unless
 execute unless data entity @s Items[{Slot:10b}].tag.CustomEnchantments[0] unless data entity @s Items[{Slot:10b}].tag.Enchantments[0].lvl if data entity @s Items[{Slot:10b}].tag.CustomCurse run data modify entity @s Items[{Slot:10b}].tag.Enchantments set value [{}]
 
 # -Update properly the lore
-function technical_anvil:extraction_mode/edit_input_item_lore
+function technical_anvil:extraction_mode/edit_lore/input_item
 
 #Remove 1 single book from the chest minecart
 ###Debug Message###

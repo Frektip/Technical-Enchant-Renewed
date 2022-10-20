@@ -32,6 +32,11 @@ data remove storage teplus:tech_extract SectionChange1
 data remove storage teplus:tech_extract SectionChange2
 data remove storage teplus:tech_extract FromItem
 
+data remove storage teplus:item_lore CurrentLore
+data remove storage teplus:item_lore First
+data remove storage teplus:item_lore TempEnch
+data remove storage teplus:item_lore Level
+
 #remove scoreboards
 scoreboard objectives remove teplus.diench
 scoreboard objectives remove Drop
@@ -155,6 +160,11 @@ scoreboard objectives remove TCHA.Section2
 scoreboard objectives remove teplus.vgmrl
 scoreboard objectives remove teplus.antkbk
 scoreboard objectives remove teplus.hrds
+scoreboard objectives remove teplus.lore
+scoreboard objectives remove teplus.cslore
+scoreboard objectives remove teplus.cencnt
+scoreboard objectives remove teplus.tmplvl
+scoreboard objectives remove teplus.single
 
 #I don't remove scoreboards related to Lantern Load or Iris because they may be used
 # alongside with other datapacks. In that case they should do a reload, but meh, I

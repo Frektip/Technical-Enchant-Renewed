@@ -1,0 +1,53 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "Explosive",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "nbt": "Level",
+          "storage": "teplus:item_lore",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        [
+          {
+            "text": "► ",
+            "color": "red"
+          },
+          {
+            "translate": "item.minecraft.bow",
+            "color": "red"
+          }
+        ]
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"teplus.loot_1ench\"]}"
+        }
+      }
+    ]
+  }
+]

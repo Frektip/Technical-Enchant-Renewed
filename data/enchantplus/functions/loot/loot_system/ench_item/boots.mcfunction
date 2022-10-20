@@ -30,10 +30,10 @@ function enchantplus:loot/enchanting/check_type
 execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:random_chance/10 run function enchantplus:loot/enchanting/set_curse/armor
 
 #Set new attributes (Agility)
-execute if data entity @s Item.tag.CustomEnchantments[{id:"Agility"}] run function #enchantplus:enchanting/set_attributes/agility
+execute if entity @s[nbt={Item:{tag:{CustomEnchantments:[{id:"Agility"}]}}}] run function #enchantplus:enchanting/set_attributes/agility
 
 #Set new Lore
-function #enchantplus:set_lore_item
+function enchantplus:loot/set_lore/items
 ##==================================================================##
 
 #In case all fails: No Custom Enchantments, Curses and Vanilla enchantaments

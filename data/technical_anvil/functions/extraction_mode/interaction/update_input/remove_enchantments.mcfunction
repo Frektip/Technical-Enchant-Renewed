@@ -1,8 +1,8 @@
 #Check only for bow input
-execute if data entity @s {Items:[{Slot:10b,id:"minecraft:bow"}]} run function technical_anvil:extraction_mode/interaction/update_input/bowcross_check
+execute if data entity @s {Items:[{Slot:10b,id:"minecraft:bow"}]} run function #technical_anvil:extraction_mode/bowcross_check
 
 #Check only for crossbow input
-execute if data entity @s {Items:[{Slot:10b,id:"minecraft:crossbow"}]} run function technical_anvil:extraction_mode/interaction/update_input/bowcross_check
+execute if data entity @s {Items:[{Slot:10b,id:"minecraft:crossbow"}]} run function #technical_anvil:extraction_mode/bowcross_check
 
 #Check only for shield input
 execute if data entity @s {Items:[{Slot:10b,id:"minecraft:shield"}]} run function technical_anvil:extraction_mode/interaction/update_input/shield_check

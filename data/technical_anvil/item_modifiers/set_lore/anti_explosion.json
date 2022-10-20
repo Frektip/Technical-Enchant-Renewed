@@ -1,0 +1,85 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "Anti-Explosion",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "nbt": "Level",
+          "storage": "teplus:item_lore",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        [
+          {
+            "text": "► ",
+            "color": "red"
+          },
+          {
+            "translate": "Sword",
+            "color": "red"
+          },
+          {
+            "text": "-",
+            "color": "red"
+          },
+          {
+            "translate": "item.minecraft.bow",
+            "color": "red"
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "text": "► ",
+            "color": "blue"
+          },
+          {
+            "translate": "Helmet",
+            "color": "blue"
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "text": "► ",
+            "color": "green"
+          },
+          {
+            "translate": "Horse Armor",
+            "color": "green"
+          }
+        ]
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"teplus.loot_1ench\"]}"
+        }
+      }
+    ]
+  }
+]
