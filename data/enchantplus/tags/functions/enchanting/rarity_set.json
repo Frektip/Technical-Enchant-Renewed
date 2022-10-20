@@ -1,5 +1,5 @@
 {
     "values": [
-        {"id":"", "required":false}
+        {"id":"enchantplus:loot/enchanting/rarity", "required":false}
     ]
 }

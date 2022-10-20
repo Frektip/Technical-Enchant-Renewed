@@ -58,6 +58,3 @@ execute if data storage teplus:loot Rarity[{id:"TurtleStiffness"}] run scoreboar
 execute if data storage teplus:loot Rarity[{id:"VeinMiner"}] run scoreboard players set #enchant.rarity teplus.data 3
 execute if data storage teplus:loot Rarity[{id:"Waterjet"}] run scoreboard players set #enchant.rarity teplus.data 3
 execute if data storage teplus:loot Rarity[{id:"XpBoost"}] run scoreboard players set #enchant.rarity teplus.data 3
-
-#Addon support
-function #enchantplus:enchanting/rarity_set

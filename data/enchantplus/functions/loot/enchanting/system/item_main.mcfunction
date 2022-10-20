@@ -27,7 +27,7 @@ function enchantplus:loot/enchanting/system/loop_ench
 data modify entity @s Item.tag.CustomEnchantments append from storage teplus:loot Temp[0]
 
 #A function to set the rarity of the enchantment (Visual)
-function enchantplus:loot/enchanting/rarity
+function #enchantplus:enchanting/rarity_set
 
 #Clear the storages
 data remove storage teplus:loot Enchantments
