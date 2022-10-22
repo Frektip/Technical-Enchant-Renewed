@@ -165,6 +165,7 @@ scoreboard objectives remove teplus.cslore
 scoreboard objectives remove teplus.cencnt
 scoreboard objectives remove teplus.tmplvl
 scoreboard objectives remove teplus.single
+scoreboard objectives remove teplus.maxlvl
 
 #I don't remove scoreboards related to Lantern Load or Iris because they may be used
 # alongside with other datapacks. In that case they should do a reload, but meh, I

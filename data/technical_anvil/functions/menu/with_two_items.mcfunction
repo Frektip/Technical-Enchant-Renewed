@@ -17,7 +17,6 @@ tag @s add InSlot2
 #In case we used exceed vanilla enchanting limit
 # -We succeeded, so we remove the tags from the books
 tag @s remove tech_anv.match_exceed
-#In case we merge item with item we need to remove this tag
-tag @s remove Is.same_item
+
 function technical_anvil:interaction/create_item
 #------------------------------------------#

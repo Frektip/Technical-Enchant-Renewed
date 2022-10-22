@@ -3,9 +3,9 @@ data merge storage teplus:tech_anvil.ui {ResultItem:{Slot:22b,id:"minecraft:air"
 data modify storage teplus:tech_anvil.ui ResultItem.id set from storage teplus:tech_anvil.ui CurrentItems[{Slot:2b}].id
 data modify storage teplus:tech_anvil.ui ResultItem.tag set from storage teplus:tech_anvil.ui CurrentItems[{Slot:2b}].tag
 #-------CHECK WHAT ITEMS ARE COMBINED------#
-function #technical_anvil:interaction/check_item_with_book
-function #technical_anvil:interaction/check_item_with_item
-function technical_anvil:interaction/item_check/book_with_book
+execute if entity @s[tag=!Is.same_item,nbt=!{Items:[{Slot:2b,id:"minecraft:enchanted_book"}]}] run function #technical_anvil:interaction/check_item_with_book
+execute if entity @s[tag=Is.same_item] run function #technical_anvil:interaction/check_item_with_item
+execute if entity @s[nbt={Items:[{Slot:2b,id:"minecraft:enchanted_book"}]}] run function technical_anvil:interaction/item_check/book_with_book
 
 ##------------DETECTING WHAT COMBINATION HAS BEEN DONDE-------------##
 #-------BOOK WITH BOOK-------#
@@ -44,10 +44,18 @@ execute if entity @s[tag=ComError] run function technical_anvil:interaction/crea
 #--------REMOVE TAGS--------#
 tag @s remove ComError
 
+#For books when detect a custom curse, custom enchantment
+# or exceeded vanilla enchantment
 tag @s remove CurseApply
 tag @s remove CEnchApply
 tag @s remove VEPApply
 
+#For items
 tag @s remove CEitm
 
-tag @s remove TCHA.ItwIt
+#If the output is an item or an enchanted book
+tag @s remove TCHA.inpbk
+tag @s remove TCHA.inpit
+
+#In case we merge item with the same item type
+tag @s remove Is.same_item

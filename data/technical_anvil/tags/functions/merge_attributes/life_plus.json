@@ -1,5 +1,5 @@
 {
     "values": [
-        {"id":"technical_anvil:interaction/merge/enchanted_items/extra_step/life_plus_type", "required":false}
+        {"id":"technical_anvil:interaction/merge/apply_enchantments/extra_step/life_plus_type", "required":false}
     ]
 }

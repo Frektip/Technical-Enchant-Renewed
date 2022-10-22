@@ -1,3 +1,6 @@
+#Add a tag as an input item
+tag @s add TCHA.inpit
+
 #Copy the custom enchantments from the book into a storage:
 function technical_anvil:interaction/item_check/find_enchantments
 

@@ -134,6 +134,7 @@ scoreboard players enable @a[tag=teplus.pydbgm] TellrawEnch
 #Settings scoreboards
 scoreboard objectives add game.Opts dummy 
 scoreboard objectives add Enchopts dummy 
+scoreboard objectives add teplus.maxlvl dummy 
 
 #When creating a world for the first time,
 # set the options (default options)
