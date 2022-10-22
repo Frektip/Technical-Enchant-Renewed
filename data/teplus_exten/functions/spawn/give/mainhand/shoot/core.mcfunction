@@ -6,7 +6,7 @@ execute if entity @s[type=#teplus_exten:spawn/bow_only] run function teplus_exte
 data modify entity @s HandItems[0].tag.CustomArrow set value 1
 
 #Set Lore
-function teplus_exten:spawn/give/mainhand/set_lore
+function teplus_exten:spawn/give/mainhand/set_lore/init
 
 #Set drop chances
 execute if score #spwdrop_mnh tepext.manager matches 0.. store result entity @s HandDropChances[0] float 0.01 run scoreboard players get #spwdrop_mnh tepext.manager

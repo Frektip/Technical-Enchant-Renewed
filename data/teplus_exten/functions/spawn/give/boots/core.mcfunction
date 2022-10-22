@@ -15,7 +15,7 @@ data modify entity @s ArmorItems[0].tag.CustomEnchantments set from storage teps
 data remove storage tepspw:ench CustomEnchantments
 
 #Set Lore
-function teplus_exten:spawn/give/boots/set_lore
+function teplus_exten:spawn/give/boots/set_lore/init
 
 #Set drop chances
 execute if score #spwdrop_feet tepext.manager matches 0.. store result entity @s ArmorDropChances[0] float 0.01 run scoreboard players get #spwdrop_feet tepext.manager

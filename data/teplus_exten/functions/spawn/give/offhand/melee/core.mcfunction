@@ -3,7 +3,7 @@ execute if entity @s[type=drowned] run function teplus_exten:spawn/give/offhand/
 execute unless entity @s[type=drowned] run function teplus_exten:spawn/give/offhand/melee/other
 
 #Set Lore
-function teplus_exten:spawn/give/offhand/set_lore
+function teplus_exten:spawn/give/offhand/set_lore/init
 
 #Set drop chances
 execute if score #spwdrop_ofh tepext.manager matches 0.. store result entity @s HandDropChances[1] float 0.01 run scoreboard players get #spwdrop_ofh tepext.manager
