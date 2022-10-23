@@ -24,10 +24,10 @@ execute if score #vanench game.Opts matches 1 run data modify entity @s Item.tag
 tag @s add teplus.loot_hoe
 
 #Set CustomEnchantments[{}] nbt
-function enchantplus:loot/enchanting/check_type
+function enchantplus:loot/enchanting/set_ench/core
 
 #Small chance to add a custom Curse
-execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:random_chance/10 run function enchantplus:loot/enchanting/set_curse/tools
+execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:random_chance/10 run function enchantplus:loot/enchanting/set_curse/prepare
 
 #Set new Lore
 function enchantplus:loot/set_lore/items

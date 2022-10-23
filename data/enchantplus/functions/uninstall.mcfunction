@@ -37,6 +37,9 @@ data remove storage teplus:item_lore First
 data remove storage teplus:item_lore TempEnch
 data remove storage teplus:item_lore Level
 
+data remove storage teplus:loot Copy
+data remove storage teplus:loot Build
+
 #remove scoreboards
 scoreboard objectives remove teplus.diench
 scoreboard objectives remove Drop

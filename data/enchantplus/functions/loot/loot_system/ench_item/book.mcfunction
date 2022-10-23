@@ -7,12 +7,12 @@ tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true
 tag @s add teplus.loot_is_book
 
 #Set StoredCustomEnchantments[{}] nbt
-function enchantplus:loot/enchanting/check_type
+function enchantplus:loot/enchanting/set_ench/core
 #------------------------------------------------------#
 
 #--------Adding Custom Curses to the book--------#
 #5% chance
-execute if predicate enchantplus:random_chance/5 run function enchantplus:loot/enchanting/set_curse/book_only
+execute if predicate enchantplus:random_chance/5 run function enchantplus:loot/enchanting/set_curse/prepare
 #------------------------------------------------#
 
 #------------------Update the Lore------------------

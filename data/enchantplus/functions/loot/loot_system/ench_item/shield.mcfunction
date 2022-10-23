@@ -27,15 +27,15 @@ execute if score #vanench game.Opts matches 1 run data modify entity @s Item.tag
 tag @s add teplus.loot_shield
 
 #Set CustomEnchantments[{}] nbt
-function enchantplus:loot/enchanting/check_type
+function enchantplus:loot/enchanting/set_ench/core
 
 #Small chance to add a custom Curse
-execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:random_chance/10 run function enchantplus:loot/enchanting/set_curse/armor
+execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:random_chance/10 run function enchantplus:loot/enchanting/set_curse/prepare
 
 #Set new attributes (Anti Knockback)
-execute if entity @s[nbt={Item:{tag:{CustomEnchantments:[{id:"AntiKnockback"}]}}}] run function enchantplus:loot/loot_system/attributes/anti_knockback
+execute if entity @s[nbt={Item:{tag:{CustomEnchantments:[{id:"AntiKnockback"}]}}}] run function enchantplus:loot/loot_set_ench/attributes/anti_knockback
 #Set new attributes (Hardness+)
-execute if entity @s[nbt={Item:{tag:{CustomEnchantments:[{id:"HardnessPlus"}]}}}] run function enchantplus:loot/loot_system/attributes/hardness_plus
+execute if entity @s[nbt={Item:{tag:{CustomEnchantments:[{id:"HardnessPlus"}]}}}] run function enchantplus:loot/loot_set_ench/attributes/hardness_plus
 
 #Set new Lore
 function enchantplus:loot/set_lore/items

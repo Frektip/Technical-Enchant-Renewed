@@ -138,7 +138,10 @@ scoreboard objectives add teplus.maxlvl dummy
 
 #When creating a world for the first time,
 # set the options (default options)
-execute unless score #new_world Enchopts matches 1 run function enchantplus:set_options
+execute unless score #new_world Enchopts matches 1 run function enchantplus:set_options/init
+
+#Register the enchantments
+function #enchantplus:register
 
 #Fix bow and crossbow enchantments when unistalling the pack 
 # (idk why this happens but it's a solution anyways)

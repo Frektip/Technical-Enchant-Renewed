@@ -1,0 +1,7 @@
+{
+    "values": [
+        {"id":"enchantplus:set_options/gameplay", "required":false},
+        {"id":"enchantplus:set_options/active", "required":false},
+        {"id":"enchantplus:set_options/max_level", "required":false}
+    ]
+}
