@@ -50,7 +50,7 @@ execute if data storage teplus:item_lore First[{id:"Replant"}] run item modify e
 execute if data storage teplus:item_lore First[{id:"Scyther"}] run item modify entity @s container.13 technical_anvil:set_lore/scyther
 execute if data storage teplus:item_lore First[{id:"Sensitive"}] run item modify entity @s container.13 technical_anvil:set_lore/sensitive
 execute if data storage teplus:item_lore First[{id:"ShockFangs"}] run item modify entity @s container.13 technical_anvil:set_lore/shock_fangs
-execute if data storage teplus:item_lore First[{id:"SkyWlak"}] run item modify entity @s container.13 technical_anvil:set_lore/sky_walk
+execute if data storage teplus:item_lore First[{id:"SkyWalk"}] run item modify entity @s container.13 technical_anvil:set_lore/sky_walk
 execute if data storage teplus:item_lore First[{id:"Slippery"}] run item modify entity @s container.13 technical_anvil:set_lore/slippery
 execute if data storage teplus:item_lore First[{id:"Sniper"}] run item modify entity @s container.13 technical_anvil:set_lore/sniper
 execute if data storage teplus:item_lore First[{id:"SoulReaper"}] run item modify entity @s container.13 technical_anvil:set_lore/soul_reaper

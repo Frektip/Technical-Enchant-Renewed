@@ -7,6 +7,7 @@ execute if score #teplus.rarity teplus.data matches 1.. run data modify storage 
 
 #Remove uneccessary data
 data remove storage teplus:loot Copy[].Sell
+data remove storage teplus:loot Copy[].Structure
 
 #Cicle though the array
 function enchantplus:loot/enchanting/set_ench/loop_build

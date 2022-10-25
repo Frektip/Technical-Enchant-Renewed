@@ -1,35 +1,50 @@
+#Summon a dummy Armor stand
+# This armor stand will generate the book that is going to be added
+# to the chest. The armor stand has different tags:
+#-teplus.loot_gen: main tag to get it
+#-tepxc.strong/average/low: what enchantments it can get from the main list
+#-tepxc.<structure>: tag that will diferentieate the structure type
+
+summon armor_stand ~.5 ~ ~.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,Small:1b,Invisible:1b,Tags:["teplus.loot_gen","tepxc.strong","tepxc.average","tepxc.low","tepxc.ancient_city","tepxc.exclusive"],DisabledSlots:4144959,HandItems:[{id:"minecraft:enchanted_book",Count:1b},{}]}
+
+execute as @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,limit=1] run function teplus_exten:chests/create_loot/define
+
+#Randomly add the book to the chest
 scoreboard players set $min random 0
 scoreboard players set $max random 26
 function enchantplus:random_uniform
 
-#Place a book randomly in the chest
-execute if score $out random matches 0 run loot replace block ~ ~ ~ container.0 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 1 run loot replace block ~ ~ ~ container.1 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 2 run loot replace block ~ ~ ~ container.2 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 3 run loot replace block ~ ~ ~ container.3 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 4 run loot replace block ~ ~ ~ container.4 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 5 run loot replace block ~ ~ ~ container.5 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 6 run loot replace block ~ ~ ~ container.6 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 7 run loot replace block ~ ~ ~ container.7 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 8 run loot replace block ~ ~ ~ container.8 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 9 run loot replace block ~ ~ ~ container.9 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 10 run loot replace block ~ ~ ~ container.10 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 11 run loot replace block ~ ~ ~ container.11 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 12 run loot replace block ~ ~ ~ container.12 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 13 run loot replace block ~ ~ ~ container.13 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 14 run loot replace block ~ ~ ~ container.14 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 15 run loot replace block ~ ~ ~ container.15 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 16 run loot replace block ~ ~ ~ container.16 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 17 run loot replace block ~ ~ ~ container.17 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 18 run loot replace block ~ ~ ~ container.18 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 19 run loot replace block ~ ~ ~ container.19 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 20 run loot replace block ~ ~ ~ container.20 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 21 run loot replace block ~ ~ ~ container.21 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 22 run loot replace block ~ ~ ~ container.22 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 23 run loot replace block ~ ~ ~ container.23 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 24 run loot replace block ~ ~ ~ container.24 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 25 run loot replace block ~ ~ ~ container.25 loot teplus_exten:chests/structure_type/ancient_city
-execute if score $out random matches 26 run loot replace block ~ ~ ~ container.26 loot teplus_exten:chests/structure_type/ancient_city
+execute if score $out random matches 0 run item replace block ~ ~ ~ container.0 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 1 run item replace block ~ ~ ~ container.1 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 2 run item replace block ~ ~ ~ container.2 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 3 run item replace block ~ ~ ~ container.3 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 4 run item replace block ~ ~ ~ container.4 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 5 run item replace block ~ ~ ~ container.5 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 6 run item replace block ~ ~ ~ container.6 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 7 run item replace block ~ ~ ~ container.7 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 8 run item replace block ~ ~ ~ container.8 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 9 run item replace block ~ ~ ~ container.9 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 10 run item replace block ~ ~ ~ container.10 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 11 run item replace block ~ ~ ~ container.11 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 12 run item replace block ~ ~ ~ container.12 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 13 run item replace block ~ ~ ~ container.13 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 14 run item replace block ~ ~ ~ container.14 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 15 run item replace block ~ ~ ~ container.15 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 16 run item replace block ~ ~ ~ container.16 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 17 run item replace block ~ ~ ~ container.17 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 18 run item replace block ~ ~ ~ container.18 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 19 run item replace block ~ ~ ~ container.19 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 20 run item replace block ~ ~ ~ container.20 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 21 run item replace block ~ ~ ~ container.21 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 22 run item replace block ~ ~ ~ container.22 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 23 run item replace block ~ ~ ~ container.23 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 24 run item replace block ~ ~ ~ container.24 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 25 run item replace block ~ ~ ~ container.25 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+execute if score $out random matches 26 run item replace block ~ ~ ~ container.26 from entity @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5,sort=nearest,limit=1] weapon.mainhand
+
+kill @e[type=armor_stand,tag=teplus.loot_gen,distance=..1.5]
 
 #Do repeat it for a second time
-function teplus_exten:chests/insert_book/ancient_city1
+execute if score #chst.snd teplus.data matches 2.. run scoreboard players reset #chst.snd teplus.data
+scoreboard players add #chst.snd teplus.data 1
+execute unless score #chst.snd teplus.data matches 2.. run function teplus_exten:chests/insert_book/ancient_city

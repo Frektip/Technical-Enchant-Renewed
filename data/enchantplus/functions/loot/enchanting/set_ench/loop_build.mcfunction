@@ -3,7 +3,14 @@ data modify storage teplus:loot Build set from storage teplus:loot Copy[0]
 #Detect if the enchantment is enabled
 execute store result score #is_enabled teplus.data run data get storage teplus:loot Build.Enabled
 
-execute if score #is_enabled teplus.data matches 1 run function enchantplus:loot/enchanting/set_ench/failed_conditions
+# IF not, then remove the current "Build" enchantment from the list
+# (skip it)
+execute if score #is_enabled teplus.data matches 1 run data remove storage teplus:loot Build
+
+#Detect if the enchantment can be obtained from the enchanting table
+# IF true, then remove the current "Build" enchantment from the list
+# (skip it)
+execute if data storage teplus:loot Build.NoEnch run data remove storage teplus:loot Build
 
 #In case we are enchanting another item (not a book) run
 # another function to get it's enchantments correctly
