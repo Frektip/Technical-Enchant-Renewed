@@ -1,4 +1,5 @@
 scoreboard players set #hdns Enchopts 0
+execute store result storage teplus:register Custom[].Enchantment[].Average[{id:"HardnessPlus"}].Enabled byte 1 run scoreboard players get #hdns Enchopts
 
 #General Message
 tellraw @a ["",{"text":"\n\n\n\n\n"}]

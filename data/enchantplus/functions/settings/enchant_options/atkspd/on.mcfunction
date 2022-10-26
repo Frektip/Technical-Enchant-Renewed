@@ -1,4 +1,5 @@
 scoreboard players set #aksp Enchopts 0
+execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"AttackSpeed"}].Enabled byte 1 run scoreboard players get #aksp Enchopts
 
 #General Message
 tellraw @a ["",{"text":"\n\n\n\n\n"}]

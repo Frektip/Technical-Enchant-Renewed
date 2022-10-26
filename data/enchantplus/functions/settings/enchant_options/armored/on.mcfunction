@@ -1,4 +1,5 @@
 scoreboard players set #armd Enchopts 0
+execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"Armored"}].Enabled byte 1 run scoreboard players get #armd Enchopts
 
 #General Message
 tellraw @a ["",{"text":"\n\n\n\n\n"}]

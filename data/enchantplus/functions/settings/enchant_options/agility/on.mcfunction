@@ -1,5 +1,5 @@
 scoreboard players set #aglt Enchopts 0 
-
+execute store result storage teplus:register Custom[].Enchantment[].Low[{id:"Agility"}].Enabled byte 1 run scoreboard players get #aglt Enchopts
 #General Message
 tellraw @a ["",{"text":"\n\n\n\n\n"}]
 tellraw @a ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}]

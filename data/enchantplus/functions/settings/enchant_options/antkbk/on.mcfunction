@@ -1,4 +1,5 @@
 scoreboard players set #atkb Enchopts 0
+execute store result storage teplus:register Custom[].Enchantment[].Average[{id:"AntiKnockback"}].Enabled byte 1 run scoreboard players get #atkb Enchopts
 
 #General Message
 tellraw @a ["",{"text":"\n\n\n\n\n"}]

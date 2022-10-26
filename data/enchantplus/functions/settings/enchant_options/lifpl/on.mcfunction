@@ -1,4 +1,5 @@
 scoreboard players set #lfps Enchopts 0
+execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"LifePlus"}].Enabled byte 1 run scoreboard players get #lfps Enchopts
 
 #General Message
 tellraw @a ["",{"text":"\n\n\n\n\n"}]
