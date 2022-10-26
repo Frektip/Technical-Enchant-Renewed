@@ -90,4 +90,5 @@ execute if entity @s[nbt={Item:{id:"minecraft:crossbow"}}] run function enchantp
 #Because the enchantting was successful, do the armor stand animation
 tag @e[type=armor_stand,tag=teplus.bookshelf_level,distance=..3] add speed_enchanted
 tag @e[type=marker,tag=teplus.charged_bookshelf,distance=2..5] add speed_enchanted
+tag @e[type=marker,tag=teplus.enchanting_table,distance=..2] add speed_enchanted
 function enchantplus:entity/armor_stand/speed_animation

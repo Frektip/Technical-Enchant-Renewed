@@ -9,3 +9,9 @@ execute if entity @s[tag=speed_enchanted] run function enchantplus:entity/armor_
 execute as @s[tag=teplus.level1] run function enchantplus:entity/armor_stand/table_rotate/level1
 execute as @s[tag=teplus.level2] run function enchantplus:entity/armor_stand/table_rotate/level2
 execute as @s[tag=teplus.level3] run function enchantplus:entity/armor_stand/table_rotate/level3
+
+#Detect 24 charged bookshelves
+execute as @s[tag=!teplus.level_mega] positioned ~ ~1 ~ if entity @e[type=marker,tag=teplus.enchanting_table,sort=nearest,tag=teplus.tier4,distance=...5] run function enchantplus:entity/armor_stand/table_rotate/mega_up
+
+#Not has 24 charged bookshelves
+execute as @s[tag=teplus.level_mega] positioned ~ ~1 ~ if entity @e[type=marker,tag=teplus.enchanting_table,sort=nearest,tag=!teplus.tier4,distance=...5] run function enchantplus:entity/armor_stand/table_rotate/mega_down
