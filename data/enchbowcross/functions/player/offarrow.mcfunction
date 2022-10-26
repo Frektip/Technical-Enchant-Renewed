@@ -5,10 +5,10 @@
 # -if is true then set teplus.arrow score to 0
 # -if is false then run another function to store the values from the offhand
 
-#Use a #function to ensure complement compatibility
+#If using a complement, overwrite the predicate while keeping
+# original vanilla bow and crossbow
 scoreboard players set #nmlhand teplus.data 0
 execute store success score #nmlhand teplus.data if predicate enchbowcross:mainhand_normal
-execute if score #nmlhand teplus.data matches 0 run function #enchbowcross:custom_arrow/offarrow
 
 #After detecting the mainhand correctly
 execute if score #nmlhand teplus.data matches 1 run scoreboard players set @s teplus.arrow 0
