@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"Recovery",lvl:2}],display:{Lore:["{\"translate\":\"Recovery II\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Leggings\",\"color\":\"blue\"}","{\"translate\":\"► Horse Armor\",\"color\":\"green\"}"]}}

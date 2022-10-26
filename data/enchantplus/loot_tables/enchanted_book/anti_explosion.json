@@ -1,0 +1,106 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:enchanted_book",
+			"functions": [
+				{
+				  "function": "minecraft:copy_nbt",
+				   "source": {
+					  "type": "minecraft:storage",
+					  "source": "teplus:item_lore"
+				    },
+				    "ops": [
+				    {
+					  "source": "First",
+					  "target": "StoredCustomEnchantments",
+					  "op": "replace"
+				    }
+				 ]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "translate": "Anti-Explosion",
+					  "color": "gray",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "nbt": "Level",
+					  "storage": "teplus:item_lore",
+					  "color": "gray",
+					  "italic": false
+					}
+				  ]
+				],
+				"replace": false
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+					[
+						[
+							[
+							  {
+								"text": "► ",
+								"color": "red"
+							  },
+							  {
+								"translate": "Sword",
+								"color": "red"
+							  },
+							  {
+								"text": "-",
+								"color": "red"
+							  },
+							  {
+								"translate": "item.minecraft.bow",
+								"color": "red"
+							  }
+							]
+						  ],
+						  [
+							[
+							  {
+								"text": "► ",
+								"color": "blue"
+							  },
+							  {
+								"translate": "Helmet",
+								"color": "blue"
+							  }
+							]
+						  ],
+						  [
+							[
+							  {
+								"text": "► ",
+								"color": "green"
+							  },
+							  {
+								"translate": "Horse Armor",
+								"color": "green"
+							  }
+							]
+						  ]
+					  ]
+				],
+				"replace": false
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"Transmission",lvl:1}],display:{Lore:["{\"translate\":\"Transmission I\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Axe\",\"color\":\"yellow\"}"]}}

@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"TimeBreaker",lvl:1}],display:{Lore:["{\"translate\":\"Time Breaker I\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Helmet\",\"color\":\"blue\"}"]}}

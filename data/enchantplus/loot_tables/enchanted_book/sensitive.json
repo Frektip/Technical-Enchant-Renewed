@@ -1,0 +1,90 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:enchanted_book",
+			"functions": [
+				{
+				  "function": "minecraft:copy_nbt",
+				   "source": {
+					  "type": "minecraft:storage",
+					  "source": "teplus:item_lore"
+				    },
+				    "ops": [
+				    {
+					  "source": "First",
+					  "target": "StoredCustomEnchantments",
+					  "op": "replace"
+				    }
+				 ]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "translate": "Curse of Sensitive",
+					  "color": "#FF4099",
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "nbt": "Level",
+					  "storage": "teplus:item_lore",
+					  "color": "#FF4099",
+					  "italic": false
+					}
+				  ]
+				],
+				"replace": false
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+					[
+						[
+							[
+							  {
+								"text": "► ",
+								"color": "white"
+							  },
+							  {
+								"translate": "Armor",
+								"color": "white"
+							  },
+							  {
+								"text": " - ",
+								"color": "white"
+							  },
+							  {
+								"translate": "item.minecraft.elytra",
+								"color": "white"
+							  },
+							  {
+								"text": " - ",
+								"color": "white"
+							  },
+							  {
+								"translate": "item.minecraft.shield",
+								"color": "white"
+							  }
+							]
+						  ]
+					  ]
+				],
+				"replace": false
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"Agility",lvl:3}],display:{Lore:["{\"translate\":\"Agility III\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Boots\",\"color\":\"blue\"}"]}}

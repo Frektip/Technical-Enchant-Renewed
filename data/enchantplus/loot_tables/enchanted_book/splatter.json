@@ -1,0 +1,87 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:enchanted_book",
+			"functions": [
+				{
+				  "function": "minecraft:copy_nbt",
+				   "source": {
+					  "type": "minecraft:storage",
+					  "source": "teplus:item_lore"
+				    },
+				    "ops": [
+				    {
+					  "source": "First",
+					  "target": "StoredCustomEnchantments",
+					  "op": "replace"
+				    }
+				 ]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+				  [
+					{
+					  "text": "<≈≈| ",
+					  "color": "dark_aqua",
+					  "bold": true,
+					  "italic": false
+					},
+					{
+					  "translate": "Splatter",
+					  "color": "aqua",
+					  "bold": false,
+					  "italic": false
+					},
+					{
+					  "text": " "
+					},
+					{
+					  "nbt": "Level",
+					  "storage": "teplus:item_lore",
+					  "color": "aqua",
+					  "italic": false
+					},
+					{
+					  "text": " |≈≈>",
+					  "color": "dark_aqua",
+					  "bold": true,
+				      "italic": false
+					}
+				  ]
+				],
+				"replace": false
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+					[
+						[
+							[
+							  {
+								"text": "► ",
+								"color": "green"
+							  },
+							  {
+								"translate": "item.minecraft.fishing_rod",
+								"color": "green"
+							  }
+							]
+						  ]
+					  ]
+				],
+				"replace": false
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

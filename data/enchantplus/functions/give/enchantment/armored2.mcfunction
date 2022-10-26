@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"Armored",lvl:2}],display:{Lore:["[{\"text\":\"✤ \",\"color\":\"light_purple\",\"italic\":false},{\"translate\":\"Armored II\",\"color\":\"dark_purple\",\"italic\":false},{\"text\":\" ✤\",\"color\":\"light_purple\",\"italic\":false}]","{\"translate\":\"► Elytra\",\"color\":\"green\"}"]}}

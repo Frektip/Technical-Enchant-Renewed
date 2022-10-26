@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"XpBoost",lvl:1}],display:{Lore:["{\"translate\":\"Xp Boost I\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Sword-Trident\",\"color\":\"red\"}","{\"translate\":\"► Axe\",\"color\":\"yellow\"}"]}}

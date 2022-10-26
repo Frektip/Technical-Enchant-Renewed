@@ -1,0 +1,119 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:enchanted_book",
+			"functions": [
+				{
+				  "function": "minecraft:copy_nbt",
+				   "source": {
+					  "type": "minecraft:storage",
+					  "source": "teplus:item_lore"
+				    },
+				    "ops": [
+				    {
+					  "source": "First",
+					  "target": "StoredCustomEnchantments",
+					  "op": "replace"
+				    }
+				 ]
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+					[
+						{
+						  "translate": "M",
+						  "color": "#E61F09",
+						  "italic": false
+						},
+						{
+						  "translate": "u",
+						  "color": "#E6630C",
+						  "italic": false
+						},
+						{
+						  "translate": "l",
+						  "color": "#F2EB0F",
+						  "italic": false
+						},
+						{
+						  "translate": "t",
+						  "color": "#8DE815",
+						  "italic": false
+						},
+						{
+						  "translate": "i",
+						  "color": "#13CF45",
+						  "italic": false
+						},
+						{
+						  "translate": "c",
+						  "color": "#19CFB1",
+						  "italic": false
+						},
+						{
+						  "translate": "o",
+						  "color": "#2689ED",
+						  "italic": false
+						},
+						{
+						  "translate": "l",
+						  "color": "#2923CF",
+						  "italic": false
+						},
+						{
+						  "translate": "o",
+						  "color": "#9125CF",
+						  "italic": false
+						},
+						{
+						  "translate": "r",
+						  "color": "#CF2EC4",
+						  "italic": false
+						},
+						{
+						  "text": " "
+						},
+						{
+						  "nbt": "Level",
+						  "storage": "teplus:item_lore",
+						  "color": "#d63194",
+						  "italic": false
+						}
+					]
+				],
+				"replace": false
+			  },
+			  {
+				"function": "minecraft:set_lore",
+				"entity": "this",
+				"lore": [
+					[
+						[
+							[
+							  {
+								"text": "► ",
+								"color": "green"
+							  },
+							  {
+								"translate": "item.minecraft.shears",
+								"color": "green"
+							  }
+							]
+						  ]
+					  ]
+				],
+				"replace": false
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

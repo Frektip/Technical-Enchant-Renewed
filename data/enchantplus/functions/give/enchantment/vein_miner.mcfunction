@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"VeinMiner",lvl:1}],display:{Lore:["{\"translate\":\"Vein Miner\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Pickaxe\",\"color\":\"yellow\"}"]}}

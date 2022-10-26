@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"GrandTilling",lvl:1}],display:{Lore:["{\"translate\":\"Grand Tilling\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Hoe\",\"color\":\"yellow\"}"]}}

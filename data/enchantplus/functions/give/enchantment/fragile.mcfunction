@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomCurse:[{id:"Fragile",lvl:1}],display:{Lore:["{\"translate\":\"Curse of Fragile\",\"color\":\"#FF4099\",\"italic\":false}","{\"translate\":\"► Everything\",\"color\":\"white\"}"]}}

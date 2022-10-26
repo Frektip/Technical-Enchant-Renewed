@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"Timber",lvl:1}],display:{Lore:["{\"translate\":\"Timber\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Axe\",\"color\":\"yellow\"}"]}}

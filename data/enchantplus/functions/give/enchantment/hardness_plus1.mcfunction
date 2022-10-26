@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"HardnessPlus",lvl:1}],display:{Lore:["{\"translate\":\"Hardness+ I\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Shield\",\"color\":\"blue\"}"]}}

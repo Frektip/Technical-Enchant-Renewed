@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"Striker",lvl:2}],display:{Lore:["{\"translate\":\"Striker II\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Axe\",\"color\":\"yellow\"}"]}}

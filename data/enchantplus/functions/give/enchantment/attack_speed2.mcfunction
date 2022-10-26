@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomEnchantments:[{id:"AttackSpeed",lvl:2}],display:{Lore:["{\"translate\":\"Attack Speed II\",\"color\":\"gray\",\"italic\":false}","{\"translate\":\"► Sword-Trident\",\"color\":\"red\"}"]}}

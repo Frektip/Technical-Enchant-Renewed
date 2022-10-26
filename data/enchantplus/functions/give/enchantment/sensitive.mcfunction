@@ -1,1 +1,0 @@
-give @s enchanted_book{StoredCustomCurse:[{id:"Sensitive",lvl:1}],display:{Lore:["{\"translate\":\"Curse of Sensitive\",\"color\":\"#FF4099\",\"italic\":false}","{\"translate\":\"► Armor - Elytra - Shield\",\"color\":\"white\"}"]}}
