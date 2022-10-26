@@ -6,6 +6,11 @@ scoreboard objectives add teplus.data dummy
 scoreboard players set #10const teplus.data 10
 scoreboard players set #2const teplus.data 2
 scoreboard players set #5const teplus.data 5
+scoreboard players set #33const teplus.data 33
+scoreboard players set #30const teplus.data 30
+scoreboard players set #3const teplus.data 3
+scoreboard players set #4const teplus.data 4
+scoreboard players set #25const teplus.data 25
 
 #Scoreboard for xp reward when disenchanting
 scoreboard objectives add teplus.diench dummy

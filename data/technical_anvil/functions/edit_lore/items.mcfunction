@@ -1,4 +1,3 @@
-#data modify storage teplus:item_lore NewLore set value []
 data modify storage teplus:item_lore CurrentLore set value []
 data modify storage teplus:item_lore TempEnch set value []
 
@@ -31,8 +30,6 @@ tag @s add at_item
 # This function is a loop and will directly add TE+ Lore first
 function technical_anvil:edit_lore/system/create_new_lore
 
-
-#data modify entity @s Items[{Slot:22b}].tag.display.Lore append from storage teplus:item_lore NewLore[]
 # Apply non TE+ related Lore if needed
 data modify entity @s Items[{Slot:22b}].tag.display.Lore append from storage teplus:item_lore CurrentLore[]
 

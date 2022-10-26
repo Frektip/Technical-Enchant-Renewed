@@ -45,8 +45,8 @@ execute if entity @s[tag=TCHA.inpit] if score #atkb Enchopts matches 0 if data s
 
 
 #Once ensured we change corretly the attribute, copy it to the data storage
-execute if entity @s[tag=TCHA.inpbk] run data modify storage teplus:tech_anvil.ui ResultItem.tag.AttributeModifiers set from entity @s Items[{Slot:22b}].tag.AttributeModifiers
-execute if entity @s[tag=TCHA.inpbk] run function technical_anvil:interaction/merge/maintain_attributes/shield_only_hardness_plus
+execute if entity @s[tag=TCHA.inpit] run data modify storage teplus:tech_anvil.ui ResultItem.tag.AttributeModifiers set from entity @s Items[{Slot:22b}].tag.AttributeModifiers
+execute if entity @s[tag=TCHA.inpit] run function technical_anvil:interaction/merge/maintain_attributes/shield_only_hardness_plus
 
 
 #Tag the item

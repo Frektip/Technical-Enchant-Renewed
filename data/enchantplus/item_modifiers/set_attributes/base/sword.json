@@ -1,0 +1,205 @@
+[
+	{
+	  "function": "minecraft:set_attributes",
+	  "modifiers": [
+		{
+		  "attribute": "minecraft:generic.attack_speed",
+		  "name": "",
+		  "amount": 1.6,
+		  "operation": "addition",
+		  "slot": "mainhand"
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:entity_properties",
+		  "entity": "this",
+		  "predicate": {
+			"equipment": {
+			  "mainhand": {
+				"items": [
+				  "minecraft:netherite_sword",
+				  "minecraft:diamond_sword",
+				  "minecraft:iron_sword",
+				  "minecraft:golden_sword",
+				  "minecraft:stone_sword",
+				  "minecraft:wooden_sword"
+				]
+			  }
+			}
+		  }
+		}
+	  ]
+	},
+	{
+	  "function": "minecraft:set_attributes",
+	  "modifiers": [
+		{
+		  "attribute": "minecraft:generic.attack_damage",
+		  "name": "",
+		  "amount": 9,
+		  "operation": "addition",
+		  "slot": "mainhand"
+		},
+		{
+		  "attribute": "minecraft:generic.attack_speed",
+		  "name": "",
+		  "amount": 1.1,
+		  "operation": "addition",
+		  "slot": "mainhand"
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:entity_properties",
+		  "entity": "this",
+		  "predicate": {
+			"equipment": {
+			  "mainhand": {
+				"items": [
+				  "minecraft:trident"
+				]
+			  }
+			}
+		  }
+		}
+	  ]
+	},
+	{
+	  "function": "minecraft:set_attributes",
+	  "modifiers": [
+		{
+		  "attribute": "minecraft:generic.attack_damage",
+		  "name": "",
+		  "amount": 8,
+		  "operation": "addition",
+		  "slot": "mainhand"
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:entity_properties",
+		  "entity": "this",
+		  "predicate": {
+			"equipment": {
+			  "mainhand": {
+				"items": [
+				  "minecraft:netherite_sword"
+				]
+			  }
+			}
+		  }
+		}
+	  ]
+	},
+	{
+	  "function": "minecraft:set_attributes",
+	  "modifiers": [
+		{
+		  "attribute": "minecraft:generic.attack_damage",
+		  "name": "",
+		  "amount": 7,
+		  "operation": "addition",
+		  "slot": "mainhand"
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:entity_properties",
+		  "entity": "this",
+		  "predicate": {
+			"equipment": {
+			  "mainhand": {
+				"items": [
+				  "minecraft:diamond_sword"
+				]
+			  }
+			}
+		  }
+		}
+	  ]
+	},
+	{
+	  "function": "minecraft:set_attributes",
+	  "modifiers": [
+		{
+		  "attribute": "minecraft:generic.attack_damage",
+		  "name": "",
+		  "amount": 6,
+		  "operation": "addition",
+		  "slot": "mainhand"
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:entity_properties",
+		  "entity": "this",
+		  "predicate": {
+			"equipment": {
+			  "mainhand": {
+				"items": [
+				  "minecraft:iron_sword"
+				]
+			  }
+			}
+		  }
+		}
+	  ]
+	},
+	{
+	  "function": "minecraft:set_attributes",
+	  "modifiers": [
+		{
+		  "attribute": "minecraft:generic.attack_damage",
+		  "name": "",
+		  "amount": 5,
+		  "operation": "addition",
+		  "slot": "mainhand"
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:entity_properties",
+		  "entity": "this",
+		  "predicate": {
+			"equipment": {
+			  "mainhand": {
+				"items": [
+				  "minecraft:stone_sword"
+				]
+			  }
+			}
+		  }
+		}
+	  ]
+	},
+	{
+	  "function": "minecraft:set_attributes",
+	  "modifiers": [
+		{
+		  "attribute": "minecraft:generic.attack_damage",
+		  "name": "",
+		  "amount": 4,
+		  "operation": "addition",
+		  "slot": "mainhand"
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:entity_properties",
+		  "entity": "this",
+		  "predicate": {
+			"equipment": {
+			  "mainhand": {
+				"items": [
+				  "minecraft:golden_sword",
+				  "minecraft:wooden_sword"
+				]
+			  }
+			}
+		  }
+		}
+	  ]
+	}
+  ]
+  

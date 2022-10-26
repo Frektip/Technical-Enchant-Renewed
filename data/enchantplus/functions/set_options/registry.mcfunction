@@ -116,5 +116,5 @@ data modify storage teplus:register Custom[].Enchantment[].Strong append value {
 data modify storage teplus:register Custom[].Curse append value {id:"Exhaustion",lvl:1,ForItem:{pickaxe:1b,axe:1b,shovel:1b,hoe:1b,shears:1b,fishing_rod:1b},Sell:5,Structure:[{all:1b}]}
 data modify storage teplus:register Custom[].Curse append value {id:"Fear",lvl:1,ForItem:{sword:1b,axe:1b,trident:1b,bow:1b,crossbow:1b},Sell:5,Structure:[{all:1b}]}
 data modify storage teplus:register Custom[].Curse append value {id:"Fragile",lvl:1,ForItem:{pickaxe:1b,axe:1b,shovel:1b,hoe:1b,shears:1b,fishing_rod:1b,sword:1b,trident:1b,bow:1b,crossbow:1b,helmet:1b,chestplate:1b,leggings:1b,boots:1b,elytra:1b,shield:1b},Sell:5,Structure:[{all:1b}]}
-data modify storage teplus:register Custom[].Curse append value {id:"Sensitive",lvl:1,ForItem:{helmet:1b,chestplate:1b,leggings:1b,boots:1b,elytra:1b,shield:1b},Sell:5,Structure:[{all:1b}]}
+data modify storage teplus:register Custom[].Curse append value {id:"Sensitive",lvl:1,ForItem:{helmet:1b,chestplate:1b,leggings:1b,boots:1b,elytra:1b,shield:1b,horse_armor:1b},Sell:5,Structure:[{all:1b}]}
 data modify storage teplus:register Custom[].Curse append value {id:"Slippery",lvl:1,ForItem:{pickaxe:1b,axe:1b,shovel:1b,hoe:1b,shears:1b,fishing_rod:1b,sword:1b,trident:1b,bow:1b,crossbow:1b},Sell:5,Structure:[{all:1b}]}

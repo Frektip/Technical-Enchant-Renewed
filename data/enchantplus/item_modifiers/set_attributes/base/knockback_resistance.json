@@ -1,0 +1,43 @@
+[
+	{
+	  "function": "minecraft:set_attributes",
+	  "modifiers": [
+		{
+		  "attribute": "minecraft:generic.knockback_resistance",
+		  "name": "",
+		  "amount": {
+			"type": "minecraft:score",
+			"target": {
+			  "type": "minecraft:fixed",
+			  "name": "#at.an_kb"
+			},
+			"score": "teplus.data",
+			"scale": 0.01
+		  },
+		  "operation": "addition",
+		  "slot": "offhand"
+		}
+	  ]
+	},
+	{
+	  "function": "minecraft:set_attributes",
+	  "modifiers": [
+		{
+		  "attribute": "minecraft:generic.knockback_resistance",
+		  "name": "",
+		  "amount": {
+			"type": "minecraft:score",
+			"target": {
+			  "type": "minecraft:fixed",
+			  "name": "#at.an_kb"
+			},
+			"score": "teplus.data",
+			"scale": 0.01
+		  },
+		  "operation": "addition",
+		  "slot": "mainhand"
+		}
+	  ]
+	}
+  ]
+  
