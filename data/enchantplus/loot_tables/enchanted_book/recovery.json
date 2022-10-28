@@ -48,32 +48,30 @@
 				"function": "minecraft:set_lore",
 				"entity": "this",
 				"lore": [
+				  [
 					[
-						[
-							[
-							  {
-								"text": "► ",
-								"color": "blue"
-							  },
-							  {
-								"translate": "Leggings",
-								"color": "blue"
-							  }
-							]
-						  ],
-						  [
-							[
-							  {
-								"text": "► ",
-								"color": "green"
-							  },
-							  {
-								"translate": "Horse Armor",
-								"color": "green"
-							  }
-							]
-						  ]
-					  ]
+					  {
+						"text": "► ",
+						"color": "blue"
+					  },
+					  {
+						"translate": "Leggings",
+						"color": "blue"
+					  }
+					]
+				  ],
+				  [
+					[
+					  {
+						"text": "► ",
+						"color": "green"
+					  },
+					  {
+						"translate": "Horse Armor",
+						"color": "green"
+					  }
+					]
+			      ]
 				],
 				"replace": false
 			  }

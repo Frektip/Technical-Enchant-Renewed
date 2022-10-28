@@ -49,31 +49,49 @@
 				"entity": "this",
 				"lore": [
 					[
-						[
-							[
-							  {
-								"text": "► ",
-								"color": "blue"
-							  },
-							  {
-								"translate": "Chestplate",
-								"color": "blue"
-							  }
-							]
-						  ],
-						  [
-							[
-							  {
-								"text": "► ",
-								"color": "green"
-							  },
-							  {
-								"translate": "Horse Armor",
-								"color": "green"
-							  }
-							]
-						  ]
-					  ]
+					[
+					  {
+						"text": "► ",
+						"color": "red"
+					  },
+					  {
+						"translate": "Sword",
+						"color": "red"
+					  },
+					  {
+					    "text": "-",
+						"color": "red"
+					  },
+					  {
+						"translate": "item.minecraft.bow",
+						"color": "red"
+					  }
+					]
+				  ],
+				  [
+					[
+					  {
+						"text": "► ",
+						"color": "blue"
+					  },
+					  {
+						"translate": "Helmet",
+						"color": "blue"
+					  }
+					]
+				  ],
+				  [
+					[
+					  {
+						"text": "► ",
+						"color": "green"
+					  },
+					  {
+						"translate": "Horse Armor",
+						"color": "green"
+					  }
+					]
+				  ]
 				],
 				"replace": false
 			  }

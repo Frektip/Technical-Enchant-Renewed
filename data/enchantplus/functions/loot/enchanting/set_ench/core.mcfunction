@@ -23,6 +23,9 @@ function enchantplus:random_uniform
 scoreboard players operation $ench.loop teplus.data = $out random
 function enchantplus:loot/enchanting/set_ench/loop_ench
 
+#Set the rarirty from the storage
+execute store result score #enchant.rarity teplus.data run data get storage teplus:loot Temp[0].Rarity
+data remove storage teplus:loot Temp[].Rarity
 
 #Add the nbt tag nchant the item based on Temp Storage
 data modify entity @s[tag=teplus.loot_is_book] Item.tag.StoredCustomEnchantments append from storage teplus:loot Temp[0]

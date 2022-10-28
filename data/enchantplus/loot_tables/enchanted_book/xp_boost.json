@@ -48,40 +48,38 @@
 				"function": "minecraft:set_lore",
 				"entity": "this",
 				"lore": [
+				  [
 					[
-						[
-							[
-							  {
-								"text": "► ",
-								"color": "red"
-							  },
-							  {
-								"translate": "Sword",
-								"color": "red"
-							  },
-							  {
-								"text": "-",
-								"color": "red"
-							  },
-							  {
-								"translate": "item.minecraft.trident",
-								"color": "red"
-							  }
-							]
-						  ],
-						  [
-							[
-							  {
-								"text": "► ",
-								"color": "yellow"
-							  },
-							  {
-								"translate": "Axe",
-								"color": "yellow"
-							  }
-							]
-						  ]
-					  ]
+					  {
+						"text": "► ",
+						"color": "red"
+					  },
+					  {
+						"translate": "Sword",
+						"color": "red"
+					  },
+					  {
+						"text": "-",
+						"color": "red"
+					  },
+					  {
+						"translate": "item.minecraft.trident",
+						"color": "red"
+					  }
+					]
+				  ],
+				  [
+					[
+					  {
+						"text": "► ",
+						"color": "yellow"
+					  },
+					  {
+						"translate": "Axe",
+						"color": "yellow"
+					  }
+					]
+				  ]
 				],
 				"replace": false
 			  }

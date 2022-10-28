@@ -5,6 +5,7 @@ data modify storage teplus:loot Copy append from storage teplus:register Custom[
 #Remove uneccessary data
 data remove storage teplus:loot Copy[].Sell
 data remove storage teplus:loot Copy[].Structure
+data remove storage teplus:loot Copy[].NoDrop
 
 #Cicle though the array
 function enchantplus:loot/enchanting/set_curse/loop_build

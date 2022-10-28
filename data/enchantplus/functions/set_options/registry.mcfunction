@@ -2,9 +2,6 @@
 #We create a storage containing information about the enchantment
 # is contained in an array in a single "{}"
 
-#If the sturcure parameter isn't there, that means that the enchantment
-# can be obtained from any loot-chest
-
 #CustomCurses doesn't have an enabled parameter or structure parameter,
 # they aren't divided between low, average or strong
 
@@ -42,6 +39,9 @@
 #-NoEnch:1b, if this is present in the string, then this enchantment won't
 # be able to obtain through the enchanting table (no matter if it is
 # enchanting a book or an item)
+
+#-NoDrop:1b, if this is present in the string, then this enchantment won't
+# be able to obtain through enchanted mobs
 
 #Clear it to initialize
 data modify storage teplus:register Custom set value []
@@ -117,7 +117,7 @@ data modify storage teplus:register Custom[].Enchantment[].Average append value 
 execute store result storage teplus:register Custom[].Enchantment[].Average[{id:"SkyWalk"}].Enabled byte 1 run scoreboard players get #skwk Enchopts
 data modify storage teplus:register Custom[].Enchantment[].Average append value {id:"Sniper",lvl:1,Enabled:0b,Rarity:2,ForItem:{crossbow:1b},Sell:5,Structure:[{all:1b}]}
 execute store result storage teplus:register Custom[].Enchantment[].Average[{id:"Sniper"}].Enabled byte 1 run scoreboard players get #snp Enchopts
-data modify storage teplus:register Custom[].Enchantment[].Average append value {id:"Splatter",lvl:3,Enabled:0b,Rarity:2,ForItem:{fishing_rod:1b},Sell:5,Structure:[{ancient_city:1b,add:4},{shipwreck:1b,add:12},{underwater_ruin:1b,add:10}]}
+data modify storage teplus:register Custom[].Enchantment[].Average append value {id:"Splatter",lvl:3,Enabled:0b,Rarity:2,ForItem:{fishing_rod:1b},Sell:5,Structure:[{ancient_city:1b,add:4},{shipwreck:1b,add:12},{underwater_ruin:1b,add:10}],NoDrop:1b}
 execute store result storage teplus:register Custom[].Enchantment[].Average[{id:"Splatter"}].Enabled byte 1 run scoreboard players get #sptr Enchopts
 data modify storage teplus:register Custom[].Enchantment[].Average append value {id:"Striker",lvl:3,Enabled:0b,Rarity:2,ForItem:{axe:1b},Sell:5,Structure:[{all:1b},{ancient_city:1b},{village:1b,add:2},{mansion:1b,add:2}]}
 execute store result storage teplus:register Custom[].Enchantment[].Average[{id:"Striker"}].Enabled byte 1 run scoreboard players get #strk Enchopts
@@ -129,7 +129,7 @@ execute store result storage teplus:register Custom[].Enchantment[].Average[{id:
 #Strong enchantments = Rarity:3
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"AntiVenom",lvl:2,Enabled:0b,Rarity:3,ForItem:{chestplate:1b},Sell:5,Structure:[{all:1b},{desert_pyramid:1b,add:3}]}
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"AntiVenom"}].Enabled byte 1 run scoreboard players get #antvn Enchopts
-data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"Armored",lvl:2,Enabled:0b,Rarity:3,ForItem:{elytra:1b},Sell:5,Structure:[{ancient_city:1b,add:5},{end_city:1b,add:20}]}
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"Armored",lvl:2,Enabled:0b,Rarity:3,ForItem:{elytra:1b},Sell:5,Structure:[{ancient_city:1b,add:5},{end_city:1b,add:20}],NoDrop:1b}
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"Armored"}].Enabled byte 1 run scoreboard players get #armd Enchopts
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"AttackSpeed",lvl:3,Enabled:0b,Rarity:3,ForItem:{sword:1b,trident:1b},Sell:5,Structure:[{all:1b},{Exlusive:[{bastion:1b}]}]}
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"AttackSpeed"}].Enabled byte 1 run scoreboard players get #aksp Enchopts
@@ -145,7 +145,7 @@ data modify storage teplus:register Custom[].Enchantment[].Strong append value {
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"LifePlus"}].Enabled byte 1 run scoreboard players get #lfps Enchopts
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"LifeSteal",lvl:1,Enabled:0b,Rarity:3,ForItem:{sword:1b},Sell:5,Structure:[{all:1b},{bastion:1b,add:1}]}
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"LifeSteal"}].Enabled byte 1 run scoreboard players get #lfstl Enchopts
-data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"Multicolor",lvl:1,Enabled:0b,Rarity:3,ForItem:{shears:1b},Sell:5,Structure:[{ancient_city:1b,add:5},{village:1b,add:13}]}
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"Multicolor",lvl:1,Enabled:0b,Rarity:3,ForItem:{shears:1b},Sell:5,Structure:[{ancient_city:1b,add:5},{village:1b,add:13}],NoDrop:1b}
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"Multicolor"}].Enabled byte 1 run scoreboard players get #mlcl Enchopts
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"Peaks",lvl:1,Enabled:0b,Rarity:3,ForItem:{shield:1b},Sell:5,Structure:[{all:1b},{bastion:1b}]}
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"Peaks"}].Enabled byte 1 run scoreboard players get #pks Enchopts

@@ -32,5 +32,8 @@ execute if entity @s[tag=teplus.tier5] run particle enchanted_hit ^-1 ^.2 ^-1 0 
 execute if entity @s[tag=teplus.tier5] run particle enchanted_hit ^-1 ^.2 ^1 0 0 0 0.03 5
 execute if entity @s[tag=teplus.tier5] run particle enchanted_hit ^1 ^.2 ^-1 0 0 0 0.03 5
 
+execute if entity @s[tag=teplus.tier5,tag=!tier.up] run function enchantplus:entity/armor_stand/table_rotate/tier_up
+execute if entity @s[tag=!teplus.tier5,tag=tier.up] run function enchantplus:entity/armor_stand/table_rotate/tier_down
+
 #If the enchanting table is removed
 execute unless block ~ ~ ~ enchanting_table run function enchantplus:entity/marker/enchanting_table_clear

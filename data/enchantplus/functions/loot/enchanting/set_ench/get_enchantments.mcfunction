@@ -8,6 +8,7 @@ execute if score #teplus.rarity teplus.data matches 1.. run data modify storage 
 #Remove uneccessary data
 data remove storage teplus:loot Copy[].Sell
 data remove storage teplus:loot Copy[].Structure
+data remove storage teplus:loot Copy[].NoDrop
 
 #Cicle though the array
 function enchantplus:loot/enchanting/set_ench/loop_build
@@ -15,4 +16,3 @@ function enchantplus:loot/enchanting/set_ench/loop_build
 #Remove Enabled data
 data remove storage teplus:loot Enchantments[].Enabled
 data remove storage teplus:loot Enchantments[].ForItem
-data remove storage teplus:loot Enchantments[].Rarity

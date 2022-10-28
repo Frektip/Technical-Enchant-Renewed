@@ -4,29 +4,19 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "teplus_exten:chests/set_enchanted_book/fragile"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "teplus_exten:chests/set_enchanted_book/sensitive"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "teplus_exten:chests/set_enchanted_book/slippery"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "teplus_exten:chests/set_enchanted_book/fear"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "teplus_exten:chests/set_enchanted_book/exhaustion"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:killed_by_player"
+          "type": "minecraft:item",
+          "name": "minecraft:stone_button",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{teplus.mob_drop:1b,Rarity:\"curse\"}",
+              "conditions": [
+                {
+                  "condition": "minecraft:killed_by_player"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
