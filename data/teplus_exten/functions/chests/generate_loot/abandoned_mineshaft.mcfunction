@@ -7,4 +7,5 @@ execute at @e[type=marker,tag=teplus.ray,limit=1,sort=nearest] as @e[type=chest_
 #End
 kill @e[type=marker,tag=teplus.ray,limit=1,sort=nearest]
 
-scoreboard players reset .distance tep.rc
+#Grant the advancement
+advancement grant @s[advancements={enchantplus:progress/start/extensions/chest_loot=false}] only enchantplus:progress/start/extensions/chest_loot

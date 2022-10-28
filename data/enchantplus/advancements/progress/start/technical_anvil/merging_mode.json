@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;865960798,1449609478,-1534635021,1965647014],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQyOTMwYzhiMGU2M2QxY2E2YTBhMDU4YTgzNjdmNGY2MDg4MTlmOTY4YmJhYWI0ZjAzY2YwMTNlNjJmZmMwMSJ9fX0=\"}]}}}"
+    },
+    "title": {
+      "translate":"Easy combining"
+    },
+    "description": {
+      "translate": "Use this Technical Anvil mode to enchant your items",
+      "color": "green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/start/technical_anvil/get",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

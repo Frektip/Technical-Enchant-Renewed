@@ -8,7 +8,7 @@
     },
     "description": {
       "translate": "Drop a book and quill on top of a enchanting table",
-      "color": "white"
+      "color": "dark_aqua"
     },
     "frame": "task",
     "show_toast": true,

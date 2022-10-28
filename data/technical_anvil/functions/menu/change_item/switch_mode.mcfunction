@@ -17,4 +17,4 @@ playsound block.note_block.snare block @p ~ ~ ~ 3 2
 playsound block.note_block.snare block @p ~ ~ ~ 3 2 
 
 #Grant advancement to the nearest player
-execute as @p[advancements={enchantplus:progress/start/extracting_mode=false},distance=..6] run advancement grant @s only enchantplus:progress/start/extracting_mode 
+execute as @p[advancements={enchantplus:progress/start/technical_anvil/extracting_mode=false},distance=..6] run advancement grant @s only enchantplus:progress/start/technical_anvil/extracting_mode

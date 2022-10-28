@@ -11,6 +11,4 @@ tellraw @s {"text":"\n"}
 tellraw @s[tag=teplus.pydbgm] ["",{"text":"[\u25b6\u25b6]","bold":true,"color":"#26C4F3","clickEvent":{"action":"run_command","value":"/function enchantplus:settings/debug_off"},"hoverEvent":{"action":"show_text","contents":"Clic here to deactivate"}},{"translate":" Debug Mode:","color":"#596CF7"},{"translate":" Get command feedback from many features in this datapack in-game. Try also using /trigger Teplus.Report","color":"gray"}]
 tellraw @s[tag=!teplus.pydbgm] ["",{"text":"[\u25b6\u25b6]","bold":true,"color":"#1A5E9A","clickEvent":{"action":"run_command","value":"/function enchantplus:settings/debug_on"},"hoverEvent":{"action":"show_text","contents":"Clic here to activate"}},{"translate":" Debug Mode:","color":"#596CF7"},{"translate":" Get command feedback from many features in this datapack in-game. Try also using /trigger Teplus.Report","color":"gray"}]
 tellraw @s {"text":"                                                                                ","color":"dark_aqua","strikethrough":true} 
-playsound block.note_block.hat player @s ~ ~ ~ 3 0.8 
-
-execute if entity @s[advancements={enchantplus:progress/start/cheats=false}] run advancement grant @s only enchantplus:progress/start/cheats 
+playsound block.note_block.hat player @s ~ ~ ~ 3 0.8

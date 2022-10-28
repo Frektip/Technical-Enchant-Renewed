@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bookshelf",
+      "nbt": "{Enchantments:[{}]}"
+    },
+    "title": {
+      "translate":"Full enchanting power"
+    },
+    "description": {
+      "translate": "Create a Tier 5 enchanting setup",
+      "color": "dark_purple"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "enchantplus:progress/start/enchanting_setup/tier_3",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

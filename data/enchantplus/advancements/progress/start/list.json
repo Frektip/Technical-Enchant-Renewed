@@ -8,7 +8,7 @@
     },
     "description": {
       "translate": "Obtain your first custom enchantment to see the other ones",
-      "color": "white"
+      "color": "dark_aqua"
     },
     "frame": "task",
     "show_toast": true,

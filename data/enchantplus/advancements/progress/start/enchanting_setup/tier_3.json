@@ -5,18 +5,18 @@
       "nbt": "{Enchantments:[{}]}"
     },
     "title": {
-      "translate":"Full enchanting power"
+      "translate":"Upgrading the power"
     },
     "description": {
-      "translate": "Create a Tier 5 enchanting setup",
-      "color": "dark_purple"
+      "translate": "Create a Tier 3 enchanting setup",
+      "color": "green"
     },
-    "frame": "challenge",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "enchantplus:progress/start/charged_bookshelf_challenge",
+  "parent": "enchantplus:progress/start/enchanting_setup/charged_bookshelf",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"
