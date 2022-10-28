@@ -1,4 +1,5 @@
 data modify storage teplus:item_lore TempEnch set value []
+data modify storage teplus:item_lore First set value []
 
 #Remove all the Lore from the Result Item (output)
 data remove entity @s Items[{Slot:22b}].tag.display.Lore

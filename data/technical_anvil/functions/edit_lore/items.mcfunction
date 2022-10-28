@@ -1,5 +1,6 @@
 data modify storage teplus:item_lore CurrentLore set value []
 data modify storage teplus:item_lore TempEnch set value []
+data modify storage teplus:item_lore First set value []
 
 #Add a scoreboard limit from ONLY all the custom enchantments
 # that are in the inout Item (original)
