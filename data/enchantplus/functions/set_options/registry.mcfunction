@@ -107,7 +107,7 @@ data modify storage teplus:register Custom[].Enchantment[].Average append value 
 execute store result storage teplus:register Custom[].Enchantment[].Average[{id:"Haste"}].Enabled byte 1 run scoreboard players get #haste Enchopts
 data modify storage teplus:register Custom[].Enchantment[].Average append value {id:"Magnet",lvl:1,Enabled:0b,Rarity:2,ForItem:{helmet:1b},Sell:5,Structure:[{all:1b},{ancient_city:1b},{fortress:1b}]}
 execute store result storage teplus:register Custom[].Enchantment[].Average[{id:"Magnet"}].Enabled byte 1 run scoreboard players get #mgnt Enchopts
-data modify storage teplus:register Custom[].Enchantment[].Average append value {id:"MiningPlus",lvl:1,Enabled:0b,Rarity:2,ForItem:{pickaxe:1b},Sell:5,Structure:[{all:1b},{ancient_city:1b},{desert_pyramid:1b,add:2},{village:1b}]}
+data modify storage teplus:register Custom[].Enchantment[].Average append value {id:"MiningPlus",lvl:1,Enabled:0b,Rarity:2,ForItem:{pickaxe:1b},Sell:5,Structure:[{all:1b},{ancient_city:1b},{desert_pyramid:1b,add:2},{village:1b}],Incompatible:[{id:"VeinMiner"}]}
 execute store result storage teplus:register Custom[].Enchantment[].Average[{id:"MiningPlus"}].Enabled byte 1 run scoreboard players get #mnpl Enchopts
 data modify storage teplus:register Custom[].Enchantment[].Average append value {id:"Recovery",lvl:2,Enabled:0b,Rarity:2,ForItem:{leggings:1b},Sell:5,Structure:[{all:1b},{village:1b,add:1}]}
 execute store result storage teplus:register Custom[].Enchantment[].Average[{id:"Recovery"}].Enabled byte 1 run scoreboard players get #rcv Enchopts
@@ -157,7 +157,7 @@ data modify storage teplus:register Custom[].Enchantment[].Strong append value {
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"Timber"}].Enabled byte 1 run scoreboard players get #tmbr Enchopts
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"TimeBreaker",lvl:2,Enabled:0b,Rarity:3,ForItem:{helmet:1b},Sell:5,Structure:[{all:1b},{bastion:1b}]}
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"TimeBreaker"}].Enabled byte 1 run scoreboard players get #tmbrk Enchopts
-data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"VeinMiner",lvl:1,Enabled:0b,Rarity:3,ForItem:{pickaxe:1b},Sell:5,Structure:[{all:1b},{desert_pyramid:1b},{village:1b}]}
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"VeinMiner",lvl:1,Enabled:0b,Rarity:3,ForItem:{pickaxe:1b},Sell:5,Structure:[{all:1b},{desert_pyramid:1b},{village:1b}],Incompatible:[{id:"MiningPlus"}]}
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"VeinMiner"}].Enabled byte 1 run scoreboard players get #vnmr Enchopts
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"Waterjet",lvl:1,Enabled:0b,Rarity:3,ForItem:{trident:1b},Sell:5,Structure:[{all:1b},{underwater_ruin:1b,add:3}]}
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"Waterjet"}].Enabled byte 1 run scoreboard players get #wtjt Enchopts

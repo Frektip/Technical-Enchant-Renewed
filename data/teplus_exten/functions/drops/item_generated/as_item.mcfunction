@@ -10,6 +10,7 @@ data remove storage teplus:loot Copy[].Sell
 data remove storage teplus:loot Copy[].ForItem
 data remove storage teplus:loot Copy[].Rarity
 data remove storage teplus:loot Copy[].Structure
+data remove storage teplus:loot Copy[].Incompatible
 
 #Cicle though the array
 function teplus_exten:drops/item_generated/get_enchantment/loop_build

@@ -12,6 +12,7 @@ data remove storage teplus:chest Copy[].ForItem
 data remove storage teplus:chest Copy[].Rarity
 data remove storage teplus:chest Copy[].NoEnch
 data remove storage teplus:chest Copy[].NoDrop
+data remove storage teplus:chest Copy[].Incompatible
 
 #Cicle though the array
 function teplus_exten:chests/create_loot/system/loop_build

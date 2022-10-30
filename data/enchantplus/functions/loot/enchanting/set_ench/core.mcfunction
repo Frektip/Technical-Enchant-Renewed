@@ -27,7 +27,15 @@ function enchantplus:loot/enchanting/set_ench/loop_ench
 execute store result score #enchant.rarity teplus.data run data get storage teplus:loot Temp[0].Rarity
 data remove storage teplus:loot Temp[].Rarity
 
-#Add the nbt tag nchant the item based on Temp Storage
+#Add the nbt tag enchant the item based on Temp Storage
+#But check first if there is incompatibilities for Items Only
+execute if entity @s[tag=teplus.loot_is_item,nbt={Item:{tag:{Enchantments:[{}]}}}] if data storage teplus:loot Temp[0].Incompatible run function enchantplus:loot/enchanting/incompatible/init
+execute if entity @s[tag=teplus.loot_is_item,nbt={Item:{tag:{CustomEnchantments:[{}]}}}] if data storage teplus:loot Temp[0].Incompatible run function enchantplus:loot/enchanting/incompatible/init
+#Remove the "Incompatible" nbt from the storage (this is in case
+# the item doesn't have any incompatible enchantment, therefore
+# it needs to continue to add that enchantment to the main item)
+data remove storage teplus:loot Temp[].Incompatible
+
 data modify entity @s[tag=teplus.loot_is_book] Item.tag.StoredCustomEnchantments append from storage teplus:loot Temp[0]
 data modify entity @s[tag=teplus.loot_is_item] Item.tag.CustomEnchantments append from storage teplus:loot Temp[0]
 
@@ -37,6 +45,7 @@ data remove storage teplus:loot Temp
 data remove storage teplus:loot Copy
 data remove storage teplus:loot Build
 data remove storage teplus:loot Current
+data remove storage teplus:loot Incomp
 
 #Add another enchantment again acording the enchanting setup
 #Kept it at 3 or 2 enchantments maximum for books
