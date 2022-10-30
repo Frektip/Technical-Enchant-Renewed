@@ -2,9 +2,6 @@
 #We create a storage containing information about the enchantment
 # is contained in an array in a single "{}"
 
-#CustomCurses doesn't have an enabled parameter or structure parameter,
-# they aren't divided between low, average or strong
-
 #The storage should be something like:
 # Main array "Custom" []
 # Divided between Enchantment[] and Curse[] arrays
@@ -17,6 +14,9 @@
 #Enabled:0b=on,1b=off [NO NEEDED IF IT IS A CURSE]
 #Rarirty:from 1 to 3 (low, average and strong) [NO NEEDED IF IT IS A CURSE]
 #ForItem:{item:1b} (all items that the enchantment is compatible with)
+
+#CustomCurses doesn't have an enabled parameter or structure parameter,
+# they aren't divided between low, average or strong
 
 ##OPTIONAL##
 #-Structure:[{all:1b},{acient_city:1b,add:10}] if set to "all" it can 
@@ -32,9 +32,9 @@
 #---(ATM) Not all the structures support every single enchantment rarity---#
 
 #-Sell:1, is the nbt data that will allow that enchantment to be offered
-# by a Technical Librarian. If it isn't there, that means that it can't be
+# by a Advanced Enchanter. If it isn't there, that means that it can't be
 # obtained by that method. Keep in mind that no matter the max level of the
-# enchantment, the Technical Librarian will only give the enchantment at lvl 1!!
+# enchantment, the Advanced Enchanter will only give the enchantment at lvl 1!!
 
 #-NoEnch:1b, if this is present in the string, then this enchantment won't
 # be able to obtain through the enchanting table (no matter if it is
@@ -42,6 +42,12 @@
 
 #-NoDrop:1b, if this is present in the string, then this enchantment won't
 # be able to obtain through enchanted mobs
+
+#-Incompatible:[{}], You can specify enchantments IDs in this array. Any
+# vanilla, custom enchantment or curse wont be compatible with that enchantment.
+# Keep in mind that this will only prevent that enchantment from combining
+#  with the ones in the Array IN THE ENCHANTING TABLE SETUP for items. The 
+#  technical anvil use another method.
 
 #Clear it to initialize
 data modify storage teplus:register Custom set value []
