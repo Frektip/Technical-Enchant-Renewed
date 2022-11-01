@@ -9,36 +9,36 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{teplus.mob_drop:1b,Rarity:\"curse\"}",
-              "conditions": [
-                {
-                  "condition": "minecraft:killed_by_player"
-                },
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "killer",
-                  "predicate": {
-                    "equipment": {
-                      "mainhand": {
-                        "enchantments": [
-                          {
-                            "enchantment": "minecraft:looting",
-                            "levels": {
-                              "min": 3
-                            }
-                          }
-                        ]
-                      }
-                    }
-                  }
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.25
-                }
-              ]
+              "tag": "{teplus.mob_drop:1b,Rarity:\"curse\"}"
             }
           ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "killer",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "enchantments": [
+                  {
+                    "enchantment": "minecraft:looting",
+                    "levels": {
+                      "min": 3
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
         }
       ]
     }

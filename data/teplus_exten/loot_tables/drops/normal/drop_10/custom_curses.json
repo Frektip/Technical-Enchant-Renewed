@@ -9,18 +9,18 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{teplus.mob_drop:1b,Rarity:\"curse\"}",
-              "conditions": [
-                {
-                  "condition": "minecraft:killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.1
-                }
-              ]
+              "tag": "{teplus.mob_drop:1b,Rarity:\"curse\"}"
             }
           ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
         }
       ]
     }
