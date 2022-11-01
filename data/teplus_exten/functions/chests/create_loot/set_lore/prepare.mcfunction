@@ -7,4 +7,4 @@ execute store result score @s teplus.tmplvl run data get storage teplus:item_lor
 function technical_anvil:edit_lore/system/get_level
 
 #Set the new Lore
-function #teplus_exten:set_lore/for_chest
+function #enchantplus:extra/set_lore_mainhand

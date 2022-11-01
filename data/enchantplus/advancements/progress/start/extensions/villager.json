@@ -4,10 +4,10 @@
       "item": "minecraft:emerald"
     },
     "title": {
-      "translate":"Exceed the limit"
+      "translate":"Enchantment offers"
     },
     "description": {
-      "translate": "Trade with a Technical Librarian",
+      "translate": "Trade with an Advanced Enchanter",
       "color": "green"
     },
     "frame": "task",
@@ -18,7 +18,18 @@
   "parent": "enchantplus:progress/start/extensions/chest_loot",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"tepxv.init\",\"tepxv.station_match\"]}"
+            }
+          }
+        ]
+      }
     }
   }
 }

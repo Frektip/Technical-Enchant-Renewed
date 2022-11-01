@@ -4,8 +4,7 @@ data modify storage teplus:chest Build set from storage teplus:chest Copy[0]
 execute if entity @s[tag=is_enchantment] store result score #is_enabled teplus.data run data get storage teplus:chest Build.Enabled
 
 # If true, then remove the current enchantment from the array
-#  
-execute if entity @s[tag=is_enchantment] if score #is_enabled teplus.chest matches 1 run data remove storage teplus:chest Build
+execute if entity @s[tag=is_enchantment] if score #is_enabled teplus.data matches 1 run data remove storage teplus:chest Build
 
 #Detect if the current enchantment has an specific structure
 # assoisated with it. For this the armor stand must generate with the

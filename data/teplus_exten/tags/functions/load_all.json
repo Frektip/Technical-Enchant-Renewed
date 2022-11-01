@@ -3,6 +3,7 @@
         "teplus_exten:manager/load",
         "teplus_exten:mobs/load",
         "teplus_exten:spawn/load",
-        "teplus_exten:drops/load"
+        "teplus_exten:drops/load",
+        "teplus_exten:villagers/load"
     ]
 }

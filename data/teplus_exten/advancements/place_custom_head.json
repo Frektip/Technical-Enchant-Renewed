@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "isolated_core": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:player_head"
+          ],
+          "nbt": "{TeplusHead:{isolated_core:1b}}"
+        }
+      }
+    },
+    "polished_lapis": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:player_head"
+          ],
+          "nbt": "{TeplusHead:{polished_lapis:1b}}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "isolated_core",
+      "polished_lapis"
+    ]
+  ],
+  "rewards": {
+    "function": "teplus_exten:villagers/return_block"
+  }
+}

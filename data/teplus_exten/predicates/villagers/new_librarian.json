@@ -1,0 +1,9 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+	  "type": "minecraft:villager",
+	  "nbt": "{Xp:0,VillagerData:{profession:\"minecraft:librarian\",level:1}}"
+	}
+  }
+  

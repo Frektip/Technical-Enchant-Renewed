@@ -10,7 +10,7 @@ execute store result score @s teplus.tmplvl run data get storage teplus:item_lor
 function technical_anvil:edit_lore/system/get_level
 
 #Put the correct lore based on the "First" storage
-function #teplus_exten:set_lore/for_chest
+function #enchantplus:extra/set_lore_mainhand
 
 #Loop again until all enchantments and curses were covered
 execute if score @s teplus.cencnt matches 1.. run data remove storage teplus:item_lore TempEnch[0]

@@ -17,7 +17,6 @@ function teplus_exten:drops/item_generated/get_enchantment/loop_build
 
 #Remove Enabled data
 data remove storage teplus:loot Enchantments[].Enabled
-
 #Copy into a Temp storage the enchantments available
 data modify storage teplus:loot Temp set from storage teplus:loot Enchantments
 
@@ -47,7 +46,7 @@ execute store result score @s teplus.tmplvl run data get storage teplus:item_lor
 function technical_anvil:edit_lore/system/get_level
 
 #Spawn the new enchantment based on the storage
-function teplus_exten:drops/item_generated/get_enchantment/set_book
+function #enchantplus:extra/loot_enchanted_book
 
 #Clear the storages
 data remove storage teplus:loot Enchantments

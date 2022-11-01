@@ -57,7 +57,10 @@ scoreboard players set #ecd.swift tepext.manager 4
 scoreboard players set #ecd.thrs tepext.manager 5
 scoreboard players set #ecd.unbrk tepext.manager 5
 #-------------------------------------------------------#
-##FUTURE: 
-# -Villagers
+scoreboard players set $Villager tepext.manager 0
+scoreboard players set #vill.dsnt tepext.manager 1
+scoreboard players set #vill.slspc tepext.manager 0
+scoreboard players set #vill.renws tepext.manager 1
+scoreboard players set #vill.anylvl tepext.manager 1
 #-------------------------------------------------------#
 scoreboard players set #new_world tepext.manager 1
