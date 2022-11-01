@@ -1,0 +1,33 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "A page full of unique",
+        "color": "white",
+        "italic": false
+      }
+    ],
+    "replace": false
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "enchantment knowledge",
+        "color": "white",
+        "italic": false
+      }
+    ],
+    "replace": false
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": " "
+      }
+    ],
+    "replace": false
+  }
+]

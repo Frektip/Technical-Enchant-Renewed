@@ -16,7 +16,7 @@ execute if score %tcha.ui_changed TCHA.Value matches 1.. run function technical_
 ##------TECHNICAL ANVIL USE--------##
 execute if entity @s[tag=tcha_open] unless data storage teplus:tech_anvil.ui CurrentItems[{Slot:4b}].tag.Teplus.switch run function technical_anvil:menu/change_item/switch_mode
 
-execute unless data storage teplus:tech_anvil.ui CurrentItems[{Slot:13b}].tag.Teplus.combine run function technical_anvil:interaction/check_level
+execute unless data storage teplus:tech_anvil.ui CurrentItems[{Slot:13b}].tag.Teplus.combine run function technical_anvil:interaction/try
 execute if data storage teplus:tech_anvil.ui {CurrentItems:[{Slot:22b,id:"minecraft:air"}]} run function technical_anvil:menu/change_item/can_change
 
 

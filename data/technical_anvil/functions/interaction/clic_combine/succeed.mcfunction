@@ -7,8 +7,13 @@ execute if score #tslpm game.Opts matches 1 run particle nautilus ~ ~1.5 ~ 0.000
 execute if score #tslpm game.Opts matches 1 run particle block anvil ~ ~1 ~ 0.3 0 0.3 1 150
 
 #Check if the xp value from the settings has sense (at least 0 levels)
-scoreboard players operation @p[tag=TECHA.try] TCHA.plxp = #xprq game.Opts
-execute as @p[tag=TECHA.try,scores={TCHA.plxp=0..}] run function technical_anvil:interaction/clic_combine/take_xp
+# Only for "normal" combining
+execute if entity @s[tag=!No.xpcomb] run scoreboard players operation @p[tag=TECHA.try] TCHA.plxp = #xprq game.Opts
+execute if entity @s[tag=!No.xpcomb] as @p[tag=TECHA.try,scores={TCHA.plxp=0..}] run function technical_anvil:interaction/clic_combine/take_xp
+
+
+#In case it has a "different" combining
+execute if entity @s[tag=No.xpcomb] as @p[tag=TECHA.try] run function technical_anvil:interaction/clic_combine/take_less_xp
 
 
 data remove entity @s Items[{Slot:2b}]

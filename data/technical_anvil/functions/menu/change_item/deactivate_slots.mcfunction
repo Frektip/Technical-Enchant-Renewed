@@ -1,6 +1,7 @@
 #------------------ANVIL-------------------#
 tag @s remove CanCombine
 tag @s remove InSlot1
+tag @s[tag=No.xpcomb] remove No.xpcomb
 function technical_anvil:menu/update_ui/slot_1/11
 function technical_anvil:menu/update_ui/slot_1/20
 function technical_anvil:menu/update_ui/slot_1/21

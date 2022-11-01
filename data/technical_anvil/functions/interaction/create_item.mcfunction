@@ -3,8 +3,16 @@ data merge storage teplus:tech_anvil.ui {ResultItem:{Slot:22b,id:"minecraft:air"
 data modify storage teplus:tech_anvil.ui ResultItem.id set from storage teplus:tech_anvil.ui CurrentItems[{Slot:2b}].id
 data modify storage teplus:tech_anvil.ui ResultItem.tag set from storage teplus:tech_anvil.ui CurrentItems[{Slot:2b}].tag
 #-------CHECK WHAT ITEMS ARE COMBINED------#
-execute if entity @s[tag=!Is.same_item,nbt=!{Items:[{Slot:2b,id:"minecraft:enchanted_book"}]}] run function #technical_anvil:interaction/check_item_with_book
+#Page of Power with Page of Power
+execute if entity @s[nbt={Items:[{Slot:2b,Count:1b,tag:{TeplusPower_page:1b}}]},nbt={Items:[{Slot:6b,Count:1b,tag:{TeplusPower_page:1b}}]}] run function technical_anvil:interaction/item_check/power_pages
+
+#Item with an enchanted book
+execute if entity @s[tag=!Is.same_item,tag=!TCHA.inpbk,nbt=!{Items:[{Slot:2b,id:"minecraft:enchanted_book"}]}] run function #technical_anvil:interaction/check_item_with_book
+
+#Item with the same item type
 execute if entity @s[tag=Is.same_item] run function #technical_anvil:interaction/check_item_with_item
+
+#Encahnted book with Enchanted Book
 execute if entity @s[nbt={Items:[{Slot:2b,id:"minecraft:enchanted_book"}]}] run function technical_anvil:interaction/item_check/book_with_book
 
 ##------------DETECTING WHAT COMBINATION HAS BEEN DONDE-------------##
