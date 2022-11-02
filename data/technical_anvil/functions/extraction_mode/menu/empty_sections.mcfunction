@@ -4,6 +4,7 @@ tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true
 
 tag @s add HasExtracted
 tag @s remove CanExtract
+tag @s remove CurseExtract
 tag @s remove InSlot1
 function technical_anvil:extraction_mode/menu/update_ui/slot_1/11
 function technical_anvil:extraction_mode/menu/update_ui/slot_1/12

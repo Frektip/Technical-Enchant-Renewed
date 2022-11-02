@@ -4,15 +4,16 @@ execute if data entity @s {Items:[{Slot:10b,id:"minecraft:bow"}]} run function #
 #Check only for crossbow input
 execute if data entity @s {Items:[{Slot:10b,id:"minecraft:crossbow"}]} run function #technical_anvil:extraction_mode/bowcross_check
 
-#Check only for shield input
-execute if data entity @s {Items:[{Slot:10b,id:"minecraft:shield"}]} run function technical_anvil:extraction_mode/interaction/update_input/shield_check
-
-#Check for especial enchantments to remove their attributes
+#Check for special enchantments to remove their attributes
 execute if data storage teplus:tech_extract {CurrentOutput:{tag:{StoredCustomEnchantments:[{id:"Agility"}]}}} run data remove entity @s Items[{Slot:10b}].tag.AttributeModifiers
+
+execute if data storage teplus:tech_extract {CurrentOutput:{tag:{StoredCustomEnchantments:[{id:"AntiKnockback"}]}}} run data remove entity @s Items[{Slot:10b}].tag.AttributeModifiers[{AttributeName:"minecraft:generic.knockback_resistance"}]
 
 execute if data storage teplus:tech_extract {CurrentOutput:{tag:{StoredCustomEnchantments:[{id:"Armored"}]}}} run data remove entity @s Items[{Slot:10b}].tag.AttributeModifiers
 
 execute if data storage teplus:tech_extract {CurrentOutput:{tag:{StoredCustomEnchantments:[{id:"AttackSpeed"}]}}} run data remove entity @s Items[{Slot:10b}].tag.AttributeModifiers
+
+execute if data storage teplus:tech_extract {CurrentOutput:{tag:{StoredCustomEnchantments:[{id:"HardnessPlus"}]}}} run data remove entity @s Items[{Slot:10b}].tag.AttributeModifiers[{AttributeName:"minecraft:generic.armor_toughness"}]
 
 execute if data storage teplus:tech_extract {CurrentOutput:{tag:{StoredCustomEnchantments:[{id:"LifePlus"}]}}} run data remove entity @s Items[{Slot:10b}].tag.AttributeModifiers
 

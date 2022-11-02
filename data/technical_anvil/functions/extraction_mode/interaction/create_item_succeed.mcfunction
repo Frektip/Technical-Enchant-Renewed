@@ -1,5 +1,6 @@
 #------------ADD ENCHANT GLINT-------------#
 tag @s add CanExtract
+tag @s[tag=techanv.ext_spl] add CurseExtract
 tag @s remove Error1
 tag @s remove Error2
 
