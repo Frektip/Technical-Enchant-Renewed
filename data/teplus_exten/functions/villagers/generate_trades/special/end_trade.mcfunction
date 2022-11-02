@@ -4,4 +4,5 @@ data modify entity @s Offers.Recipes[-1].maxUses set value 0
 #Reset scores and remove tags
 scoreboard players reset @s tepxv.limit
 tag @s remove tepxv.isl_cr
+tag @s remove tepxv.bls_orb
 tag @s remove tepxv.special

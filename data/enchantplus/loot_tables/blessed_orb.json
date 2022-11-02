@@ -1,0 +1,50 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:player_head",
+			"functions": [
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{TeplusHead:{blessed_orb:1b},SkullOwner:{Id:[I;1426414260,-1053604529,-1932565519,-1658789434],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODcyNWQxMWZlMWQ3YmUxNjdlYzVjYzc2OTdjZGZjMjU1NzM3NzRlZTQxYjhjM2IzNzI2MWU0M2Q1ZDMxOGZjMyJ9fX0=\"}]}}}"
+			  },	
+			  {
+				"function": "minecraft:set_lore",
+				"lore": [
+				  {
+					"translate": "Puch a mob with this orb to",
+					"color": "white",
+					"italic": false
+				  },
+				  {
+					"translate": "convert it into an enchanted one",
+					"color": "white",
+					"italic": false
+				  },
+				  {
+					"translate": "Technical Enchant+",
+					"color": "#63C0E3",
+					"italic": true
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_name",
+				"name": [
+				  {
+					"translate": "Blessed Orb",
+					"color": "gold",
+					"italic": false
+				  }
+				]
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

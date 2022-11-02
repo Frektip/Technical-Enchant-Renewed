@@ -21,12 +21,24 @@
           "nbt": "{TeplusHead:{polished_lapis:1b}}"
         }
       }
+    },
+    "blessed_orb": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:player_head"
+          ],
+          "nbt": "{TeplusHead:{blessed_orb:1b}}"
+        }
+      }
     }
   },
   "requirements": [
     [
       "isolated_core",
-      "polished_lapis"
+      "polished_lapis",
+      "blessed_orb"
     ]
   ],
   "rewards": {

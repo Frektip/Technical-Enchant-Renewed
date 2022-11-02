@@ -1,0 +1,48 @@
+{
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:player_hurt_entity",
+		"conditions": {
+		  "player": [
+			{
+			  "condition": "minecraft:entity_properties",
+			  "entity": "this",
+			  "predicate": {
+				"equipment": {
+				  "mainhand": {
+					"nbt": "{TeplusHead:{blessed_orb:1b}}"
+				  }
+				}
+			  }
+			}
+		  ],
+		  "entity": [
+			{
+			  "condition": "minecraft:inverted",
+			  "term": {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "type": "#teplus_exten:drops/ignore"
+				}
+			  }
+			},
+			{
+			  "condition": "minecraft:inverted",
+			  "term": {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "nbt": "{Tags:[\"tepdrop.can\"]}"
+				}
+			  }
+			}
+		  ]
+		}
+	  }
+	},
+	"rewards": {
+	  "function": "teplus_exten:drops/convert/hurt_with_orb"
+	}
+  }
+  
