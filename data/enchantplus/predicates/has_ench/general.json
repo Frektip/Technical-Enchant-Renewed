@@ -1,93 +1,30 @@
 {
 	"condition": "minecraft:alternative",
 	"terms": [
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"equipment": {
-					"mainhand": {
-						"nbt": "{CustomEnchantments:[{}]}"
-					}
-				}
-			}
-		},
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"equipment": {
-					"head": {
-						"nbt": "{CustomEnchantments:[{}]}"
-					}
-				}
-			}
-		},
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"equipment": {
-					"chest": {
-						"nbt": "{CustomEnchantments:[{}]}"
-					}
-				}
-			}
-		},
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"equipment": {
-					"legs": {
-						"nbt": "{CustomEnchantments:[{}]}"
-					}
-				}
-			}
-		},
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"equipment": {
-					"feet": {
-						"nbt": "{CustomEnchantments:[{}]}"
-					}
-				}
-			}
-		},
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"equipment": {
-					"offhand": {
-						"nbt": "{CustomEnchantments:[{}]}"
-					}
-				}
-			}
-		},
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"equipment": {
-					"offhand": {
-						"nbt": "{CustomCurse:[{}]}"
-					}
-				}
-			}
-		},
-		{
-			"condition": "minecraft:entity_properties",
-			"entity": "this",
-			"predicate": {
-				"equipment": {
-					"mainhand": {
-						"nbt": "{CustomCurse:[{}]}"
-					}
-				}
-			}
-		}
+	  {
+		"condition": "minecraft:reference",
+		"name": "enchantplus:has_ench/chestplate"
+	  },
+	  {
+		"condition": "minecraft:reference",
+		"name": "enchantplus:has_ench/boots"
+	  },
+	  {
+		"condition": "minecraft:reference",
+		"name": "enchantplus:has_ench/helmet"
+	  },
+	  {
+		"condition": "minecraft:reference",
+		"name": "enchantplus:has_ench/leggings"
+	  },
+	  {
+		"condition": "minecraft:reference",
+		"name": "enchantplus:has_ench/selected"
+	  },
+	  {
+		"condition": "minecraft:reference",
+		"name": "enchantplus:has_ench/offhand"
+	  }
 	]
-}
+  }
+  

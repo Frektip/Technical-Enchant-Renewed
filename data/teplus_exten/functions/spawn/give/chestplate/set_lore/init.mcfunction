@@ -12,3 +12,6 @@ tag @s add at_item
 function teplus_exten:spawn/give/chestplate/set_lore/new_lore
 
 tag @s remove at_item
+
+scoreboard players reset @s teplus.single
+scoreboard players reset @s teplus.tmplvl

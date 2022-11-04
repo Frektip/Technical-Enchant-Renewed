@@ -156,21 +156,16 @@ execute as @a[tag=teplus.uuid] run function enchbowcross:new_user
 #Detect TE+ extensions
 scoreboard objectives add tep.exten dummy
 
-#Detect Villager module
-function enchantplus:extention_detect/tech_villager_check
-
 #Detect Addons
-function enchantplus:extention_detect/addons_check
-function enchantplus:extention_detect/complements_check
+function enchantplus:detect/addons_check
+function enchantplus:detect/complements_check
 
 
 #Tellraw
 tellraw @a ["",{"text":"             [","color":"gold"},{"text":"Technical Enchant+ Renewed","color":"green"},{"text":" is ready","color":"green"},{"text":"]","color":"gold"}]
 tellraw @a ["",{"text":"              *------*--*--*------*--*--*------*","color":"gold"}]
 tellraw @a ["",{"text":"        *-----*","color":"gold"},{"text":" By Hardel ","color":"blue"},{"text":" Modified by Frektip ","color":"red"},{"text":"*-----*","color":"gold"}]
-tellraw @a ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}] 
-execute if score $Villager tep.exten matches 0 run tellraw @a ["",{"translate":"Custom Villagers Module:","color":"yellow"},{"translate":" Not installed","color":"dark_red"}]
-execute if score $Villager tep.exten matches 1 run tellraw @a ["",{"translate":"Custom Villagers Module:","color":"yellow"},{"translate":" Installed","color":"dark_green"}]
+tellraw @a ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}]
 
 execute if score $Addon tep.exten matches 0 run tellraw @a ["",{"translate":"TE+ Addons:","color":"yellow"},{"translate":" Not detected","color":"dark_red"}]
 execute if score $Addon tep.exten matches 1 run tellraw @a ["",{"translate":"TE+ Addons:","color":"yellow"},{"translate":" Were detected","color":"dark_green"}]

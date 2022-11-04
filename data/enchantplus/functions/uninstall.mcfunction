@@ -40,6 +40,8 @@ data remove storage teplus:item_lore Level
 data remove storage teplus:loot Copy
 data remove storage teplus:loot Build
 
+data remove storage teplus:register Custom
+
 #remove scoreboards
 scoreboard objectives remove teplus.diench
 scoreboard objectives remove Drop

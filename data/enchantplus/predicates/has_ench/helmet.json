@@ -1,11 +1,27 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "equipment": {
-      "head": {
-        "nbt": "{CustomEnchantments:[{}]}"
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "head": {
+            "nbt": "{CustomEnchantments:[{}]}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "head": {
+            "nbt": "{CustomCurse:[{}]}"
+          }
+        }
       }
     }
-  }
+  ]
 }
