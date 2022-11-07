@@ -1,5 +1,6 @@
 #Revome Technical Anvil Minecart, so it also kills "decorative" entities
 execute as @e[type=chest_minecart,tag=teplus.technical_anvil] at @s run setblock ~ ~ ~ air
+execute as @e[type=marker,tag=teplus.admin_box] at @s run setblock ~ ~ ~ air
 kill @e[type=chest_minecart,tag=teplus.technical_anvil]
 
 #Stop tick functions
@@ -31,6 +32,7 @@ data remove storage teplus:tech_extract CurrentUICheckChange
 data remove storage teplus:tech_extract SectionChange1
 data remove storage teplus:tech_extract SectionChange2
 data remove storage teplus:tech_extract FromItem
+data remove storage teplus:tech_extract First
 
 data remove storage teplus:item_lore CurrentLore
 data remove storage teplus:item_lore First
@@ -38,6 +40,7 @@ data remove storage teplus:item_lore TempEnch
 data remove storage teplus:item_lore Level
 
 data remove storage teplus:loot Copy
+data remove storage teplus:loot First
 data remove storage teplus:loot Build
 
 data remove storage teplus:register Custom

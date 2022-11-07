@@ -8,6 +8,7 @@ scoreboard players set #3const teplus.data 3
 scoreboard players set #4const teplus.data 4
 scoreboard players set #5const teplus.data 5
 scoreboard players set #10const teplus.data 10
+scoreboard players set #19const teplus.data 19
 scoreboard players set #25const teplus.data 25
 scoreboard players set #30const teplus.data 30
 scoreboard players set #33const teplus.data 33

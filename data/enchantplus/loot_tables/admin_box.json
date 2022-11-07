@@ -1,0 +1,41 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:barrel",
+			"functions": [
+			  {
+				"function": "minecraft:set_name",
+				"entity": "this",
+				"name": [
+				  {
+					"text": "[",
+					"color": "dark_blue",
+					"italic": false
+				  },
+				  {
+					"translate": "TE+ ADMIN BOX",
+					"color": "dark_aqua",
+					"italic": false
+				  },
+				  {
+					"text": "]",
+					"color": "dark_blue",
+					"italic": false
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{TeplusAdminBox:1b, Enchantments:[{}]}"
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

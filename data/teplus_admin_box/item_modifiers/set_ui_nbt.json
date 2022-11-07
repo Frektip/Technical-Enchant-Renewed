@@ -1,0 +1,6 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{Teplus:{ui:1b}}"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:barrel",
+        "item": {
+          "nbt": "{TeplusAdminBox:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "teplus_admin_box:events/placed/init"
+  }
+}

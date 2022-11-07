@@ -1,0 +1,45 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:enchanted_book",
+			"functions": [
+			  {
+				"function": "minecraft:copy_nbt",
+				"source": {
+				  "type": "minecraft:storage",
+				  "source": "teplus:admin_box"
+				},
+				"ops": [
+				  {
+					"source": "Copy.tag.StoredCustomEnchantments",
+					"target": "StoredCustomEnchantments",
+					"op": "replace"
+				  },
+				  {
+					"source": "Copy.tag.StoredCustomCurse",
+					"target": "StoredCustomCurse",
+					"op": "replace"
+				  },
+				  {
+					"source": "Copy.tag.MaxEnch",
+					"target": "MaxEnch",
+					"op": "replace"
+				  },
+				  {
+					"source": "Copy.tag.display",
+					"target": "display",
+					"op": "replace"
+				  }
+				]
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

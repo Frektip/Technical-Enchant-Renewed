@@ -1,6 +1,7 @@
 {
     "values": [
         {"id":"enchantplus:uninstall", "required":false},
-        {"id":"teplus_exten:uninstall", "required":false}
+        {"id":"teplus_exten:uninstall", "required":false},
+        {"id":"teplus_admin_box:uninstall", "required":false}
     ]
 }

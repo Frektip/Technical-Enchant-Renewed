@@ -1,0 +1,21 @@
+#Add it for the 20 container slots
+item modify block ~ ~ ~ container.2 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.3 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.4 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.5 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.6 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.7 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.8 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.11 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.12 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.13 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.14 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.15 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.16 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.17 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.20 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.21 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.22 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.23 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.24 teplus_admin_box:set_ui_nbt
+item modify block ~ ~ ~ container.25 teplus_admin_box:set_ui_nbt

@@ -1,0 +1,35 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:enchanted_book",
+			"functions": [
+			  {
+				"function": "minecraft:copy_nbt",
+				"source": {
+				  "type": "minecraft:storage",
+				  "source": "teplus:admin_box"
+				},
+				"ops": [
+				  {
+					"source": "Copy.tag.StoredEnchantments",
+					"target": "StoredEnchantments",
+					"op": "replace"
+				  },
+				  {
+					"source": "Copy.tag.MaxEnch",
+					"target": "MaxEnch",
+					"op": "replace"
+				  }
+				]
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

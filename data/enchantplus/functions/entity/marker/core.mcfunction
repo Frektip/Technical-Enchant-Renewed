@@ -27,3 +27,6 @@ execute if entity @s[tag=teplus.FrostWalk] at @s run function enchantplus:entity
 #Marker for bow/crossbow enchantments
 # this is used when the arrow hits a mob
 execute if entity @s[tag=tep.arrow_follow] at @s unless entity @e[type=arrow,tag=tep.custom_arrow,distance=..1] run function #enchbowcross:marker_select 
+
+#Marker for the Admin Box
+execute if entity @s[tag=teplus.admin_box] at @s run function teplus_admin_box:as_marker

@@ -9,6 +9,11 @@
         "player_head",
         "nether_star",
         "paper",
+        "enchanting_table",
+        "book",
+        "potion",
+        "written_book",
+        "bookshelf",
         "#technical_anvil:additional",
         "#technical_anvil:armor",
         "#technical_anvil:tools"
