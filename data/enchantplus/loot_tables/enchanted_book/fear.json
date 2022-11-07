@@ -16,7 +16,7 @@
 				    "ops": [
 				    {
 					  "source": "First",
-					  "target": "StoredCustomEnchantments",
+					  "target": "StoredCustomCurse",
 					  "op": "replace"
 				    }
 				 ]
