@@ -14,7 +14,7 @@ execute if data storage teplus:loot Build.NoEnch run data remove storage teplus:
 
 #In case we are enchanting another item (not a book) run
 # another function to get it's enchantments correctly
-execute if entity @s[tag=teplus.loot_is_item] run function enchantplus:loot/enchanting/set_ench/get_item
+execute if entity @s[tag=teplus.loot_is_item] run function #enchantplus:enchanting/items/set_enchantment
 
 #If it is an enchanted book, then always run the success function
 execute if entity @s[tag=teplus.loot_is_book] run function enchantplus:loot/enchanting/set_ench/success

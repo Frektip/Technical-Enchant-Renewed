@@ -9,7 +9,7 @@ execute if data storage teplus:loot Build.NoEnch run data remove storage teplus:
 
 #In case we are enchanting another item (not a book) run
 # another function to get it's enchantments correctly
-execute if entity @s[tag=teplus.loot_is_item] run function enchantplus:loot/enchanting/set_curse/get_item
+execute if entity @s[tag=teplus.loot_is_item] run function #enchantplus:enchanting/items/set_curse
 
 #If the enchantment is enabled, then run a function
 # This also runs only if the enchantment is compatible
