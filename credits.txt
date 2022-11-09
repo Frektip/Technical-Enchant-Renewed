@@ -13,6 +13,7 @@ Also, IMPORTANT to mention that this datapack has:
 - "Blue Commander's" (https://www.youtube.com/c/BlueCommander) base to create a custom anvil 
 - "Stoupy51" for helping me optimizing parts in the code
 - "Jaro" for creating the textures
+- Ziromanean for creating "TE+ complement creator" software: https://github.com/KendallP4299/Complement-Creator-for-Technical-Enchant-Renewed-
 
 This RENEWED version include:
 
@@ -45,9 +46,10 @@ This RENEWED version include:
 - Compatibility with "TE+ complements", which are other datapacks designed for modded items to be
   compatible with all of the custom enchantments and curses from this datapack
 - Added "addons" support, so other people can create/add their own custom enchantments or curses!
+- Added built-in extensions to enhance the experience while playing
 - A compatibility system with Custom Villagers Professions Datpack from "Sirloscus" (credit to him)
   https://www.planetminecraft.com/data-pack/custom-villagers-professions-with-custom-buildable-workstations-for-survial-vanilla-friendly-quite-simple-capitalist-proof/
 - A lot of bug fixes.
 
-This covers the most relevant information of the changelog for the current datapack version 7.2.1, for
+This covers the most relevant information of the changelog for the current datapack version 7.3.0, for
 more details visit the planet minecraft page of Technical Enchant+ for 1.19, 1.18 and 1.17

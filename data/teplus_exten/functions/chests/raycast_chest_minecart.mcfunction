@@ -1,4 +1,4 @@
-execute positioned ~-0.05 ~-0.05 ~-0.05 as @e[type=chest_minecart,tag=!teplus.found,dx=0,sort=nearest] at @s align xyz run function teplus_exten:chests/minecart_found
+execute positioned ~-0.05 ~-0.05 ~-0.05 as @e[type=chest_minecart,dx=0,sort=nearest,limit=1] at @s align xyz run function teplus_exten:chests/minecart_found
 
 scoreboard players add .distance tep.rc 1 
 
