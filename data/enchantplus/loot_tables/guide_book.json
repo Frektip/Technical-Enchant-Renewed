@@ -15,7 +15,7 @@
 				"function": "minecraft:set_lore",
 				"lore": [
 				  {
-					"translate": "Technical Enchant+",
+					"text": "Technical Enchant+",
 					"color": "#63C0E3",
 					"italic": true
 				  }
