@@ -15,7 +15,7 @@
 				"function": "minecraft:set_lore",
 				"lore": [
 				  {
-					"translate": "Puch a mob with this orb to",
+					"translate": "Punch a mob with this orb to",
 					"color": "white",
 					"italic": false
 				  },

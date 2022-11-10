@@ -21,7 +21,7 @@ tellraw @s[scores={TellrawEnch=1}] ["",{"translate":"Technical Anvil:","color":"
 tellraw @s[scores={TellrawEnch=1}] ["",{"text":"\n"}]
 tellraw @s[scores={TellrawEnch=1}] ["",{"translate":"Isolated Core:","color":"#D93262","bold":true},{"translate":" Use it instead of books in the ","color":"gray","bold":false},{"translate":"Technical Anvil extracting mode","color":"#F78B25","bold":false},{"translate":" to remove custom and vanilla curses! Watch out, there is a chance it can also remove other enchantments.","color":"gray","bold":false}]
 tellraw @s[scores={TellrawEnch=1}] ["",{"text":"\n"}]
-tellraw @s[scores={TellrawEnch=1}] ["",{"translate":"Blessed Orb:","color":"#E2AE18","bold":true},{"translate":" Puch a mob with this orb to convert it into an enchanted one. Keep in mind that ","color":"gray","bold":false},{"translate":" not all entities can be converted.","color":"red","bold":false}]
+tellraw @s[scores={TellrawEnch=1}] ["",{"translate":"Blessed Orb:","color":"#E2AE18","bold":true},{"translate":" Punch a mob with this orb to convert it into an enchanted one. Keep in mind that ","color":"gray","bold":false},{"translate":" not all entities can be converted.","color":"red","bold":false}]
 tellraw @s[scores={TellrawEnch=1}] ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}]
 ##=========================================================##
 
