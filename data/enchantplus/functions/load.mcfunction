@@ -166,6 +166,7 @@ function enchantplus:detect/complements_check
 tellraw @a ["",{"text":"             [","color":"gold"},{"text":"Technical Enchant+ Renewed","color":"green"},{"text":" is ready","color":"green"},{"text":"]","color":"gold"}]
 tellraw @a ["",{"text":"              *------*--*--*------*--*--*------*","color":"gold"}]
 tellraw @a ["",{"text":"        *-----*","color":"gold"},{"text":" By Hardel ","color":"blue"},{"text":" Modified by Frektip ","color":"red"},{"text":"*-----*","color":"gold"}]
+tellraw @a ["",{"text":"                      [","color":"aqua","italic":true},{"translate":"Reset All Global Settings","color":"#DDC65C","clickEvent":{"action":"suggest_command","value":"/function enchantplus:set_options/init"},"italic":true},{"text":"]","color":"aqua","italic":true}]
 tellraw @a ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}]
 
 execute if score $Addon tep.exten matches 0 run tellraw @a ["",{"translate":"TE+ Addons:","color":"yellow"},{"translate":" Not detected","color":"dark_red"}]
