@@ -24,10 +24,10 @@ When you place your first enchanting table you will get an advancement, you shou
 
 # Useful commands
 
-`/function enchantplus:config` To mess around with the settings (very important for server owners)
+`/function enchantplus:config` To change the TE+ settings (very important for server owners)
 
-`/function enchantplus:give/all` To get a barrel with all the items form TE+
+`/function enchantplus:give/all` Obtain a barrel with all TE+ items
 
-`/function #enchantplus:uninstall` To uninstall the datapack and it's branches (addons, extentions and complements)
+`/function #enchantplus:uninstall` To uninstall the datapack and its branches (addons, extensions & complements)
 
-`/function enchantplus:heldenchant/set/<enchantment>` While holding an item to enchant it with custom enchantments
+`/function enchantplus:heldenchant/set/<enchantment>` While holding an item to enchant it with TE+ enchantments
