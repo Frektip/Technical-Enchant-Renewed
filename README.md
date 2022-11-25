@@ -11,18 +11,18 @@ At its current state, TE+ isn't the same as the original and some of the most im
 - Many customizable options using Admin Commands
 - Compatibility with modded items by using "TE+ complements"
 - More custom enchantments using "TE+ addons"
-- Extra mechanics using "TE+ Extentions" including:
-    - Allow mobs using TE+ enchantments
+- Extra mechanics using "TE+ Extensions" including:
+    - Allow mobs to use TE+ enchantments
     - Certain mobs can spawn with TE+ enchanted gear
     - Find custom enchantments in any Minecraft vanilla chest
     - Almost any mob can spawn with custom enchanted books as a drop
-    - Exceed the enchantment level from 20 vanilla enchantments
+    - Exceed the vanilla enchantment level from 20 vanilla enchantments
 
 
 # Getting started
 When you place your first enchanting table you will get an advancement, you should follow the steps that are displayed there. Try getting a guide book (which supports other languages if you have the resource pack installed). You can also check out the [wiki](https://github.com/Frektip/Technical-Enchant-Renewed/wiki) to get more detailed information about the datapack.
 
-# Useful commads
+# Useful commands
 
 `/function enchantplus:config` To mess around with the settings (very important for server owners)
 
