@@ -30,7 +30,7 @@ function enchantplus:loot/enchanting/set_ench/core
 execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:random_chance/10 run function enchantplus:loot/enchanting/set_curse/prepare
 
 #Set new Lore
-function enchantplus:loot/set_lore/items
+execute if entity @s[predicate=enchantplus:none_ench] run function enchantplus:loot/set_lore/items
 ##==================================================================##
 
 #In case all fails: No Custom Enchantments, Curses and Vanilla enchantaments

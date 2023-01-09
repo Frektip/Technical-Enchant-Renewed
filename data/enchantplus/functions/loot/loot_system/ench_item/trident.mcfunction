@@ -37,7 +37,7 @@ execute if data entity @s[nbt={Item:{tag:{CustomEnchantments:[{id:"AttackSpeed"}
 
 
 #Set new Lore
-function enchantplus:loot/set_lore/items
+execute if entity @s[predicate=enchantplus:none_ench] run function enchantplus:loot/set_lore/items
 ##==================================================================##
 
 #In case all fails: No Custom Enchantments, Curses and Vanilla enchantaments

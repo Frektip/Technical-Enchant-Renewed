@@ -1,5 +1,4 @@
-#data remove storage teplus:loot Temp[0].Incompatible
-data modify storage teplus:loot Incomp.Source[0] set from storage teplus:loot Temp[0].Incompatible[0]
+data modify storage teplus:loot Incomp.Source set from storage teplus:loot Temp[0].Incompatible
 
 data modify storage teplus:loot Incomp.With set value []
 data modify storage teplus:loot Incomp.With append from entity @s Item.tag.Enchantments[]

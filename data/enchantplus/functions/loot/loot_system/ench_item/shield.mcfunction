@@ -38,7 +38,7 @@ execute if entity @s[nbt={Item:{tag:{CustomEnchantments:[{id:"AntiKnockback"}]}}
 execute if entity @s[nbt={Item:{tag:{CustomEnchantments:[{id:"HardnessPlus"}]}}}] run function enchantplus:loot/loot_set_ench/attributes/hardness_plus
 
 #Set new Lore
-function enchantplus:loot/set_lore/items
+execute if entity @s[predicate=enchantplus:none_ench] run function enchantplus:loot/set_lore/items
 ##==================================================================##
 
 #In case all fails: No Custom Enchantments, Curses and Vanilla enchantaments

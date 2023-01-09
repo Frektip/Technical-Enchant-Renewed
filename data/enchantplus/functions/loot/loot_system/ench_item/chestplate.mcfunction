@@ -33,7 +33,7 @@ execute unless data entity @s Item.tag.CustomCurse if predicate enchantplus:rand
 execute if entity @s[nbt={Item:{tag:{CustomEnchantments:[{id:"LifePlus"}]}}}] run function #enchantplus:enchanting/set_attributes/life_plus
 
 #Set new Lore
-function enchantplus:loot/set_lore/items
+execute if entity @s[predicate=enchantplus:none_ench] run function enchantplus:loot/set_lore/items
 ##==================================================================##
 
 #In case all fails: No Custom Enchantments, Curses and Vanilla enchantaments
