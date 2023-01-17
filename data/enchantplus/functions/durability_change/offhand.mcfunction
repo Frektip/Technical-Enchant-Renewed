@@ -28,14 +28,14 @@ execute if score .maxdmg tep.rc matches 1.. store result storage teplus:item_dur
 
 #If the Damage score is less than the max score, copy the new nbt from
 # the storage to the player
-execute if score .tempdmg tep.rc < .maxdmg tep.rc run item modify entity @s weapon.offhand enchantplus:copy_damage
+execute unless score .maxdmg tep.rc matches 0 if score .tempdmg tep.rc < .maxdmg tep.rc run item modify entity @s weapon.offhand enchantplus:copy_damage
 
 #If the Damage score exceeds the max score, clear the item
 # Do it for certain custom enchantments
-execute if score .maxdmg tep.rc matches 1.. if score .tempdmg tep.rc >= .maxdmg tep.rc run item replace entity @s weapon.offhand with air
-execute if score .maxdmg tep.rc matches 1.. if score .tempdmg tep.rc >= .maxdmg tep.rc run playsound entity.item.break master @a ~ ~ ~ 2 1
+execute unless score .maxdmg tep.rc matches 0 if score .maxdmg tep.rc matches 1.. if score .tempdmg tep.rc >= .maxdmg tep.rc run item replace entity @s weapon.offhand with air
+execute unless score .maxdmg tep.rc matches 0 if score .maxdmg tep.rc matches 1.. if score .tempdmg tep.rc >= .maxdmg tep.rc run playsound entity.item.break master @a ~ ~ ~ 2 1
 
-execute if score .maxdmg tep.rc matches 1.. if score .tempdmg tep.rc >= .maxdmg tep.rc if entity @s[nbt={Inventory:[{Slot:-106b,tag:{CustomEnchantments:[{id:"Splatter"}]}}]}] run function enchantplus:result/splatter/clear_rod
+execute unless score .maxdmg tep.rc matches 0 if score .maxdmg tep.rc matches 1.. if score .tempdmg tep.rc >= .maxdmg tep.rc if entity @s[nbt={Inventory:[{Slot:-106b,tag:{CustomEnchantments:[{id:"Splatter"}]}}]}] run function enchantplus:result/splatter/clear_rod
 
 
 ###Debug Message###

@@ -2,6 +2,9 @@
 tag @s remove CanCombine
 function technical_anvil:menu/change_item/deactivate_slots
 
+#Update the storage to get the ID's from both inputs
+data modify storage teplus:tech_anvil.ui SectionChange1 set from storage teplus:tech_anvil.ui CurrentItems[{Slot:2b}]
+data modify storage teplus:tech_anvil.ui SectionChange2 set from storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}]
 
 
 

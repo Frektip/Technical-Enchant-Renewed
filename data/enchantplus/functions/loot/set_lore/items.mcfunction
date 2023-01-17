@@ -1,9 +1,8 @@
-#Store the Current item Lore
-data modify storage teplus:item_lore CurrentLore set from entity @s Item.tag.display.Lore
+data modify storage teplus:item_lore TempEnch set value []
+data modify storage teplus:item_lore First set value []
 
 #Remove all the Lore from the Result Item (output)
 data remove entity @s Item.tag.display.Lore
-
 
 #Store in a Temp storage all the enchantments and curses
 data modify storage teplus:item_lore TempEnch append from entity @s Item.tag.CustomEnchantments[]

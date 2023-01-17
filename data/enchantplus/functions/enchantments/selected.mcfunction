@@ -13,7 +13,7 @@ execute if score #hrvpl Enchopts matches 0 as @s[nbt={SelectedItem:{tag:{CustomE
 
 #Weapons/Sword/Trident/Axe
 execute if score #xpbt Enchopts matches 0 as @s[scores={XpBoostKill=1..},nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"XpBoost"}]}}}] at @s run function enchantplus:result/xp_boost
-execute if score #lfstl Enchopts matches 0 as @s[scores={LifeStealDealt=200..},nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"LifeSteal"}]}}}] at @s run function enchantplus:result/life_steal
+execute if score #lfstl Enchopts matches 0 as @s[scores={LifeStealDealt=250..},nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"LifeSteal"}]}}}] at @s run function enchantplus:result/life_steal
 execute if score #bobl Enchopts matches 0 as @s[nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"BloodyBlade"}]}}}] at @s run function enchantplus:result/bloody_blade/effect
 execute if score #lstnd Enchopts matches 0 as @s[nbt={SelectedItem:{tag:{CustomEnchantments:[{id:"LastStand"}]}}}] at @s run function enchantplus:result/laststand
 

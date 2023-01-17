@@ -28,12 +28,12 @@ execute if score .maxdmg tep.rc matches 1.. store result storage teplus:item_dur
 
 #If the Damage score is less than the max score, copy the new nbt from
 # the storage to the player
-execute if score .maxdmg tep.rc matches 1.. if score .tempdmg tep.rc < .maxdmg tep.rc run item modify entity @s weapon.mainhand enchantplus:copy_damage
+execute unless score .maxdmg tep.rc matches 0 if score .maxdmg tep.rc matches 1.. if score .tempdmg tep.rc < .maxdmg tep.rc run item modify entity @s weapon.mainhand enchantplus:copy_damage
 
 #If the Damage score exceeds the max score, clear the item
 # Do it for certain custom enchantments
-execute if score .maxdmg tep.rc matches 1.. if score .tempdmg tep.rc >= .maxdmg tep.rc run item replace entity @s weapon.mainhand with air
-execute if score .maxdmg tep.rc matches 1.. if score .tempdmg tep.rc >= .maxdmg tep.rc run playsound entity.item.break master @a ~ ~ ~ 2 1
+execute unless score .maxdmg tep.rc matches 0 if score .maxdmg tep.rc matches 1.. if score .tempdmg tep.rc >= .maxdmg tep.rc run item replace entity @s weapon.mainhand with air
+execute unless score .maxdmg tep.rc matches 0 if score .maxdmg tep.rc matches 1.. if score .tempdmg tep.rc >= .maxdmg tep.rc run playsound entity.item.break master @a ~ ~ ~ 2 1
 
 ###Debug Message###
 execute if score .maxdmg tep.rc matches 0 run tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"Ignored! ","color":"red","italic":true,"bold":false},{"text":"The current item doesn't have Damage nbt tag","color":"gray","italic":true,"bold":false}]

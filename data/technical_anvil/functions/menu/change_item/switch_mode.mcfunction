@@ -7,6 +7,7 @@ data remove storage teplus:tech_extract CurrentOutput
 #Put Air in Slots for Extracting Mode
 item replace entity @s container.10 with air
 item replace entity @s container.16 with air
+item replace entity @s container.13 with air
 
 #Changing tags so it actually changes the UI
 tag @s add anv.extract

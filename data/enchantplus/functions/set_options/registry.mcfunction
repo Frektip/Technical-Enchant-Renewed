@@ -155,7 +155,7 @@ data modify storage teplus:register Custom[].Enchantment[].Strong append value {
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"FireballWave"}].Enabled byte 1 run scoreboard players get #frbw Enchopts
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"LastLife",lvl:1,Enabled:0b,Rarity:3,ForItem:{leggings:1b},Sell:4,Structure:[{all:1b},{mansion:1b,add:1}]}
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"LastLife"}].Enabled byte 1 run scoreboard players get #lstlf Enchopts
-data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"LavaWalker",lvl:3,Enabled:0b,Rarity:3,ForItem:{boots:1b},Sell:3,Structure:[{all:1b},{bastion:1b,add:9}]}
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"LavaWalker",lvl:1,Enabled:0b,Rarity:3,ForItem:{boots:1b},Sell:3,Structure:[{all:1b},{bastion:1b,add:9}]}
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"LavaWalker"}].Enabled byte 1 run scoreboard players get #lvwk Enchopts
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"LifePlus",lvl:5,Enabled:0b,Rarity:3,ForItem:{chestplate:1b},Sell:8,Structure:[{all:1b},{bastion:1b}]}
 execute store result storage teplus:register Custom[].Enchantment[].Strong[{id:"LifePlus"}].Enabled byte 1 run scoreboard players get #lfps Enchopts

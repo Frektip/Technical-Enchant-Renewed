@@ -13,6 +13,9 @@ scoreboard players set #extrmd game.Opts 0
 scoreboard players set #lmtsoul game.Opts 0
 scoreboard players set #tmblvs game.Opts 0
 
+scoreboard players set #crftbksh game.Opts 0
+scoreboard players set #crftchnv game.Opts 0
+
 # The dirthday potion has a different scoreboard because I
 # I forget about it XD
 scoreboard players set #yrbrt Enchopts 0

@@ -7,6 +7,10 @@ tag @s add teplus.loot_is_item
 #Give a tag if the item has custom curses
 execute if data entity @s Item.tag.CustomCurse run tag @s add has_tepcurse
 
+#Store the Current Lore if it has some
+execute if data entity @s Item.tag.display.Lore run function enchantplus:loot/set_lore/store_previous
+execute unless data entity @s Item.tag.display.Lore run data modify storage teplus:item_lore CurrentLore set value []
+
 #Enchant if entityed on the item
 #Helmet
 execute if entity @s[nbt={Item:{id:"minecraft:turtle_helmet"}}] run function enchantplus:loot/loot_system/ench_item/helmet

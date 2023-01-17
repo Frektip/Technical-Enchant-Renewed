@@ -23,5 +23,5 @@ execute if entity @s[tag=CanCombine] if entity @p[tag=TECHA.try,gamemode=creativ
 tag @s remove CanCombine
 tag @s remove No.xpcomb
 
-data modify entity @s Items[{Slot:13b}].tag.SectionChange1 set value {Slot:2b,id:"minecraft:air"}
-data modify entity @s Items[{Slot:13b}].tag.SectionChange2 set value {Slot:6b,id:"minecraft:air"}
+
+function technical_anvil:menu/change_item/deactivate_slots

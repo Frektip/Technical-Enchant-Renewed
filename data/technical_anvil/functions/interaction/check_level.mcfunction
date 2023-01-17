@@ -24,5 +24,4 @@ execute if entity @s[tag=CanCombine] unless score #xprq game.Opts matches ..-1 i
 
 tag @s remove CanCombine
 
-data modify entity @s Items[{Slot:13b}].tag.SectionChange1 set value {Slot:2b,id:"minecraft:air"}
-data modify entity @s Items[{Slot:13b}].tag.SectionChange2 set value {Slot:6b,id:"minecraft:air"}
+function technical_anvil:menu/change_item/deactivate_slots

@@ -7,6 +7,7 @@ data remove storage teplus:tech_anvil.ui CurrentOutput
 #Put Air in Slots for Merging Mode
 item replace entity @s container.2 with air
 item replace entity @s container.6 with air
+item replace entity @s container.22 with air
 
 #Changing tags so it actually changes the UI
 tag @s add anv.merge
