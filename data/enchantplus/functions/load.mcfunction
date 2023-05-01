@@ -1,8 +1,10 @@
 #Datapack Version
-scoreboard players set #teplus.version load.status 730
+scoreboard players set #teplus.version load.status 732
 
 #Load constants
 scoreboard objectives add teplus.data dummy
+scoreboard objectives add teplus.place dummy
+scoreboard players set #1const teplus.data 1
 scoreboard players set #2const teplus.data 2
 scoreboard players set #3const teplus.data 3
 scoreboard players set #4const teplus.data 4
@@ -12,11 +14,13 @@ scoreboard players set #19const teplus.data 19
 scoreboard players set #25const teplus.data 25
 scoreboard players set #30const teplus.data 30
 scoreboard players set #33const teplus.data 33
+scoreboard players set #50const teplus.data 50
 
 #Scoreboard for xp reward when disenchanting
 scoreboard objectives add teplus.diench dummy
 
 #Charged Bookshelf and armor stand scoreboards
+scoreboard objectives add teplus.block_id dummy
 scoreboard objectives add tep.CbBf.qnty dummy
 scoreboard objectives add tep.CbBf.animt dummy
 scoreboard objectives add tep.spd_animt dummy
@@ -121,6 +125,8 @@ scoreboard objectives add MarineCarry dummy
 scoreboard objectives add CobwebGroup dummy
 scoreboard objectives add InLiqdTime dummy
 scoreboard objectives add TimerExha dummy
+
+scoreboard objectives add BaseCharge dummy
 
 #Randomizer - Uniform (By Aeldrion)
 scoreboard objectives add random dummy

@@ -8,7 +8,7 @@ execute if score #tslpm game.Opts matches 1 run particle block anvil ~ ~1 ~ 0.3 
 
 #Check if the xp value from the settings has sense (at least 0 levels)
 # Only for "normal" combining
-execute if entity @s[tag=!No.xpcomb] run scoreboard players operation @p[tag=TECHA.try] TCHA.plxp = #xprq game.Opts
+execute if entity @s[tag=!No.xpcomb] run scoreboard players operation @p[tag=TECHA.try] TCHA.plxp = @s TCHA.cost
 execute if entity @s[tag=!No.xpcomb] as @p[tag=TECHA.try,scores={TCHA.plxp=0..}] run function technical_anvil:interaction/clic_combine/take_xp
 
 

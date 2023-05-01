@@ -1,6 +1,6 @@
-##Normal use for survival
-execute if score #enchit game.Opts matches 0 if entity @s[nbt=!{Item:{tag:{CustomEnchantments:[{}]}}}] at @s if entity @e[type=marker,tag=teplus.enchanting_table,distance=..1] run function enchantplus:loot/lapis_check 
-execute if score #enchtbk game.Opts matches 0 if entity @s[nbt={Item:{id:"minecraft:book",Count:1b}},nbt=!{Item:{tag:{StoredCustomEnchantments:[{}]}}}] at @s if entity @e[type=marker,tag=teplus.enchanting_table,distance=..1] run function enchantplus:loot/checkitem_bookonly 
+##Special use for creative mode
+execute if score #enchit game.Opts matches 0 if entity @s[nbt=!{Item:{tag:{CustomEnchantments:[{}]}}}] at @s if entity @e[type=marker,tag=teplus.enchanting_table,distance=..1] run function #enchantplus:enchanting/items/check_item
+execute if score #enchtbk game.Opts matches 0 if entity @s[nbt={Item:{id:"minecraft:book",Count:1b}},nbt=!{Item:{tag:{StoredCustomEnchantments:[{}]}}}] at @s if entity @e[type=marker,tag=teplus.enchanting_table,distance=..1] run function enchantplus:loot/loot_system/book
 
 ### Debug Message ###
 execute if score #enchit game.Opts matches 1 if entity @s[nbt=!{Item:{tag:{CustomEnchantments:[{}]}}}] at @s if entity @e[type=marker,tag=teplus.enchanting_table,distance=..1] run tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Enchanting): ","color":"#24E3F9","italic":true,"bold":false},{"text":"Fail! ","color":"red","italic":true,"bold":false},{"text":"The enchanting feature for items is diasbled!","color":"gray","italic":true,"bold":false}]

@@ -33,6 +33,11 @@
 					"source": "Copy.tag.display",
 					"target": "display",
 					"op": "replace"
+				  },
+				  {
+					"source": "Copy.tag.CustomModelData",
+					"target": "CustomModelData",
+					"op": "replace"
 				  }
 				]
 			  }

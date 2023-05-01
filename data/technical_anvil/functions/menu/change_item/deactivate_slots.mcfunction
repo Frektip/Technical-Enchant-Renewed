@@ -1,4 +1,5 @@
 #------------------ANVIL-------------------#
+scoreboard players reset @s TCHA.cost
 tag @s remove CanCombine
 tag @s remove InSlot1
 tag @s[tag=No.xpcomb] remove No.xpcomb

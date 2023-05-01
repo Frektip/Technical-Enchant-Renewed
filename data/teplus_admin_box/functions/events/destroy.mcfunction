@@ -1,7 +1,5 @@
-kill @e[type=item,nbt={Item:{id:"minecraft:barrel"}}, distance=..1] 
-kill @e[type=item_frame,tag=teplus.technical_anvil_decorative, distance=..2]
-kill @e[type=glow_item_frame,tag=teplus.technical_anvil_decorative, distance=..2]
-kill @e[type=item,distance=..1,nbt={Item:{id:"minecraft:chest_minecart",Count:1b}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:barrel"}}, distance=..1]
+kill @e[type=item_display,tag=teplus.decor_admbx,predicate=teplus_admin_box:block_id_match,distance=..10]
 
 setblock ~ ~ ~ air
 

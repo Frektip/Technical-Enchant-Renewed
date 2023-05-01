@@ -42,6 +42,7 @@ tag @s remove ench_strong
 
 scoreboard players reset @s teplus.single
 scoreboard players reset @s teplus.tmplvl
+scoreboard players reset @s TCHA.Section1
 
 #Give final tag to level it up
 # 25% chance to continue with a unique special trade

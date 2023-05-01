@@ -11,6 +11,7 @@ data remove storage teplus:loot Copy[].ForItem
 data remove storage teplus:loot Copy[].Rarity
 data remove storage teplus:loot Copy[].Structure
 data remove storage teplus:loot Copy[].Incompatible
+data remove storage teplus:loot Copy[].Charge
 
 #Cicle though the array
 function teplus_exten:drops/item_generated/get_enchantment/loop_build
@@ -44,6 +45,12 @@ function #technical_anvil:edit_lore/set_single_level
 #Set the level number based on the score
 execute store result score @s teplus.tmplvl run data get storage teplus:item_lore First[0].lvl
 function technical_anvil:edit_lore/system/get_level
+
+#Store the level value to match with the custom enchantment CMD
+#Add some tags to apply the CMD value
+execute store result score @s TCHA.Section1 run scoreboard players get @s teplus.tmplvl
+tag @s add teplus.loot_is_book
+tag @s add teplus.loot_1ench
 
 #Spawn the new enchantment based on the storage
 function #enchantplus:extra/loot_enchanted_book

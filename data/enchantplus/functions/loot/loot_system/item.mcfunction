@@ -16,10 +16,10 @@ execute if entity @e[type=marker,tag=!is_enchanting,tag=!teplus.tier3,tag=!teplu
 ##-------------------------------------------------------------------------------------##
 #Survival only
 #FIRST STRONG ENCHANTMENTS
-execute if entity @e[type=marker,tag=teplus.tier3,tag=!is_enchanting,distance=..1] if score $LapisCount tep.count matches 3.. if entity @p[distance=..10,level=30..,scores={Drop=1..}] run function enchantplus:loot/loot_system/prepare/strong_setup
+execute if entity @e[type=marker,scores={BaseCharge=150..},tag=teplus.tier3,tag=!is_enchanting,distance=..1] if score @p[distance=..10,scores={Drop=1..}] TCHA.plxp >= #xpstr game.Opts run function enchantplus:loot/loot_system/prepare/strong_setup
 
 #SECOND AVERAGE ENCHANTMENTS
-execute if entity @e[type=marker,tag=teplus.tier2,tag=!is_enchanting,distance=..1] if score $LapisCount tep.count matches 2.. if entity @p[distance=..10,level=20..,scores={Drop=1..}] run function enchantplus:loot/loot_system/prepare/average_setup
+execute if entity @e[type=marker,scores={BaseCharge=84..},tag=teplus.tier2,tag=!is_enchanting,distance=..1] if score @p[distance=..10,scores={Drop=1..}] TCHA.plxp >= #xpavr game.Opts run function enchantplus:loot/loot_system/prepare/average_setup
 
 #THIRD LOW ENCHATMENTS
-execute if entity @e[type=marker,tag=teplus.tier1,tag=!is_enchanting,distance=..1] if score $LapisCount tep.count matches 1.. if entity @p[distance=..10,level=10..,scores={Drop=1..}] run function enchantplus:loot/loot_system/prepare/low_setup
+execute if entity @e[type=marker,scores={BaseCharge=36..},tag=teplus.tier1,tag=!is_enchanting,distance=..1] if score @p[distance=..10,scores={Drop=1..}] TCHA.plxp >= #xplow game.Opts run function enchantplus:loot/loot_system/prepare/low_setup

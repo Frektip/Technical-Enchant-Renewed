@@ -1,3 +1,6 @@
+#Update the score
+scoreboard players operation $techanv teplus.block_id = @s teplus.block_id
+
 execute if entity @s[tag=anv.merge,tag=!anv.extract] if entity @p[distance=..5] at @s run function technical_anvil:menu/main
 
 execute if entity @s[tag=anv.extract,tag=!anv.merge] if entity @p[distance=..5] at @s run function technical_anvil:extraction_mode/menu/main

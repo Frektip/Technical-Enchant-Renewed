@@ -61,6 +61,7 @@ data remove entity @s Item.tag.StoredCustomEnchantments
 
 #Change it into a normal book if no custom or vanilla curse are left
 data modify entity @s[tag=!has_vanilla_curse,nbt=!{Item:{tag:{StoredCustomCurse:[{}]}}}] Item.id set value "minecraft:book"
+data remove entity @s[tag=!has_vanilla_curse,nbt=!{Item:{tag:{StoredCustomCurse:[{}]}}}] Item.tag.CustomModelData
 
 #Update the second Lore line of the custom curse ONLY if there is one
 # custom curse left in the book and no other vanilla curse

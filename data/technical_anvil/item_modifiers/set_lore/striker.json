@@ -49,5 +49,67 @@
         }
       }
     ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{CustomModelData:7340095}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"teplus.loot_is_book\",\"teplus.loot_1ench\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "TCHA.Section1": 1
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{CustomModelData:7340096}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"teplus.loot_is_book\",\"teplus.loot_1ench\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "TCHA.Section1": 2
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{CustomModelData:7340097}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"teplus.loot_is_book\",\"teplus.loot_1ench\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "TCHA.Section1": {
+            "min": 3
+          }
+        }
+      }
+    ]
   }
 ]

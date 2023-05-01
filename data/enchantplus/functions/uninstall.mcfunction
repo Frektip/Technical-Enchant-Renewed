@@ -110,7 +110,6 @@ scoreboard objectives remove attb.knbrs
 scoreboard objectives remove attb.toug
 scoreboard objectives remove attb.dmg
 scoreboard objectives remove MarineCarry
-scoreboard objectives remove teplus.vgmrl
 scoreboard objectives remove CobwebGroup
 scoreboard objectives remove InLiqdTime
 scoreboard objectives remove tep.exten
@@ -165,7 +164,6 @@ scoreboard objectives remove attb.toug
 scoreboard objectives remove attb.dmg
 scoreboard objectives remove TCHA.Section1
 scoreboard objectives remove TCHA.Section2
-scoreboard objectives remove teplus.vgmrl
 scoreboard objectives remove teplus.antkbk
 scoreboard objectives remove teplus.hrds
 scoreboard objectives remove teplus.lore
@@ -174,6 +172,9 @@ scoreboard objectives remove teplus.cencnt
 scoreboard objectives remove teplus.tmplvl
 scoreboard objectives remove teplus.single
 scoreboard objectives remove teplus.maxlvl
+scoreboard objectives remove teplus.place
+scoreboard objectives remove teplus.block_id
+scoreboard objectives remove TCHA.cost
 
 #I don't remove scoreboards related to Lantern Load or Iris because they may be used
 # alongside with other datapacks. In that case they should do a reload, but meh, I
@@ -186,9 +187,8 @@ kill @e[type=marker,tag=teplus.marker]
 kill @e[type=item_frame,tag=teplus.enchanted]
 kill @e[tag=turtle_shield]
 kill @e[type=arrow,tag=tep.custom_arrow]
-kill @e[tag=teplus.technical_anvil_decorative]
 kill @e[type=item,nbt={Item:{tag:{Teplus:{ui:1b}}}}]
-
+kill @e[tag=teplus.decorative]
 
 
 #Uninstall message 

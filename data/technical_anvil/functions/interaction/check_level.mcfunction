@@ -13,14 +13,14 @@ execute as @p[tag=TECHA.try] store result score @p TCHA.plxp run xp query @s lev
 
 #For Survival
 # Xp settings make sense
-execute if entity @s[tag=CanCombine] unless score #xprq game.Opts matches ..-1 if score #xprq game.Opts <= @p[tag=TECHA.try,gamemode=!creative] TCHA.plxp run function technical_anvil:interaction/clic_combine/succeed
-execute if entity @s[tag=CanCombine] unless score #xprq game.Opts matches ..-1 unless score #xprq game.Opts <= @p[tag=TECHA.try,gamemode=!creative] TCHA.plxp run function technical_anvil:interaction/clic_combine/failed
+execute if entity @s[tag=CanCombine] unless score #xprq game.Opts matches ..1 if score @s TCHA.cost <= @p[tag=TECHA.try,gamemode=!creative] TCHA.plxp run function technical_anvil:interaction/clic_combine/succeed
+execute if entity @s[tag=CanCombine] unless score #xprq game.Opts matches ..1 unless score @s TCHA.cost <= @p[tag=TECHA.try,gamemode=!creative] TCHA.plxp run function technical_anvil:interaction/clic_combine/failed
 # Xp settings don't make sense
-execute if entity @s[tag=CanCombine] if score #xprq game.Opts matches ..-1 as @p[tag=TECHA.try] run function technical_anvil:interaction/clic_combine/fail_settings
+execute if entity @s[tag=CanCombine] if score #xprq game.Opts matches ..1 as @p[tag=TECHA.try] run function technical_anvil:interaction/clic_combine/fail_settings
 
 
 #For creative (always succeed)
-execute if entity @s[tag=CanCombine] unless score #xprq game.Opts matches ..-1 if entity @p[tag=TECHA.try,gamemode=creative] run function technical_anvil:interaction/clic_combine/succeed
+execute if entity @s[tag=CanCombine] unless score #xprq game.Opts matches ..1 if entity @p[tag=TECHA.try,gamemode=creative] run function technical_anvil:interaction/clic_combine/succeed
 
 tag @s remove CanCombine
 

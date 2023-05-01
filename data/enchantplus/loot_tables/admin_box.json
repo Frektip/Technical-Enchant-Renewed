@@ -5,32 +5,82 @@
 		"entries": [
 		  {
 			"type": "minecraft:item",
-			"name": "minecraft:barrel",
+			"name": "minecraft:player_head",
 			"functions": [
 			  {
 				"function": "minecraft:set_name",
 				"entity": "this",
 				"name": [
 				  {
-					"text": "[",
-					"color": "dark_blue",
+					"text": "❖❖ ",
+					"color": "#F9CD60",
 					"italic": false
 				  },
 				  {
-					"translate": "TE+ ADMIN BOX",
-					"color": "dark_aqua",
+					"text": "T",
+					"color": "#f8a8ff",
 					"italic": false
 				  },
 				  {
-					"text": "]",
-					"color": "dark_blue",
+					"text": "E",
+					"color": "#d98fe9",
+					"italic": false
+				  },
+				  {
+					"text": "+ ",
+					"color": "#bb77d4",
+					"italic": false
+				  },
+				  {
+					"text": "A",
+					"color": "#9c60bf",
+					"italic": false
+				  },
+				  {
+					"text": "D",
+					"color": "#7e4aaa",
+					"italic": false
+				  },
+				  {
+					"text": "M",
+					"color": "#683196",
+					"italic": false
+				  },
+				  {
+					"text": "I",
+					"color": "#7e4aaa",
+					"italic": false
+				  },
+				  {
+					"text": "N ",
+					"color": "#9c60bf",
+					"italic": false
+				  },
+				  {
+					"text": "B",
+					"color": "#bb77d4",
+					"italic": false
+				  },
+				  {
+					"text": "O",
+					"color": "#d98fe9",
+					"italic": false
+				  },
+				  {
+					"text": "X",
+					"color": "#f8a8ff",
+					"italic": false
+				  },
+				  {
+					"text": " ❖❖",
+					"color": "#F9CD60",
 					"italic": false
 				  }
 				]
 			  },
 			  {
 				"function": "minecraft:set_nbt",
-				"tag": "{TeplusAdminBox:1b, Enchantments:[{}]}"
+				"tag": "{TeplusAdminBox:1b,SkullOwner:{Name:\"%teplus.block.admin_box\",Id:[I;1809211202,12143792,-1644162449,-1614214459],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWExNTlkOWFjMmZkYjE2NDg1OGI2MzUwZTAzYzE5MjRmMTdlNWFhODYxMWEzNDdkNTViNmI4OTgyMGZhZjA5NCJ9fX0=\"}]}}}"
 			  }
 			]
 		  }

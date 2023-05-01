@@ -1,3 +1,6 @@
+#Update the score
+scoreboard players operation $current teplus.block_id = @s teplus.block_id
+
 ##PARTICLES##
 
 #---Set by default a particle animation---#
@@ -15,3 +18,6 @@ execute if score $Villager tepext.manager matches 0 run function teplus_exten:vi
 
 #If the bookshelf is removed
 execute unless block ~ ~ ~ bookshelf run function enchantplus:entity/marker/charged_bookshelf_remove
+
+#Update light source
+function enchantplus:entity/marker/light/main

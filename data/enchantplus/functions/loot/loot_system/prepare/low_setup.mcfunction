@@ -3,6 +3,8 @@ tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true
 
 #Set the enchanting tier rarity
 scoreboard players set #teplus.rarity teplus.data 1
+scoreboard players set #teplus.bachamt BaseCharge 0
+scoreboard players set #charge_remove BaseCharge 0
 
 #Summon a temporal entity
 execute at @e[type=marker,tag=teplus.enchanting_table,tag=!is_enchanting,distance=..1] run summon item_frame ~ ~ ~ {Silent:1b,Facing:1b,Invulnerable:1b,Fixed:1b,Tags:["teplus.enchanted"],Item:{}}

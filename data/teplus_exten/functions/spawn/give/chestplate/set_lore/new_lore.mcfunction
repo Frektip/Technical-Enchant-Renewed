@@ -10,10 +10,10 @@ execute store result score @s teplus.tmplvl run data get storage teplus:item_lor
 function technical_anvil:edit_lore/system/get_level
 
 #Put the correct lore based on the "First" storage
-function teplus_exten:spawn/give/chesplate/set_lore/apply
+function teplus_exten:spawn/give/chestplate/set_lore/apply
 
 #Loop again until all enchantments and curses were covered
 execute if score @s teplus.cencnt matches 1.. run data remove storage teplus:item_lore TempEnch[0]
 scoreboard players remove @s teplus.cencnt 1
 #Repeat if it is still greater than 1
-execute if score @s teplus.cencnt matches 1.. run function teplus_exten:spawn/give/chesplate/set_lore/new_lore
+execute if score @s teplus.cencnt matches 1.. run function teplus_exten:spawn/give/chestplate/set_lore/new_lore

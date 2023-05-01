@@ -46,3 +46,4 @@ tag @s remove ench_low
 
 scoreboard players reset @s teplus.single
 scoreboard players reset @s teplus.tmplvl
+scoreboard players reset @s TCHA.Section1

@@ -35,5 +35,19 @@ execute if entity @s[tag=teplus.tier5] run particle enchanted_hit ^1 ^.2 ^-1 0 0
 execute if entity @s[tag=teplus.tier5,tag=!tier.up] run function enchantplus:entity/armor_stand/table_rotate/tier_up
 execute if entity @s[tag=!teplus.tier5,tag=tier.up] run function enchantplus:entity/armor_stand/table_rotate/tier_down
 
+#In case there is an item near it to increase it's base charge
+execute if entity @s[tag=!charge_fail,scores={tep.CbBf.qnty=6..}] if score @p Drop matches 1.. if entity @e[type=item,sort=nearest,distance=..2] run function enchantplus:entity/marker/add_base_charge/init
+
+execute if entity @s[tag=charge_fail] unless entity @e[type=item,distance=..2] run tag @s remove charge_fail
+
+#In case it is full and need to get updated
+execute if entity @s[tag=ch.full] run function enchantplus:entity/marker/add_base_charge/debug_charge
+
+#Show the the Base Charge to the player
+execute if score @s tep.CbBf.qnty matches 6.. if entity @a[distance=..2,predicate=enchantplus:is_sneaking] run function enchantplus:entity/marker/show_to_player
+
+#Set the score to 0 if it is less than 0
+scoreboard players set @s[scores={BaseCharge=..-1}] BaseCharge 0
+
 #If the enchanting table is removed
 execute unless block ~ ~ ~ enchanting_table run function enchantplus:entity/marker/enchanting_table_clear

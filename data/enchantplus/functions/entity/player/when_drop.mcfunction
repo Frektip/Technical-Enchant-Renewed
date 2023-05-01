@@ -16,5 +16,6 @@ execute if score #crftchnv game.Opts matches 0 as @e[type=item,distance=..10,nbt
 execute as @e[type=item,limit=1,sort=nearest,distance=..10,nbt={Item:{id:"minecraft:paper",Count:1b,tag:{TeplusPower_page:1b}}}] at @s if entity @e[type=marker,tag=teplus.enchanting_table,tag=teplus.tier4,distance=..1] run function enchantplus:loot/loot_system/power_page
 
 #Checks if it throw an item on top of an enchanting table
-execute if entity @s[gamemode=!creative,level=10..] as @e[type=item,distance=..10] at @s run function enchantplus:loot/enchant_ini
-execute if entity @s[gamemode=creative] as @e[type=item,distance=..10] at @s run function enchantplus:loot/enchant_ini_creative
+execute store result score @s TCHA.plxp run xp query @s levels
+execute if entity @s[gamemode=!creative,scores={TCHA.plxp=1..}] as @e[type=item,distance=..10] at @s run function enchantplus:loot/enchant_ini
+execute if entity @s[gamemode=creative] as @e[type=item,distance=..10] at @s run function enchantplus:loot/enchant_ini

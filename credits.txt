@@ -9,7 +9,7 @@ changes and tweaks.
 Also, IMPORTANT to mention that this datapack has:
 - "Splatus" custom bow system
 - "Aeldrion's" randomizer system
-- "PauseKawa's" custom GUI detection system
+- "PauseKawa's" custom GUI detection system, custom block placement and item display light update system
 - "Blue Commander's" (https://www.youtube.com/c/BlueCommander) base to create a custom anvil 
 - "Stoupy51" for helping me optimizing parts in the code
 - "Jaro" for creating the textures

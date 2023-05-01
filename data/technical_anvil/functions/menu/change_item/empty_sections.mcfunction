@@ -2,6 +2,7 @@
 tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(TechnAnv): ","color":"yellow","italic":true,"bold":false},{"text":"Updating UI, Slot1 and Slot2","color":"gray","italic":true,"bold":false}]
 tellraw @a[tag=teplus.pydbgm] ["",{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(TechnAnv): ","color":"yellow","italic":true,"bold":false},{"text":"Removing output storage","color":"gray","italic":true,"bold":false}]
 
+scoreboard players reset @s TCHA.cost
 tag @s add HasCombined
 tag @s remove CanCombine
 tag @s remove InSlot1

@@ -64,6 +64,19 @@
 					  ]
 				],
 				"replace": false
+			  },
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{CustomModelData:7340059}",
+				"conditions": [
+				  {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+					  "nbt": "{Tags:[\"teplus.loot_is_book\",\"teplus.loot_1ench\"]}"
+					}
+				  }
+				]
 			  }
 			]
 		  }

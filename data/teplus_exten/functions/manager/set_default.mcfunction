@@ -1,6 +1,6 @@
-scoreboard players set $Mobs tepext.manager 0
+scoreboard players set $Mobs tepext.manager 1
 #-------------------------------------------------------#
-scoreboard players set $Spawn tepext.manager 0
+scoreboard players set $Spawn tepext.manager 1
 scoreboard players set #spwdrop_hel tepext.manager -1
 scoreboard players set #spwdrop_cht tepext.manager -1
 scoreboard players set #spwdrop_leg tepext.manager -1
@@ -10,23 +10,41 @@ scoreboard players set #spwdrop_ofh tepext.manager -1
 #-------------------------------------------------------#
 scoreboard players set $Chests tepext.manager 0
 scoreboard players set #chl_mineshaft tepext.manager 0
+scoreboard players set #chance_mineshaft tepext.manager 30
 scoreboard players set #chl_ancity tepext.manager 0
+scoreboard players set #chance_ancity tepext.manager 30
 scoreboard players set #chl_bastion tepext.manager 0
+scoreboard players set #chance_bastion tepext.manager 30
 scoreboard players set #chl_btreasure tepext.manager 0
+scoreboard players set #chance_btreasure tepext.manager 30
 scoreboard players set #chl_despyram tepext.manager 0
+scoreboard players set #chance_despyram tepext.manager 30
 scoreboard players set #chl_endcity tepext.manager 0
+scoreboard players set #chance_endcity tepext.manager 30
 scoreboard players set #chl_igloo tepext.manager 0
+scoreboard players set #chance_igloo tepext.manager 30
 scoreboard players set #chl_jngltmp tepext.manager 0
+scoreboard players set #chance_jngltmp tepext.manager 30
 scoreboard players set #chl_fortress tepext.manager 0
+scoreboard players set #chance_fortress tepext.manager 30
 scoreboard players set #chl_outpost tepext.manager 0
+scoreboard players set #chance_outpost tepext.manager 30
 scoreboard players set #chl_ruinport tepext.manager 0
+scoreboard players set #chance_ruinport tepext.manager 30
 scoreboard players set #chl_shipwreck tepext.manager 0
+scoreboard players set #chance_shipwreck tepext.manager 30
 scoreboard players set #chl_dungeon tepext.manager 0
+scoreboard players set #chance_dungeon tepext.manager 30
 scoreboard players set #chl_stronghold tepext.manager 0
+scoreboard players set #chance_stronghold tepext.manager 30
 scoreboard players set #chl_library tepext.manager 0
+scoreboard players set #chance_library tepext.manager 30
 scoreboard players set #chl_undwruin tepext.manager 0
+scoreboard players set #chance_undwruin tepext.manager 30
 scoreboard players set #chl_village tepext.manager 0
+scoreboard players set #chance_village tepext.manager 30
 scoreboard players set #chl_mansion tepext.manager 0
+scoreboard players set #chance_mansion tepext.manager 30
 #-------------------------------------------------------#
 scoreboard players set $Drops tepext.manager 0
 scoreboard players set #drop.looting tepext.manager 0

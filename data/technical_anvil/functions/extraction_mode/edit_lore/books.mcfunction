@@ -16,7 +16,9 @@ function technical_anvil:edit_lore/system/get_level
 #Put the correct lore based on the "First" storage
 tag @s add at_book
 tag @s add teplus.loot_1ench
+tag @s add teplus.loot_is_book
 function #technical_anvil:extraction_mode/set_lore_books_only
 
 tag @s remove at_book
 tag @s remove teplus.loot_1ench
+tag @s remove teplus.loot_is_book

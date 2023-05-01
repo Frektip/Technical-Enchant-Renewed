@@ -23,9 +23,13 @@ function enchantplus:random_uniform
 scoreboard players operation $ench.loop teplus.data = $out random
 function enchantplus:loot/enchanting/set_ench/loop_ench
 
+#Get the Base Charge to be removed
+function enchantplus:loot/calculate_base_charge
+
 #Set the rarirty from the storage
 execute store result score #enchant.rarity teplus.data run data get storage teplus:loot Temp[0].Rarity
 data remove storage teplus:loot Temp[].Rarity
+data remove storage teplus:loot Temp[].Charge
 
 #Add the nbt tag enchant the item based on Temp Storage
 #But check first if there is incompatibilities for Items Only

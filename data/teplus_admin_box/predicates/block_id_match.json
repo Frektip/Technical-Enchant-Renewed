@@ -1,0 +1,26 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "teplus.block_id"
+  },
+  "range": {
+      "min": {
+          "type": "minecraft:score",
+          "target": {
+              "type": "minecraft:fixed",
+              "name": "$adminbox"
+          },
+          "score": "teplus.block_id"
+      },
+      "max": {
+          "type": "minecraft:score",
+          "target": {
+              "type": "minecraft:fixed",
+              "name": "$adminbox"
+          },
+          "score": "teplus.block_id"
+      }
+  }
+}
