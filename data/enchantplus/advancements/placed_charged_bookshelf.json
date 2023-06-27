@@ -3,10 +3,17 @@
     "requirement": {
       "trigger": "minecraft:placed_block",
       "conditions": {
-        "block": "minecraft:bookshelf",
-        "item": {
-          "nbt": "{TeplusChBf:1b}"
-        }
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:bookshelf"
+              ],
+              "nbt": "{TeplusChBf:1b}"
+            }
+          }
+        ]
       }
     }
   },
