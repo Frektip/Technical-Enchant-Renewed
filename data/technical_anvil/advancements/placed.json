@@ -1,18 +1,24 @@
 {
 	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:placed_block",
-			"conditions": {
-				"item": {
-					"items": [
-						"minecraft:player_head"
-					],
-					"nbt": "{Teplus.anvil:1b}"
-				}
+	  "requirement": {
+		"trigger": "minecraft:placed_block",
+		"conditions": {
+		  "location": [
+			{
+			  "condition": "minecraft:match_tool",
+			  "predicate": {
+				"items": [
+				  "minecraft:player_head"
+				],
+				"nbt": "{Teplus.anvil:1b}"
+			  }
 			}
+		  ]
 		}
+	  }
 	},
 	"rewards": {
-		"function": "technical_anvil:place/init"
+	  "function": "technical_anvil:place/init"
 	}
 }
+  
