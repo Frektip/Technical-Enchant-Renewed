@@ -15,6 +15,10 @@ execute if entity @s[tag=Is.same_item] run function #technical_anvil:interaction
 #Encahnted book with Enchanted Book
 execute if entity @s[nbt={Items:[{Slot:2b,id:"minecraft:enchanted_book"}]}] run function technical_anvil:interaction/item_check/book_with_book
 
+#Experience Crystal
+execute if entity @s[tag=TCHA.inxpcrst] run function technical_anvil:interaction/item_check/experience_crystal
+
+
 ##------------DETECTING WHAT COMBINATION HAS BEEN DONDE-------------##
 #-------BOOK WITH BOOK-------#
 # -Only Custom Enchantments
@@ -45,6 +49,9 @@ execute if entity @s[tag=CEitm] if data storage teplus:tech_anvil.ui ResultItem.
 execute if entity @s[tag=CEitm] if data storage teplus:tech_anvil.ui ResultItem.tag.MaxEnch run function technical_anvil:interaction/create_item_succeed
 #Only for horse armor
 execute if entity @s[tag=CEitm] if data storage teplus:tech_anvil.ui {ResultItem:{tag:{Teplus:{item_type:"HORSE_ARMOR"},Enchantments:[{id:"minecraft:frost_walker"}]}}} run function technical_anvil:interaction/create_item_succeed
+
+execute if entity @s[tag=CExpcrst] if data storage teplus:tech_anvil.ui {ResultItem:{tag:{Teplus_xp_crystal:1b}}} run function technical_anvil:interaction/create_item_succeed
+
 #Detect when an enchantment is not compatible with an item
 execute if entity @s[tag=ComError] run function technical_anvil:interaction/create_item_failed
 
@@ -67,3 +74,7 @@ tag @s remove TCHA.inpit
 
 #In case we merge item with the same item type
 tag @s remove Is.same_item
+
+#For Experience Crystal
+tag @s remove TCHA.inxpcrst
+tag @s remove CExpcrst

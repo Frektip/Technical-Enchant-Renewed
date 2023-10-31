@@ -8,7 +8,7 @@ scoreboard players add $current teplus.block_id 1
 execute summon marker run function enchantplus:enchanting_table/charged_bookshelf/place/marker
 
 #Summon item display
-execute positioned ~ ~1 ~ summon item_display run function enchantplus:enchanting_table/charged_bookshelf/place/display
+execute if score #tslpm game.Opts matches 1 positioned ~ ~1 ~ summon item_display run function enchantplus:enchanting_table/charged_bookshelf/place/display
 
 #Kill marker
 kill @s

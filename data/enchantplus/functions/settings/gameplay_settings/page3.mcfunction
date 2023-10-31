@@ -20,6 +20,11 @@ tellraw @s ["",{"text":"(✎","color":"#75F396"},{"translate":"Edit","color":"#7
 
 
 
+execute if score #xpcrtlm game.Opts matches 0 run tellraw @s ["",{"text":"[\u2714]","color":"green"},{"text":"/","color":"white"},{"text":"[\u274c]","color":"gray","hoverEvent":{"action":"show_text","contents":[{"text":"Click to disable"}]},"clickEvent":{"action":"run_command","value":"/function enchantplus:settings/gameplay/xp_crystal_merge_off"}},{"text":" "},{"translate":"Experience Crystal upgrades:","color":"#92A85E"},{"text":" "},{"translate":"Allow the increase of the Experience crystal Tier.","color":"#E2E3D9"}] 
+execute if score #xpcrtlm game.Opts matches 1 run tellraw @s ["",{"text":"[\u2714]","color":"gray","hoverEvent":{"action":"show_text","contents":[{"text":"Click to enable"}]},"clickEvent":{"action":"run_command","value":"/function enchantplus:settings/gameplay/xp_crystal_merge_on"}},{"text":"/","color":"white"},{"text":"[\u274c]","color":"red"},{"text":" "},{"translate":"Experience Crystal upgrades:","color":"#92A85E"},{"text":" "},{"translate":"Allow the increase of the Experience crystal Tier.","color":"#E2E3D9"}]
+
+
+
 tellraw @s [{"text":"                                    ","color":"dark_purple","strikethrough":true},{"text":"(↔▎↔)","color":"#B5FFDC","strikethrough":false,"hoverEvent":{"action":"show_text","contents":[{"text":"Return to the main page"}]},"clickEvent":{"action":"run_command","value":"/function enchantplus:config"}},{"text":"                               ","color":"dark_purple","strikethrough":true},{"text":" (","color":"#7A1DA2","strikethrough":false},{"text":"←","color":"#7A1DA2","strikethrough":false,"hoverEvent":{"action":"show_text","contents":[{"text":"Previous page"}]},"clickEvent":{"action":"run_command","value":"/function enchantplus:settings/gameplay_settings/page2"}},{"text":")","color":"#7A1DA2","strikethrough":false}] 
 
 

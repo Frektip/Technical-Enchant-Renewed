@@ -1,0 +1,19 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "flags": {
+          "is_sneaking": true
+        },
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:player_head"
+            ],
+           "count": 1,
+           "nbt": "{Teplus_xp_crystal:1b}"
+          }
+       }
+    }
+  }
+  

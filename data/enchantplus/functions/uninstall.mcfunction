@@ -45,6 +45,8 @@ data remove storage teplus:loot Build
 
 data remove storage teplus:register Custom
 
+data remove storage teplus:xp_crystal Set
+
 #remove scoreboards
 scoreboard objectives remove teplus.diench
 scoreboard objectives remove Drop
@@ -175,6 +177,7 @@ scoreboard objectives remove teplus.maxlvl
 scoreboard objectives remove teplus.place
 scoreboard objectives remove teplus.block_id
 scoreboard objectives remove TCHA.cost
+scoreboard objectives remove teplus.xpcrtl
 
 #I don't remove scoreboards related to Lantern Load or Iris because they may be used
 # alongside with other datapacks. In that case they should do a reload, but meh, I

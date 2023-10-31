@@ -14,9 +14,6 @@ data modify entity @e[type=item_frame,tag=teplus.enchanted,tag=!teplus.loot_is_i
 #Set the enchatment in the item frame
 execute as @e[type=item_frame,tag=teplus.enchanted,distance=..1] run function #enchantplus:enchanting/items/item_type
 
-#Small chance to get something...
-execute if predicate enchantplus:random_chance/5 at @e[type=marker,tag=teplus.enchanting_table,tag=teplus.tier5,distance=..1] run tellraw @a[distance=..7] ["",{"text":"Keep ","color":"#80AC74","italic":true},{"text":"c","color":"#DBEF8F","italic":true},{"text":"alm, ","color":"#80AC74","italic":true},{"text":"s","color":"#DBEF8F","italic":true},{"text":"omething is t","color":"#80AC74","italic":true},{"text":"ry","color":"#DBEF8F","italic":true},{"text":"ing to appe","color":"#80AC74","italic":true},{"text":"a","color":"#DBEF8F","italic":true},{"text":"r ","color":"#80AC74","italic":true},{"text":"t","color":"#DBEF8F","bold":true},{"text":"o he","color":"#6DC654","bold":true},{"text":"l","color":"#DBEF8F","bold":true},{"text":"p you","color":"#6DC654","bold":true}]
-
 #Grafical things
 function enchantplus:loot/end/strong
 kill @s

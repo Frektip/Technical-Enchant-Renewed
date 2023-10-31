@@ -1,18 +1,21 @@
 {
 	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:placed_block",
-			"conditions": {
-				"item": {
-					"items": [
-						"minecraft:player_head"
-					],
-					"nbt": "{TeplusAdminBox:1b}"
+	  "requirement": {
+		"trigger": "minecraft:placed_block",
+		"conditions": {
+		  "location": [
+			{
+			  "condition": "minecraft:match_tool",
+			  "predicate": {
+				  "nbt": "{TeplusAdminBox:1b}"
 				}
 			}
+		  ]
 		}
+	  }
 	},
 	"rewards": {
-		"function": "teplus_admin_box:events/placed/init"
+	  "function": "teplus_admin_box:events/placed/init"
 	}
-}
+  }
+  

@@ -4,9 +4,9 @@ tellraw @s ["",{"translate":"                       Exceed Enchantment Level","c
 tellraw @s {"text":"                                                                                ","color":"#67DE83","strikethrough":true}
 
 #Enabled/Disabled
-execute if score $Exceed tepext.manager matches 0 run tellraw @s ["",{"translate":"(Enabled)","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Clic here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/exceed/off"}},{"text":" "},{"translate":"Use the Technical Anvil to surpass the vanilla enchantment level for:","color":"gray"},{"text":"\n"}]
+execute if score $Exceed tepext.manager matches 0 run tellraw @s ["",{"translate":"(Enabled)","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Click here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/exceed/off"}},{"text":" "},{"translate":"Use the Technical Anvil to surpass the vanilla enchantment level for:","color":"gray"},{"text":"\n"}]
 
-execute if score $Exceed tepext.manager matches 1 run tellraw @s ["",{"translate":"(Disabled)","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Clic here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/exceed/on"}},{"text":" "},{"translate":"Use the Technical Anvil to surpass the vanilla enchantment level for:","color":"gray"},{"text":"\n"}]
+execute if score $Exceed tepext.manager matches 1 run tellraw @s ["",{"translate":"(Disabled)","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/exceed/on"}},{"text":" "},{"translate":"Use the Technical Anvil to surpass the vanilla enchantment level for:","color":"gray"},{"text":"\n"}]
 
 
 

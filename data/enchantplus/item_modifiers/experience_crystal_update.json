@@ -1,0 +1,104 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "Hold one in you offhand or",
+        "color": "white",
+        "italic": false
+        },
+        {
+        "translate": "mainhand while sneaking to",
+        "color": "white",
+        "italic": false
+        },
+        {
+        "translate": "obtain the experience orbs",
+        "color": "white",
+        "italic": false
+        },
+      {
+      "text": "---------------------",
+      "color":"#DEE8B8"
+      },
+      [
+      {
+        "translate": " ⭐ ",
+        "color": "#548256",
+        "italic": false
+      },
+      {
+        "translate": "Tier: ",
+        "color": "#D5EC86",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": "#temp.tier",
+          "objective": "teplus.xpcrtl"
+        },
+        "color": "#ECB969",
+        "italic": false
+      }
+      ],
+      [
+      {
+        "translate": " ✪ ",
+        "color": "#548256",
+        "italic": false
+      },
+      {
+        "translate": "Value: ",
+        "color": "#D5EC86",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": "@s",
+          "objective": "teplus.xpcrtl"
+        },
+        "color": "#72C45B",
+        "italic": false
+      },
+      {
+        "text": "/",
+        "color": "#D1CEA1",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": "#temp.max",
+          "objective": "teplus.xpcrtl"
+        },
+        "color": "#357D3A",
+        "italic": false
+      }
+      ],
+      {
+      "text": "---------------------",
+      "color":"#DEE8B8"
+      },
+      {
+      "text": "Technical Enchant+",
+      "color": "#63C0E3",
+      "italic": true
+      }
+    ],
+    "replace": true
+  },
+  {
+  "function": "minecraft:copy_nbt",
+   "source": {
+    "type": "minecraft:storage",
+    "source": "teplus:xp_crystal"
+    },
+    "ops": [
+    {
+    "source": "Update",
+    "target": "Content.Value[0]",
+    "op": "replace"
+    }
+   ]
+  }
+]

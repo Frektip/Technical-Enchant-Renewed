@@ -28,3 +28,6 @@ scoreboard players set #qtychrg game.Opts 3
 scoreboard players set #xplow game.Opts 12
 scoreboard players set #xpavr game.Opts 24
 scoreboard players set #xpstr game.Opts 36
+
+#Experience Crystal merging
+scoreboard players set #xpcrtlm game.Opts 0

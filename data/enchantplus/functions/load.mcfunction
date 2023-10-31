@@ -1,5 +1,5 @@
 #Datapack Version
-scoreboard players set #teplus.version load.status 732
+scoreboard players set #teplus.version load.status 740
 
 #Load constants
 scoreboard objectives add teplus.data dummy
@@ -9,12 +9,15 @@ scoreboard players set #2const teplus.data 2
 scoreboard players set #3const teplus.data 3
 scoreboard players set #4const teplus.data 4
 scoreboard players set #5const teplus.data 5
+scoreboard players set #7const teplus.data 7
 scoreboard players set #10const teplus.data 10
 scoreboard players set #19const teplus.data 19
 scoreboard players set #25const teplus.data 25
 scoreboard players set #30const teplus.data 30
 scoreboard players set #33const teplus.data 33
 scoreboard players set #50const teplus.data 50
+scoreboard players set #200const teplus.data 200
+scoreboard players set #250const teplus.data 250
 
 #Scoreboard for xp reward when disenchanting
 scoreboard objectives add teplus.diench dummy
@@ -104,6 +107,7 @@ scoreboard objectives add teplus.htlct dummy
 scoreboard objectives add teplus.scared dummy
 scoreboard objectives add teplus.facdmg dummy
 scoreboard objectives add teplus.racdmg dummy
+scoreboard objectives add teplus.xpcrtl dummy
 
 #Timers
 scoreboard objectives add TimerHurt dummy
@@ -176,7 +180,7 @@ tellraw @a ["",{"text":"                      [","color":"aqua","italic":true},{
 tellraw @a ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}]
 
 execute if score $Addon tep.exten matches 0 run tellraw @a ["",{"translate":"TE+ Addons:","color":"yellow"},{"translate":" Not detected","color":"dark_red"}]
-execute if score $Addon tep.exten matches 1 run tellraw @a ["",{"translate":"TE+ Addons:","color":"yellow"},{"translate":" Were detected","color":"dark_green"}]
+execute if score $Addon tep.exten matches 1.. run tellraw @a ["",{"translate":"TE+ Addons:","color":"yellow"},{"translate":" Were detected","color":"dark_green"},{"text":"  "},{"score":{"name":"$Addon","objective":"tep.exten"},"color":"#6CBA8F"}]
 execute if score $Complement tep.exten matches 0 run tellraw @a ["",{"translate":"TE+ Complements:","color":"yellow"},{"translate":" Not detected","color":"dark_red"}]
-execute if score $Complement tep.exten matches 1 run tellraw @a ["",{"translate":"TE+ Complements:","color":"yellow"},{"translate":" Were detected","color":"dark_green"}]
+execute if score $Complement tep.exten matches 1.. run tellraw @a ["",{"translate":"TE+ Complements:","color":"yellow"},{"translate":" Were detected","color":"dark_green"},{"text":"  "},{"score":{"name":"$Complement","objective":"tep.exten"},"color":"#6CBA8F"}]
 tellraw @a ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}]

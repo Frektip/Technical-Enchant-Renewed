@@ -4,9 +4,9 @@ tellraw @s ["",{"translate":"                                MOB SPAWNING","colo
 tellraw @s {"text":"                                                                                ","color":"#67DE83","strikethrough":true}
 
 #Enabled/Disabled
-execute if score $Spawn tepext.manager matches 0 run tellraw @s ["",{"translate":"(Enabled)","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Clic here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/spawn/off"}},{"text":" "},{"translate":"Mobs can spawn wearing armor and other items with custom enchantments. They can't spawn with netherite gear.","color":"gray"}]
+execute if score $Spawn tepext.manager matches 0 run tellraw @s ["",{"translate":"(Enabled)","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Click here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/spawn/off"}},{"text":" "},{"translate":"Mobs can spawn wearing armor and other items with custom enchantments. They can't spawn with netherite gear.","color":"gray"}]
 
-execute if score $Spawn tepext.manager matches 1 run tellraw @s ["",{"translate":"(Disabled)","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Clic here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/spawn/on"}},{"text":" "},{"translate":"Mobs can spawn wearing armor and other items with custom enchantments. They can't spawn with netherite gear.","color":"gray"}]
+execute if score $Spawn tepext.manager matches 1 run tellraw @s ["",{"translate":"(Disabled)","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/spawn/on"}},{"text":" "},{"translate":"Mobs can spawn wearing armor and other items with custom enchantments. They can't spawn with netherite gear.","color":"gray"}]
 
 tellraw @s {"text":"\n"}
 

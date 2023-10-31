@@ -4,9 +4,9 @@ tellraw @s ["",{"translate":"                           ENCHANTED MOB DROPS","co
 tellraw @s {"text":"                                                                                ","color":"#67DE83","strikethrough":true}
 
 #Enabled/Disabled
-execute if score $Drops tepext.manager matches 0 run tellraw @s ["",{"translate":"(Enabled)","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Clic here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/drops/off"}},{"text":" "},{"translate":"Some random mobs (excluding bosses, pets and villagers) will spawn with the chance of dropping custom enchanted books.","color":"gray"}]
+execute if score $Drops tepext.manager matches 0 run tellraw @s ["",{"translate":"(Enabled)","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Click here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/drops/off"}},{"text":" "},{"translate":"Some random mobs (excluding bosses, pets and villagers) will spawn with the chance of dropping custom enchanted books.","color":"gray"}]
 
-execute if score $Drops tepext.manager matches 1 run tellraw @s ["",{"translate":"(Disabled)","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Clic here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/drops/on"}},{"text":" "},{"translate":"Some random mobs (excluding bosses, pets and villagers) will spawn with the chance of dropping custom enchanted books.","color":"gray"}]
+execute if score $Drops tepext.manager matches 1 run tellraw @s ["",{"translate":"(Disabled)","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/drops/on"}},{"text":" "},{"translate":"Some random mobs (excluding bosses, pets and villagers) will spawn with the chance of dropping custom enchanted books.","color":"gray"}]
 
 tellraw @s {"text":"\n"}
 

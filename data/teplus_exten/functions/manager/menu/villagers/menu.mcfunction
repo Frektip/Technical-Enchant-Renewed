@@ -4,9 +4,9 @@ tellraw @s ["",{"translate":"                           ADVANCED ENCHANTERS","co
 tellraw @s {"text":"                                                                                ","color":"#67DE83","strikethrough":true}
 
 #Enabled/Disabled
-execute if score $Villager tepext.manager matches 0 run tellraw @s ["",{"translate":"(Enabled)","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Clic here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/villagers/off"}},{"text":" "},{"translate":"Allow librarians to convert into an Advanced Enchanter.","color":"gray"}]
+execute if score $Villager tepext.manager matches 0 run tellraw @s ["",{"translate":"(Enabled)","color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Click here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/villagers/off"}},{"text":" "},{"translate":"Allow librarians to convert into an Advanced Enchanter.","color":"gray"}]
 
-execute if score $Villager tepext.manager matches 1 run tellraw @s ["",{"translate":"(Disabled)","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Clic here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/villagers/on"}},{"text":" "},{"translate":"Allow librarians to convert into an Advanced Enchanter.","color":"gray"}]
+execute if score $Villager tepext.manager matches 1 run tellraw @s ["",{"translate":"(Disabled)","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Click here to change"}]},"clickEvent":{"action":"run_command","value":"/function teplus_exten:manager/menu/villagers/on"}},{"text":" "},{"translate":"Allow librarians to convert into an Advanced Enchanter.","color":"gray"}]
 
 tellraw @s {"text":"\n"}
 

@@ -8,8 +8,7 @@ execute if entity @s[tag=trigger_protection] run function enchantplus:result/tur
 execute if entity @s[tag=teplus.celebrate] run function enchantplus:result/birthday/init
 execute if entity @s[tag=teplus.exhausted] run function enchantplus:result/exhaustion/effects
 execute if entity @s[tag=teplus.fearatt,predicate=!enchantplus:has_fear] run function enchantplus:result/fear/reset_player
-##-----#-----#-----#-----# When Fishing #-----#-----#-----#-----#-----#
-execute if entity @s[tag=teplus.fishing] run function enchantplus:entity/player/fishing/find_item
+
 ##-----#-----#-----#-----# When the player drop something #-----#-----#-----#-----#-----#
 # It could be:
 # -To enchant an item
@@ -18,7 +17,10 @@ execute if entity @s[tag=teplus.fishing] run function enchantplus:entity/player/
 # -To obtain a guide book
 execute if entity @s[scores={Drop=1..}] run function enchantplus:entity/player/when_drop 
 
+##-----#-----#-----#-----# Experience Crystal #-----#-----#-----#-----#-----#
+execute if entity @s[predicate=enchantplus:holding_experience_crystal/only_mainhand] unless data entity @s Inventory[{Slot:-106b}].tag.Teplus_xp_crystal run function enchantplus:entity/player/using_experience_crystal/mainhand_use
 
+execute if entity @s[predicate=enchantplus:holding_experience_crystal/only_offhand] unless data entity @s SelectedItem.tag.Teplus_xp_crystal run function enchantplus:entity/player/using_experience_crystal/offhand_use
 
 ##-----#-----#-----#-----# Scoreboard Stuff #-----#-----#-----#-----#-----#
 # Take damage - Allows to always use an updated score

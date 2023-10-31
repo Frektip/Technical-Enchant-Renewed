@@ -22,3 +22,6 @@ execute if entity @e[type=marker,scores={BaseCharge=84..},tag=!is_enchanting,tag
 
 #THIRD LOW ENCHATMENTS
 execute if entity @e[type=marker,scores={BaseCharge=36..},tag=!is_enchanting,tag=teplus.tier1,distance=..1] if score @p[distance=..10,scores={Drop=1..}] TCHA.plxp >= #xplow game.Opts run function enchantplus:loot/loot_system/prepare/book/low
+
+#Small chance to get an xp Crystal
+execute if predicate enchantplus:random_chance/15 at @e[type=marker,tag=teplus.enchanting_table,tag=teplus.tier5,distance=..1] positioned ~ ~1 ~ run function enchantplus:loot/loot_system/give_xp_crystal/core

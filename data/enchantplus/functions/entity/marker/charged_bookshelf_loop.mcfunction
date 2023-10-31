@@ -20,4 +20,4 @@ execute if score $Villager tepext.manager matches 0 run function teplus_exten:vi
 execute unless block ~ ~ ~ bookshelf run function enchantplus:entity/marker/charged_bookshelf_remove
 
 #Update light source
-function enchantplus:entity/marker/light/main
+execute if score #tslpm game.Opts matches 1 run function enchantplus:entity/marker/light/main

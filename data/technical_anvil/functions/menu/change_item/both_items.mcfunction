@@ -80,4 +80,17 @@ execute if score #mrgit game.Opts matches 0 run function #technical_anvil:menu/m
 execute if score #mrgit game.Opts matches 0 if entity @s[tag=Is.same_item] run function #technical_anvil:menu/item_debug_slot6
 execute if score #mrgit game.Opts matches 0 if entity @s[tag=Is.same_item] if data storage teplus:tech_anvil.ui CurrentItems[{Slot:2b}].tag.EnchCore if data storage teplus:tech_anvil.ui CurrentItems[{Slot:6b}].tag.EnchCore run function technical_anvil:menu/with_two_items
 
+
+
+
+
+
+
+
+
+##--EXPERIENCE CRYSTAL MERGING--##
+execute if data storage teplus:tech_anvil.ui CurrentItems[{Slot:2b}].tag.Teplus_xp_crystal run tag @s add TCHA.inxpcrst
+
+execute if entity @s[tag=TCHA.inxpcrst] run function technical_anvil:menu/with_two_items
+
 #------------------------------------------#

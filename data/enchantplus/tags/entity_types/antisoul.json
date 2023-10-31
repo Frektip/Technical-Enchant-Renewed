@@ -39,6 +39,9 @@
     "minecraft:tnt",
     "minecraft:tnt_minecart",
     "#enchantplus:trident",
-    "minecraft:wither_skull"
+    "minecraft:wither_skull",
+    "minecraft:block_display",
+    "minecraft:item_display",
+    "minecraft:text_display"
   ]
 }

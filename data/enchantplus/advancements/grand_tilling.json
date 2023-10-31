@@ -3,9 +3,19 @@
     "requirement": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "nbt": "{CustomEnchantments:[{id:\"GrandTilling\"}]}"
-        }
+        "location": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{CustomEnchantments:[{id:\"GrandTilling\"}]}"
+                }
+              }
+            }
+          }
+        ]
       }
     }
   },

@@ -3,7 +3,18 @@
     "requirement": {
       "trigger": "minecraft:placed_block",
       "conditions": {
-        "block": "minecraft:enchanting_table"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:enchanting_table"
+                ]
+              }
+            }
+          }
+        ]
       }
     }
   },

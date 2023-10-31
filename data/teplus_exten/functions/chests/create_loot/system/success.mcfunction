@@ -4,9 +4,6 @@ execute unless score #current_max teplus.data matches ..1 run function teplus_ex
 
 #Set the enchantment to the "Enchantments" data storage
 data modify storage teplus:chest Result append from storage teplus:chest Build
-#Add this tag, so it doesn't dupe/repeat again unless it is from an
-# specific structure
-tag @s add build.done
 
 #Incase there this enchantment has more odds to appear in this structure
 # chest, then repeat this function

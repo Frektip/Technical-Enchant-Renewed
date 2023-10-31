@@ -3,34 +3,53 @@
     "isolated_core": {
       "trigger": "minecraft:placed_block",
       "conditions": {
-        "item": {
-          "items": [
-            "minecraft:player_head"
-          ],
-          "nbt": "{TeplusHead:{isolated_core:1b}}"
+        "location": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "nbt": "{TeplusHead:{isolated_core:1b}}"
+          }
         }
+        ]
       }
     },
     "polished_lapis": {
       "trigger": "minecraft:placed_block",
       "conditions": {
-        "item": {
-          "items": [
-            "minecraft:player_head"
-          ],
-          "nbt": "{TeplusHead:{polished_lapis:1b}}"
+        "location": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "nbt": "{TeplusHead:{polished_lapis:1b}}"
+          }
         }
+        ]
       }
     },
     "blessed_orb": {
       "trigger": "minecraft:placed_block",
       "conditions": {
-        "item": {
-          "items": [
-            "minecraft:player_head"
-          ],
-          "nbt": "{TeplusHead:{blessed_orb:1b}}"
+        "location": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "nbt": "{TeplusHead:{blessed_orb:1b}}"
+          }
         }
+        ]
+      }
+    },
+    "experience_crystal": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "nbt": "{Teplus_xp_crystal:1b}"
+          }
+        }
+        ]
       }
     }
   },
@@ -38,7 +57,8 @@
     [
       "isolated_core",
       "polished_lapis",
-      "blessed_orb"
+      "blessed_orb",
+      "experience_crystal"
     ]
   ],
   "rewards": {

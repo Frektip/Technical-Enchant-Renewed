@@ -1,7 +1,7 @@
 {
 	"pack":
 	{
-		"pack_format": 12,
+		"pack_format": 18,
 		"description": [
             {
                 "text": "by ",
@@ -20,7 +20,7 @@
                 "color": "#CF130C"
             },
             {
-                "text": "→ 1.19.4",
+                "text": "→ 1.20.2",
                 "color": "#DB9E4F"
             }
         ]
