@@ -7,9 +7,9 @@
         "minecraft:warped_wart_block",
         "minecraft:shroomlight",
 
-        "minecraft:mangrove_roots"
+        "minecraft:mangrove_roots",
 
-        
-        
+        "minecraft:bamboo_block",        
+        "minecraft:stripped_bamboo_block"
     ]
 }

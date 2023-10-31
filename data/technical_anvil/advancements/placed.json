@@ -7,8 +7,11 @@
 			{
 			  "condition": "minecraft:match_tool",
 			  "predicate": {
-				  "nbt": "{Teplus.anvil:1b}"
-				}
+				"items": [
+				  "minecraft:player_head"
+				],
+				"nbt": "{Teplus.anvil:1b}"
+			  }
 			}
 		  ]
 		}
@@ -17,5 +20,5 @@
 	"rewards": {
 	  "function": "technical_anvil:place/init"
 	}
-  }
+}
   

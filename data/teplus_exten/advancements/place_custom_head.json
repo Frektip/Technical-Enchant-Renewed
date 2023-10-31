@@ -4,12 +4,15 @@
       "trigger": "minecraft:placed_block",
       "conditions": {
         "location": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "nbt": "{TeplusHead:{isolated_core:1b}}"
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:player_head"
+              ],
+              "nbt": "{TeplusHead:{isolated_core:1b}}"
+            }
           }
-        }
         ]
       }
     },
@@ -17,12 +20,15 @@
       "trigger": "minecraft:placed_block",
       "conditions": {
         "location": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "nbt": "{TeplusHead:{polished_lapis:1b}}"
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:player_head"
+              ],
+              "nbt": "{TeplusHead:{polished_lapis:1b}}"
+            }
           }
-        }
         ]
       }
     },
@@ -30,25 +36,15 @@
       "trigger": "minecraft:placed_block",
       "conditions": {
         "location": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "nbt": "{TeplusHead:{blessed_orb:1b}}"
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:player_head"
+              ],
+              "nbt": "{TeplusHead:{blessed_orb:1b}}"
+            }
           }
-        }
-        ]
-      }
-    },
-    "experience_crystal": {
-      "trigger": "minecraft:placed_block",
-      "conditions": {
-        "location": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "nbt": "{Teplus_xp_crystal:1b}"
-          }
-        }
         ]
       }
     }

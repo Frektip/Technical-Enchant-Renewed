@@ -14,6 +14,7 @@ Also, IMPORTANT to mention that this datapack has:
 - "Stoupy51" for helping me optimizing parts in the code
 - "Jaro" for creating the textures
 - Ziromanean for creating "TE+ complement creator" software: https://github.com/KendallP4299/Complement-Creator-for-Technical-Enchant-Renewed-
+- Viability for makeing the neccessary changes to make TE+ compatible for 1.20
 
 This RENEWED version include:
 
