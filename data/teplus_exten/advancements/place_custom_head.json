@@ -47,6 +47,22 @@
           }
         ]
       }
+    },
+    "experience_crystal": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:player_head"
+              ],
+              "nbt": "{Teplus_xp_crystal:1b}"
+            }
+          }
+        ]
+      }
     }
   },
   "requirements": [
