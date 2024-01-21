@@ -5,14 +5,14 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Trident:{tag:{CustomEnchantments:[{}]}}}"
+        "nbt": "{item:{tag:{CustomEnchantments:[{}]}}}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Trident:{tag:{CustomCurse:[{}]}}}"
+        "nbt": "{item:{tag:{CustomCurse:[{}]}}}"
       }
     }
   ]
