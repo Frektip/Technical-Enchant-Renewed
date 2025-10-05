@@ -1,8 +1,9 @@
 {
-	"pack":
-	{
-		"pack_format": 26,
-		"description": [
+    "pack": {
+        "pack_format": 88,
+        "min_format": 88,
+        "max_format": 88,
+        "description": [
             {
                 "text": "by ",
                 "color": "#9aa3a5"
@@ -20,6 +21,5 @@
                 "color": "#CF130C"
             }
         ]
-
-	}
+    }
 }
