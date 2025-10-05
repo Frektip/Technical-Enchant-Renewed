@@ -1,0 +1,78 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "teplus.item.birthday_potion",
+                "fallback": "Birthday Potion",
+                "color": "#FFD399",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "teplus.birthday_potion.desc.lore1",
+                  "fallback": "Celebrate the best party,",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "teplus.birthday_potion.desc.lore2",
+                  "fallback": "with cakes, candles, fireworks",
+                  "color": "white",
+                  "italic": false
+                },
+                [
+                  {
+                    "translate": "teplus.birthday_potion.desc.lore3",
+                    "fallback": "and balloons!",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": " (2:00)",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": "Technical Enchant+",
+                  "color": "#63C0E3",
+                  "italic": true
+                }
+              ],
+              "mode": "insert"
+            },
+            {
+              "function": "minecraft:set_components",
+              "id": "",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 16768767,
+                  "custom_effects": []
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "OnBirthday": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
