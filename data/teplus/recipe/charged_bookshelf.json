@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LBL",
+    "LLL"
+  ],
+  "key": {
+    "L": [
+      "minecraft:lapis_lazuli"
+    ],
+    "B": [
+      "minecraft:bookshelf"
+    ]
+  },
+  "result": {
+    "id": "minecraft:bookshelf",
+    "components": {
+      "minecraft:custom_name": {
+        "translate": "teplus.item.charged_bookshelf",
+        "fallback": "Charged Bookshelf",
+        "color": "aqua",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "translate": "teplus.charged_bookshelf.desc1",
+          "fallback": "Place it down to increase the",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "translate": "teplus.charged_bookshelf.desc1",
+          "fallback": "tier of an enchanting setup",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "Technical Enchant+",
+          "color": "#63C0E3",
+          "italic": true
+        }
+      ],
+      "minecraft:enchantment_glint_override": true
+    },
+    "count": 1
+  }
+}
