@@ -41,7 +41,8 @@
           "italic": true
         }
       ],
-      "minecraft:enchantment_glint_override": true
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:custom_data": "{teplus:{block:1b, id: \"charged_bookshelf\"}}"
     },
     "count": 1
   }

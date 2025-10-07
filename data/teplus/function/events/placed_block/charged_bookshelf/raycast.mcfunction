@@ -1,0 +1,2 @@
+execute if block ~ ~ ~ minecraft:bookshelf align xyz run summon marker ~ ~ ~ {Tags:["teplus.ray"]}
+execute unless block ~ ~ ~ minecraft:bookshelf positioned ^ ^ ^0.1 run function teplus:events/placed_block/charged_bookshelf/raycast
