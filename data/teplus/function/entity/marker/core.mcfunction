@@ -1,0 +1,1 @@
+execute if entity @s[tag=teplus.charged_bookshelf] run function teplus:blocks/charged_bookshelf/loop

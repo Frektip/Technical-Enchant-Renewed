@@ -1,0 +1,55 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bookshelf",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "teplus.item.charged_bookshelf",
+                "fallback": "Charged Bookshelf",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "teplus.charged_bookshelf.desc1",
+                  "fallback": "Place it down to increase the",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "teplus.charged_bookshelf.desc1",
+                  "fallback": "tier of an enchanting setup",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Technical Enchant+",
+                  "color": "#63C0E3",
+                  "italic": true
+                }
+              ],
+              "mode": "insert"
+            },
+            {
+              "function": "minecraft:set_components",
+              "id": "",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": "{teplus:{block:1b, id: \"charged_bookshelf\"}}"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

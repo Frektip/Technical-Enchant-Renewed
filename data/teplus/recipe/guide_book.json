@@ -1,0 +1,492 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "minecraft:writable_book"
+    ],
+    [
+      "minecraft:lapis_lazuli"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:written_book",
+    "components": {
+      "minecraft:item_name": [
+        {
+          "text": "ench ",
+          "color": "dark_aqua",
+          "obfuscated": true
+        },
+        {
+          "translate": "teplus.item.guide_book",
+          "fallback": "TE+ Guide Book",
+          "color": "aqua",
+          "underlined": true,
+          "obfuscated": false
+        },
+        {
+          "text": " ants",
+          "color": "dark_aqua",
+          "obfuscated": true
+        }
+      ],
+      "minecraft:lore": [
+        {
+          "text": "Technical Enchant+",
+          "color": "#63C0E3",
+          "italic": true
+        }
+      ],
+      "minecraft:custom_model_data": {
+        "strings": [
+          "teplus:guide_book"
+        ]
+      },
+      "minecraft:written_book_content": {
+        "pages": [
+          [
+            {
+              "text": "#--------------#\n",
+              "color": "gold",
+              "bold": true
+            },
+            {
+              "text": "#-- ",
+              "color": "gold",
+              "bold": true
+            },
+            {
+              "text": "TECHNICAL",
+              "bold": true,
+              "color": "dark_red"
+            },
+            {
+              "text": " --#\n",
+              "bold": true,
+              "color": "gold"
+            },
+            {
+              "text": "#-- ",
+              "bold": true,
+              "color": "gold"
+            },
+            {
+              "text": "ENCHANT +",
+              "bold": true,
+              "color": "dark_red"
+            },
+            {
+              "text": " --#\n#--------------#\n\n#===> ",
+              "bold": true,
+              "color": "gold"
+            },
+            {
+              "text": "[",
+              "bold": false,
+              "color": "dark_blue"
+            },
+            {
+              "score": {
+                "objective": "teplus.version",
+                "name": "#major"
+              },
+              "color": "dark_blue",
+              "bold": false
+            },
+            {
+              "text": ".",
+              "bold": false,
+              "color": "dark_blue"
+            },
+            {
+              "score": {
+                "objective": "teplus.version",
+                "name": "#minor"
+              },
+              "color": "dark_blue",
+              "bold": false
+            },
+            {
+              "text": ".",
+              "bold": false,
+              "color": "dark_blue"
+            },
+            {
+              "score": {
+                "objective": "teplus.version",
+                "name": "#patch"
+              },
+              "color": "dark_blue",
+              "bold": false
+            },
+            {
+              "text": "]",
+              "bold": false,
+              "color": "dark_blue"
+            },
+            {
+              "text": " <===#",
+              "bold": true,
+              "color": "gold"
+            },
+            {
+              "text": "\n\n>> ",
+              "color": "dark_green",
+              "bold": true
+            },
+            {
+              "translate": "teplus.guide_book.page1.admin_tools",
+              "fallback": "Admin Tools",
+              "color": "#E4B54F",
+              "bold": false,
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_info_feedback",
+                  "fallback": "Click to get more info"
+                }
+              }
+            },
+            {
+              "text": "\n>> ",
+              "color": "dark_green",
+              "bold": true
+            },
+            {
+              "translate": "teplus.guide_book.page1.new_items",
+              "fallback": "New Items",
+              "color": "#9BB64E",
+              "bold": false,
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_info_feedback",
+                  "fallback": "Click to get more info"
+                }
+              }
+            },
+            {
+              "text": "\n>> ",
+              "color": "dark_green",
+              "bold": true
+            },
+            {
+              "translate": "teplus.guide_book.page1.main_mechanics",
+              "fallback": "Main Mechanics",
+              "color": "#3BA975",
+              "bold": false,
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_info_feedback",
+                  "fallback": "Click to get more info"
+                }
+              }
+            },
+            {
+              "text": "\n>> ",
+              "color": "dark_green",
+              "bold": true
+            },
+            {
+              "translate": "teplus.guide_book.page1.enchanting_rates",
+              "fallback": "Enchanting Rates",
+              "color": "#408FB4",
+              "bold": false,
+              "click_event": {
+                "action": "open_url",
+                "url": "https://github.com/Frektip/Technical-Enchant-Renewed/wiki/Enchanting-System"
+              },
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_info_feedback",
+                  "fallback": "Click to get more info"
+                }
+              }
+            },
+            {
+              "text": "\n>> ",
+              "color": "dark_green",
+              "bold": true
+            },
+            {
+              "translate": "teplus.guide_book.page1.enchantments_list",
+              "fallback": "Enchantments List",
+              "color": "#8050D5",
+              "bold": false,
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_info_feedback",
+                  "fallback": "Click to get more info"
+                }
+              }
+            },
+            {
+              "text": "\n\n(",
+              "color": "#B4782A",
+              "bold": false,
+              "click_event": {
+                "action": "run_command",
+                "command": "/trigger teplus.trigger.get_birthday_potion set 1"
+              },
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_get_feedback",
+                  "fallback": "Click here to get"
+                }
+              }
+            },
+            {
+              "translate": "teplus.item.birthday_potion",
+              "fallback": "Birthday Potion",
+              "color": "#B4782A",
+              "bold": false,
+              "click_event": {
+                "action": "run_command",
+                "command": "/trigger teplus.trigger.get_birthday_potion set 1"
+              },
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_get_feedback",
+                  "fallback": "Click here to get"
+                }
+              }
+            },
+            {
+              "text": ")",
+              "color": "#B4782A",
+              "bold": false,
+              "click_event": {
+                "action": "run_command",
+                "command": "/trigger teplus.trigger.get_birthday_potion set 1"
+              },
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_get_feedback",
+                  "fallback": "Click here to get"
+                }
+              }
+            }
+          ],
+          [
+            {
+              "text": "#--------------#\n",
+              "color": "gold",
+              "bold": true
+            },
+            {
+              "text": "#-- ",
+              "color": "gold",
+              "bold": true
+            },
+            {
+              "text": "TECHNICAL",
+              "bold": true,
+              "color": "dark_red"
+            },
+            {
+              "text": " --#\n",
+              "bold": true,
+              "color": "gold"
+            },
+            {
+              "text": "#-- ",
+              "bold": true,
+              "color": "gold"
+            },
+            {
+              "text": "ENCHANT +",
+              "bold": true,
+              "color": "dark_red"
+            },
+            {
+              "text": " --#\n#--------------#",
+              "bold": true,
+              "color": "gold"
+            },
+            {
+              "text": "\n\n   >> ",
+              "color": "dark_green",
+              "bold": true
+            },
+            {
+              "text": "[",
+              "color": "#A0781A",
+              "bold": false,
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_show_feedback",
+                  "fallback": "Click to show"
+                }
+              }
+            },
+            {
+              "translate": "teplus.guide_book.page5.credits",
+              "fallback": "Credits",
+              "color": "#A0781A",
+              "bold": false,
+              
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_show_feedback",
+                  "fallback": "Click to show"
+                }
+              }
+            },
+            {
+              "text": "]",
+              "color": "#A0781A",
+              "bold": false,
+              
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_show_feedback",
+                  "fallback": "Click to show"
+                }
+              }
+            },
+            {
+              "text": " <<",
+              "color": "dark_green",
+              "bold": true
+            },
+            {
+              "text": "\n\n   >> ",
+              "color": "dark_green",
+              "bold": true
+            },
+            {
+              "text": "[",
+              "color": "#7289da",
+              "bold": false,
+              "click_event": {
+                "action": "open_url",
+                "url": "https://discord.gg/MksvFbGPvR"
+              },
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_go_feedback",
+                  "fallback": "Click to go"
+                }
+              }
+            },
+            {
+              "translate": "teplus.guide_book.page5.discord",
+              "text": "Discord",
+              "color": "#7289da",
+              "bold": false,
+              "click_event": {
+                "action": "open_url",
+                "url": "https://discord.gg/MksvFbGPvR"
+              },
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_go_feedback",
+                  "fallback": "Click to go"
+                }
+              }
+            },
+            {
+              "text": "]",
+              "color": "#7289da",
+              "bold": false,
+              "click_event": {
+                "action": "open_url",
+                "url": "https://discord.gg/MksvFbGPvR"
+              },
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_go_feedback",
+                  "fallback": "Click to go"
+                }
+              }
+            },
+            {
+              "text": " <<",
+              "color": "dark_green",
+              "bold": true
+            },
+            {
+              "text": "\n\n     >> ",
+              "color": "dark_green",
+              "bold": true
+            },
+            {
+              "text": "[",
+              "color": "#454446",
+              "bold": false,
+              "click_event": {
+                "action": "open_url",
+                "url": "https://github.com/Frektip/Technical-Enchant-Renewed/wiki"
+              },
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_go_feedback",
+                  "fallback": "Click to go"
+                }
+              }
+            },
+            {
+              "translate": "teplus.guide_book.page5.wiki",
+              "text": "Wiki",
+              "color": "#454446",
+              "bold": false,
+              "click_event": {
+                "action": "open_url",
+                "url": "https://github.com/Frektip/Technical-Enchant-Renewed/wiki"
+              },
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_go_feedback",
+                  "fallback": "Click to go"
+                }
+              }
+            },
+            {
+              "text": "]",
+              "color": "#454446",
+              "bold": false,
+              "click_event": {
+                "action": "open_url",
+                "url": "https://github.com/Frektip/Technical-Enchant-Renewed/wiki"
+              },
+              "hover_event": {
+                "action": "show_text",
+                "value": {
+                  "translate": "teplus.common.click_hover_go_feedback",
+                  "fallback": "Click to go"
+                }
+              }
+            },
+            {
+              "text": " <<",
+              "color": "dark_green",
+              "bold": true
+            },
+            {
+              "text": "\n\n#--------------#",
+              "bold": true,
+              "color": "gold"
+            }
+          ]
+        ],
+        "title": "",
+        "author": "Frektip"
+      }
+    },
+    "count": 1
+  }
+}

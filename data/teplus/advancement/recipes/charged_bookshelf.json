@@ -1,0 +1,25 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_an_ingredient": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["minecraft:lapis_lazuli", "minecraft:bookshelf"]
+                    }
+                ]
+            }
+        },
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "teplus:charged_bookshelf"
+            }
+        }
+    },
+    "requirements": [["has_the_recipe", "has_an_ingredient"]],
+    "rewards": {
+        "recipes": ["teplus:charged_bookshelf"]
+    }
+}
