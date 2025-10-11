@@ -4,6 +4,9 @@ scoreboard players set #major teplus.version 8
 scoreboard players set #minor teplus.version 0
 scoreboard players set #patch teplus.version 0
 
+#Placed Blocks scoreboard
+scoreboard objectives add teplus.block_id dummy
+
 #Triggers
 scoreboard objectives add teplus.trigger.get_birthday_potion trigger
 
