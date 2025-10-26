@@ -1,0 +1,2 @@
+execute if block ~ ~ ~ minecraft:enchanting_table align xyz run summon marker ~ ~ ~ {Tags:["teplus.ray"]}
+execute unless block ~ ~ ~ minecraft:enchanting_table positioned ^ ^ ^0.1 run function teplus:events/placed_block/enchanting_table/raycast

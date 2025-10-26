@@ -1,0 +1,1 @@
+execute unless block ~ ~ ~ enchanting_table run function teplus:blocks/enchanting_table/break
