@@ -10,6 +10,9 @@ scoreboard objectives add teplus.block_id dummy
 #Triggers
 scoreboard objectives add teplus.trigger.get_birthday_potion trigger
 
+#Scheduled functions
+schedule function teplus:blocks/charged_bookshelf/light/main_1s 1s replace
+
 
 tellraw @a ["",{"text":"             [","color":"gold"},{"text":"Technical Enchant+ Renewed","color":"green"},{"text":" is ready","color":"green"},{"text":"]","color":"gold"}]
 tellraw @a ["",{"text":"              *------*--*--*------*--*--*------*","color":"gold"}]
