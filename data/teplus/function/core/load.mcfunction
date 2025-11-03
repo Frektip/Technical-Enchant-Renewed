@@ -7,6 +7,13 @@ scoreboard players set #patch teplus.version 0
 #Placed Blocks scoreboard
 scoreboard objectives add teplus.block_id dummy
 
+#Enchanting setup system
+scoreboard objectives add teplus.chrgbksf.qnty dummy
+
+#Animations
+scoreboard objectives add teplus.hover dummy
+scoreboard objectives add teplus.open_lapis dummy
+
 #Triggers
 scoreboard objectives add teplus.trigger.get_birthday_potion trigger
 
