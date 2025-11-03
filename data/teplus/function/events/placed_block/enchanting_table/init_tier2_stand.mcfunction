@@ -1,0 +1,1 @@
+tag @e[type=armor_stand,tag=teplus.bookshelf_level,tag=teplus.level2,tag=!teplus.init_stand] add teplus.init_stand
