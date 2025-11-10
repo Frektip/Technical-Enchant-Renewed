@@ -4,6 +4,9 @@ scoreboard players set #major teplus.version 8
 scoreboard players set #minor teplus.version 0
 scoreboard players set #patch teplus.version 0
 
+# General use
+scoreboard objectives add teplus.data dummy
+
 # Placed Blocks scoreboard
 scoreboard objectives add teplus.block_id dummy
 
