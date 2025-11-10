@@ -1,23 +1,31 @@
-#Datapack version
+# Datapack version
 scoreboard objectives add teplus.version dummy
 scoreboard players set #major teplus.version 8
 scoreboard players set #minor teplus.version 0
 scoreboard players set #patch teplus.version 0
 
-#Placed Blocks scoreboard
+# Placed Blocks scoreboard
 scoreboard objectives add teplus.block_id dummy
 
-#Enchanting setup system
+# Enchanting setup system
 scoreboard objectives add teplus.chrgbksf.qnty dummy
+scoreboard objectives add teplus.base_charge dummy
 
-#Animations
+# Animations
 scoreboard objectives add teplus.hover dummy
 scoreboard objectives add teplus.open_lapis dummy
 
-#Triggers
+# Player related
+scoreboard objectives add teplus.drop minecraft.custom:minecraft.drop
+
+# Triggers
 scoreboard objectives add teplus.trigger.get_birthday_potion trigger
 
-#Scheduled functions
+# Config related
+scoreboard objectives add teplus.game_opts dummy
+function teplus:core/settings/set_options
+
+# Scheduled functions
 schedule function teplus:blocks/charged_bookshelf/light/main_1s 1s replace
 
 
