@@ -1,0 +1,18 @@
+{
+  "values": [
+    "minecraft:book",
+    "#minecraft:swords",
+    "#minecraft:axes",
+    "#minecraft:pickaxes",
+    "#minecraft:hoes",
+    "#minecraft:shovels",
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "minecraft:trident",
+    "#minecraft:chest_armor",
+    "#minecraft:foot_armor",
+    "#minecraft:head_armor",
+    "#minecraft:leg_armor",
+    "minecraft:shield"
+  ]
+}

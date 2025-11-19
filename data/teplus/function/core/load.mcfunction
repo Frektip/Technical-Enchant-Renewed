@@ -20,6 +20,7 @@ scoreboard objectives add teplus.open_lapis dummy
 
 # Player related
 scoreboard objectives add teplus.drop minecraft.custom:minecraft.drop
+scoreboard objectives add teplus.player.xp dummy
 
 # Triggers
 scoreboard objectives add teplus.trigger.get_birthday_potion trigger

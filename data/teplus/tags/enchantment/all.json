@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#teplus:types/low",
+    "#teplus:types/average",
+    "#teplus:types/strong",
+    "#teplus:types/curses",
+    "#teplus:types/exclusive"
+  ]
+}
