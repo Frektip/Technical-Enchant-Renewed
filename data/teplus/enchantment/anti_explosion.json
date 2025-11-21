@@ -1,11 +1,12 @@
 {
   "description": {
-    "translate": "teplus.enchantment.accuracy_shot",
-    "fallback": "Accuracy Shot"
+    "translate": "teplus.enchantment.anti_explosion",
+    "fallback": "Anti Explosion"
   },
   "supported_items": [
     "minecraft:bow",
-    "minecraft:crossbow"
+    "minecraft:netherite_sword",
+    "minecraft:trident"
   ],
   "weight": 1,
   "max_level": 1,
