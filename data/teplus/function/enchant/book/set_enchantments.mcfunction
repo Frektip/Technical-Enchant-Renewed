@@ -1,0 +1,34 @@
+### Debug Message ###
+tellraw @a[tag=teplus.debug_mode] [{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Enchanting★): ","color":"#24E3F9","italic":true,"bold":false},{"text":"Summoned a dummy item frame","color":"gray","italic":true,"bold":false}]
+
+##========================TECHNICAL ENCHANT+========================##
+#--------Adding Custom Enchantments to the book--------#
+#Add tag, this will help selecting from the enchantment list
+tag @s add teplus.loot_is_book
+
+#Set StoredCustomEnchantments[{}] nbt
+#function enchantplus:loot/enchanting/set_ench/core
+#------------------------------------------------------#
+
+#--------Adding Custom Curses to the book--------#
+#5% chance
+#execute if predicate enchantplus:random_chance/5 run function enchantplus:loot/enchanting/set_curse/prepare
+#---------------------------------------------------#
+##==================================================================##
+
+#Summon a new item that will get the data from this item frame
+summon item ~ ~ ~ {Motion:[0.0,0.32,0.0],PickupDelay:4,Tags:["teplus.enchant_sucessful"],Item:{id:"minecraft:stone_button",count:1}}
+
+### Debug Message ###
+tellraw @a[tag=teplus.debug_mode] [{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Enchanting★): ","color":"#24E3F9","italic":true,"bold":false},{"text":"Summon a dummy stone button and changing it's nbt","color":"gray","italic":true,"bold":false}]
+
+#Give the stone button thhe new item nbt
+data modify entity @e[type=item,tag=teplus.enchant_sucessful,limit=1,sort=nearest] Item set from entity @s Item
+
+#Kill the item frame
+kill @s
+
+#Because the enchantting was successful, do the armor stand animation
+tag @e[type=armor_stand,tag=teplus.bookshelf_level,distance=..3] add teplus.speed_enchanted
+tag @e[type=marker,tag=teplus.enchanting_table,distance=..2] add teplus.speed_enchanted
+function teplus:entity/armor_stand/table_rotate/rotate_speed/animate

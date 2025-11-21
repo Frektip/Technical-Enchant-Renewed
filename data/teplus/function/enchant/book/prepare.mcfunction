@@ -17,8 +17,7 @@ execute at @e[type=marker,tag=teplus.enchanting_table,tag=!teplus.is_enchanting,
 tag @e[type=marker,tag=teplus.enchanting_table,tag=!teplus.is_enchanting,distance=..1] add teplus.is_enchanting
 
 # Set the enchatment in the item frame
-execute as @e[type=item_frame,tag=teplus.enchanted,distance=..1] run say item frame exists
-execute as @e[type=item_frame,tag=teplus.enchanted,distance=..1] run kill @s
+execute as @e[type=item_frame,tag=teplus.enchanted,distance=..1] run function teplus:enchant/book/set_enchantments
 
 # End the action, removing particles and xp levels based on the rarity
 execute if score #teplus.rarity teplus.data matches 3 run function teplus:enchant/end { xp_remove: -3 }
