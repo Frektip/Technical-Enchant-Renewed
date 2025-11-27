@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "teplus.enchantment.leaping",
+    "fallback": "Leaping"
+  },
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "legs"
+  ]
+}

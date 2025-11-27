@@ -1,0 +1,23 @@
+{
+  "description": {
+    "translate": "teplus.enchantment.sniper",
+    "fallback": "Sniper"
+  },
+  "supported_items": [
+    "minecraft:crossbow"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "hand"
+  ]
+}

@@ -1,5 +1,7 @@
 {
   "values": [
-    "teplus:accuracy_shot"
+    "teplus:accuracy_shot",
+    "teplus:sniper",
+    "teplus:arachnid"
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "description": {
+    "translate": "teplus.enchantment.exhaustion",
+    "fallback": "Exhaustion"
+  },
+  "supported_items": [
+    "minecraft:diamond_pickaxe",
+    "minecraft:diamond_axe",
+    "minecraft:diamond_hoe",
+    "minecraft:diamond_shovel"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "hand"
+  ]
+}

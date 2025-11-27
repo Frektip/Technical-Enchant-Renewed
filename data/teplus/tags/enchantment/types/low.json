@@ -1,5 +1,7 @@
 {
   "values": [
-    "teplus:anti_explosion"
+    "teplus:anti_explosion",
+    "teplus:poison_aspect",
+    "teplus:leaping"
   ]
 }

@@ -13,7 +13,7 @@ scoreboard players set #teplus.bachamt teplus.base_charge 0
 scoreboard players set #charge_remove teplus.base_charge 0
 
 # Summon a temporal entity
-execute at @e[type=marker,tag=teplus.enchanting_table,tag=!teplus.is_enchanting,distance=..1] run summon item_frame ~ ~ ~ {Silent:1b,Facing:1b,Invulnerable:1b,Fixed:1b,Tags:["teplus.enchanted"],Item:{id:"minecraft:enchanted_book",count:1}}
+execute at @e[type=marker,tag=teplus.enchanting_table,tag=!teplus.is_enchanting,distance=..1] run summon item_frame ~ ~ ~ {Silent:1b,Facing:1b,Invulnerable:1b,Fixed:1b,Tags:["teplus.enchanted"],Item:{id:"minecraft:book",count:1}}
 tag @e[type=marker,tag=teplus.enchanting_table,tag=!teplus.is_enchanting,distance=..1] add teplus.is_enchanting
 
 # Set the enchatment in the item frame

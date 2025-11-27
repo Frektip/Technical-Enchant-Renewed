@@ -1,0 +1,30 @@
+{
+  "description": {
+    "translate": "teplus.enchantment.poison_aspect",
+    "fallback": "Poison Aspect"
+  },
+  "supported_items": [
+    "minecraft:trident",
+    "minecraft:diamond_sword",
+    "minecraft:netherite_sword",
+    "minecraft:iron_sword",
+    "minecraft:golden_sword",
+    "minecraft:stone_sword",
+    "minecraft:wooden_sword",
+    "minecraft:copper_sword"
+  ],
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "hand"
+  ]
+}

@@ -3,16 +3,14 @@ tellraw @a[tag=teplus.debug_mode] [{"text":"TE+» ","color":"#65DAD4","bold":tru
 
 ##========================TECHNICAL ENCHANT+========================##
 #--------Adding Custom Enchantments to the book--------#
-#Add tag, this will help selecting from the enchantment list
+# Add tag, this will help selecting from the enchantment list
 tag @s add teplus.loot_is_book
-
-#Set StoredCustomEnchantments[{}] nbt
-#function enchantplus:loot/enchanting/set_ench/core
+function teplus:enchant/set_enchant/core
 #------------------------------------------------------#
 
 #--------Adding Custom Curses to the book--------#
-#5% chance
-#execute if predicate enchantplus:random_chance/5 run function enchantplus:loot/enchanting/set_curse/prepare
+# 5% chance
+execute if predicate teplus:random_chance/5  run function teplus:enchant/set_curse/prepare
 #---------------------------------------------------#
 ##==================================================================##
 
