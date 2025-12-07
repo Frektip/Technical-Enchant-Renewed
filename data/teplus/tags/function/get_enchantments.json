@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id":"teplus:utils/get_enchantments/add_custom_only",
+      "required":false
+    }
+  ]
+}

@@ -6,6 +6,7 @@ scoreboard players set #patch teplus.version 0
 
 # General use
 scoreboard objectives add teplus.data dummy
+scoreboard objectives add teplus.rng dummy
 
 # Placed Blocks scoreboard
 scoreboard objectives add teplus.block_id dummy
@@ -28,6 +29,9 @@ scoreboard objectives add teplus.trigger.get_birthday_potion trigger
 # Config related
 scoreboard objectives add teplus.game_opts dummy
 function teplus:core/settings/set_options
+
+# Register the enchantments
+function #teplus:register
 
 # Scheduled functions
 schedule function teplus:blocks/charged_bookshelf/light/main_1s 1s replace

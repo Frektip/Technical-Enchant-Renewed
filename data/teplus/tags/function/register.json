@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id":"teplus:core/registry",
+      "required":false
+    }
+  ]
+}
