@@ -12,7 +12,7 @@ data modify storage teplus:loot Current set from entity @s[tag=teplus.loot_is_bo
 data modify storage teplus:loot Current set from entity @s[tag=teplus.loot_is_item] Item.components.minecraft:enchantments
 
 execute store result score #size teplus.data run data get storage teplus:loot Current
-execute unless score #size temp matches 0 run function #teplus:enchanting/clear_storage
+execute unless score #size teplus.data matches 0 run function #teplus:enchanting/clear_storage
 
 # Preapare RNG based on the Temp storage
 scoreboard players set $min teplus.rng 0
