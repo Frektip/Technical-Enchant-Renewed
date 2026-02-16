@@ -15,7 +15,7 @@ scoreboard players set #charge_remove teplus.base_charge 0
 # Summon a temporal entity (placeholder)
 execute at @e[type=marker,tag=teplus.enchanting_table,tag=!teplus.is_enchanting,distance=..1] run summon item_frame ~ ~ ~ {Silent:1b,Facing:1b,Invulnerable:1b,Fixed:1b,Tags:["teplus.enchanted"],Item:{id:"minecraft:air",count:1}}
 tag @e[type=marker,tag=teplus.enchanting_table,tag=!teplus.is_enchanting,distance=..1] add teplus.is_enchanting
-data modify entity @e[type=item_frame,tag=teplus.enchanted,tag=!teplus.loot_is_item,limit=1,distance=..1] Item.id set from entity @s Item.id
+data modify entity @e[type=item_frame,tag=teplus.enchanted,tag=!teplus.loot_is_item,limit=1,distance=..1] Item set from entity @s Item
 
 # Update item frame whether it's a book or another item
 execute as @e[type=item_frame,tag=teplus.enchanted,distance=..1] run function teplus:enchant/item/placeholder/setup
