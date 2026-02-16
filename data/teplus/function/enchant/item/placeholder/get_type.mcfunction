@@ -3,9 +3,6 @@
 #            item that we're trying to enchant
 ###################################################
 
-# Give a Global tag if it is an item
-tag @s add teplus.loot_is_item
-
 # Check for every enchantmentable item by type and add a tag
 execute if predicate teplus:item/type/is_helmet run return run tag @s add teplus.loot_helmet
 execute if predicate teplus:item/type/is_chestplate run return run tag @s add teplus.loot_chestplate

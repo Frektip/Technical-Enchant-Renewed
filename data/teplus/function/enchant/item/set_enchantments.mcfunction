@@ -3,9 +3,6 @@ tellraw @a[tag=teplus.debug_mode] [{"text":"TE+» ","color":"#65DAD4","bold":tru
 
 ##========================TECHNICAL ENCHANT+========================##
 #--------Adding Custom Enchantments to the item--------#
-# Add tag, this will help selecting from the enchantment list
-function #teplus:enchanting/items/item_type
-
 function teplus:enchant/set_enchant/core
 #------------------------------------------------------#
 

@@ -2,7 +2,7 @@
   "values":
   [
     {
-      "id": "teplus:enchant/item/get_type",
+      "id": "teplus:enchant/item/placeholder/get_type",
       "required":false
     }
   ]
