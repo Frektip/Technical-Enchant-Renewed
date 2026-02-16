@@ -7,8 +7,7 @@ function teplus:enchant/set_enchant/core
 #------------------------------------------------------#
 
 #--------Adding Custom Curses to the item--------#
-# 5% chance
-#execute if predicate teplus:random_chance/5 run function teplus:enchant/set_curse/prepare
+execute if predicate teplus:random_chance/5 run function teplus:enchant/set_curse/prepare
 #---------------------------------------------------#
 ##==================================================================##
 
