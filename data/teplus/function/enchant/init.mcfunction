@@ -4,6 +4,6 @@
 
 execute if predicate teplus:item/no_enchants if entity @s[nbt={Item:{id:"minecraft:book"}}] if entity @e[type=marker,tag=teplus.enchanting_table,distance=..1] run return run function teplus:enchant/book/get_tier
 
-execute if predicate teplus:item/no_enchants if entity @e[type=marker,tag=teplus.enchanting_table,distance=..1] run say item without teplus echantments
+execute if predicate teplus:item/no_enchants if entity @e[type=marker,tag=teplus.enchanting_table,distance=..1] run function teplus:enchant/item/get_tier
 
 ##-----#-----#-----#-----#-----#-----#-----#-----#-----#-----#-----#-----#-----#-----#-----#

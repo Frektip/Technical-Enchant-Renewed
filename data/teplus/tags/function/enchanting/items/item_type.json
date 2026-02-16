@@ -1,0 +1,9 @@
+{
+  "values":
+  [
+    {
+      "id": "teplus:enchant/item/get_type",
+      "required":false
+    }
+  ]
+}
