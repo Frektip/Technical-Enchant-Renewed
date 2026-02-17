@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:enchantable/mining",
+    "#minecraft:hoes",
+    "minecraft:shears",
+    "#teplus:enchantable/fishing_rods"
+  ]
+}

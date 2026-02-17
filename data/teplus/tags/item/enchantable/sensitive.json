@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:enchantable/armor",
+    "#teplus:enchantable/elytras",
+    "#teplus:enchantable/shields",
+    "#teplus:enchantable/horse_armor"
+  ]
+}

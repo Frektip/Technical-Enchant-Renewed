@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:enchantable/mining",
+    "#minecraft:enchantable/armor",
+    "#minecraft:hoes",
+    "minecraft:shears",
+    "#minecraft:swords",
+    "#minecraft:enchantable/trident",
+    "#minecraft:enchantable/bow",
+    "#minecraft:enchantable/crossbow",
+    "#teplus:enchantable/fishing_rods",
+    "#teplus:enchantable/elytras",
+    "#teplus:enchantable/shields"
+  ]
+}

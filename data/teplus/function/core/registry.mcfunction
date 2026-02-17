@@ -116,3 +116,11 @@ data modify storage teplus:register Custom[].Enchantment[].Strong append value {
 # Custom Curses
 # They don't need "Enabled" or "Rarity" properties
 data modify storage teplus:register Custom[].Curse append value {id:"teplus:exhaustion",lvl:1,Enabled:1b,ForItem:{pickaxe:1b,axe:1b,shovel:1b,hoe:1b,shears:1b,fishing_rod:1b},Sell:2,Structure:[{all:1b}]}
+
+data modify storage teplus:register Custom[].Curse append value {id:"teplus:fear",lvl:1,Enabled:1b,ForItem:{sword:1b,axe:1b,trident:1b,bow:1b,crossbow:1b},Sell:3,Structure:[{all:1b}]}
+
+data modify storage teplus:register Custom[].Curse append value {id:"teplus:fragile",lvl:1,Enabled:1b,ForItem:{pickaxe:1b,axe:1b,shovel:1b,hoe:1b,shears:1b,fishing_rod:1b,sword:1b,trident:1b,bow:1b,crossbow:1b,helmet:1b,chestplate:1b,leggings:1b,boots:1b,elytra:1b,shield:1b},Sell:2,Structure:[{all:1b}]}
+
+data modify storage teplus:register Custom[].Curse append value {id:"teplus:sensitive",lvl:1,Enabled:1b,ForItem:{helmet:1b,chestplate:1b,leggings:1b,boots:1b,elytra:1b,shield:1b,horse_armor:1b},Sell:3,Structure:[{all:1b}]}
+
+data modify storage teplus:register Custom[].Curse append value {id:"teplus:slippery",lvl:1,Enabled:1b,ForItem:{pickaxe:1b,axe:1b,shovel:1b,hoe:1b,shears:1b,fishing_rod:1b,sword:1b,trident:1b,bow:1b,crossbow:1b},Sell:3,Structure:[{all:1b}]}

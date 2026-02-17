@@ -1,9 +1,9 @@
 {
   "description": {
-    "translate": "teplus.enchantment.exhaustion",
-    "fallback": "Exhaustion"
+    "translate": "teplus.enchantment.sensitive",
+    "fallback": "Sensitive"
   },
-  "supported_items": "#teplus:enchantable/exhaustion",
+  "supported_items": "#teplus:enchantable/sensitive",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
@@ -16,6 +16,6 @@
   },
   "anvil_cost": 0,
   "slots": [
-    "hand"
+    "armor"
   ]
 }
