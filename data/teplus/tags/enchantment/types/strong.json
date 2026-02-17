@@ -1,7 +1,20 @@
 {
   "values": [
+    "teplus:anti_venom",
+    "teplus:attack_speed",
+    "teplus:explosive",
+    "teplus:fireball_wave",
+    "teplus:last_life",
     "teplus:lava_walker",
+    "teplus:life_plus",
+    "teplus:life_steal",
     "teplus:peaks",
-    "teplus:last_life"
+    "teplus:replant",
+    "teplus:soul_reaper",
+    "teplus:timber",
+    "teplus:time_breaker",
+    "teplus:vein_miner",
+    "teplus:waterjet",
+    "teplus:xp_boost"
   ]
 }

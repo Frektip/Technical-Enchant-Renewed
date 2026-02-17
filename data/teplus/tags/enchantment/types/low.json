@@ -1,7 +1,20 @@
 {
   "values": [
+    "teplus:agility",
     "teplus:anti_explosion",
+    "teplus:big_path",
+    "teplus:bright_vision",
+    "teplus:chopping",
+    "teplus:excavator",
+    "teplus:flaming_skin",
+    "teplus:grand_tilling",
+    "teplus:harvesting_plus",
+    "teplus:last_stand",
+    "teplus:leaping",
+    "teplus:marine_grace",
     "teplus:poison_aspect",
-    "teplus:leaping"
+    "teplus:scyther",
+    "teplus:swim_plus",
+    "teplus:transmission"
   ]
 }

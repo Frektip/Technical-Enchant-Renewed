@@ -1,5 +1,9 @@
 {
   "values": [
-    "teplus:exhaustion"
+    "teplus:exhaustion",
+    "teplus:fear",
+    "teplus:fragile",
+    "teplus:sensitive",
+    "teplus:slippery"
   ]
 }
