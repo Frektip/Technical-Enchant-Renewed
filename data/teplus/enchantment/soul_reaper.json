@@ -1,11 +1,11 @@
 {
   "description": {
-    "translate": "teplus.enchantment.peaks",
-    "fallback": "Peaks"
+    "translate": "teplus.enchantment.soul_reaper",
+    "fallback": "Soul Reaper"
   },
-  "supported_items": "#teplus:enchantable/shields",
+  "supported_items": "#minecraft:hoes",
   "weight": 1,
-  "max_level": 1,
+  "max_level": 3,
   "min_cost": {
     "base": 0,
     "per_level_above_first": 0

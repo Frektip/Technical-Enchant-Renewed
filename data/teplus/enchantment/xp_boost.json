@@ -1,11 +1,11 @@
 {
   "description": {
-    "translate": "teplus.enchantment.peaks",
-    "fallback": "Peaks"
+    "translate": "teplus.enchantment.xp_boost",
+    "fallback": "Xp Boost"
   },
-  "supported_items": "#teplus:enchantable/shields",
+  "supported_items": "#teplus:enchantable/xp_boost",
   "weight": 1,
-  "max_level": 1,
+  "max_level": 3,
   "min_cost": {
     "base": 0,
     "per_level_above_first": 0

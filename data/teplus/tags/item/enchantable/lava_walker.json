@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:foot_armor",
+    "#teplus:enchantable/horse_armor"
+  ]
+}

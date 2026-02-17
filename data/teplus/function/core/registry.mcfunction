@@ -77,11 +77,41 @@ data modify storage teplus:register Custom[].Enchantment[].Average append value 
 
 
 # Strong enchantments = Rarity:3
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:anti_venom",lvl:2,Enabled:1b,Rarity:3,ForItem:{chestplate:1b},Sell:7,Structure:[{id:"minecraft:mineshaft",add:3},{id:"minecraft:desert_pyramid",add:3}],Charge:30}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:armored",lvl:2,Enabled:1b,Rarity:3,ForItem:{elytra:1b},Structure:[{id:"minecraft:ancient_city",add:2},{id:"minecraft:end_city",add:20}],NoDrop:1b,Charge:50}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:attack_speed",lvl:3,Enabled:1b,Rarity:3,ForItem:{sword:1b,trident:1b},Sell:8,Structure:[{id:"minecraft:igloo"},{id:"minecraft:bastion"}],Incompatible:[{all:1b},{id:"minecraft:sharpness"}],Charge:34}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:explosive",lvl:1,Enabled:1b,Rarity:3,ForItem:{bow:1b},Sell:9,Structure:[{all:1b},{id:"minecraft:mineshaft",add:2}],Charge:42}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:fireball_wave",lvl:1,Enabled:1b,Rarity:3,ForItem:{crossbow:1b},Sell:4,Structure:[{id:"minecraft:ruined_portal"},{id:"minecraft:bastion",add:9},{id:"minecraft:fortress",add:8}],Charge:34}
+
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:last_life",lvl:1,Enabled:1b,Rarity:3,ForItem:{leggings:1b},Sell:4,Structure:[{id:"minecraft:mansion",add:1}],Charge:38}
 
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:lava_walker",lvl:1,Enabled:1b,Rarity:3,ForItem:{boots:1b},Sell:3,Structure:[{all:1b},{id:"minecraft:bastion",add:12}],Charge:39}
 
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:life_plus",lvl:5,Enabled:1b,Rarity:3,ForItem:{chestplate:1b},Sell:8,Structure:[{all:1b},{id:"minecraft:stronghold_library",add:12},{id:"minecraft:stronghold",add:5}],Charge:46}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:life_steal",lvl:1,Enabled:1b,Rarity:3,ForItem:{sword:1b},Sell:3,Structure:[{id:"minecraft:bastion",add:1}],Charge:37}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:multicolor",lvl:1,Enabled:1b,Rarity:3,ForItem:{shears:1b},Structure:[{all:1b},{id:"minecraft:ancient_city",add:5},{id:"minecraft:village",add:13}],NoDrop:1b,Charge:47}
+
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:peaks",lvl:1,Enabled:1b,Rarity:3,ForItem:{shield:1b},Sell:4,Structure:[{id:"minecraft:jungle_temple"},{id:"minecraft:bastion"}],Charge:40}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:replant",lvl:1,Enabled:1b,Rarity:3,ForItem:{hoe:1b},Sell:5,Structure:[{all:1b},{id:"minecraft:jungle_temple",add:2},{id:"minecraft:village",add:3}],Charge:38}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:soul_reaper",lvl:3,Enabled:1b,Rarity:3,ForItem:{hoe:1b},Sell:7,Structure:[{id:"minecraft:stronghold_library",add:10},{id:"minecraft:bastion",add:2}],Charge:42}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:timber",lvl:1,Enabled:1b,Rarity:3,ForItem:{axe:1b},Sell:4,Structure:[{id:"minecraft:jungle_temple"}],Charge:41}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:time_breaker",lvl:2,Enabled:1b,Rarity:3,ForItem:{helmet:1b},Sell:3,Structure:[{id:"minecraft:end_city"},{id:"minecraft:stronghold"},{id:"minecraft:dungeon"}],Charge:34}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:vein_miner",lvl:1,Enabled:1b,Rarity:3,ForItem:{pickaxe:1b},Sell:5,Structure:[{all:1b},{id:"minecraft:mineshaft"},{id:"minecraft:stronghold_library",add:15}],Incompatible:[{id:"MiningPlus"},{id:"Compact"}],Charge:42}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:waterjet",lvl:1,Enabled:1b,Rarity:3,ForItem:{trident:1b},Sell:6,Structure:[{id:"minecraft:underwater_ruin",add:3},{id:"minecraft:shipwreck",add:5}],Charge:47}
+
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:xp_boost",lvl:3,Enabled:1b,Rarity:3,ForItem:{sword:1b,trident:1b,axe:1b},Sell:5,Structure:[{all:1b},{id:"minecraft:dungeon",add:8}],Charge:43}
 
 # Custom Curses
 # They don't need "Enabled" or "Rarity" properties

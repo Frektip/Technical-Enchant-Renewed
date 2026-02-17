@@ -1,9 +1,9 @@
 {
   "description": {
-    "translate": "teplus.enchantment.peaks",
-    "fallback": "Peaks"
+    "translate": "teplus.enchantment.timber",
+    "fallback": "Timber"
   },
-  "supported_items": "#teplus:enchantable/shields",
+  "supported_items": "#minecraft:axes",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

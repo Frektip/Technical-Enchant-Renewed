@@ -1,11 +1,11 @@
 {
   "description": {
-    "translate": "teplus.enchantment.peaks",
-    "fallback": "Peaks"
+    "translate": "teplus.enchantment.life_plus",
+    "fallback": "Life+"
   },
-  "supported_items": "#teplus:enchantable/shields",
+  "supported_items": "#minecraft:chest_armor",
   "weight": 1,
-  "max_level": 1,
+  "max_level": 5,
   "min_cost": {
     "base": 0,
     "per_level_above_first": 0
@@ -16,6 +16,6 @@
   },
   "anvil_cost": 0,
   "slots": [
-    "hand"
+    "chest"
   ]
 }

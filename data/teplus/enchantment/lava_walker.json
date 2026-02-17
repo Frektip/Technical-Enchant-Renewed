@@ -3,7 +3,7 @@
     "translate": "teplus.enchantment.lava_walker",
     "fallback": "Lava Walker"
   },
-  "supported_items": "#minecraft:enchantable/foot_armor",
+  "supported_items": "#teplus:enchantable/lava_walker",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

@@ -1,9 +1,9 @@
 {
   "description": {
-    "translate": "teplus.enchantment.peaks",
-    "fallback": "Peaks"
+    "translate": "teplus.enchantment.explosive",
+    "fallback": "Explosive"
   },
-  "supported_items": "#teplus:enchantable/shields",
+  "supported_items": "#minecraft:enchantable/bow",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
