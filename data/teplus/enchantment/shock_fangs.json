@@ -1,9 +1,9 @@
 {
   "description": {
-    "translate": "teplus.enchantment.accuracy_shot",
-    "fallback": "Accuracy Shot"
+    "translate": "teplus.enchantment.shock_fangs",
+    "fallback": "Shock Fangs"
   },
-  "supported_items": "#teplus:enchantable/accuracy_shot",
+  "supported_items": "#minecraft:enchantable/crossbow",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

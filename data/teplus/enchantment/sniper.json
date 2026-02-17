@@ -3,9 +3,7 @@
     "translate": "teplus.enchantment.sniper",
     "fallback": "Sniper"
   },
-  "supported_items": [
-    "minecraft:crossbow"
-  ],
+  "supported_items": "#minecraft:enchantable/crossbow",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

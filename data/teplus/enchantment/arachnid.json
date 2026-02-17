@@ -3,9 +3,7 @@
     "translate": "teplus.enchantment.arachnid",
     "fallback": "Arachnid"
   },
-  "supported_items": [
-    "minecraft:bow"
-  ],
+  "supported_items": "#minecraft:enchantable/bow",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

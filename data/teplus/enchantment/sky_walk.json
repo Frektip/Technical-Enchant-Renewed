@@ -1,9 +1,9 @@
 {
   "description": {
-    "translate": "teplus.enchantment.accuracy_shot",
-    "fallback": "Accuracy Shot"
+    "translate": "teplus.enchantment.sky_walk",
+    "fallback": "Sky Walk"
   },
-  "supported_items": "#teplus:enchantable/accuracy_shot",
+  "supported_items": "#minecraft:foot_armor",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
@@ -16,6 +16,6 @@
   },
   "anvil_cost": 0,
   "slots": [
-    "hand"
+    "feet"
   ]
 }

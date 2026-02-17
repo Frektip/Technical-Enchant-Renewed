@@ -1,9 +1,9 @@
 {
   "description": {
-    "translate": "teplus.enchantment.accuracy_shot",
-    "fallback": "Accuracy Shot"
+    "translate": "teplus.enchantment.auto_smelt",
+    "fallback": "Auto Smelt"
   },
-  "supported_items": "#teplus:enchantable/accuracy_shot",
+  "supported_items": "#minecraft:enchantable/mining",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

@@ -1,11 +1,11 @@
 {
   "description": {
-    "translate": "teplus.enchantment.accuracy_shot",
-    "fallback": "Accuracy Shot"
+    "translate": "teplus.enchantment.turtle_stiffness",
+    "fallback": "Turtle Stiffness"
   },
-  "supported_items": "#teplus:enchantable/accuracy_shot",
+  "supported_items": "#teplus:enchantable/shields",
   "weight": 1,
-  "max_level": 1,
+  "max_level": 2,
   "min_cost": {
     "base": 0,
     "per_level_above_first": 0
