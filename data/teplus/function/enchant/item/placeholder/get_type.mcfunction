@@ -13,7 +13,7 @@ execute if predicate teplus:item/type/is_axe run return run tag @s add teplus.lo
 execute if predicate teplus:item/type/is_pickaxe run return run tag @s add teplus.loot_pickaxe
 execute if predicate teplus:item/type/is_shovel run return run tag @s add teplus.loot_shovel
 execute if predicate teplus:item/type/is_hoe run return run tag @s add teplus.loot_hoe
-execute if data entity @s {Item:{id:"minecraft:trident"}} run return run tag @s add teplus.loot_trident
-execute if data entity @s {Item:{id:"minecraft:shield"}} run return run tag @s add teplus.loot_shield
-execute if data entity @s {Item:{id:"minecraft:bow"}} run return run tag @s add teplus.loot_bow
-execute if data entity @s {Item:{id:"minecraft:crossbow"}} run return run tag @s add teplus.loot_crossbow
+execute if predicate teplus:item/type/is_trident run return run tag @s add teplus.loot_trident
+execute if predicate teplus:item/type/is_shield run return run tag @s add teplus.loot_shield
+execute if predicate teplus:item/type/is_bow run return run tag @s add teplus.loot_bow
+execute if predicate teplus:item/type/is_crossbow run return run tag @s add teplus.loot_crossbow
