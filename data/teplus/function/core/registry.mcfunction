@@ -5,37 +5,37 @@ data modify storage teplus:register Custom set value []
 
 ##-----Append the values for each storage-----##
 # Low enchantments = Rarity:1
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:agility",lvl:3,Enabled:0b,Rarity:1,ForItem:{boots:1b},Sell:3,Structure:[{id:"minecraft:shipwreck",add:2},{id:"minecraft:underwater_ruin"}],Charge:12}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:agility",lvl:3,Enabled:1b,Rarity:1,ForItem:{boots:1b},Sell:3,Structure:[{id:"minecraft:shipwreck",add:2},{id:"minecraft:underwater_ruin"}],Charge:12}
 
 data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:anti_explosion",lvl:1,Enabled:1b,Rarity:1,ForItem:{sword:1b,bow:1b,helmet:1b},Sell:2,Structure:[{all:1b},{id:"minecraft:mineshaft",add:4},{id:"minecraft:shipwreck"},{id:"minecraft:underwater_ruin"}],Charge:8}
 
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:big_path",lvl:1,Enabled:0b,Rarity:1,ForItem:{shovel:1b},Sell:2,Structure:[{id:"minecraft:village",add:2}],Charge:8}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:big_path",lvl:1,Enabled:1b,Rarity:1,ForItem:{shovel:1b},Sell:2,Structure:[{id:"minecraft:village",add:2}],Charge:8}
 
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:bright_vision",lvl:1,Enabled:0b,Rarity:1,ForItem:{helmet:1b},Sell:3,Structure:[{all:1b},{id:"minecraft:mineshaft",add:4},{id:"minecraft:ancient_city",add:5},{id:"minecraft:fortress"}],Charge:15}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:bright_vision",lvl:1,Enabled:1b,Rarity:1,ForItem:{helmet:1b},Sell:3,Structure:[{all:1b},{id:"minecraft:mineshaft",add:4},{id:"minecraft:ancient_city",add:5},{id:"minecraft:fortress"}],Charge:15}
 
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:chopping",lvl:1,Enabled:0b,Rarity:1,ForItem:{axe:1b},Sell:2,Structure:[{id:"minecraft:desert_pyramid"},{id:"minecraft:jungle_temple"},{id:"minecraft:village",add:2}],Charge:10}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:chopping",lvl:1,Enabled:1b,Rarity:1,ForItem:{axe:1b},Sell:2,Structure:[{id:"minecraft:desert_pyramid"},{id:"minecraft:jungle_temple"},{id:"minecraft:village",add:2}],Charge:10}
 
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:excavator",lvl:1,Enabled:0b,Rarity:1,ForItem:{shovel:1b},Sell:2,Structure:[{all:1b},{id:"minecraft:desert_pyramid",add:3},{id:"minecraft:shipwreck",add:1},{id:"minecraft:village",add:1}],Charge:12}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:excavator",lvl:1,Enabled:1b,Rarity:1,ForItem:{shovel:1b},Sell:2,Structure:[{all:1b},{id:"minecraft:desert_pyramid",add:3},{id:"minecraft:shipwreck",add:1},{id:"minecraft:village",add:1}],Charge:12}
 
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:flaming_skin",lvl:1,Enabled:0b,Rarity:1,ForItem:{chestplate:1b},Sell:4,Structure:[{all:1b},{id:"minecraft:bastion",add:10},{id:"minecraft:fortress",add:15}],Charge:9}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:flaming_skin",lvl:1,Enabled:1b,Rarity:1,ForItem:{chestplate:1b},Sell:4,Structure:[{all:1b},{id:"minecraft:bastion",add:10},{id:"minecraft:fortress",add:15}],Charge:9}
 
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:grand_tilling",lvl:1,Enabled:0b,Rarity:1,ForItem:{hoe:1b},Sell:2,Structure:[{id:"minecraft:desert_pyramid"},{id:"minecraft:village",add:2}],Charge:7}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:grand_tilling",lvl:1,Enabled:1b,Rarity:1,ForItem:{hoe:1b},Sell:2,Structure:[{id:"minecraft:desert_pyramid"},{id:"minecraft:village",add:2}],Charge:7}
 
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:harvesting_plus",lvl:1,Enabled:0b,Rarity:1,ForItem:{hoe:1b},Sell:2,Structure:[{all:1b},{id:"minecraft:fortress"},{id:"minecraft:village",add:2}],Charge:8}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:harvesting_plus",lvl:1,Enabled:1b,Rarity:1,ForItem:{hoe:1b},Sell:2,Structure:[{all:1b},{id:"minecraft:fortress"},{id:"minecraft:village",add:2}],Charge:8}
 
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:last_stand",lvl:1,Enabled:0b,Rarity:1,ForItem:{sword:1b},Sell:3,Structure:[{id:"minecraft:stronghold"},{id:"minecraft:dungeon"},{id:"minecraft:fortress",add:1},{id:"minecraft:mansion",add:1}],Charge:9}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:last_stand",lvl:1,Enabled:1b,Rarity:1,ForItem:{sword:1b},Sell:3,Structure:[{id:"minecraft:stronghold"},{id:"minecraft:dungeon"},{id:"minecraft:fortress",add:1},{id:"minecraft:mansion",add:1}],Charge:9}
 
 data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:leaping",lvl:3,Enabled:1b,Rarity:1,ForItem:{leggings:1b},Sell:3,Structure:[{all:1b}],Charge:11}
 
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:marine_grace",lvl:2,Enabled:0b,Rarity:1,ForItem:{trident:1b},Sell:3,Structure:[{all:1b},{id:"minecraft:shipwreck",add:2},{id:"minecraft:underwater_ruin",add:2}],Charge:14}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:marine_grace",lvl:2,Enabled:1b,Rarity:1,ForItem:{trident:1b},Sell:3,Structure:[{all:1b},{id:"minecraft:shipwreck",add:2},{id:"minecraft:underwater_ruin",add:2}],Charge:14}
 
 data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:poison_aspect",lvl:3,Enabled:1b,Rarity:1,ForItem:{sword:1b,trident:1b},Sell:4,Structure:[{all:1b},{id:"minecraft:mineshaft",add:3},{id:"minecraft:jungle_temple",add:5},{id:"minecraft:ancient_city"},{id:"minecraft:desert_pyramid",add:3},{id:"minecraft:fortress",add:2}],Charge:13}
 
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:scyther",lvl:2,Enabled:0b,Rarity:1,ForItem:{hoe:1b},Sell:2,Structure:[{id:"minecraft:desert_pyramid",add:2},{id:"minecraft:village",add:1},{id:"minecraft:jungle_temple",add:1}],Charge:10}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:scyther",lvl:2,Enabled:1b,Rarity:1,ForItem:{hoe:1b},Sell:2,Structure:[{id:"minecraft:desert_pyramid",add:2},{id:"minecraft:village",add:1},{id:"minecraft:jungle_temple",add:1}],Charge:10}
 
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:swim_plus",lvl:1,Enabled:0b,Rarity:1,ForItem:{leggings:1b},Sell:2,Structure:[{id:"minecraft:shipwreck",add:2},{id:"minecraft:underwater_ruin",add:5}],Charge:11}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:swim_plus",lvl:1,Enabled:1b,Rarity:1,ForItem:{leggings:1b},Sell:2,Structure:[{id:"minecraft:shipwreck",add:2},{id:"minecraft:underwater_ruin",add:5}],Charge:11}
 
-data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:transmission",lvl:5,Enabled:0b,Rarity:1,ForItem:{axe:1b},Sell:2,Structure:[{all:1b},{id:"minecraft:ancient_city"},{id:"minecraft:end_city",add:8},{id:"minecraft:bastion"}],Charge:9}
+data modify storage teplus:register Custom[].Enchantment[].Low append value {id:"teplus:transmission",lvl:5,Enabled:1b,Rarity:1,ForItem:{axe:1b},Sell:2,Structure:[{all:1b},{id:"minecraft:ancient_city"},{id:"minecraft:end_city",add:8},{id:"minecraft:bastion"}],Charge:9}
 
 
 # Average enchantments = Rarity:2
