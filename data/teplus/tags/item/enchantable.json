@@ -6,13 +6,13 @@
     "#minecraft:pickaxes",
     "#minecraft:hoes",
     "#minecraft:shovels",
-    "minecraft:bow",
-    "minecraft:crossbow",
-    "minecraft:trident",
+    "#minecraft:enchantable/bow",
+    "#minecraft:enchantable/crossbow",
+    "#minecraft:enchantable/trident",
     "#minecraft:chest_armor",
     "#minecraft:foot_armor",
     "#minecraft:head_armor",
     "#minecraft:leg_armor",
-    "minecraft:shield"
+    "#teplus:enchantable/shields"
   ]
 }

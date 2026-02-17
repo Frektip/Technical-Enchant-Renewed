@@ -1,9 +1,9 @@
 {
   "description": {
-    "translate": "teplus.enchantment.anti_explosion",
-    "fallback": "Anti Explosion"
+    "translate": "teplus.enchantment.flaming_skin",
+    "fallback": "Flaming Skin"
   },
-  "supported_items": "#teplus:enchantable/anti_explosion",
+  "supported_items": "#minecraft:chest_armor",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
@@ -16,6 +16,6 @@
   },
   "anvil_cost": 0,
   "slots": [
-    "hand"
+    "chest"
   ]
 }

@@ -1,11 +1,11 @@
 {
   "description": {
-    "translate": "teplus.enchantment.anti_explosion",
-    "fallback": "Anti Explosion"
+    "translate": "teplus.enchantment.scyther",
+    "fallback": "Scyther"
   },
-  "supported_items": "#teplus:enchantable/anti_explosion",
+  "supported_items": "#minecraft:hoes",
   "weight": 1,
-  "max_level": 1,
+  "max_level": 2,
   "min_cost": {
     "base": 0,
     "per_level_above_first": 0

@@ -1,9 +1,9 @@
 {
   "description": {
-    "translate": "teplus.enchantment.anti_explosion",
-    "fallback": "Anti Explosion"
+    "translate": "teplus.enchantment.last_stand",
+    "fallback": "Last Stand"
   },
-  "supported_items": "#teplus:enchantable/anti_explosion",
+  "supported_items": "#minecraft:swords",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

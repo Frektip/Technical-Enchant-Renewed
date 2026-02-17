@@ -3,9 +3,7 @@
     "translate": "teplus.enchantment.lava_walker",
     "fallback": "Lava Walker"
   },
-  "supported_items": [
-    "minecraft:netherite_boots"
-  ],
+  "supported_items": "#minecraft:enchantable/foot_armor",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

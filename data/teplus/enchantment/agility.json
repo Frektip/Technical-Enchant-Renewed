@@ -1,11 +1,11 @@
 {
   "description": {
-    "translate": "teplus.enchantment.anti_explosion",
-    "fallback": "Anti Explosion"
+    "translate": "teplus.enchantment.agility",
+    "fallback": "Agility"
   },
-  "supported_items": "#teplus:enchantable/anti_explosion",
+  "supported_items": "#minecraft:foot_armor",
   "weight": 1,
-  "max_level": 1,
+  "max_level": 3,
   "min_cost": {
     "base": 0,
     "per_level_above_first": 0
@@ -16,6 +16,6 @@
   },
   "anvil_cost": 0,
   "slots": [
-    "hand"
+    "feet"
   ]
 }
