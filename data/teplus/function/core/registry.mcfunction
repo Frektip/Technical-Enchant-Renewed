@@ -81,7 +81,7 @@ data modify storage teplus:register Custom[].Enchantment[].Strong append value {
 
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:armored",lvl:2,Enabled:1b,Rarity:3,ForItem:{elytra:1b},Structure:[{id:"minecraft:ancient_city",add:2},{id:"minecraft:end_city",add:20}],NoDrop:1b,Charge:50}
 
-data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:attack_speed",lvl:3,Enabled:1b,Rarity:3,ForItem:{sword:1b,trident:1b},Sell:8,Structure:[{id:"minecraft:igloo"},{id:"minecraft:bastion"}],Incompatible:[{all:1b},{id:"minecraft:sharpness"}],Charge:34}
+data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:attack_speed",lvl:3,Enabled:1b,Rarity:3,ForItem:{sword:1b,trident:1b},Sell:8,Structure:[{all:1b},{id:"minecraft:igloo"},{id:"minecraft:bastion"}],Incompatible:[{id:"minecraft:sharpness"}],Charge:34}
 
 data modify storage teplus:register Custom[].Enchantment[].Strong append value {id:"teplus:explosive",lvl:1,Enabled:1b,Rarity:3,ForItem:{bow:1b},Sell:9,Structure:[{all:1b},{id:"minecraft:mineshaft",add:2}],Charge:42}
 

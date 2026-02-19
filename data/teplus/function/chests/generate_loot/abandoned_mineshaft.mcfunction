@@ -12,7 +12,7 @@ data modify storage teplus:chest Struct.Get set value "minecraft:mineshaft"
 # Generate a list of all possible enchantments for this structure
 function teplus:chests/create_loot/define
 
-execute at @e[type=marker,tag=teplus.ray,limit=1,sort=nearest] run function teplus:chests/insert_book
+#execute at @e[type=marker,tag=teplus.ray,limit=1,sort=nearest] run function teplus:chests/insert_book
 
 kill @e[type=marker,tag=teplus.ray,limit=1,sort=nearest]
 
