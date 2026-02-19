@@ -7,6 +7,7 @@ scoreboard players set #patch teplus.version 0
 # General use
 scoreboard objectives add teplus.data dummy
 scoreboard objectives add teplus.rng dummy
+scoreboard objectives add teplus.ryc dummy
 
 # Placed Blocks scoreboard
 scoreboard objectives add teplus.block_id dummy
