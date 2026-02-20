@@ -1,2 +1,0 @@
-execute if block ~ ~ ~ #enchantplus:container_block align xyz run summon marker ~ ~ ~ {Tags:["teplus.ray"]}
-execute unless block ~ ~ ~ #enchantplus:container_block positioned ^ ^ ^0.1 run function teplus_exten:chests/raycast_chest
