@@ -42,3 +42,13 @@ scoreboard players set #chl_village teplus.game_opts 0
 scoreboard players set #chance_village teplus.game_opts 30
 scoreboard players set #chl_mansion teplus.game_opts 0
 scoreboard players set #chance_mansion teplus.game_opts 30
+
+#-------------------------------------------------------#
+# Drops related
+#-------------------------------------------------------#
+scoreboard players set $Drops teplus.game_opts 0
+scoreboard players set #drop.looting teplus.game_opts 0
+scoreboard players set #drop.chance teplus.game_opts 50
+scoreboard players set #drop.glow teplus.game_opts 1
+scoreboard players set #drop.rates teplus.game_opts 0
+scoreboard players set #drop.buffs teplus.game_opts 0

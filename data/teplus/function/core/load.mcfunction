@@ -37,6 +37,10 @@ function #teplus:register
 # Scheduled functions
 schedule function teplus:blocks/charged_bookshelf/light/main_1s 1s replace
 
+# Enabled extensions
+schedule clear teplus:drops/main_3min
+schedule clear teplus:drops/main_20t
+execute if score $Drops teplus.game_opts matches 0 run function teplus:drops/init
 
 tellraw @a ["",{"text":"             [","color":"gold"},{"text":"Technical Enchant+ Renewed","color":"green"},{"text":" is ready","color":"green"},{"text":"]","color":"gold"}]
 tellraw @a ["",{"text":"              *------*--*--*------*--*--*------*","color":"gold"}]
