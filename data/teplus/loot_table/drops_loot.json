@@ -9,13 +9,10 @@
           "functions": [
             {
               "function": "minecraft:copy_custom_data",
-              "source": {
-                "type": "minecraft:storage",
-                "source": "teplus:drops"
-              },
+              "source": "this",
               "ops": [
                 {
-                  "source": "type",
+                  "source": "data.teplus",
                   "target": "teplus",
                   "op": "replace"
                 }
