@@ -1,0 +1,2 @@
+execute if block ~ ~ ~ #teplus:container_block align xyz run summon marker ~ ~ ~ {Tags:["teplus.ray"]}
+execute unless block ~ ~ ~ #teplus:container_block positioned ^ ^ ^0.1 run function teplus:chests/locate_target/chest_block
