@@ -47,7 +47,6 @@ scoreboard players set #chance_mansion teplus.game_opts 30
 # Drops related (0: enabled, 1: disabled)
 #-------------------------------------------------------#
 scoreboard players set $Drops teplus.game_opts 0
-scoreboard players set #drop.looting teplus.game_opts 0
 scoreboard players set #drop.chance teplus.game_opts 50
 scoreboard players set #drop.glow teplus.game_opts 1
 scoreboard players set #drop.rates teplus.game_opts 15
