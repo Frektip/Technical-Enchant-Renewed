@@ -9,6 +9,10 @@ function teplus:enchant/set_enchant/core
 #--------Adding Custom Curses to the item--------#
 execute if predicate teplus:random_chance/5 run function teplus:enchant/set_curse/prepare
 #---------------------------------------------------#
+
+#------------------Update the Lore (Book Only) ------------------#
+execute if entity @s[tag=teplus.loot_is_book] run function teplus:utils/set_book_lore/check_enchants
+#---------------------------------------------------#
 ##==================================================================##
 
 #Summon a new item that will get the data from this item frame

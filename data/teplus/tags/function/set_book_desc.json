@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id":"teplus:utils/set_book_lore/set_description",
+      "required":false
+    }
+  ]
+}
