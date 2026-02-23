@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "teplus:accuracy_shot": {
+                  "type": "minecraft:storage",
+                  "storage": "teplus:temp",
+                  "path": "targetench.teplus:accuracy_shot"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "► ",
+                    "color": "red"
+                  },
+                  {
+                    "translate": "item.minecraft.bow",
+                    "color": "red"
+                  },
+                  {
+                    "text": "-",
+                    "color": "red"
+                  },
+                  {
+                    "translate": "item.minecraft.crossbow",
+                    "color": "red"
+                  }
+                ]
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
