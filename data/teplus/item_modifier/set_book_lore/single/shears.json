@@ -1,0 +1,17 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "green"
+      },
+      {
+        "translate": "item.minecraft.shears",
+        "color": "green"
+      }
+    ]
+  ],
+  "mode": "insert"
+}

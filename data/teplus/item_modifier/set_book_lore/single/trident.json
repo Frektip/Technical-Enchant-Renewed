@@ -1,0 +1,17 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "red"
+      },
+      {
+        "translate": "item.minecraft.trident",
+        "color": "red"
+      }
+    ]
+  ],
+  "mode": "insert"
+}

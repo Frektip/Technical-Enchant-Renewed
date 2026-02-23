@@ -1,0 +1,18 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "yellow"
+      },
+      {
+        "translate": "teplus.item.groups.hoe",
+        "fallback": "Hoe",
+        "color": "yellow"
+      }
+    ]
+  ],
+  "mode": "insert"
+}

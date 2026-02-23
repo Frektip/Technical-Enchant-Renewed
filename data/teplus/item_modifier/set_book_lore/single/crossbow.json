@@ -1,0 +1,17 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "red"
+      },
+      {
+        "translate": "item.minecraft.crossbow",
+        "color": "red"
+      }
+    ]
+  ],
+  "mode": "insert"
+}

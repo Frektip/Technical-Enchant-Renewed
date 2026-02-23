@@ -1,0 +1,18 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "blue"
+      },
+      {
+        "translate": "teplus.item.groups.chestplate",
+        "fallback": "Chestplate",
+        "color": "blue"
+      }
+    ]
+  ],
+  "mode": "insert"
+}

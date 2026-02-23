@@ -1,0 +1,18 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "white"
+      },
+      {
+        "translate": "teplus.item.groups.weapons",
+        "fallback": "Weapons",
+        "color": "white"
+      }
+    ]
+  ],
+  "mode": "insert"
+}
