@@ -10,16 +10,16 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "teplus:accuracy_shot": {
+                "teplus:lava_walker": {
                   "type": "minecraft:storage",
                   "storage": "teplus:temp",
-                  "path": "targetench.teplus:accuracy_shot"
+                  "path": "targetench.teplus:lava_walker"
                 }
               }
             },
             {
               "function": "minecraft:reference",
-              "name": "teplus:set_book_lore/group/shot_arrow"
+              "name": "teplus:set_book_lore/specific/lava_walker"
             }
           ]
         }

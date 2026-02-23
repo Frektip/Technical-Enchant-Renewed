@@ -10,16 +10,16 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "teplus:accuracy_shot": {
+                "teplus:life_steal": {
                   "type": "minecraft:storage",
                   "storage": "teplus:temp",
-                  "path": "targetench.teplus:accuracy_shot"
+                  "path": "targetench.teplus:life_steal"
                 }
               }
             },
             {
               "function": "minecraft:reference",
-              "name": "teplus:set_book_lore/group/shot_arrow"
+              "name": "teplus:set_book_lore/single/sword"
             }
           ]
         }

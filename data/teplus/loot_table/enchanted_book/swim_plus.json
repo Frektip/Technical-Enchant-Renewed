@@ -10,16 +10,16 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "teplus:accuracy_shot": {
+                "teplus:swim_plus": {
                   "type": "minecraft:storage",
                   "storage": "teplus:temp",
-                  "path": "targetench.teplus:accuracy_shot"
+                  "path": "targetench.teplus:swim_plus"
                 }
               }
             },
             {
               "function": "minecraft:reference",
-              "name": "teplus:set_book_lore/group/shot_arrow"
+              "name": "teplus:set_book_lore/single/leggings"
             }
           ]
         }
