@@ -8,8 +8,8 @@ tellraw @a[tag=teplus.debug_mode] [{"text":"TE+» ","color":"#65DAD4","bold":tru
 # Get the player facing
 function teplus:utils/get_entity_facing
 
-# Place the main marker
-execute summon marker run function teplus:events/placed_block/technical_anvil/place
+# Place the main marker initializer
+execute summon marker run function teplus:events/placed_block/technical_anvil/place/init
 
 # Clear the storage
 data remove storage teplus:temp search_head
