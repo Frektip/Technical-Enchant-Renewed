@@ -21,11 +21,16 @@ function teplus:utils/ench_to_single_obj with storage teplus:chest Temp[0]
 # Add the enchantment to the component in the armorstand
 data modify entity @s equipment.mainhand.components.minecraft:stored_enchantments merge from storage teplus:temp singlenchobj
 
+# Add custom lore description based on the enchantment
+data modify storage teplus:lore Enchants[] set from storage teplus:chest Temp[0]
+function #teplus:set_book_desc {slot: "weapon.mainhand"}
+
 # Clear the storages
 data remove storage teplus:chest Temp
 data remove storage teplus:chest Copy
 data remove storage teplus:chest Build
 data remove storage teplus:temp singlenchobj
+data remove storage teplus:lore Enchants
 
 # Insert the book into the chest or chest_minecart
 execute if score #teplus.container_type teplus.data matches 0 run function teplus:chests/insert_book/in_block
