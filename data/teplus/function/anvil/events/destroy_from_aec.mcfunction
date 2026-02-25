@@ -6,7 +6,7 @@ scoreboard players operation $temp teplus.block_id = @s teplus.block_id
 # Remove vanilla related items
 kill @e[type=item,nbt={Item:{id:"minecraft:deepslate_tile_slab"}}, distance=..1] 
 kill @e[type=item,nbt={Item:{id:"minecraft:chest_minecart",count:1}},distance=..1]
-#kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{teplus:{ui:1b}}}}}]
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{teplus:{ui:1b}}}}}]
 setblock ~ ~1 ~ air
 
 # Remove decoration
