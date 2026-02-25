@@ -47,6 +47,8 @@ function teplus:core/ui/set_blank {slot:19,mode:"Merge",cmd:{strings:["teplus:bl
 data modify storage teplus:ui Global[{profile:"technical_anvil"}].Merge append value {id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:tooltip_display":{hide_tooltip:true},"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:progress.empty.turn_right"]}},Slot:20b}
 # Slot 21 : Progress/Arrow Right
 data modify storage teplus:ui Global[{profile:"technical_anvil"}].Merge append value {id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:tooltip_display":{hide_tooltip:true},"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:progress.empty.arrow_right"]}},Slot:21b}
+# Slot 22 : Result
+data modify storage teplus:ui Global[{profile:"technical_anvil"}].Merge append value {id:"minecraft:structure_void",count:1,components:{"minecraft:custom_name":[{text:""}],"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:error"]}},Slot:22b}
 # Slot 23 : Progress/Arrow Left
 data modify storage teplus:ui Global[{profile:"technical_anvil"}].Merge append value {id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:tooltip_display":{hide_tooltip:true},"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:progress.empty.arrow_left"]}},Slot:23b}
 # Slot 24 : Progress/Turn Left
