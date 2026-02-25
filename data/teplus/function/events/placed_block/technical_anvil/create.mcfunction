@@ -11,5 +11,6 @@ function teplus:utils/get_entity_facing
 # Place the main marker initializer
 execute summon marker run function teplus:events/placed_block/technical_anvil/place/init
 
-# Clear the storage
+# Clear the storages
 data remove storage teplus:temp search_head
+data remove storage teplus:temp place_anvil
