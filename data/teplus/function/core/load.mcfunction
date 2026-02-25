@@ -43,6 +43,14 @@ schedule clear teplus:drops/main_3min
 schedule clear teplus:drops/main_20t
 execute if score $Drops teplus.game_opts matches 0 run function teplus:drops/init
 
+
+# GUI interfaces
+data modify storage teplus:ui Global set value []
+data modify storage teplus:ui Global append value {profile:"technical_anvil"}
+function teplus:core/ui/technical_anvil/merge_mode
+
+
+
 tellraw @a ["",{"text":"             [","color":"gold"},{"text":"Technical Enchant+ Renewed","color":"green"},{"text":" is ready","color":"green"},{"text":"]","color":"gold"}]
 tellraw @a ["",{"text":"              *------*--*--*------*--*--*------*","color":"gold"}]
 tellraw @a ["",{"text":"        *-----*","color":"gold"},{"text":" By Hardel ","color":"blue"},{"text":" Modified by Frektip ","color":"red"},{"text":"*-----*","color":"gold"}]

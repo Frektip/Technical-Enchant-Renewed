@@ -33,7 +33,7 @@ execute if score $Facing teplus.tmp matches 4 run data modify storage teplus:tem
 function teplus:events/placed_block/technical_anvil/place/from_direction with storage teplus:temp place_anvil
 
 # Initialize the placed entities
-# data modify entity @e[type=chest_minecart,tag=teplus.technical_anvil.init,limit=1] Items set from storage teplus:tech_anvil.ui Profile
+data modify entity @e[type=chest_minecart,tag=teplus.technical_anvil.init,limit=1] Items set from storage teplus:ui Global[{profile:"technical_anvil"}].Merge
 scoreboard players operation @e[type=#teplus:types/technical_anvil,tag=teplus.technical_anvil.init] teplus.block_id = $current teplus.block_id
 
 tag @e[type=#teplus:types/technical_anvil,tag=teplus.technical_anvil.init,distance=..10] remove teplus.technical_anvil.init
