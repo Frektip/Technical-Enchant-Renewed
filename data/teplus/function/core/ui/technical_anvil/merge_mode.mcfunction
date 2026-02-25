@@ -24,14 +24,16 @@ function teplus:core/ui/set_blank {slot:8,mode:"Merge",cmd:{strings:["teplus:bla
 function teplus:core/ui/set_blank {slot:9,mode:"Merge",cmd:{strings:["teplus:blank_slot"]}}
 # Slot 10 : Blank
 function teplus:core/ui/set_blank {slot:10,mode:"Merge",cmd:{strings:["teplus:blank_slot"]}}
-
+# Slot 11 : Progress/Vertical
+data modify storage teplus:ui Global[{profile:"technical_anvil"}].Merge append value {id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:tooltip_display":{hide_tooltip:true},"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:progress.empty.vertical"]}},Slot:11b}
 # Slot 12 : Blank
 function teplus:core/ui/set_blank {slot:12,mode:"Merge",cmd:{strings:["teplus:blank_slot"]}}
 # Slot 13 : Action
 data modify storage teplus:ui Global[{profile:"technical_anvil"}].Merge append value {id:"minecraft:experience_bottle",count:1,components:{"minecraft:custom_name":[{translate:"teplus.technical_anvil.merge_action.title",fallback:"Need levels",color:"green",italic:false}],"minecraft:lore":[{translate:"teplus.technical_anvil.merge_action.lore",fallback:"Clic this item to combine",color:"white",italic:false}],"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b,merge:1b}},"minecraft:custom_model_data":{strings:["teplus:technical_anvil.merge_action"]}},Slot:13b}
 # Slot 14 : Blank
 function teplus:core/ui/set_blank {slot:14,mode:"Merge",cmd:{strings:["teplus:blank_slot"]}}
-
+# Slot 15 : Progress/Vertical
+data modify storage teplus:ui Global[{profile:"technical_anvil"}].Merge append value {id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:tooltip_display":{hide_tooltip:true},"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:progress.empty.vertical"]}},Slot:15b}
 # Slot 16 : Blank
 function teplus:core/ui/set_blank {slot:16,mode:"Merge",cmd:{strings:["teplus:blank_slot"]}}
 # Slot 17 : Blank
@@ -41,8 +43,14 @@ function teplus:core/ui/set_blank {slot:17,mode:"Merge",cmd:{strings:["teplus:bl
 function teplus:core/ui/set_blank {slot:18,mode:"Merge",cmd:{strings:["teplus:blank_slot"]}}
 # Slot 19 : Blank
 function teplus:core/ui/set_blank {slot:19,mode:"Merge",cmd:{strings:["teplus:blank_slot"]}}
-
-
+# Slot 20 : Progress/Turn Right
+data modify storage teplus:ui Global[{profile:"technical_anvil"}].Merge append value {id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:tooltip_display":{hide_tooltip:true},"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:progress.empty.turn_right"]}},Slot:20b}
+# Slot 21 : Progress/Arrow Right
+data modify storage teplus:ui Global[{profile:"technical_anvil"}].Merge append value {id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:tooltip_display":{hide_tooltip:true},"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:progress.empty.arrow_right"]}},Slot:21b}
+# Slot 23 : Progress/Arrow Left
+data modify storage teplus:ui Global[{profile:"technical_anvil"}].Merge append value {id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:tooltip_display":{hide_tooltip:true},"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:progress.empty.arrow_left"]}},Slot:23b}
+# Slot 24 : Progress/Turn Left
+data modify storage teplus:ui Global[{profile:"technical_anvil"}].Merge append value {id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:tooltip_display":{hide_tooltip:true},"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:progress.empty.turn_left"]}},Slot:24b}
 # Slot 25 : Blank
 function teplus:core/ui/set_blank {slot:25,mode:"Merge",cmd:{strings:["teplus:blank_slot"]}}
 # Slot 26 : Merge Frame + Blank
