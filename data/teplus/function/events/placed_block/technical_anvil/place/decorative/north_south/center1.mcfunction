@@ -1,7 +1,7 @@
 
 
 # Set an ID
-scoreboard players operation @s teplus.block_id = $techanv teplus.block_id
+scoreboard players operation @s teplus.block_id = $current teplus.block_id
 
 # Set tags
 tag @s add teplus.decorative
