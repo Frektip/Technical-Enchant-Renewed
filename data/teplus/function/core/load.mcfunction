@@ -48,6 +48,7 @@ execute if score $Drops teplus.game_opts matches 0 run function teplus:drops/ini
 data modify storage teplus:ui Global set value []
 data modify storage teplus:ui Global append value {profile:"technical_anvil"}
 function teplus:core/ui/technical_anvil/merge_mode
+function teplus:core/ui/technical_anvil/extract_mode
 
 
 
