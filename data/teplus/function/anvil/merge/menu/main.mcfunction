@@ -1,0 +1,60 @@
+# Take a snapshot of all the items in the Technical Anvil
+data modify storage teplus:updates TAM.CurrentItems set from entity @s Items
+
+#----------- UPDATE UI ITEMS -----------#
+# Obtain current UI
+scoreboard players set $ui_changed teplus.anvil.value 0 
+data modify storage teplus:updates TAM.CurrentUI set from storage teplus:updates TAM.CurrentItems
+
+# Ignore action slots
+# Inputs
+data remove storage teplus:updates TAM.CurrentUI[{Slot:2b}]
+data remove storage teplus:updates TAM.CurrentUI[{Slot:6b}]
+# Output/Error
+data remove storage teplus:updates TAM.CurrentUI[{Slot:4b}]
+# Toggle
+data remove storage teplus:updates TAM.CurrentUI[{Slot:13b}]
+# Merge
+data remove storage teplus:updates TAM.CurrentUI[{Slot:22b}]
+
+# Check for UI changes
+data modify storage teplus:updates TAM.UICheckChange set from storage teplus:updates TAM.CurrentUI
+
+# Basically, we compare the current UI with the default values from the storage
+# if it's not the same, then that means that some items were dropped from the UI (ie: hoppers, direct drop from player, player inserts another item in the UI)
+execute store result score $ui_changed teplus.anvil.value run data modify storage teplus:updates TAM.UICheckChange set from storage teplus:ui Global[{profile:"technical_anvil"}].Merge
+
+# If UI items changed, refresh the UI 
+execute if score $ui_changed teplus.anvil.value matches 1.. run function teplus:anvil/merge/menu/update_ui/init
+
+#----------- TECHNICAL ANVIL ACTIONS -----------#
+# Player clics on the Toggle item
+#execute if entity @s[tag=tcha_open] unless data storage teplus:updates TAM.CurrentItems[{Slot:4b}].components."minecraft:custom_data".teplus.toggle run function technical_anvil:menu/change_item/switch_mode
+
+# Player clics on the Merge action item
+#execute unless data storage teplus:updates TAM.CurrentItems[{Slot:13b}].components."minecraft:custom_data".teplus.merge run function technical_anvil:interaction/try
+
+# Player clics on the Result slot
+#execute unless data storage teplus:updates TAM.CurrentItems[{Slot:22b}].id run function technical_anvil:menu/change_item/can_change
+
+
+#----------- MERGING SYSTEM -----------#
+# Set it false by default
+scoreboard players set @s teplus.anvil.value -1
+
+# Check if there is an item in one of the input slots
+execute if data entity @s[scores={teplus.anvil.value=-1}] Items[{Slot:2b}].id run scoreboard players set @s teplus.anvil.value -2
+execute if data entity @s[scores={teplus.anvil.value=-1}] Items[{Slot:6b}].id run scoreboard players set @s teplus.anvil.value -3
+
+# Update the UI according to the input slots used
+# execute if score @s teplus.anvil.value matches -2 run function technical_anvil:menu/change_item/slot_1_add
+# execute if score @s teplus.anvil.value matches -3 run function technical_anvil:menu/change_item/slot_2_add
+
+# tag @s remove CanCombine
+# execute if score @s[tag=InSlot1] teplus.anvil.value matches -1 run tag @s remove InSlot1
+# execute if score @s[tag=InSlot2] teplus.anvil.value matches -1 run tag @s remove InSlot2
+
+#data modify entity @s Items[{Slot:22b}] set value {id:"minecraft:structure_void",count:1,components:{"minecraft:custom_name":[{text:""}],"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:error"]}},Slot:22b}
+
+# execute if entity @s[scores={teplus.anvil.value=-4}] run function technical_anvil:menu/change_item/both_items
+# tag @s remove HasCombined
