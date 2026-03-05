@@ -25,7 +25,7 @@ data modify storage teplus:updates TAM.UICheckChange set from storage teplus:upd
 execute store result score $ui_changed teplus.anvil.value run data modify storage teplus:updates TAM.UICheckChange set from storage teplus:ui Global[{profile:"technical_anvil"}].Merge
 
 # If UI items changed, refresh the UI 
-execute if score $ui_changed teplus.anvil.value matches 1.. run function teplus:anvil/merge/menu/update_ui/init
+execute if score $ui_changed teplus.anvil.value matches 1.. run function teplus:anvil/merge/menu/update_ui/refresh
 
 #----------- TECHNICAL ANVIL ACTIONS -----------#
 # Player clics on the Toggle item
