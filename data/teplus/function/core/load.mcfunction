@@ -32,6 +32,9 @@ scoreboard objectives add teplus.anvil.value dummy
 # Triggers
 scoreboard objectives add teplus.trigger.get_birthday_potion trigger
 
+# Constants
+scoreboard players set #25const teplus.data 25
+
 # Config related
 scoreboard objectives add teplus.game_opts dummy
 function teplus:core/settings/set_options

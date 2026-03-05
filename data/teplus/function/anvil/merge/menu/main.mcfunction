@@ -1,31 +1,30 @@
+#====================================== UPDATE UI SLOTS ======================================#
 # Take a snapshot of all the items in the Technical Anvil
-data modify storage teplus:updates TAM.CurrentItems set from entity @s Items
+data modify storage teplus:updates TAM.CurrentUI set from entity @s Items
 
-#----------- UPDATE UI ITEMS -----------#
-# Obtain current UI
-scoreboard players set $ui_changed teplus.anvil.value 0 
-data modify storage teplus:updates TAM.CurrentUI set from storage teplus:updates TAM.CurrentItems
-
-# Ignore action slots
-# Inputs
+# Ignore Input slots
 data remove storage teplus:updates TAM.CurrentUI[{Slot:2b}]
 data remove storage teplus:updates TAM.CurrentUI[{Slot:6b}]
-# Output/Error
-data remove storage teplus:updates TAM.CurrentUI[{Slot:4b}]
-# Toggle
-data remove storage teplus:updates TAM.CurrentUI[{Slot:13b}]
-# Merge
-data remove storage teplus:updates TAM.CurrentUI[{Slot:22b}]
 
-# Check for UI changes
+# $ui_changed determines weather the UI was changed or not
+# Always reset the value globally
+scoreboard players set $ui_changed teplus.anvil.value 0
+
+# Store in $ui_slots the number of UI items present in the current UI (should be 25)
 data modify storage teplus:updates TAM.UICheckChange set from storage teplus:updates TAM.CurrentUI
+execute store result score $ui_slots teplus.anvil.value run data remove storage teplus:updates TAM.UICheckChange[{components:{"minecraft:custom_data":{teplus:{ui:1b}}}}]
 
-# Basically, we compare the current UI with the default values from the storage
-# if it's not the same, then that means that some items were dropped from the UI (ie: hoppers, direct drop from player, player inserts another item in the UI)
-execute store result score $ui_changed teplus.anvil.value run data modify storage teplus:updates TAM.UICheckChange set from storage teplus:ui Global[{profile:"technical_anvil"}].Merge
+# Check if there is a non UI item in any of the UI slots
+execute store result score $ui_changed teplus.anvil.value run data get storage teplus:updates TAM.UICheckChange
 
-# If UI items changed, refresh the UI 
+# Check if a UI item was taken from the chest minecart 
+execute if score $ui_slots teplus.anvil.value < #25const teplus.data run scoreboard players set $ui_changed teplus.anvil.value 1
+
+# If UI items changed, refresh the UI slots
 execute if score $ui_changed teplus.anvil.value matches 1.. run function teplus:anvil/merge/menu/update_ui/refresh
+#=============================================================================================#
+
+
 
 #----------- TECHNICAL ANVIL ACTIONS -----------#
 # Player clics on the Toggle item
@@ -38,7 +37,7 @@ execute if score $ui_changed teplus.anvil.value matches 1.. run function teplus:
 #execute unless data storage teplus:updates TAM.CurrentItems[{Slot:22b}].id run function technical_anvil:menu/change_item/can_change
 
 
-#----------- MERGING SYSTEM -----------#
+#====================================== MERGING SYSTEM ======================================#
 # Set it false by default
 scoreboard players set @s teplus.anvil.value -1
 
@@ -58,3 +57,4 @@ execute if data entity @s[scores={teplus.anvil.value=-1}] Items[{Slot:6b}].id ru
 
 # execute if entity @s[scores={teplus.anvil.value=-4}] run function technical_anvil:menu/change_item/both_items
 # tag @s remove HasCombined
+#=============================================================================================#
