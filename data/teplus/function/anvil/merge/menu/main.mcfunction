@@ -45,13 +45,13 @@ scoreboard players set @s teplus.anvil.value -1
 execute if data entity @s[scores={teplus.anvil.value=-1}] Items[{Slot:2b}].id run scoreboard players set @s teplus.anvil.value -2
 execute if data entity @s[scores={teplus.anvil.value=-1}] Items[{Slot:6b}].id run scoreboard players set @s teplus.anvil.value -3
 
-# Update the UI according to the input slots used
-# execute if score @s teplus.anvil.value matches -2 run function technical_anvil:menu/change_item/slot_1_add
-# execute if score @s teplus.anvil.value matches -3 run function technical_anvil:menu/change_item/slot_2_add
+# Update the UI according to the input slots used (-2 for slot 2b and -3 for slot 6b)
+execute if score @s teplus.anvil.value matches -2 run function teplus:anvil/merge/menu/change_item/inputs/slot_1_check
+execute if score @s teplus.anvil.value matches -3 run function teplus:anvil/merge/menu/change_item/inputs/slot_2_check
 
 # tag @s remove CanCombine
-# execute if score @s[tag=InSlot1] teplus.anvil.value matches -1 run tag @s remove InSlot1
-# execute if score @s[tag=InSlot2] teplus.anvil.value matches -1 run tag @s remove InSlot2
+execute if score @s[tag=teplus.anvil.InSlot1] teplus.anvil.value matches -1 run tag @s remove teplus.anvil.InSlot1
+execute if score @s[tag=teplus.anvil.InSlot2] teplus.anvil.value matches -1 run tag @s remove teplus.anvil.InSlot2
 
 #data modify entity @s Items[{Slot:22b}] set value {id:"minecraft:structure_void",count:1,components:{"minecraft:custom_name":[{text:""}],"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:error"]}},Slot:22b}
 
