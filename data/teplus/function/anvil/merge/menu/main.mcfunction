@@ -49,12 +49,13 @@ execute if data entity @s[scores={teplus.anvil.value=-1}] Items[{Slot:6b}].id ru
 execute if score @s teplus.anvil.value matches -2 run function teplus:anvil/merge/menu/change_item/inputs/slot_1_check
 execute if score @s teplus.anvil.value matches -3 run function teplus:anvil/merge/menu/change_item/inputs/slot_2_check
 
-# tag @s remove CanCombine
+tag @s remove teplus.anvil.CanCombine
 execute if score @s[tag=teplus.anvil.InSlot1] teplus.anvil.value matches -1 run tag @s remove teplus.anvil.InSlot1
 execute if score @s[tag=teplus.anvil.InSlot2] teplus.anvil.value matches -1 run tag @s remove teplus.anvil.InSlot2
 
 #data modify entity @s Items[{Slot:22b}] set value {id:"minecraft:structure_void",count:1,components:{"minecraft:custom_name":[{text:""}],"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:error"]}},Slot:22b}
 
-# execute if entity @s[scores={teplus.anvil.value=-4}] run function technical_anvil:menu/change_item/both_items
+# In case there's an item at any of the input slots (with score value = 0)
+execute if entity @s[scores={teplus.anvil.value=0}] run function teplus:anvil/merge/menu/change_item/inputs/check_items
 # tag @s remove HasCombined
 #=============================================================================================#
