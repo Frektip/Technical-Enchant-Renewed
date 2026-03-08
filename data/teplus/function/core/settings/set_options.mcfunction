@@ -3,6 +3,13 @@ data modify storage teplus:register Resource set value [{Value:{id:"minecraft:la
 scoreboard players set #qnty_per_item teplus.game_opts 3
 
 #-------------------------------------------------------#
+# Gameplay options related (0: enabled, 1: disabled)
+#-------------------------------------------------------#
+scoreboard players set #mrgbk teplus.game_opts 0
+scoreboard players set #itwbk teplus.game_opts 0
+scoreboard players set #mrgit teplus.game_opts 0
+
+#-------------------------------------------------------#
 # Chest related (0: enabled, 1: disabled)
 #-------------------------------------------------------#
 scoreboard players set $Chests teplus.game_opts 0
