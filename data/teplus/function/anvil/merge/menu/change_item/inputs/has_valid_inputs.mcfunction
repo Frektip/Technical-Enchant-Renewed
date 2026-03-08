@@ -24,5 +24,5 @@ tag @s add InSlot2
 # - We succeeded, so we remove the tags from the books
 #tag @s remove tech_anv.match_exceed
 
-#function teplus:anvil/merge/interaction/create_item/main
+function teplus:anvil/merge/interaction/create_item/main
 #------------------------------------------#

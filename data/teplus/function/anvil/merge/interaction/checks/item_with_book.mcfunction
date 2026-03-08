@@ -1,0 +1,1 @@
+tag @s add teplus.anvil.output_item
