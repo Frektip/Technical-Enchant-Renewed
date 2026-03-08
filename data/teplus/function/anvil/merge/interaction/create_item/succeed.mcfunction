@@ -5,9 +5,10 @@ tag @s remove teplus.anvil.error.invalid_enchant
 #-----------------ADD ITEM-----------------#
 data modify storage teplus:updates TAM.Output.Result.components.minecraft:custom_data.teplus.ui set value 1b
 data modify entity @s Items[{Slot:22b}] set from storage teplus:updates TAM.Output.Result
-#---------------UPDATE LORE----------------#
+#---------------UPDATE LORE DESCRIPTION----------------#
 # Just for enchanted books
-#execute if data storage teplus:updates {ResultItem:{id:"minecraft:enchanted_book"}} run function technical_anvil:edit_lore/books
+execute if data storage teplus:updates {TAM:{Output:{Result:{id:"minecraft:enchanted_book"}}}} run function teplus:anvil/merge/interaction/create_item/add_lore
+
 # Just for Pages of Power
 #----------------------------------------------------
 # Just for Experience Crystal
