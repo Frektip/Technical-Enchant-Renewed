@@ -28,6 +28,8 @@ scoreboard objectives add teplus.player.id dummy
 
 # Technical Anvil related
 scoreboard objectives add teplus.anvil.value dummy
+scoreboard objectives add teplus.anvil.inp1 dummy
+scoreboard objectives add teplus.anvil.inp2 dummy
 
 # Triggers
 scoreboard objectives add teplus.trigger.get_birthday_potion trigger
@@ -37,6 +39,7 @@ scoreboard players set #25const teplus.data 25
 
 # Config related
 scoreboard objectives add teplus.game_opts dummy
+scoreboard objectives add teplus.maxlvl dummy
 function teplus:core/settings/set_options
 
 # Register the enchantments

@@ -3,6 +3,67 @@ data modify storage teplus:register Resource set value [{Value:{id:"minecraft:la
 scoreboard players set #qnty_per_item teplus.game_opts 3
 
 #-------------------------------------------------------#
+# Enchantments max level
+#-------------------------------------------------------#
+scoreboard players set #accuracy_shot teplus.maxlvl 1
+scoreboard players set #agility teplus.maxlvl 3
+scoreboard players set #anti_explosion teplus.maxlvl 1
+scoreboard players set #anti_knockback teplus.maxlvl 2
+scoreboard players set #anti_venom teplus.maxlvl 2
+scoreboard players set #arachnid teplus.maxlvl 1
+scoreboard players set #armored teplus.maxlvl 2
+scoreboard players set #attack_speed teplus.maxlvl 3
+scoreboard players set #auto_feed teplus.maxlvl 1
+scoreboard players set #auto_smelt teplus.maxlvl 1
+scoreboard players set #big_path teplus.maxlvl 1
+scoreboard players set #bloody_blade teplus.maxlvl 1
+scoreboard players set #bright_vision teplus.maxlvl 1
+scoreboard players set #chopping teplus.maxlvl 1
+scoreboard players set #dasher teplus.maxlvl 2
+scoreboard players set #excavator teplus.maxlvl 1
+scoreboard players set #exhaustion teplus.maxlvl 1
+scoreboard players set #explosive teplus.maxlvl 1
+scoreboard players set #fear teplus.maxlvl 1
+scoreboard players set #fireball_wave teplus.maxlvl 1
+scoreboard players set #flaming_skin teplus.maxlvl 1
+scoreboard players set #fragile teplus.maxlvl 1
+scoreboard players set #grand_tilling teplus.maxlvl 1
+scoreboard players set #hardness_plus teplus.maxlvl 3
+scoreboard players set #harvesting_plus teplus.maxlvl 1
+scoreboard players set #haste teplus.maxlvl 2
+scoreboard players set #last_life teplus.maxlvl 1
+scoreboard players set #last_stand teplus.maxlvl 1
+scoreboard players set #lava_walker teplus.maxlvl 1
+scoreboard players set #leaping teplus.maxlvl 3
+scoreboard players set #life_plus teplus.maxlvl 5
+scoreboard players set #life_steal teplus.maxlvl 1
+scoreboard players set #magnet teplus.maxlvl 1
+scoreboard players set #marine_grace teplus.maxlvl 2
+scoreboard players set #mining_plus teplus.maxlvl 1
+scoreboard players set #multicolor teplus.maxlvl 1
+scoreboard players set #peaks teplus.maxlvl 1
+scoreboard players set #poison_aspect teplus.maxlvl 3
+scoreboard players set #recovery teplus.maxlvl 2
+scoreboard players set #replant teplus.maxlvl 1
+scoreboard players set #scyther teplus.maxlvl 2
+scoreboard players set #sensitive teplus.maxlvl 1
+scoreboard players set #shock_fangs teplus.maxlvl 1
+scoreboard players set #sky_walk teplus.maxlvl 1
+scoreboard players set #slippery teplus.maxlvl 1
+scoreboard players set #sniper teplus.maxlvl 1
+scoreboard players set #soul_reaper teplus.maxlvl 3
+scoreboard players set #splatter teplus.maxlvl 3
+scoreboard players set #striker teplus.maxlvl 3
+scoreboard players set #swim_plus teplus.maxlvl 1
+scoreboard players set #timber teplus.maxlvl 1
+scoreboard players set #time_breaker teplus.maxlvl 2
+scoreboard players set #transmission teplus.maxlvl 5
+scoreboard players set #turtle_stiffness teplus.maxlvl 2
+scoreboard players set #vein_miner teplus.maxlvl 1
+scoreboard players set #waterjet teplus.maxlvl 1
+scoreboard players set #xp_boost teplus.maxlvl 3
+
+#-------------------------------------------------------#
 # Gameplay options related (0: enabled, 1: disabled)
 #-------------------------------------------------------#
 scoreboard players set #mrgbk teplus.game_opts 0

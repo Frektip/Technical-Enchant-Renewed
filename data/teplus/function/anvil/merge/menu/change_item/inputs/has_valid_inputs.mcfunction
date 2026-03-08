@@ -17,8 +17,8 @@ data remove entity @s Items[{Slot:24b}]
 data modify entity @s Items prepend value {id:"minecraft:lime_stained_glass_pane",count:1,components:{"minecraft:tooltip_display":{hide_tooltip:true},"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:progress.filled.turn_left"]}},Slot:24b}
 
 # Add tags to make make the UI know the current state
-tag @s add InSlot1
-tag @s add InSlot2
+tag @s add teplus.anvil.InSlot1
+tag @s add teplus.anvil.InSlot2
 
 # In case we used exceed vanilla enchanting limit
 # - We succeeded, so we remove the tags from the books

@@ -21,9 +21,23 @@ execute if entity @s[nbt={Items:[{Slot:2b,id:"minecraft:enchanted_book",count:1}
 # Experience Crystal - Experience Crystal
 #-------------------------------------
 
+#============================= UPDATE RESULT ITEM SLOT =============================#
+#-------BOOK - BOOK-------#
+execute if entity @s[tag=teplus.anvil.output_book] if data storage teplus:updates TAM.Output.Result.components.minecraft:stored_enchantments run function teplus:anvil/merge/interaction/create_item/succeed
+execute if entity @s[tag=teplus.anvil.output_book] unless data storage teplus:updates TAM.Output.Result.components.minecraft:stored_enchantments run function teplus:anvil/merge/interaction/create_item/failed
 
+
+
+# Detect when an enchantment is not compatible with an item
+execute if entity @s[tag=teplus.anvil.merge.error] run function teplus:anvil/merge/interaction/create_item/failed
 
 #============================= REMOVE TAGS =============================#
+# Remove general merge error tag
+tag @s remove teplus.anvil.merge.error
+
+# Remove tags when an enchantment is applied to a book or item
+tag @s remove teplus.anvil.apply_on_book
+tag @s remove teplus.anvil.apply_on_item
 
 # If the output is an item or an enchanted book
 tag @s remove teplus.anvil.output_book
