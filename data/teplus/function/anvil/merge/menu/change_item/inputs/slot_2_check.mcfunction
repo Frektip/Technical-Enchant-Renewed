@@ -1,4 +1,4 @@
-#execute if entity @s[tag=teplus.anvil.HasCombined] run function teplus:anvil/merge/menu/update_ui/output_slot
+execute if entity @s[tag=teplus.anvil.HasCombined] run function teplus:anvil/merge/menu/update_ui/output_slot
 
 # Update related input indicator slots based on the tag
 tag @s add teplus.anvil.InSlot2

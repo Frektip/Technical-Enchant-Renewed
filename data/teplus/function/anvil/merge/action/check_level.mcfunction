@@ -19,7 +19,7 @@ execute if entity @s[tag=teplus.anvil.CanCombine] unless score #xprq teplus.game
 
 
 # For creative (always succeed)
-execute if entity @s[tag=teplus.anvil.CanCombine] unless score #xprq teplus.game_opts matches ..1 if entity @p[tag=teplus.anvil.current,gamemode=creative] run say CAN COMBINE (CREATIVE MODE)
+execute if entity @s[tag=teplus.anvil.CanCombine] unless score #xprq teplus.game_opts matches ..1 if entity @p[tag=teplus.anvil.current,gamemode=creative] run function teplus:anvil/merge/action/succeed
 
 tag @s remove teplus.anvil.CanCombine
 

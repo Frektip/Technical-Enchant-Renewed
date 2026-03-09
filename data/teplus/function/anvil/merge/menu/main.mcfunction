@@ -26,15 +26,13 @@ execute if score $ui_changed teplus.anvil.value matches 1.. run function teplus:
 
 
 
-#----------- TECHNICAL ANVIL ACTIONS -----------#
+#====================================== TECHNICAL ANVIL ACTIONS ======================================#
 # Player clics on the Toggle item
 #execute if entity @s[tag=tcha_open] unless data storage teplus:updates TAM.CurrentItems[{Slot:4b}].components."minecraft:custom_data".teplus.toggle run function technical_anvil:menu/change_item/switch_mode
 
 # Player clics on the Merge action item
 execute unless data storage teplus:updates TAM.CurrentUI[{Slot:13b}].components.minecraft:custom_data.teplus.merge run function teplus:anvil/merge/action/try
 
-# Player clics on the Result slot
-#execute unless data storage teplus:updates TAM.CurrentItems[{Slot:22b}].id run function technical_anvil:menu/change_item/can_change
 
 
 #====================================== MERGING SYSTEM ======================================#
@@ -55,5 +53,6 @@ execute if score @s[tag=teplus.anvil.InSlot2] teplus.anvil.value matches -1 run 
 
 # In case there's an item at any of the input slots (with score value = 0)
 execute if entity @s[scores={teplus.anvil.value=0}] run function teplus:anvil/merge/menu/change_item/inputs/check_items
-# tag @s remove HasCombined
+
+tag @s remove teplus.anvil.HasCombined
 #=============================================================================================#
