@@ -133,6 +133,9 @@ scoreboard players set #mrgbk teplus.game_opts 0
 scoreboard players set #itwbk teplus.game_opts 0
 scoreboard players set #mrgit teplus.game_opts 0
 
+# Special cases
+scoreboard players set #xprq teplus.game_opts 2
+
 #-------------------------------------------------------#
 # Chest related (0: enabled, 1: disabled)
 #-------------------------------------------------------#

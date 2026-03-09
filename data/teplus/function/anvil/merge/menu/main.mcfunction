@@ -31,7 +31,7 @@ execute if score $ui_changed teplus.anvil.value matches 1.. run function teplus:
 #execute if entity @s[tag=tcha_open] unless data storage teplus:updates TAM.CurrentItems[{Slot:4b}].components."minecraft:custom_data".teplus.toggle run function technical_anvil:menu/change_item/switch_mode
 
 # Player clics on the Merge action item
-#execute unless data storage teplus:updates TAM.CurrentItems[{Slot:13b}].components."minecraft:custom_data".teplus.merge run function technical_anvil:interaction/try
+execute unless data storage teplus:updates TAM.CurrentUI[{Slot:13b}].components.minecraft:custom_data.teplus.merge run function teplus:anvil/merge/action/try
 
 # Player clics on the Result slot
 #execute unless data storage teplus:updates TAM.CurrentItems[{Slot:22b}].id run function technical_anvil:menu/change_item/can_change
@@ -52,8 +52,6 @@ execute if score @s teplus.anvil.value matches -3 run function teplus:anvil/merg
 tag @s remove teplus.anvil.CanCombine
 execute if score @s[tag=teplus.anvil.InSlot1] teplus.anvil.value matches -1 run tag @s remove teplus.anvil.InSlot1
 execute if score @s[tag=teplus.anvil.InSlot2] teplus.anvil.value matches -1 run tag @s remove teplus.anvil.InSlot2
-
-#data modify entity @s Items[{Slot:22b}] set value {id:"minecraft:structure_void",count:1,components:{"minecraft:custom_name":[{text:""}],"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:error"]}},Slot:22b}
 
 # In case there's an item at any of the input slots (with score value = 0)
 execute if entity @s[scores={teplus.anvil.value=0}] run function teplus:anvil/merge/menu/change_item/inputs/check_items

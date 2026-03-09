@@ -28,6 +28,8 @@ scoreboard objectives add teplus.player.id dummy
 
 # Technical Anvil related
 scoreboard objectives add teplus.anvil.value dummy
+scoreboard objectives add teplus.anvil.cost dummy
+scoreboard objectives add teplus.anvil.ench_count dummy
 scoreboard objectives add teplus.anvil.inp1 dummy
 scoreboard objectives add teplus.anvil.inp2 dummy
 
@@ -35,7 +37,9 @@ scoreboard objectives add teplus.anvil.inp2 dummy
 scoreboard objectives add teplus.trigger.get_birthday_potion trigger
 
 # Constants
+scoreboard players set #2const teplus.data 2
 scoreboard players set #25const teplus.data 25
+scoreboard players set #50const teplus.data 50
 
 # Config related
 scoreboard objectives add teplus.game_opts dummy
