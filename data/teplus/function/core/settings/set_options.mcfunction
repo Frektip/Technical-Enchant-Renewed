@@ -124,6 +124,8 @@ scoreboard players set #vein_miner teplus.maxlvl 1
 scoreboard players set #waterjet teplus.maxlvl 1
 scoreboard players set #xp_boost teplus.maxlvl 3
 
+scoreboard players set #frost_walker teplus.maxlvl 2
+
 #-------------------------------------------------------#
 # Gameplay options related (0: enabled, 1: disabled)
 #-------------------------------------------------------#
