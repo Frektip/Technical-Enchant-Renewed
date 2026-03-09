@@ -14,11 +14,8 @@ execute as @p[tag=teplus.anvil.current] store result score @s teplus.player.xp r
 
 # For Survival
 # Xp settings make sense
-execute if entity @s[tag=teplus.anvil.CanCombine] unless score #xprq teplus.game_opts matches ..1 if score @s teplus.anvil.cost <= @p[tag=teplus.anvil.current,gamemode=!creative] teplus.player.xp run say CAN COMBINE
-execute if entity @s[tag=teplus.anvil.CanCombine] unless score #xprq teplus.game_opts matches ..1 unless score @s teplus.anvil.cost <= @p[tag=teplus.anvil.current,gamemode=!creative] teplus.player.xp run say CANNOT COMBINE
-
-# Xp settings don't make sense
-execute if entity @s[tag=teplus.anvil.CanCombine] if score #xprq teplus.game_opts matches ..1 as @p[tag=teplus.anvil.current] run say INVALID CONFIGURATION
+execute if entity @s[tag=teplus.anvil.CanCombine] unless score #xprq teplus.game_opts matches ..1 if score @s teplus.anvil.cost <= @p[tag=teplus.anvil.current,gamemode=!creative] teplus.player.xp run function teplus:anvil/merge/action/succeed
+execute if entity @s[tag=teplus.anvil.CanCombine] unless score #xprq teplus.game_opts matches ..1 unless score @s teplus.anvil.cost <= @p[tag=teplus.anvil.current,gamemode=!creative] teplus.player.xp run function teplus:anvil/merge/action/failed
 
 
 # For creative (always succeed)
@@ -26,4 +23,4 @@ execute if entity @s[tag=teplus.anvil.CanCombine] unless score #xprq teplus.game
 
 tag @s remove teplus.anvil.CanCombine
 
-#function technical_anvil:menu/change_item/deactivate_slots
+function teplus:anvil/merge/menu/change_item/inputs/deactivate_slots

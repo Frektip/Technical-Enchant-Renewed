@@ -37,7 +37,9 @@ scoreboard objectives add teplus.anvil.inp2 dummy
 scoreboard objectives add teplus.trigger.get_birthday_potion trigger
 
 # Constants
+scoreboard players set #1const teplus.data 1
 scoreboard players set #2const teplus.data 2
+scoreboard players set #10const teplus.data 10
 scoreboard players set #25const teplus.data 25
 scoreboard players set #50const teplus.data 50
 
