@@ -13,10 +13,10 @@ data modify storage teplus:updates TAM.Output.Result.type set from storage teplu
 #-------------------------------------
 
 # Item - Enchanted Book
-execute if entity @s[tag=!teplus.anvil.IsSameItem,tag=!teplus.anvil.output_book,nbt=!{Items:[{Slot:2b,id:"minecraft:enchanted_book",count:1}]}] run function #teplus:anvil/merge/interaction/check_item_with_book
+execute if entity @s[tag=!teplus.anvil.IsSameItem,tag=!teplus.anvil.output_book,nbt=!{Items:[{Slot:2b,id:"minecraft:enchanted_book",count:1}]}] run function #teplus:anvil/merge/interaction/check_for_items
 
 # Item - Item
-execute if entity @s[tag=teplus.anvil.IsSameItem] run function #teplus:anvil/merge/interaction/check_item_with_item
+execute if entity @s[tag=teplus.anvil.IsSameItem] run function #teplus:anvil/merge/interaction/check_for_items
 
 # Enchanted Book - Enchanted Book
 execute if entity @s[nbt={Items:[{Slot:2b,id:"minecraft:enchanted_book",count:1}]}] run function teplus:anvil/merge/interaction/checks/book_with_book
