@@ -3,6 +3,67 @@ data modify storage teplus:register Resource set value [{Value:{id:"minecraft:la
 scoreboard players set #qnty_per_item teplus.game_opts 3
 
 #-------------------------------------------------------#
+# Enchantments available (0 = disabled ; 1 = enabled )
+#-------------------------------------------------------#
+scoreboard players set #accuracy_shot teplus.game_opts 1
+scoreboard players set #agility teplus.game_opts 3
+scoreboard players set #anti_explosion teplus.game_opts 1
+scoreboard players set #anti_knockback teplus.game_opts 2
+scoreboard players set #anti_venom teplus.game_opts 2
+scoreboard players set #arachnid teplus.game_opts 1
+scoreboard players set #armored teplus.game_opts 2
+scoreboard players set #attack_speed teplus.game_opts 3
+scoreboard players set #auto_feed teplus.game_opts 1
+scoreboard players set #auto_smelt teplus.game_opts 1
+scoreboard players set #big_path teplus.game_opts 1
+scoreboard players set #bloody_blade teplus.game_opts 1
+scoreboard players set #bright_vision teplus.game_opts 1
+scoreboard players set #chopping teplus.game_opts 1
+scoreboard players set #dasher teplus.game_opts 2
+scoreboard players set #excavator teplus.game_opts 1
+scoreboard players set #exhaustion teplus.game_opts 1
+scoreboard players set #explosive teplus.game_opts 1
+scoreboard players set #fear teplus.game_opts 1
+scoreboard players set #fireball_wave teplus.game_opts 1
+scoreboard players set #flaming_skin teplus.game_opts 1
+scoreboard players set #fragile teplus.game_opts 1
+scoreboard players set #grand_tilling teplus.game_opts 1
+scoreboard players set #hardness_plus teplus.game_opts 3
+scoreboard players set #harvesting_plus teplus.game_opts 1
+scoreboard players set #haste teplus.game_opts 2
+scoreboard players set #last_life teplus.game_opts 1
+scoreboard players set #last_stand teplus.game_opts 1
+scoreboard players set #lava_walker teplus.game_opts 1
+scoreboard players set #leaping teplus.game_opts 3
+scoreboard players set #life_plus teplus.game_opts 5
+scoreboard players set #life_steal teplus.game_opts 1
+scoreboard players set #magnet teplus.game_opts 1
+scoreboard players set #marine_grace teplus.game_opts 2
+scoreboard players set #mining_plus teplus.game_opts 1
+scoreboard players set #multicolor teplus.game_opts 1
+scoreboard players set #peaks teplus.game_opts 1
+scoreboard players set #poison_aspect teplus.game_opts 3
+scoreboard players set #recovery teplus.game_opts 2
+scoreboard players set #replant teplus.game_opts 1
+scoreboard players set #scyther teplus.game_opts 2
+scoreboard players set #sensitive teplus.game_opts 1
+scoreboard players set #shock_fangs teplus.game_opts 1
+scoreboard players set #sky_walk teplus.game_opts 1
+scoreboard players set #slippery teplus.game_opts 1
+scoreboard players set #sniper teplus.game_opts 1
+scoreboard players set #soul_reaper teplus.game_opts 3
+scoreboard players set #splatter teplus.game_opts 3
+scoreboard players set #striker teplus.game_opts 3
+scoreboard players set #swim_plus teplus.game_opts 1
+scoreboard players set #timber teplus.game_opts 1
+scoreboard players set #time_breaker teplus.game_opts 2
+scoreboard players set #transmission teplus.game_opts 5
+scoreboard players set #turtle_stiffness teplus.game_opts 2
+scoreboard players set #vein_miner teplus.game_opts 1
+scoreboard players set #waterjet teplus.game_opts 1
+scoreboard players set #xp_boost teplus.game_opts 3
+
+#-------------------------------------------------------#
 # Enchantments max level
 #-------------------------------------------------------#
 scoreboard players set #accuracy_shot teplus.maxlvl 1
