@@ -3,7 +3,7 @@ scoreboard players operation $temp teplus.block_id = @s teplus.block_id
 
 execute if entity @s[tag=teplus.anvil.merge,tag=!teplus.anvil.extract] if entity @p[distance=..5] at @s run function teplus:anvil/merge/menu/main
 
-#execute if entity @s[tag=teplus.anvil.extract,tag=!teplus.anvil.merge] if entity @p[distance=..5] at @s run function teplus:anvil/extract/menu/main
+execute if entity @s[tag=teplus.anvil.extract,tag=!teplus.anvil.merge] if entity @p[distance=..5] at @s run function teplus:anvil/extract/menu/main
 
 # Prevent stealing from hoppers and hopper minecarts
 execute if block ~ ~-1 ~ minecraft:hopper run setblock ~ ~-1 ~ air destroy

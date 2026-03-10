@@ -28,7 +28,7 @@ execute if score $ui_changed teplus.anvil.value matches 1.. run function teplus:
 
 #====================================== TECHNICAL ANVIL ACTIONS ======================================#
 # Player clics on the Toggle item
-#execute if entity @s[tag=tcha_open] unless data storage teplus:updates TAM.CurrentItems[{Slot:4b}].components."minecraft:custom_data".teplus.toggle run function technical_anvil:menu/change_item/switch_mode
+execute if entity @s[tag=teplus.anvil.open] unless data storage teplus:updates TAM.CurrentUI[{Slot:4b}].components.minecraft:custom_data.teplus.toggle run function teplus:anvil/merge/menu/change_item/switch_mode
 
 # Player clics on the Merge action item
 execute unless data storage teplus:updates TAM.CurrentUI[{Slot:13b}].components.minecraft:custom_data.teplus.merge run function teplus:anvil/merge/action/try
