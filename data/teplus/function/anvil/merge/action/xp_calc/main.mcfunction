@@ -9,12 +9,9 @@ execute if data storage teplus:updates TAM.Output.Current.components.minecraft:s
 # Items
 execute if data storage teplus:updates TAM.Output.Current.components.minecraft:enchantments run data modify storage tteplus:temp enchobj set from storage teplus:updates TAM.Output.Current.components.minecraft:enchantments
 
-# Convert the enchantments into a list
-function teplus:utils/ench_to_list/init
+# Convert all custom enchantments into a list
+function teplus:utils/ench_to_list/init {ve:0,vc:0,te:1,tc:1}
 data modify storage teplus:cost Available set from storage teplus:temp enchlist
-
-# Remove vanilla enchantments from the list
-function teplus:anvil/merge/action/xp_calc/remove_vanilla
 
 # 2. Use an scoreboard as a counter for the loop
 execute store result score @s teplus.anvil.ench_count run data get storage teplus:cost Available

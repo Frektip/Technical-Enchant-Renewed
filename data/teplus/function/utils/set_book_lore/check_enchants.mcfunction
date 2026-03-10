@@ -6,7 +6,9 @@
 # Obtain the current enchantments stored in the book as an Array
 # Use the utility function to convert the enchantment object into a list
 $data modify storage teplus:temp enchobj set from entity @s $(path).components.minecraft:stored_enchantments
-function teplus:utils/ench_to_list/init
+
+# Get TE+ enchantments/curses ONLY
+function teplus:utils/ench_to_list/init {ve:0,vc:0,te:1,tc:1}
 
 # Copy the result list in another storage
 data modify storage teplus:lore Enchants set from storage teplus:temp enchlist
