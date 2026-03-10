@@ -132,6 +132,7 @@ scoreboard players set #frost_walker teplus.maxlvl 2
 scoreboard players set #mrgbk teplus.game_opts 0
 scoreboard players set #itwbk teplus.game_opts 0
 scoreboard players set #mrgit teplus.game_opts 0
+scoreboard players set #extrmd teplus.game_opts 0
 
 # Special cases
 scoreboard players set #xprq teplus.game_opts 2
