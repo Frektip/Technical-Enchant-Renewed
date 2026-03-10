@@ -32,3 +32,27 @@ execute if entity @s[tag=teplus.anvil.open] unless data storage teplus:updates T
 
 # Player clics on the Extract action item
 #execute unless data storage teplus:updates TAE.CurrentUI[{Slot:22b}].components.minecraft:custom_data.teplus.extract run function teplus:anvil/extract/action/try
+
+
+
+#====================================== EXTRACTION SYSTEM ======================================#
+# Set it false by default
+scoreboard players set @s teplus.anvil.value -1
+
+# Check if there is an item in one of the input slots
+execute if data entity @s[scores={teplus.anvil.value=-1}] Items[{Slot:10b}].id run scoreboard players set @s teplus.anvil.value -2
+execute if data entity @s[scores={teplus.anvil.value=-1}] Items[{Slot:16b}].id run scoreboard players set @s teplus.anvil.value -3
+
+# Update the UI according to the input slots used (-2 for slot 10b and -3 for slot 16b)
+execute if score @s teplus.anvil.value matches -2 run function teplus:anvil/extract/menu/change_item/inputs/slot_1_check
+execute if score @s teplus.anvil.value matches -3 run function teplus:anvil/extract/menu/change_item/inputs/slot_2_check
+
+tag @s remove teplus.anvil.CanExtract
+execute if score @s[tag=teplus.anvil.InSlot1] teplus.anvil.value matches -1 run tag @s remove teplus.anvil.InSlot1
+execute if score @s[tag=teplus.anvil.InSlot2] teplus.anvil.value matches -1 run tag @s remove teplus.anvil.InSlot2
+
+# In case there's an item at any of the input slots (with score value = 0)
+#execute if entity @s[scores={teplus.anvil.value=0}] run function teplus:anvil/extract/menu/change_item/inputs/check_items
+
+tag @s remove teplus.anvil.HasExtracted
+#=============================================================================================#
