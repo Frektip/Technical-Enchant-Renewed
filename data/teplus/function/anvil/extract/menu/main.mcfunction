@@ -31,7 +31,7 @@ execute if score $ui_changed teplus.anvil.value matches 1.. run function teplus:
 execute if entity @s[tag=teplus.anvil.open] unless data storage teplus:updates TAE.CurrentUI[{Slot:4b}].components.minecraft:custom_data.teplus.toggle run function teplus:anvil/extract/menu/change_item/switch_mode
 
 # Player clics on the Extract action item
-#execute unless data storage teplus:updates TAE.CurrentUI[{Slot:22b}].components.minecraft:custom_data.teplus.extract run function teplus:anvil/extract/action/try
+execute unless data storage teplus:updates TAE.CurrentUI[{Slot:22b}].components.minecraft:custom_data.teplus.extract run function teplus:anvil/extract/action/init
 
 
 
