@@ -5,10 +5,8 @@
 # We can update the error message with the @param {err} to set is as a tag
 
 # Remove other previous error tags
-tag @s remove teplus.anvil.error.invalid_items
-tag @s remove teplus.anvil.error.invalid_right_input
-tag @s remove teplus.anvil.error.no_isolated_core
-tag @s remove teplus.anvil.error.no_book
+function teplus:anvil/extract/menu/remove_error_tags
 
+# Add the corresponding error tag
 $tag @s add teplus.anvil.error.$(err)
 function teplus:anvil/extract/menu/change_item/inputs/deactivate_slots

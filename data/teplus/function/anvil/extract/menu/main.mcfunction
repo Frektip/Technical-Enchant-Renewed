@@ -38,6 +38,7 @@ execute unless data storage teplus:updates TAE.CurrentUI[{Slot:22b}].components.
 #====================================== EXTRACTION SYSTEM ======================================#
 # Set it false by default
 scoreboard players set @s teplus.anvil.value -1
+execute if entity @s[tag=!teplus.anvil.CanExtract] run function teplus:anvil/extract/menu/set_default_output
 
 # Check if there is an item in one of the input slots
 execute if data entity @s[scores={teplus.anvil.value=-1}] Items[{Slot:10b}].id run scoreboard players set @s teplus.anvil.value -2
@@ -53,6 +54,4 @@ execute if score @s[tag=teplus.anvil.InSlot2] teplus.anvil.value matches -1 run 
 
 # In case there's an item at any of the input slots (with score value = 0)
 execute if entity @s[scores={teplus.anvil.value=0}] run function teplus:anvil/extract/menu/change_item/inputs/check_items
-
-tag @s remove teplus.anvil.HasExtracted
 #=============================================================================================#

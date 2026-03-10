@@ -1,5 +1,3 @@
-execute if entity @s[tag=teplus.anvil.HasExtracted] run function teplus:anvil/extract/menu/update_ui/output_slot
-
 # Update related input indicator slots based on the tag
 tag @s add teplus.anvil.InSlot2
 function teplus:anvil/extract/menu/update_ui/input_indicator {slot: 15, tag: "teplus.anvil.InSlot2", cmd_empty: "teplus:progress.empty.horizontal", cmd_filled: "teplus:progress.filled.horizontal"}

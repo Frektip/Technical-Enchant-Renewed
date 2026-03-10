@@ -14,8 +14,6 @@ function teplus:anvil/extract/action/remove_enchantment with storage teplus:upda
 # ==== Debug Message ====#
 tellraw @a[tag=teplus.debug_mode] [{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Anvil): ","color":"gold","italic":true,"bold":false},{"text":"Removing 1 book from the UI","color":"gray","italic":true,"bold":false}]
 
-tag @s add teplus.anvil.HasExtracted
-
 # Remove 1 single book from the chest minecart
 item modify entity @s container.16 teplus:reduce_count1
 

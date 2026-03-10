@@ -1,8 +1,6 @@
 #------------INIT STATE-------------#
 tag @s add teplus.anvil.CanExtract
-tag @s remove teplus.anvil.error.invalid_items
-tag @s remove teplus.anvil.error.invalid_right_input
-tag @s remove teplus.anvil.error.no_isolated_core
+function teplus:anvil/extract/menu/remove_error_tags
 #-----------------ADD ITEM-----------------#
 data modify storage teplus:updates TAE.Output.Result.components.minecraft:custom_data.teplus.ui set value 1b
 data modify entity @s Items[{Slot:13b}] set from storage teplus:updates TAE.Output.Result
