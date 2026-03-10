@@ -1,9 +1,5 @@
-# Add general input error tag
-tag @s add teplus.anvil.error.invalid_items
-
 # Reset the input slots tags and UI
 tag @s remove teplus.anvil.CanExtract
-tag @s remove teplus.anvil.CurseExtract
 tag @s remove teplus.anvil.InSlot1
 data remove storage teplus:updates TAE.Inputs.Section1
 

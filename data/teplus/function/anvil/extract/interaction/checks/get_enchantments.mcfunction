@@ -1,11 +1,17 @@
+# @Context: We're trying to obtain Enchantments ONLY or Curses ONLY
+# @params:
+#  - {enchant}: Get vanilla and TE+ custom enchantments
+#  - {curse}: Get vanilla and TE+ custom curses
+# Both params could be 0 (false) or 1 (true)
+
 # Initialize main storage
 data modify storage teplus:updates TAE.Output.Enchants set value []
 
 # Get all the enchantments from the component
 data modify storage teplus:temp enchobj set from storage teplus:updates TAE.Inputs.Section1.components.minecraft:enchantments
 
-# Convert vanilla and TE+ custom enchantments into a list
-function teplus:utils/ench_to_list/init {ve:1,vc:0,te:1,tc:0}
+# Convert the enchantments into a list (get only enchantments or only curses)
+$function teplus:utils/ench_to_list/init {ve:$(enchant),vc:$(curse),te:$(enchant),tc:$(curse)}
 
 # Add the enchantments into the resultItem storage
 data modify storage teplus:updates TAE.Output.Enchants set from storage teplus:temp enchlist

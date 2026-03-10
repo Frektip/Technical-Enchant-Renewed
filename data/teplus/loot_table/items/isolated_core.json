@@ -1,0 +1,62 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "teplus.item.isolated_core",
+                "fallback": "Isolated Core",
+                "color": "#D93262",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "teplus.isolated_core.desc.lore1",
+                  "fallback": "A rare item used to remove",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "teplus.isolated_core.desc.lore2",
+                  "fallback": "vanilla and custom curses",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Technical Enchant+",
+                  "color": "#63C0E3",
+                  "italic": true
+                }
+              ],
+              "mode": "insert"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{teplus:{head:1b, id: \"isolated_core\"}}",
+                "!minecraft:equippable": {},
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRiMWVlMjgyOWU1YzE4OGUwZDU1NDRmMjkyZTMzZTVjOTY2ZGZiZmNkMDE4ZGFjNjA2MzcwMjU4N2VkZDc5ZiJ9fX0="
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -9,8 +9,11 @@ data modify entity @s[tag=teplus.anvil.error.invalid_right_input] Items append v
 # Warning: Use an isolated core to extract curses
 data modify entity @s[tag=teplus.anvil.error.no_isolated_core] Items append value {id:"minecraft:structure_void",count:1,components:{"minecraft:custom_name":[{translate:"teplus.technical_anvil.error_title",fallback:"Error!",color:"red",italic:false}],"minecraft:lore":[{translate:"teplus.technical_anvil.extract_error.no_isolated_core.lore",fallback:"You need an isolated core to extract curses!",color:"gray",italic:false}],"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:warning"]}},Slot:13b}
 
+# Warning: Use a book to extract enchantments
+data modify entity @s[tag=teplus.anvil.error.no_book] Items append value {id:"minecraft:structure_void",count:1,components:{"minecraft:custom_name":[{translate:"teplus.technical_anvil.error_title",fallback:"Error!",color:"red",italic:false}],"minecraft:lore":[{translate:"teplus.technical_anvil.extract_error.no_book.lore",fallback:"You need a book to extract enchantments!",color:"gray",italic:false}],"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:warning"]}},Slot:13b}
+
 
 # Default case
-data modify entity @s[tag=!teplus.anvil.error.invalid_items,tag=!teplus.anvil.error.invalid_right_input,tag=!teplus.anvil.error.no_isolated_core] Items append value {id:"minecraft:structure_void",count:1,components:{"minecraft:custom_name":[{text:""}],"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:error"]}},Slot:13b}
+data modify entity @s[tag=!teplus.anvil.error.invalid_items,tag=!teplus.anvil.error.invalid_right_input,tag=!teplus.anvil.error.no_isolated_core,tag=!teplus.anvil.error.no_book] Items append value {id:"minecraft:structure_void",count:1,components:{"minecraft:custom_name":[{text:""}],"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b}},"minecraft:custom_model_data":{strings:["teplus:error"]}},Slot:13b}
 
 data modify storage teplus:updates TAE.CurrentUI[{Slot:13b}] set from entity @s Items[{Slot:13b}]

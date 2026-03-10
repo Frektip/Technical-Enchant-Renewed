@@ -15,6 +15,4 @@ data modify entity @s Items prepend value {id:"minecraft:lime_stained_glass_pane
 # Add tags to make make the UI know the current state
 tag @s add teplus.anvil.InSlot1
 tag @s add teplus.anvil.InSlot2
-
-function teplus:anvil/extract/interaction/create_item/main
 #------------------------------------------#
