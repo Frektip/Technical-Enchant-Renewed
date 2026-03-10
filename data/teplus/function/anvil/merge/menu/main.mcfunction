@@ -21,7 +21,7 @@ execute store result score $ui_changed teplus.anvil.value run data get storage t
 execute if score $ui_slots teplus.anvil.value < #25const teplus.data run scoreboard players set $ui_changed teplus.anvil.value 1
 
 # If UI items changed, refresh the UI slots
-execute if score $ui_changed teplus.anvil.value matches 1.. run function teplus:anvil/merge/menu/update_ui/refresh
+execute if score $ui_changed teplus.anvil.value matches 1.. run function teplus:anvil/events/refresh_ui/init {input1:2,input2:6,profile:"Merge"}
 #=============================================================================================#
 
 
