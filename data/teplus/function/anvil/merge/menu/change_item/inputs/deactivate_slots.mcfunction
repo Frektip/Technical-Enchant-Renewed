@@ -3,6 +3,9 @@
 #tag @s[tag=No.xpcomb] remove No.xpcomb
 #tag @s[tag=Noxpcost] remove Noxpcost
 
+# Add general input error tag
+tag @s add teplus.anvil.error.invalid_items
+
 # Reset the input slots tags and UI
 tag @s remove teplus.anvil.CanCombine
 tag @s remove teplus.anvil.InSlot1

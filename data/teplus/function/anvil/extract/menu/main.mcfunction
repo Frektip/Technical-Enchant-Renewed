@@ -52,7 +52,7 @@ execute if score @s[tag=teplus.anvil.InSlot1] teplus.anvil.value matches -1 run 
 execute if score @s[tag=teplus.anvil.InSlot2] teplus.anvil.value matches -1 run tag @s remove teplus.anvil.InSlot2
 
 # In case there's an item at any of the input slots (with score value = 0)
-#execute if entity @s[scores={teplus.anvil.value=0}] run function teplus:anvil/extract/menu/change_item/inputs/check_items
+execute if entity @s[scores={teplus.anvil.value=0}] run function teplus:anvil/extract/menu/change_item/inputs/check_items
 
 tag @s remove teplus.anvil.HasExtracted
 #=============================================================================================#
