@@ -2,7 +2,9 @@ data modify storage teplus:loot Incomp.Source set from storage teplus:loot Temp[
 
 # Convert the enchantment object into a list
 data modify storage teplus:temp enchobj set from entity @s Item.components.minecraft:enchantments
-function teplus:utils/ench_to_list/init
+
+# Include all the enchantments from the item
+function teplus:utils/ench_to_list/init {ve:1,vc:1,te:1,tc:1}
 
 # Get the list of enchantments and format them
 data modify storage teplus:loot Incomp.With set from storage teplus:temp enchlist

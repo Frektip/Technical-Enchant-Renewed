@@ -11,7 +11,7 @@ execute if predicate teplus:random_chance/5 run function teplus:enchant/set_curs
 #---------------------------------------------------#
 
 #------------------Update the Lore (Book Only) ------------------#
-execute if entity @s[tag=teplus.loot_is_book] run function teplus:utils/set_book_lore/check_enchants
+execute if entity @s[tag=teplus.loot_is_book] run function teplus:utils/set_book_lore/check_enchants {path:"Item",slot:"container.0"}
 #---------------------------------------------------#
 ##==================================================================##
 

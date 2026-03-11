@@ -1,0 +1,62 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "teplus.item.technical_anvil",
+                "fallback": "Technical Anvil",
+                "color": "#909FB3",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "teplus.technical_anvil.desc.lore1",
+                  "fallback": "Place it down to merge or",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "teplus.technical_anvil.desc.lore2",
+                  "fallback": "extract custom enchantments",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "Technical Enchant+",
+                  "color": "#63C0E3",
+                  "italic": true
+                }
+              ],
+              "mode": "insert"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{teplus:{block:1b, id: \"technical_anvil\"}}",
+                "!minecraft:equippable": {},
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTAyZjRhOWQxODJjYzYyNTkyNWU1ZGVhN2UyOWQxM2E5NDhhZDY0ZmY0Mjg3MTc4YWYyM2EwNDI4ZTFmYTU0ZSJ9fX0="
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

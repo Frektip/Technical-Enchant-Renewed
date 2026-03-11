@@ -1,7 +1,8 @@
 {
   "description": {
     "translate": "teplus.enchantment.fear",
-    "fallback": "Fear"
+    "fallback": "Curse of Fear",
+    "color": "#FF4099"
   },
   "supported_items": "#teplus:enchantable/fear",
   "weight": 1,
@@ -14,7 +15,7 @@
     "base": 0,
     "per_level_above_first": 0
   },
-  "anvil_cost": 0,
+  "anvil_cost": 9999999,
   "slots": [
     "hand"
   ]

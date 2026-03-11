@@ -2,7 +2,6 @@
 # We send a key-value pair to be referenced in a generic function ()
 execute if data storage teplus:temp enchobj.minecraft:aqua_affinity run function teplus:utils/ench_to_list/add_enchantment {"ench": "minecraft:aqua_affinity"}
 execute if data storage teplus:temp enchobj.minecraft:bane_of_arthropods run function teplus:utils/ench_to_list/add_enchantment {"ench": "minecraft:bane_of_arthropods"}
-execute if data storage teplus:temp enchobj.minecraft:binding_curse run function teplus:utils/ench_to_list/add_enchantment {"ench": "minecraft:binding_curse"}
 execute if data storage teplus:temp enchobj.minecraft:blast_protection run function teplus:utils/ench_to_list/add_enchantment {"ench": "minecraft:blast_protection"}
 execute if data storage teplus:temp enchobj.minecraft:breach run function teplus:utils/ench_to_list/add_enchantment {"ench": "minecraft:breach"}
 execute if data storage teplus:temp enchobj.minecraft:channeling run function teplus:utils/ench_to_list/add_enchantment {"ench": "minecraft:channeling"}
@@ -40,5 +39,4 @@ execute if data storage teplus:temp enchobj.minecraft:sweeping_edge run function
 execute if data storage teplus:temp enchobj.minecraft:swift_sneak run function teplus:utils/ench_to_list/add_enchantment {"ench": "minecraft:swift_sneak"}
 execute if data storage teplus:temp enchobj.minecraft:thorns run function teplus:utils/ench_to_list/add_enchantment {"ench": "minecraft:thorns"}
 execute if data storage teplus:temp enchobj.minecraft:unbreaking run function teplus:utils/ench_to_list/add_enchantment {"ench": "minecraft:unbreaking"}
-execute if data storage teplus:temp enchobj.minecraft:vanishing_curse run function teplus:utils/ench_to_list/add_enchantment {"ench": "minecraft:vanishing_curse"}
 execute if data storage teplus:temp enchobj.minecraft:wind_burst run function teplus:utils/ench_to_list/add_enchantment {"ench": "minecraft:wind_burst"}
