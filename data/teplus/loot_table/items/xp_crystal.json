@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "teplus.item.xp_crystal",
+                "fallback": "Experience Crystal",
+                "color": "#5FC187",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "teplus.xp_crystal.desc.lore1",
+                  "fallback": "Hold one in you offhand or",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "teplus.xp_crystal.desc.lore2",
+                  "fallback": "mainhand while sneaking to",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "teplus.xp_crystal.desc.lore3",
+                  "fallback": "obtain experience orbs",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text" : "---------------------",
+                  "color":"#DEE8B8"
+                },
+                {
+                  "text" : "---------------------",
+                  "color":"#DEE8B8"
+                },
+                {
+                  "text": "Technical Enchant+",
+                  "color": "#63C0E3",
+                  "italic": true
+                }
+              ],
+              "mode": "insert"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{teplus:{head:1b, id: \"xp_crystal\"}}",
+                "!minecraft:equippable": {},
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmU2Y2EzY2U1ZDg5YWNiMDZhNjQzZjQ5ZjUyNzQ4NTVlZGVlNmVlYjFhNTQ1MTViMzA0MGExYjNmOGNiYjdhMSJ9fX0="
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
