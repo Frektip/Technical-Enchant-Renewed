@@ -18,6 +18,7 @@
             },
             {
               "function": "minecraft:set_lore",
+              "entity": "this",
               "lore": [
                 {
                   "translate": "teplus.xp_crystal.desc.lore1",
@@ -38,11 +39,76 @@
                   "italic": false
                 },
                 {
-                  "text" : "---------------------",
+                  "text" : "-----------------------",
                   "color":"#DEE8B8"
                 },
+                [
+                  {
+                    "text": " ⭐ ",
+					          "color": "#548256",
+					          "italic": false
+                  },
+                  {
+					        	"translate": "teplus.xp_crystal.desc.lore4.tier",
+                    "fallback": "Tier",
+					        	"color": "#D5EC86",
+					        	"italic": false
+					        },
+                  {
+                    "text":": ",
+                    "color": "#D5EC86",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "objective": "teplus.data",
+                      "name": "#teplus.xptier"
+                    },
+                    "color": "#ECB969",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+					          "text": " ✪ ",
+					          "color": "#548256",
+					          "italic": false
+					        },
+					        {
+					        	"translate": "teplus.xp_crystal.desc.lore5.value",
+                    "fallback": "Value",
+					        	"color": "#D5EC86",
+					        	"italic": false
+					        },
+                  {
+					        	"text": ": ",
+					        	"color": "#D5EC86",
+					        	"italic": false
+					        },
+					        {
+					        	"score": {
+					        	  "name": "#teplus.xpvalue",
+					        	  "objective": "teplus.data"
+					        	},
+					        	"color": "#72C45B",
+					        	"italic": false
+					        },
+					        {
+					        	"text": "/",
+					        	"color": "#D1CEA1",
+					        	"italic": false
+					        },
+					        {
+					        	"score": {
+					        	  "name": "#teplus.xpmax",
+					        	  "objective": "teplus.data"
+					        	},
+					        	"color": "#357D3A",
+					        	"italic": false
+					        }
+                ],
                 {
-                  "text" : "---------------------",
+                  "text" : "-----------------------",
                   "color":"#DEE8B8"
                 },
                 {
@@ -67,6 +133,20 @@
                   ]
                 }
               }
+            },
+            {
+              "function": "minecraft:copy_custom_data",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "teplus:xp_crystal"
+              },
+              "ops": [
+                {
+                  "source": "Build",
+                  "target": "teplus.Content",
+                  "op": "append"
+                }
+              ]
             }
           ]
         }
