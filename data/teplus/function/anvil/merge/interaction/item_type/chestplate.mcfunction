@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR CHESTPLATE-------------#
 execute if score #auto_feed teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:auto_feed run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:auto_feed",score:"#auto_feed"}
 execute if score #flaming_skin teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:flaming_skin run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:flaming_skin",score:"#flaming_skin"}

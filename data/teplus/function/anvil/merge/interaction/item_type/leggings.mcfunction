@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR LEGGINGS-------------#
 execute if score #leaping teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:leaping run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:leaping",score:"#leaping"}
 execute if score #swim_plus teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:swim_plus run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:swim_plus",score:"#swim_plus"}

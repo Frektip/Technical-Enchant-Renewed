@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR BOOTS-------------#
 execute if score #agility teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:agility run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:agility",score:"#agility"}
 execute if score #dasher teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:dasher run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:dasher",score:"#dasher"}

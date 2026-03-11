@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR HORSE ARMOR-------------#
 # NO EXCLUSIVE ENCHANTMENTS??
 #      ¯\_( ͡o ͜ʖ ͡O)_/¯

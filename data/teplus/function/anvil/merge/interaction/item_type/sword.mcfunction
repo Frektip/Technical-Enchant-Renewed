@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR SWORD-------------#
 execute if score #bloody_blade teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:bloody_blade run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:bloody_blade",score:"#bloody_blade"}
 execute if score #last_stand teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:last_stand run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:last_stand",score:"#last_stand"}

@@ -32,7 +32,7 @@ execute if entity @s[tag=teplus.anvil.output_book,tag=!teplus.anvil.merge.error]
 execute if entity @s[tag=teplus.anvil.apply_on_item] if data storage teplus:updates TAM.Output.Result.components.minecraft:enchantments run function teplus:anvil/merge/interaction/create_item/succeed
 
 # Detect when an enchantment is not compatible with an item
-execute if entity @s[tag=teplus.anvil.apply_on_item,tag=teplus.anvil.merge.error] run function teplus:anvil/merge/interaction/create_item/failed {err:"invalid_enchant"}
+execute if entity @s[tag=teplus.anvil.output_item,tag=teplus.anvil.merge.error] run function teplus:anvil/merge/interaction/create_item/failed {err:"invalid_enchant"}
 
 #============================= REMOVE TAGS =============================#
 # Remove general merge error tag

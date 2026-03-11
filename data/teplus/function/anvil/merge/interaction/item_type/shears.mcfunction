@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR SHEARS-------------#
 execute if score #multicolor teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:multicolor run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:multicolor",score:"#multicolor"}
 

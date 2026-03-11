@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR SHIELD-------------#
 execute if score #anti_knockback teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:anti_knockback run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:anti_knockback",score:"#anti_knockback"}
 execute if score #hardness_plus teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:hardness_plus run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:hardness_plus",score:"#hardness_plus"}

@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR HOE-------------#
 execute if score #grand_tilling teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:grand_tilling run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:grand_tilling",score:"#grand_tilling"}
 execute if score #harvesting_plus teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:harvesting_plus run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:harvesting_plus",score:"#harvesting_plus"}

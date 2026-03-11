@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR AXE-------------#
 execute if score #chopping teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:chopping run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:chopping",score:"#chopping"}
 execute if score #timber teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:timber run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:timber",score:"#timber"}

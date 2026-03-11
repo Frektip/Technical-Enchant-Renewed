@@ -1,3 +1,7 @@
+# #----SET ERROR BY DEFAULT----#
+tag @s add teplus.anvil.merge.error
+
+# Add tracking tag (item + item/book = item)
 tag @s add teplus.anvil.output_item
 
 function teplus:anvil/merge/interaction/checks/get_input_enchants

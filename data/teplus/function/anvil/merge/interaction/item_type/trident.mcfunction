@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR TRIDENT-------------#
 execute if score #marine_grace teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:marine_grace run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:marine_grace",score:"#marine_grace"}
 execute if score #waterjet teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:waterjet run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:waterjet",score:"#waterjet"}

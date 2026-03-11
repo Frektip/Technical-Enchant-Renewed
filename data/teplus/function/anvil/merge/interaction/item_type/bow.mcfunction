@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR BOW-------------#
 execute if score #arachnid teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:arachnid run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:arachnid",score:"#arachnid"}
 execute if score #explosive teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:explosive run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:explosive",score:"#explosive"}

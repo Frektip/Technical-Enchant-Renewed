@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR SHOVEL-------------#
 execute if score #big_path teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:big_path run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:big_path",score:"#big_path"}
 execute if score #excavator teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:excavator run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:excavator",score:"#excavator"}

@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR PICKAXE-------------#
 execute if score #mining_plus teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:mining_plus unless data storage teplus:updates TAM.Output.Result.components.minecraft:enchantments.teplus:vein_miner run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:mining_plus",score:"#mining_plus"}
 execute if score #vein_miner teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:vein_miner unless data storage teplus:updates TAM.Output.Result.components.minecraft:enchantments.teplus:mining_plus run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:vein_miner",score:"#vein_miner"}

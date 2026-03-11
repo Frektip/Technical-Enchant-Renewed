@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR HELMET-------------#
 execute if score #bright_vision teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:bright_vision run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:bright_vision",score:"#bright_vision"}
 execute if score #magnet teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:magnet run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:magnet",score:"#magnet"}

@@ -24,11 +24,8 @@ execute if score #itwbk teplus.game_opts matches 0 if data storage teplus:update
 # Check first if both items are the same
 execute if score #mrgit teplus.game_opts matches 0 run function #teplus:anvil/merge/menu/compare_items
 
-# Only if the items are the same (minecart with a specific tag) ---> Debug all enchantable items in the right input slot
-execute if score #mrgit teplus.game_opts matches 0 if entity @s[tag=teplus.anvil.IsSameItem] run function #teplus:anvil/merge/menu/debug_input {storage:"Section2"}
-
-# Check if Section1 & Section2 storages have teplus.valid value
-execute if score #mrgit teplus.game_opts matches 0 if entity @s[tag=teplus.anvil.IsSameItem] if data storage teplus:updates TAM.Inputs.Section1.teplus.valid if data storage teplus:updates TAM.Inputs.Section2.teplus.valid run return run function teplus:anvil/merge/menu/change_item/inputs/has_valid_inputs
+# Check if both input items (Section1 & Section2 storages) have enchantments
+execute if score #mrgit teplus.game_opts matches 0 if entity @s[tag=teplus.anvil.IsSameItem] if data storage teplus:updates TAM.Inputs.Section1.components.minecraft:enchantments if data storage teplus:updates TAM.Inputs.Section2.components.minecraft:enchantments run return run function teplus:anvil/merge/menu/change_item/inputs/has_valid_inputs
 
 
 #============================= COMBINE EXPERIENCE CRYSTALS =============================#

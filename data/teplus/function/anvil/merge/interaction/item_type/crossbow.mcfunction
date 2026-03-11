@@ -1,6 +1,3 @@
-#----SET ERROR BY DEFAULT----#
-tag @s add teplus.anvil.merge.error
-
 #-------------EXCLUSIVE FOR CROSSBOW-------------#
 execute if score #fireball_wave teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:fireball_wave run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:fireball_wave",score:"#fireball_wave"}
 execute if score #shock_fangs teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:shock_fangs run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:shock_fangs",score:"#shock_fangs"}
