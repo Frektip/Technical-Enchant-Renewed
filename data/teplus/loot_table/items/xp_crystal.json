@@ -144,7 +144,7 @@
                 {
                   "source": "Build",
                   "target": "teplus.Content",
-                  "op": "append"
+                  "op": "merge"
                 }
               ]
             }

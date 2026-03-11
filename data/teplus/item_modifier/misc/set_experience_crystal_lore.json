@@ -1,0 +1,103 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    {
+      "translate": "teplus.xp_crystal.desc.lore1",
+      "fallback": "Hold one in you offhand or",
+      "color": "white",
+      "italic": false
+    },
+    {
+      "translate": "teplus.xp_crystal.desc.lore2",
+      "fallback": "mainhand while sneaking to",
+      "color": "white",
+      "italic": false
+    },
+    {
+      "translate": "teplus.xp_crystal.desc.lore3",
+      "fallback": "obtain experience orbs",
+      "color": "white",
+      "italic": false
+    },
+    {
+      "text" : "-----------------------",
+      "color":"#DEE8B8"
+    },
+    [
+      {
+        "text": " ⭐ ",
+	      "color": "#548256",
+	      "italic": false
+      },
+      {
+	    	"translate": "teplus.xp_crystal.desc.lore4.tier",
+        "fallback": "Tier",
+	    	"color": "#D5EC86",
+	    	"italic": false
+	    },
+      {
+        "text":": ",
+        "color": "#D5EC86",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": "@s",
+          "objective": "teplus.anvil.inp1"
+        },
+        "color": "#ECB969",
+        "italic": false
+      }
+    ],
+    [
+      {
+	      "text": " ✪ ",
+	      "color": "#548256",
+	      "italic": false
+	    },
+	    {
+	    	"translate": "teplus.xp_crystal.desc.lore5.value",
+        "fallback": "Value",
+	    	"color": "#D5EC86",
+	    	"italic": false
+	    },
+      {
+	    	"text": ": ",
+	    	"color": "#D5EC86",
+	    	"italic": false
+	    },
+	    {
+	    	"score": {
+	    	  "name": "#teplus.xpcrystal_val1",
+	    	  "objective": "teplus.data"
+	    	},
+	    	"color": "#72C45B",
+	    	"italic": false
+	    },
+	    {
+	    	"text": "/",
+	    	"color": "#D1CEA1",
+	    	"italic": false
+	    },
+	    {
+	    	"score": {
+	    	  "name": "#teplus.xpcrystal_newmax",
+	    	  "objective": "teplus.data"
+	    	},
+	    	"color": "#357D3A",
+	    	"italic": false
+	    }
+    ],
+    {
+      "text" : "-----------------------",
+      "color":"#DEE8B8"
+    },
+    {
+      "text": "Technical Enchant+",
+      "color": "#63C0E3",
+      "italic": true
+    }
+  ],
+  "mode": "replace_all"
+}

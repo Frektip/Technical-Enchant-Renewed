@@ -34,6 +34,9 @@ execute if entity @s[tag=teplus.anvil.apply_on_item] if data storage teplus:upda
 # Detect when an enchantment is not compatible with an item
 execute if entity @s[tag=teplus.anvil.output_item,tag=teplus.anvil.merge.error,tag=!teplus.anvil.output_xp_crystal] run function teplus:anvil/merge/interaction/create_item/failed {err:"invalid_enchant"}
 
+#-------EXPERIENCE CRYSTAL#-------#
+execute if entity @s[tag=teplus.anvil.output_xp_crystal,tag=!teplus.anvil.merge.error] run function teplus:anvil/merge/interaction/create_item/succeed
+
 #============================= REMOVE TAGS =============================#
 # Remove general merge error tag
 tag @s remove teplus.anvil.merge.error
