@@ -18,7 +18,7 @@ execute if score @s[tag=teplus.tier4] teplus.chrgbksf.qnty matches ..23 run tag 
 execute if score @s[tag=teplus.tier5] teplus.chrgbksf.qnty matches ..29 run tag @s remove teplus.tier5
 
 # Exclusive tier 5 actions
-execute if entity @s[tag=teplus.tier5] run function teplus:blocks/enchanting_table/update/tier5_visual
+execute if entity @s[tag=teplus.tier5] run function teplus:blocks/enchanting_table/update/tier5/visual
 
-execute if entity @s[tag=teplus.tier5,tag=!teplus.tier5_up] run function teplus:blocks/enchanting_table/update/tier5_up
-execute if entity @s[tag=!teplus.tier5,tag=teplus.tier5_up] run function teplus:blocks/enchanting_table/update/tier5_down
+execute if entity @s[tag=teplus.tier5,tag=!teplus.tier5_up] run function teplus:blocks/enchanting_table/update/tier5/up
+execute if entity @s[tag=!teplus.tier5,tag=teplus.tier5_up] run function teplus:blocks/enchanting_table/update/tier5/down

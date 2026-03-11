@@ -1,4 +1,4 @@
-# Check if a player drops an item near the table, at leat in Tier 1
+# Check if a player drops an item near the table, at least in Tier 1
 execute if entity @s[tag=!teplus.charge_fail,scores={teplus.chrgbksf.qnty=6..}] if score @p teplus.drop matches 1.. if entity @e[type=item,sort=nearest,distance=..2] run function teplus:blocks/enchanting_table/base_charge/watch/main
 
 execute if entity @s[tag=teplus.charge_fail] unless entity @e[type=item,distance=..2] run tag @s remove teplus.charge_fail

@@ -3,7 +3,7 @@
 scoreboard players operation @s teplus.base_charge += #add.bachrg teplus.base_charge
 
 # Limit the capacity based on the tiers (bookshelves being around)
-# if the base charge score is more than the one allowed for each tiear, change its state to full
+# if the base charge score is more than the one allowed for each tier, change its state to full
 execute if score @s[tag=teplus.tier1] teplus.chrgbksf.qnty matches ..11 if score @s teplus.base_charge matches 101.. run function teplus:blocks/enchanting_table/base_charge/is_full
 execute if score @s[tag=teplus.tier2] teplus.chrgbksf.qnty matches ..17 if score @s teplus.base_charge matches 201.. run function teplus:blocks/enchanting_table/base_charge/is_full
 execute if score @s[tag=teplus.tier3] teplus.chrgbksf.qnty matches ..23 if score @s teplus.base_charge matches 301.. run function teplus:blocks/enchanting_table/base_charge/is_full
