@@ -1,7 +1,6 @@
 #------------INIT STATE-------------#
 tag @s add teplus.anvil.CanCombine
-tag @s remove teplus.anvil.error.invalid_items
-tag @s remove teplus.anvil.error.invalid_enchant
+function teplus:anvil/merge/menu/remove_error_tags
 #-----------------ADD ITEM-----------------#
 data modify storage teplus:updates TAM.Output.Result.components.minecraft:custom_data.teplus.ui set value 1b
 data modify entity @s Items[{Slot:22b}] set from storage teplus:updates TAM.Output.Result

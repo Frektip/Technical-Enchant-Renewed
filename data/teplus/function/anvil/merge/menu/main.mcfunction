@@ -38,6 +38,7 @@ execute unless data storage teplus:updates TAM.CurrentUI[{Slot:13b}].components.
 #====================================== MERGING SYSTEM ======================================#
 # Set it false by default
 scoreboard players set @s teplus.anvil.value -1
+execute if entity @s[tag=!teplus.anvil.CanCombine] run function teplus:anvil/merge/menu/set_default_output
 
 # Check if there is an item in one of the input slots
 execute if data entity @s[scores={teplus.anvil.value=-1}] Items[{Slot:2b}].id run scoreboard players set @s teplus.anvil.value -2

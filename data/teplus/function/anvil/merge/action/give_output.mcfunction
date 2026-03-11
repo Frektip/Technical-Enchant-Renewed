@@ -13,6 +13,7 @@ scoreboard players operation #teplus.anvil.merge_id teplus.player.id = @s teplus
 execute as @a[distance=..6] if score #teplus.anvil.merge_id teplus.player.id = @s teplus.player.id at @s run summon item ~ ~ ~ {Tags:["teplus.anvil.merge"],Item:{id:"stick",count:1},PickupDelay:0}
 data modify entity @e[type=item,sort=nearest,tag=teplus.anvil.merge,distance=..6,limit=1] Item set from storage teplus:updates TAM.Output.Current
 
+# Clear storages
 data remove storage teplus:updates TAM.Output.Current
 data remove storage teplus:updates TAM.Output.Result
 data remove storage teplus:updates TAM.Output.Enchants

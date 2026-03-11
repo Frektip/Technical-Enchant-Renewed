@@ -26,14 +26,13 @@ execute if entity @s[nbt={Items:[{Slot:2b,id:"minecraft:enchanted_book",count:1}
 
 #============================= UPDATE RESULT ITEM SLOT =============================#
 #-------BOOK - BOOK-------#
-execute if entity @s[tag=teplus.anvil.output_book] if data storage teplus:updates TAM.Output.Result.components.minecraft:stored_enchantments run function teplus:anvil/merge/interaction/create_item/succeed
-execute if entity @s[tag=teplus.anvil.output_book] unless data storage teplus:updates TAM.Output.Result.components.minecraft:stored_enchantments run function teplus:anvil/merge/interaction/create_item/failed
+execute if entity @s[tag=teplus.anvil.output_book,tag=!teplus.anvil.merge.error] if data storage teplus:updates TAM.Output.Result.components.minecraft:stored_enchantments run function teplus:anvil/merge/interaction/create_item/succeed
 
 #-------ITEM - BOOK/ ITEM - ITEM-------#
 execute if entity @s[tag=teplus.anvil.apply_on_item] if data storage teplus:updates TAM.Output.Result.components.minecraft:enchantments run function teplus:anvil/merge/interaction/create_item/succeed
 
 # Detect when an enchantment is not compatible with an item
-execute if entity @s[tag=teplus.anvil.merge.error] run function teplus:anvil/merge/interaction/create_item/failed
+execute if entity @s[tag=teplus.anvil.apply_on_item,tag=teplus.anvil.merge.error] run function teplus:anvil/merge/interaction/create_item/failed {err:"invalid_enchant"}
 
 #============================= REMOVE TAGS =============================#
 # Remove general merge error tag

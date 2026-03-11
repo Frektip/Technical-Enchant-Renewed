@@ -1,0 +1,45 @@
+# @Context: We are trying to combine two enchanted books
+#  We need to make sure that any of the input books don't have vanilla enchantments
+#  By using the @param: {slot} to select the left (2b) or right (6b) input slot
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:aqua_affinity run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:bane_of_arthropods run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:binding_curse run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:blast_protection run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:breach run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:channeling run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:density run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:depth_strider run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:efficiency run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:feather_falling run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:fire_aspect run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:fire_protection run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:flame run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:fortune run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:frost_walker run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:impaling run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:infinity run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:knockback run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:looting run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:loyalty run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:luck_of_the_sea run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:lure run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:mending run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:multishot run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:piercing run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:power run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:projectile_protection run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:protection run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:punch run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:quick_charge run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:respiration run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:riptide run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:sharpness run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:silk_touch run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:smite run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:soul_speed run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:sweeping_edge run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:swift_sneak run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:thorns run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:unbreaking run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:vanishing_curse run return 1
+$execute if data entity @s Items[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:wind_burst run return 1

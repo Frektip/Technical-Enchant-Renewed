@@ -19,5 +19,5 @@ execute if data entity @s Items[{Slot:10b}].components.minecraft:enchantments if
 execute if data entity @s Items[{Slot:10b}].components.minecraft:enchantments run return run function teplus:anvil/extract/interaction/create_item/failed {err:"invalid_right_input"}
 
 # In case none of the above conditiones were met, use the default error message
-# NOTE: In this context, at leat one input slot is being used
+# NOTE: In this context, at least one input slot is being used
 function teplus:anvil/extract/interaction/create_item/failed {err:"invalid_items"}
