@@ -21,8 +21,8 @@ execute if entity @s[tag=teplus.anvil.IsSameItem] run function #teplus:anvil/mer
 # Enchanted Book - Enchanted Book
 execute if entity @s[nbt={Items:[{Slot:2b,id:"minecraft:enchanted_book",count:1}]}] run function teplus:anvil/merge/interaction/checks/book_with_book
 
-# Experience Crystal - Experience Crystal
-#-------------------------------------
+# Experience Crystal - Experience Crystal/Experience bottle
+execute if entity @s[tag=teplus.anvil.output_xp_crystal] run function teplus:anvil/merge/interaction/checks/xp_crystal
 
 #============================= UPDATE RESULT ITEM SLOT =============================#
 #-------BOOK - BOOK-------#
@@ -32,7 +32,7 @@ execute if entity @s[tag=teplus.anvil.output_book,tag=!teplus.anvil.merge.error]
 execute if entity @s[tag=teplus.anvil.apply_on_item] if data storage teplus:updates TAM.Output.Result.components.minecraft:enchantments run function teplus:anvil/merge/interaction/create_item/succeed
 
 # Detect when an enchantment is not compatible with an item
-execute if entity @s[tag=teplus.anvil.output_item,tag=teplus.anvil.merge.error] run function teplus:anvil/merge/interaction/create_item/failed {err:"invalid_enchant"}
+execute if entity @s[tag=teplus.anvil.output_item,tag=teplus.anvil.merge.error,tag=!teplus.anvil.output_xp_crystal] run function teplus:anvil/merge/interaction/create_item/failed {err:"invalid_enchant"}
 
 #============================= REMOVE TAGS =============================#
 # Remove general merge error tag
@@ -48,3 +48,6 @@ tag @s remove teplus.anvil.output_item
 
 # In case we merge item with the same item type
 tag @s remove teplus.anvil.IsSameItem
+
+# In case we merge for an experience crystal
+tag @s remove teplus.anvil.output_xp_crystal

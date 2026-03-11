@@ -29,6 +29,8 @@ execute if score #mrgit teplus.game_opts matches 0 if entity @s[tag=teplus.anvil
 
 
 #============================= COMBINE EXPERIENCE CRYSTALS =============================#
+execute if data storage teplus:updates {TAM:{Inputs:{Section1:{components:{"minecraft:custom_data":{teplus:{id:"xp_crystal"}}}}}}} run tag @s add teplus.anvil.output_xp_crystal
+execute if entity @s[tag=teplus.anvil.output_xp_crystal] run return run function teplus:anvil/merge/menu/change_item/inputs/has_valid_inputs
 
 
 #============================= ERRORS UI UPDATE =============================#
