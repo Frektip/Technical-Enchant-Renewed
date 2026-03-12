@@ -8,14 +8,16 @@ particle block{block_state:"minecraft:anvil"} ~ ~1 ~ 0.3 0 0.3 1 150
 
 # Check if the xp value from the settings has sense (at least 0 levels)
 scoreboard players operation @p[tag=teplus.anvil.current] teplus.player.xp = @s teplus.anvil.cost
-execute as @p[tag=teplus.anvil.current,scores={teplus.player.xp=0..},gamemode=!creative] run function teplus:anvil/merge/action/take_xp/loop
+execute if entity @s[tag=!teplus.anvil.no_combine_cost] as @p[tag=teplus.anvil.current,scores={teplus.player.xp=0..},gamemode=!creative] run function teplus:anvil/merge/action/take_xp/loop
+
+# Remove no combine cost tag
+tag @s remove teplus.anvil.no_combine_cost
 
 # Update UI
 # ==== Debug Message ====#
 tellraw @a[tag=teplus.debug_mode] [{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Anvil): ","color":"yellow","italic":true,"bold":false},{"text":"Updating UI & input slots","color":"gray","italic":true,"bold":false}]
 
 scoreboard players reset @s teplus.anvil.cost
-tag @s add teplus.anvil.HasCombined
 
 # Remove input items from minecart
 data remove entity @s Items[{Slot:2b}]

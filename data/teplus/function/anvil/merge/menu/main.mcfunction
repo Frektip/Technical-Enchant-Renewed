@@ -31,7 +31,8 @@ execute if score $ui_changed teplus.anvil.value matches 1.. run function teplus:
 execute if entity @s[tag=teplus.anvil.open] unless data storage teplus:updates TAM.CurrentUI[{Slot:4b}].components.minecraft:custom_data.teplus.toggle run function teplus:anvil/merge/menu/change_item/switch_mode
 
 # Player clics on the Merge action item
-execute unless data storage teplus:updates TAM.CurrentUI[{Slot:13b}].components.minecraft:custom_data.teplus.merge run function teplus:anvil/merge/action/try
+execute if entity @s[tag=teplus.anvil.CanCombine] unless data storage teplus:updates TAM.CurrentUI[{Slot:13b}].components.minecraft:custom_data.teplus.merge run function teplus:anvil/merge/action/try
+#=============================================================================================#
 
 
 
@@ -54,6 +55,4 @@ execute if score @s[tag=teplus.anvil.InSlot2] teplus.anvil.value matches -1 run 
 
 # In case there's an item at any of the input slots (with score value = 0)
 execute if entity @s[scores={teplus.anvil.value=0}] run function teplus:anvil/merge/menu/change_item/inputs/check_items
-
-tag @s remove teplus.anvil.HasCombined
 #=============================================================================================#

@@ -3,7 +3,7 @@ tellraw @a[tag=teplus.debug_mode] [{"text":"TE+» ","color":"#65DAD4","bold":tru
 
 # Remove irrelevant data from Output storage to generate a valid Item
 data remove storage teplus:updates TAM.Output.Current.Slot
-data remove storage teplus:updates TAM.Output.Current.components.minecraft:custom_data.teplus
+data remove storage teplus:updates TAM.Output.Current.components.minecraft:custom_data.teplus.ui
 
 # ==== Debug Message ====#
 tellraw @a[tag=teplus.debug_mode] [{"text":"TE+» ","color":"#65DAD4","bold":true},{"text":"(Anvil): ","color":"yellow","italic":true,"bold":false},{"text":"Summoning a dummy stick item","color":"gray","italic":true,"bold":false}]
