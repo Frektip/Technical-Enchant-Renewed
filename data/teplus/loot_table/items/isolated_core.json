@@ -44,6 +44,18 @@
               "components": {
                 "minecraft:custom_data": "{teplus:{head:1b, id: \"isolated_core\"}}",
                 "!minecraft:equippable": {},
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:block_interaction_range",
+                    "id": "teplus:range_zero",
+                    "amount": -5,
+                    "operation": "add_value",
+                    "slot": "hand",
+                    "display": {
+                      "type": "hidden"
+                    }
+                  }
+                ],
                 "minecraft:profile": {
                   "properties": [
                     {
