@@ -1,0 +1,113 @@
+{
+  "criteria": {
+    "crystal_mainhand": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "flags": {
+                "is_sneaking": true
+              },
+              "equipment": {
+                "mainhand": {
+                  "items": "minecraft:player_head",
+                  "count": 1,
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "teplus": {
+                        "id": "xp_crystal"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "offhand": {
+                    "items": "minecraft:player_head",
+                    "predicates": {
+                      "minecraft:custom_data": {
+                        "teplus": {
+                          "id": "xp_crystal"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "crystal_offhand": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "flags": {
+                "is_sneaking": true
+              },
+              "equipment": {
+                "offhand": {
+                  "items": "minecraft:player_head",
+                  "count": 1,
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "teplus": {
+                        "id": "xp_crystal"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": "minecraft:player_head",
+                    "predicates": {
+                      "minecraft:custom_data": {
+                        "teplus": {
+                          "id": "xp_crystal"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crystal_mainhand",
+      "crystal_offhand"
+    ]
+  ],
+  "rewards": {
+    "function": "teplus:entity/player/using_xp_crystal/main"
+  }
+}
