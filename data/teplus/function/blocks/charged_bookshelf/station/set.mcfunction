@@ -1,4 +1,4 @@
-data modify entity @s data.Station set value [0,0,0]
+data modify entity @s data.Station set value [I;0,0,0]
 
 # X coordinate
 execute store result entity @s data.Station[0] int 1 run data get entity @s Pos[0]
