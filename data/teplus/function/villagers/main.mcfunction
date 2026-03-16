@@ -5,7 +5,7 @@ execute as @e[type=villager,tag=!teplus.new_enchanter,predicate=teplus:villager/
 execute as @e[type=villager,tag=teplus.station_match] at @s run function teplus:villagers/advanced_enchanter/core
 
 # # If the Advanced Enchanter hasn't trade yet and loose it's workstation
-# tag @e[type=villager,tag=teplus.enchanter.init,tag=!tepxv.set,predicate=teplus_exten:villagers/no_profession] remove teplus.enchanter.init
-# tag @e[type=villager,tag=teplus.new_enchanter,tag=!tepxv.set,predicate=teplus_exten:villagers/no_profession] remove teplus.new_enchanter
+tag @e[type=villager,tag=teplus.enchanter.init,predicate=teplus:villager/unemployed] remove teplus.enchanter.init
+tag @e[type=villager,tag=teplus.new_enchanter,predicate=teplus:villager/unemployed] remove teplus.new_enchanter
 
 schedule function teplus:villagers/main 1t
