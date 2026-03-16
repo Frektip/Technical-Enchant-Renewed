@@ -187,3 +187,8 @@ scoreboard players set #drop.chance teplus.game_opts 50
 scoreboard players set #drop.glow teplus.game_opts 1
 scoreboard players set #drop.rates teplus.game_opts 15
 scoreboard players set #drop.buffs teplus.game_opts 0
+
+#-------------------------------------------------------#
+# Villagers related (0: enabled, 1: disabled)
+#-------------------------------------------------------#
+scoreboard players set $Villagers teplus.game_opts 0

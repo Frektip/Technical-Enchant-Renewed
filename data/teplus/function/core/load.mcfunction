@@ -62,6 +62,9 @@ schedule clear teplus:drops/main_3min
 schedule clear teplus:drops/main_20t
 execute if score $Drops teplus.game_opts matches 0 run function teplus:drops/init
 
+schedule clear teplus:villagers/main
+execute if score $Villagers teplus.game_opts matches 0 run function teplus:villagers/init
+
 
 # GUI interfaces
 data modify storage teplus:ui Global set value []
