@@ -34,6 +34,9 @@ scoreboard objectives add teplus.anvil.ench_count dummy
 scoreboard objectives add teplus.anvil.inp1 dummy
 scoreboard objectives add teplus.anvil.inp2 dummy
 
+# Villager related}
+scoreboard objectives add teplus.trade_uses dummy
+
 # Triggers
 scoreboard objectives add teplus.trigger.get_birthday_potion trigger
 
