@@ -193,6 +193,5 @@ scoreboard players set #drop.buffs teplus.game_opts 0
 #-------------------------------------------------------#
 scoreboard players set $Villagers teplus.game_opts 0
 scoreboard players set #vill.dsnt teplus.game_opts 1
-scoreboard players set #vill.slspc teplus.game_opts 0
 scoreboard players set #vill.renws teplus.game_opts 1
 scoreboard players set #vill.anylvl teplus.game_opts 1
