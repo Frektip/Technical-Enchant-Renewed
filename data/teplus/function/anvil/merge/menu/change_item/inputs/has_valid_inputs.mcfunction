@@ -20,9 +20,5 @@ data modify entity @s Items prepend value {id:"minecraft:lime_stained_glass_pane
 tag @s add teplus.anvil.InSlot1
 tag @s add teplus.anvil.InSlot2
 
-# In case we used exceed vanilla enchanting limit
-# - We succeeded, so we remove the tags from the books
-#tag @s remove tech_anv.match_exceed
-
 function teplus:anvil/merge/interaction/create_item/main
 #------------------------------------------#

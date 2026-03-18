@@ -1,9 +1,17 @@
 #-------------EXCLUSIVE FOR CROSSBOW-------------#
+# Vanilla with increased level
+execute if score $VanPlus teplus.game_opts matches 0 if data storage teplus:updates TAM.Output.Enchants.minecraft:piercing run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:piercing",score:"#piercing"}
+
+# Custom enchantments
 execute if score #fireball_wave teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:fireball_wave run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:fireball_wave",score:"#fireball_wave"}
 execute if score #shock_fangs teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:shock_fangs run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:shock_fangs",score:"#shock_fangs"}
 execute if score #sniper teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:sniper run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:sniper",score:"#sniper"}
 
 #-------------SHARED ENCHANTMENTS-------------#
+# Vanilla with increased level
+execute if score $VanPlus teplus.game_opts matches 0 if data storage teplus:updates TAM.Output.Enchants.minecraft:unbreaking run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:unbreaking",score:"#unbreaking"}
+
+# Custom enchantments
 execute if score #accuracy_shot teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:accuracy_shot run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:accuracy_shot",score:"#accuracy_shot"}
 
 #-------------CUSTOM CURSES-------------#

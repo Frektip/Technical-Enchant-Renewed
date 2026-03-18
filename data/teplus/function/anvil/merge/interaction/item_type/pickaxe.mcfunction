@@ -3,6 +3,12 @@ execute if score #mining_plus teplus.game_opts matches 1 if data storage teplus:
 execute if score #vein_miner teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:vein_miner unless data storage teplus:updates TAM.Output.Result.components.minecraft:enchantments.teplus:mining_plus run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:vein_miner",score:"#vein_miner"}
 
 #-------------SHARED ENCHANTMENTS-------------#
+# Vanilla with increased level
+execute if score $VanPlus teplus.game_opts matches 0 if data storage teplus:updates TAM.Output.Enchants.minecraft:efficiency run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:efficiency",score:"#efficiency"}
+execute if score $VanPlus teplus.game_opts matches 0 if data storage teplus:updates TAM.Output.Enchants.minecraft:fortune run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:fortune",score:"#fortune"}
+execute if score $VanPlus teplus.game_opts matches 0 if data storage teplus:updates TAM.Output.Enchants.minecraft:unbreaking run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:unbreaking",score:"#unbreaking"}
+
+# Custom enchantments
 execute if score #auto_smelt teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:auto_smelt run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:auto_smelt",score:"#auto_smelt"}
 execute if score #haste teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:haste run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:haste",score:"#haste"}
 

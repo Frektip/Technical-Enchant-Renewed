@@ -5,7 +5,8 @@ execute if score #peaks teplus.game_opts matches 1 if data storage teplus:update
 execute if score #turtle_stiffness teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:turtle_stiffness run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:turtle_stiffness",score:"#turtle_stiffness"}
 
 #-------------SHARED ENCHANTMENTS-------------#
-
+# Vanilla with increased level
+execute if score $VanPlus teplus.game_opts matches 0 if data storage teplus:updates TAM.Output.Enchants.minecraft:unbreaking run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:unbreaking",score:"#unbreaking"}
 
 #-------------CUSTOM CURSES-------------#
 execute if score #fragile teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:fragile run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:fragile",score:"#fragile"}

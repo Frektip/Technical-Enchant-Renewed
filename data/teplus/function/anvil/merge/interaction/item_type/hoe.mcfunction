@@ -6,6 +6,10 @@ execute if score #scyther teplus.game_opts matches 1 if data storage teplus:upda
 execute if score #soul_reaper teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:soul_reaper run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:soul_reaper",score:"#soul_reaper"}
 
 #-------------SHARED ENCHANTMENTS-------------#
+# Vanilla with increased level
+execute if score $VanPlus teplus.game_opts matches 0 if data storage teplus:updates TAM.Output.Enchants.minecraft:efficiency run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:efficiency",score:"#efficiency"}
+execute if score $VanPlus teplus.game_opts matches 0 if data storage teplus:updates TAM.Output.Enchants.minecraft:fortune run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:fortune",score:"#fortune"}
+execute if score $VanPlus teplus.game_opts matches 0 if data storage teplus:updates TAM.Output.Enchants.minecraft:unbreaking run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:unbreaking",score:"#unbreaking"}
 
 #-------------CUSTOM CURSES-------------#
 execute if score #exhaustion teplus.game_opts matches 1 if data storage teplus:updates TAM.Output.Enchants.teplus:exhaustion run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:exhaustion",score:"#exhaustion"}

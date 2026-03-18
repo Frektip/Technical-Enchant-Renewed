@@ -1,2 +1,0 @@
-# ------------------- Look for all custom enchantments & curses ------------------- #
-execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:efficiency run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:efficiency",score:"#efficiency"}
