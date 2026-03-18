@@ -3,6 +3,7 @@ tag @s add teplus.anvil.merge.error
 
 # Add tracking tag (page + page = page)
 tag @s add teplus.anvil.output_page
+tag @s add teplus.anvil.output_book
 
 # Check if both pages of power have a count of 1
 # Combine as a normal enchanted book
