@@ -1,0 +1,19 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    {
+      "translate": "teplus.page_of_power.desc.lore1",
+      "fallback": "A page full of unique",
+      "color": "white",
+      "italic": false
+    },
+    {
+      "translate": "teplus.page_of_power.desc.lore2",
+      "fallback": "enchantment knowledge",
+      "color": "white",
+      "italic": false
+    }
+  ],
+  "mode": "replace_all"
+}
