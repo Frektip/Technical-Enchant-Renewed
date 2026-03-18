@@ -10,7 +10,7 @@ data modify storage teplus:updates TAM.Output.Result.type set from storage teplu
 #============================= COMBINATION TYPE CHECKS =============================#
 
 # Page of Power - Page of Power
-#-------------------------------------
+execute if entity @s[nbt={Items:[{Slot:2b,components:{"minecraft:custom_data":{teplus:{id:"page_of_power"}}}}]},nbt={Items:[{Slot:6b,components:{"minecraft:custom_data":{teplus:{id:"page_of_power"}}}}]}] run function teplus:anvil/merge/interaction/checks/power_pages
 
 # Item - Enchanted Book
 execute if entity @s[tag=!teplus.anvil.IsSameItem,tag=!teplus.anvil.output_book,nbt=!{Items:[{Slot:2b,id:"minecraft:enchanted_book",count:1}]}] run function #teplus:anvil/merge/interaction/check_for_items
@@ -32,9 +32,12 @@ execute if entity @s[tag=teplus.anvil.output_book,tag=!teplus.anvil.merge.error]
 execute if entity @s[tag=teplus.anvil.apply_on_item] if data storage teplus:updates TAM.Output.Result.components.minecraft:enchantments run function teplus:anvil/merge/interaction/create_item/succeed
 
 # Detect when an enchantment is not compatible with an item
-execute if entity @s[tag=teplus.anvil.output_item,tag=teplus.anvil.merge.error,tag=!teplus.anvil.output_xp_crystal] run function teplus:anvil/merge/interaction/create_item/failed {err:"invalid_enchant"}
+execute if entity @s[tag=teplus.anvil.output_item,tag=teplus.anvil.merge.error,tag=!teplus.anvil.output_xp_crystal,tag=!teplus.anvil.output_page] run function teplus:anvil/merge/interaction/create_item/failed {err:"invalid_enchant"}
 
-#-------EXPERIENCE CRYSTAL#-------#
+#-------PAGE OF POWER-------#
+execute if entity @s[tag=teplus.anvil.output_page,tag=!teplus.anvil.merge.error] run function teplus:anvil/merge/interaction/create_item/succeed
+
+#-------EXPERIENCE CRYSTAL-------#
 execute if entity @s[tag=teplus.anvil.output_xp_crystal,tag=!teplus.anvil.merge.error] run function teplus:anvil/merge/interaction/create_item/succeed
 
 #============================= REMOVE TAGS =============================#
@@ -45,8 +48,9 @@ tag @s remove teplus.anvil.merge.error
 tag @s remove teplus.anvil.apply_on_book
 tag @s remove teplus.anvil.apply_on_item
 
-# If the output is an item or an enchanted book
+# If the output is an item, an enchanted book or page of power
 tag @s remove teplus.anvil.output_book
+tag @s remove teplus.anvil.output_page
 tag @s remove teplus.anvil.output_item
 
 # In case we merge item with the same item type
