@@ -12,3 +12,10 @@ data modify entity @s Offers.Recipes append value {maxUses:10,uses:0,rewardExp:0
 
 # Assign tag
 tag @s add teplus.enchanter.init
+
+
+# Particles & sounds
+playsound minecraft:block.enchantment_table.use master @a[distance=..7] ~ ~ ~ 5 2
+playsound minecraft:block.enchantment_table.use master @a[distance=..7] ~ ~ ~ 5 2
+playsound minecraft:block.enchantment_table.use master @a[distance=..7] ~ ~ ~ 5 2
+particle minecraft:scrape ~ ~.5 ~ 0.05 .5 0.05 7 25
