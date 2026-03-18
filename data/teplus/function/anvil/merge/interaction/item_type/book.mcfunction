@@ -56,3 +56,25 @@ execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantme
 execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.teplus:vein_miner run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:vein_miner",score:"#vein_miner"}
 execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.teplus:waterjet run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:waterjet",score:"#waterjet"}
 execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.teplus:xp_boost run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "teplus:xp_boost",score:"#xp_boost"}
+
+# ------------------- Look for all vanilla enchantments compatible with TE+ ------------------- #
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:efficiency run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:efficiency",score:"#efficiency"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:feather_falling run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:feather_falling",score:"#feather_falling"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:fire_aspect run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:fire_aspect",score:"#fire_aspect"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:fortune run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:fortune",score:"#fortune"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:impaling run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:impaling",score:"#impaling"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:knockback run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:knockback",score:"#knockback"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:looting run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:looting",score:"#looting"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:luck_of_the_sea run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:luck_of_the_sea",score:"#luck_of_the_sea"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:lure run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:lure",score:"#lure"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:piercing run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:piercing",score:"#piercing"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:power run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:power",score:"#power"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:protection run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:protection",score:"#protection"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:punch run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:punch",score:"#punch"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:respiration run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:respiration",score:"#respiration"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:riptide run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:riptide",score:"#riptide"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:sharpness run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:sharpness",score:"#sharpness"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:sweeping_edge run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:sweeping_edge",score:"#sweeping_edge"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:swift_sneak run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:swift_sneak",score:"#swift_sneak"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:thorns run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:thorns",score:"#thorns"}
+execute if data entity @s Items[{Slot:6b}].components.minecraft:stored_enchantments.minecraft:unbreaking run function teplus:anvil/merge/interaction/apply_enchantment {"ench": "minecraft:unbreaking",score:"#unbreaking"}

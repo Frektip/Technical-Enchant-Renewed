@@ -195,3 +195,28 @@ scoreboard players set $Villagers teplus.game_opts 0
 scoreboard players set #vill.dsnt teplus.game_opts 1
 scoreboard players set #vill.renws teplus.game_opts 1
 scoreboard players set #vill.anylvl teplus.game_opts 1
+
+#--------------------------------------------------------#
+# Vanilla Enchantments+ related (0: enabled, 1: disabled)
+#--------------------------------------------------------#
+scoreboard players set $VanPlus teplus.game_opts 0
+scoreboard players set #efficiency teplus.maxlvl 6
+scoreboard players set #feather_falling teplus.maxlvl 5
+scoreboard players set #fire_aspect teplus.maxlvl 3
+scoreboard players set #fortune teplus.maxlvl 4
+scoreboard players set #impaling teplus.maxlvl 6
+scoreboard players set #knockback teplus.maxlvl 3
+scoreboard players set #looting teplus.maxlvl 4
+scoreboard players set #luck_of_the_sea teplus.maxlvl 5
+scoreboard players set #lure teplus.maxlvl 4
+scoreboard players set #piercing teplus.maxlvl 6
+scoreboard players set #power teplus.maxlvl 6
+scoreboard players set #protection teplus.maxlvl 5
+scoreboard players set #punch teplus.maxlvl 3
+scoreboard players set #respiration teplus.maxlvl 5
+scoreboard players set #riptide teplus.maxlvl 4
+scoreboard players set #sharpness teplus.maxlvl 7
+scoreboard players set #sweeping_edge teplus.maxlvl 5
+scoreboard players set #swift_sneak teplus.maxlvl 4
+scoreboard players set #thorns teplus.maxlvl 5
+scoreboard players set #unbreaking teplus.maxlvl 5
