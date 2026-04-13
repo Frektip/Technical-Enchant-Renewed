@@ -39,6 +39,7 @@ scoreboard objectives add teplus.trade_uses dummy
 
 # Triggers
 scoreboard objectives add teplus.trigger.get_birthday_potion trigger
+scoreboard objectives add teplus.trigger.settings_dialogs trigger
 
 # Constants
 scoreboard players set #1const teplus.data 1

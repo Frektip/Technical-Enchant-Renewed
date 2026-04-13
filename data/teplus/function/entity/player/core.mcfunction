@@ -1,6 +1,9 @@
 # Give the player a unique ID
 execute unless entity @s[tag=teplus.registered] run function teplus:entity/player/assign_id
 
+# Dialog trigger
+execute if score @s teplus.trigger.settings_dialogs matches 1.. run function teplus:events/trigger/settings_dialog
+
 # Remove ui items from inventory
 clear @s *[minecraft:custom_data~{teplus:{ui:1b}}]
 
