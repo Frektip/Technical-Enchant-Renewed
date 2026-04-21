@@ -52,7 +52,7 @@
     {
       "label": {
         "translate": "teplus.settings.advanced_enchanters_tittle",
-        "fallback": "Advanced Enchanters",
+        "fallback": "Advanced enchanters settings",
         "color": "#6c8cc7"
       },
       "tooltip": {

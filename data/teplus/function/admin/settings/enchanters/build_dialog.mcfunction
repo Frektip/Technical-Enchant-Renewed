@@ -1,5 +1,5 @@
 $dialog show @s {type:"minecraft:confirmation",\
-  title:{translate:"teplus.settings.advanced_enchanters_tittle",fallback:"Advanced Enchanters",color:"#6c8cc7",bold:1b},\
+  title:{translate:"teplus.settings.advanced_enchanters_tittle",fallback:"Advanced enchanters settings",color:"#6c8cc7",bold:1b},\
   inputs:[\
     {type:"minecraft:single_option",key:"input_villagers",width:250,label:{\
         translate:"teplus.settings.enchanters.allow_enchanters",fallback:"Allow Advanced Enchanters"\
