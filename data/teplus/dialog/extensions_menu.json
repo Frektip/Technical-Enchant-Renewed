@@ -19,6 +19,22 @@
   "actions": [
     {
       "label": {
+        "translate": "teplus.settings.drops_tittle",
+        "fallback": "Mob drops settings",
+        "color": "#a7b056"
+      },
+      "tooltip": {
+        "translate": "teplus.hover.click_to_go",
+        "fallback": "Click here to go"
+      },
+      "width": 220,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/function teplus:admin/settings/drops/get_options"
+      }
+    },
+    {
+      "label": {
         "translate": "teplus.settings.chests_tittle",
         "fallback": "Chest loot settings",
         "color": "#6cc685"
