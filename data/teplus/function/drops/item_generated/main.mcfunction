@@ -1,4 +1,4 @@
-execute as @e[type=item,tag=!teplus.drop.done,limit=1,sort=nearest] if data entity @s Item.components.minecraft:custom_data.teplus.mob_drop at @s run function teplus:drops/item_generated/as_item
+execute as @e[type=item,tag=!teplus.drop.try,limit=1,sort=nearest] if data entity @s Item.components.minecraft:custom_data.teplus.mob_drop at @s run function teplus:drops/item_generated/as_item
 
 # Schedule the function for 20ticks
 schedule function teplus:drops/item_generated/main 1t
