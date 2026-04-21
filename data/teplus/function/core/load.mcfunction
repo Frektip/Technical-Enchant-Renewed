@@ -53,7 +53,7 @@ scoreboard players set #250const teplus.data 250
 # Config related
 scoreboard objectives add teplus.game_opts dummy
 scoreboard objectives add teplus.maxlvl dummy
-function teplus:core/settings/set_options
+execute unless score #new_world teplus.game_opts matches 1 run function teplus:core/settings/set_options
 
 # Register the enchantments
 function #teplus:register
