@@ -1,19 +1,10 @@
 {
     "pack": {
-        "pack_format": 94.1,
-        "min_format": 94.1,
-        "max_format": 94.1,
+        "min_format": [94,1],
+        "max_format": [101,1],
         "description": [
             {
                 "text": "by ",
-                "color": "#9aa3a5"
-            },
-            {
-                "text": "Hardel ",
-                "color": "#3051BF"
-            },
-            {
-                "text": "and ",
                 "color": "#9aa3a5"
             },
             {

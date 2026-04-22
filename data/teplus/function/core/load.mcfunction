@@ -78,8 +78,7 @@ function teplus:core/ui/technical_anvil/extract_mode
 
 
 
-tellraw @a ["",{"text":"             [","color":"gold"},{"text":"Technical Enchant+ Renewed","color":"green"},{"text":" is ready","color":"green"},{"text":"]","color":"gold"}]
-tellraw @a ["",{"text":"              *------*--*--*------*--*--*------*","color":"gold"}]
-tellraw @a ["",{"text":"        *-----*","color":"gold"},{"text":" By Hardel ","color":"blue"},{"text":" Modified by Frektip ","color":"red"},{"text":"*-----*","color":"gold"}]
-tellraw @a ["",{"text":"                      [","color":"aqua","italic":true},{"translate":"Reset All Global Settings","color":"#DDC65C","clickEvent":{"action":"suggest_command","value":"/function enchantplus:set_options/init"},"italic":true},{"text":"]","color":"aqua","italic":true}]
-tellraw @a ["",{"text":"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*","color":"gold"}]
+tellraw @a ["",{text:"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*",color:"gold"}]
+tellraw @a ["",{text:"[",color:"gold"},{text:"Technical Enchant+ is ready",color:"green"},{text:"]",color:"gold"},{text:" -- ",color:"gold"},{text:"By Frektip",color:"red"}]
+tellraw @a ["",{text:" |----> ",color:"gold"},{text:"[",color:"aqua",italic:true},{translate:"teplus.settings.reset",fallback:"Reset All Settings",color:"#DDC65C",click_event:{action:"suggest_command",command:"/function teplus:core/settings/init"},italic:true},{text:"]",color:"aqua",italic:true}]
+tellraw @a ["",{text:"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*",color:"gold"}]
