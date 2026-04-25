@@ -141,6 +141,11 @@ scoreboard players set #xpcrtlm teplus.game_opts 0
 # Special cases
 scoreboard players set #xprq teplus.game_opts 2
 
+# Xp required to get a Low/Average/Strong enchantment with the enchanting table
+scoreboard players set #xpstr teplus.player.xp 36
+scoreboard players set #xpavr teplus.player.xp 24
+scoreboard players set #xplow teplus.player.xp 12
+
 #-------------------------------------------------------#
 # Chest related (0: enabled, 1: disabled)
 #-------------------------------------------------------#

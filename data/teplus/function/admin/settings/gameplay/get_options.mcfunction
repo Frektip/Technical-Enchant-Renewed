@@ -25,6 +25,10 @@ execute store result storage teplus:updates settings.gameplay.xpcrtlm_opt1 int 1
 
 execute store result storage teplus:updates settings.gameplay.xprq int 1 run scoreboard players get #xprq teplus.game_opts
 
+execute store result storage teplus:updates settings.gameplay.xpstr int 1 run scoreboard players get #xpstr teplus.player.xp
+execute store result storage teplus:updates settings.gameplay.xpavr int 1 run scoreboard players get #xpavr teplus.player.xp
+execute store result storage teplus:updates settings.gameplay.xplow int 1 run scoreboard players get #xplow teplus.player.xp
+
 function teplus:admin/settings/gameplay/build_dialog with storage teplus:updates settings.gameplay
 
 data remove storage teplus:updates settings.gameplay

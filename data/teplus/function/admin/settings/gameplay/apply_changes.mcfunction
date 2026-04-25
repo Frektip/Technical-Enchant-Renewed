@@ -10,3 +10,7 @@ $scoreboard players set #mrgit teplus.game_opts $(input_mrgit)
 $scoreboard players set #extrmd teplus.game_opts $(input_extrmd)
 $scoreboard players set #xpcrtlm teplus.game_opts $(input_xpcrtlm)
 $scoreboard players set #xprq teplus.game_opts $(input_xprq)
+
+$scoreboard players set #xpstr teplus.player.xp $(input_xpstr)
+$scoreboard players set #xpavr teplus.player.xp $(input_xpavr)
+$scoreboard players set #xplow teplus.player.xp $(input_xplow)
