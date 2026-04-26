@@ -42,6 +42,7 @@
           "teplus:guide_book"
         ]
       },
+      "minecraft:custom_data": "{teplus:{item:1b, id: \"guide_book\"}}",
       "minecraft:written_book_content": {
         "pages": [
           [

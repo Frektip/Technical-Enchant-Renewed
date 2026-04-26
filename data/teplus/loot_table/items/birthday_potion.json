@@ -65,9 +65,7 @@
                     "minecraft:potion_contents"
                   ]
                 },
-                "minecraft:custom_data": {
-                  "OnBirthday": false
-                }
+                "minecraft:custom_data": "{teplus:{item:1b, id: \"birthday_potion\"}}"
               }
             }
           ]
