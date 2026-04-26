@@ -34,6 +34,9 @@ scoreboard objectives add teplus.anvil.ench_count dummy
 scoreboard objectives add teplus.anvil.inp1 dummy
 scoreboard objectives add teplus.anvil.inp2 dummy
 
+# Admin Box related
+scoreboard objectives add teplus.admin_box.value dummy
+
 # Villager related
 scoreboard objectives add teplus.trade_uses dummy
 
@@ -47,6 +50,7 @@ scoreboard players set #2const teplus.data 2
 scoreboard players set #7const teplus.data 7
 scoreboard players set #10const teplus.data 10
 scoreboard players set #25const teplus.data 25
+scoreboard players set #27const teplus.data 27
 scoreboard players set #50const teplus.data 50
 scoreboard players set #250const teplus.data 250
 

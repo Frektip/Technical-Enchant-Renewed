@@ -10,7 +10,7 @@ tag @s add teplus.admin_box
 tp @s ~0.5 ~ ~0.5
 
 # Set barrel block
-setblock ~ ~ ~ minecraft:barrel[facing=up] replace
+setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:{translate:"teplus.item.admin_box",fallback:"Admin Box"}} replace
 
 # Initialize UI
 data modify block ~ ~ ~ Items set from storage teplus:ui Global[{profile:"admin_box"}].Main
