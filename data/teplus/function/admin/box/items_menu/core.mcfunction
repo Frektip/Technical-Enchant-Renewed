@@ -24,7 +24,15 @@ execute if score $ui_changed teplus.admin_box.value matches 1.. run function tep
 
 #====================================== ADMIN BOX ACTIONS ======================================#
 # Player clics on one of the custom items from TE+
-#execute unless data storage teplus:updates ABX.CurrentUI[{Slot:11b}].components.minecraft:custom_data.teplus.items_btn run return run function teplus:admin/box/main_menu/to_items_menu
+# Look for the specific "teplus" custom component data
+execute unless data storage teplus:updates ABX.CurrentUI[{components:{"minecraft:custom_data":{teplus:{id:"guide_book"}}}}] run return run function teplus:admin/box/items_menu/give/static_item {item_id:"guide_book"}
+execute unless data storage teplus:updates ABX.CurrentUI[{components:{"minecraft:custom_data":{teplus:{id:"charged_bookshelf"}}}}] run return run function teplus:admin/box/items_menu/give/static_item {item_id:"charged_bookshelf"}
+execute unless data storage teplus:updates ABX.CurrentUI[{components:{"minecraft:custom_data":{teplus:{id:"birthday_potion"}}}}] run return run function teplus:admin/box/items_menu/give/static_item {item_id:"birthday_potion"}
+execute unless data storage teplus:updates ABX.CurrentUI[{components:{"minecraft:custom_data":{teplus:{id:"technical_anvil"}}}}] run return run function teplus:admin/box/items_menu/give/static_item {item_id:"technical_anvil"}
+execute unless data storage teplus:updates ABX.CurrentUI[{components:{"minecraft:custom_data":{teplus:{id:"polished_lapis"}}}}] run return run function teplus:admin/box/items_menu/give/static_item {item_id:"polished_lapis"}
+execute unless data storage teplus:updates ABX.CurrentUI[{components:{"minecraft:custom_data":{teplus:{id:"isolated_core"}}}}] run return run function teplus:admin/box/items_menu/give/static_item {item_id:"isolated_core"}
+execute unless data storage teplus:updates ABX.CurrentUI[{components:{"minecraft:custom_data":{teplus:{id:"blessed_orb"}}}}] run return run function teplus:admin/box/items_menu/give/static_item {item_id:"blessed_orb"}
+execute unless data storage teplus:updates ABX.CurrentUI[{components:{"minecraft:custom_data":{teplus:{id:"admin_box"}}}}] run return run function teplus:admin/box/items_menu/give/static_item {item_id:"admin_box"}
 
 # Player clics on the Return Main Button item
 execute unless data storage teplus:updates ABX.CurrentUI[{Slot:26b}].components.minecraft:custom_data.teplus.main_return run function teplus:admin/box/items_menu/to_main_menu
