@@ -1,5 +1,9 @@
 # @Context: Run as the main marker controller
 
+# Check state
+execute if block ~ ~ ~ barrel[open=true] run function teplus:admin/box/barrel_open
+execute if block ~ ~ ~ barrel[open=false] if entity @s[tag=teplus.admin_box.is_open] run tag @s remove teplus.admin_box.is_open
+
 # Update the score
 scoreboard players operation $temp teplus.block_id = @s teplus.block_id
 

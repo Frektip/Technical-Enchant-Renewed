@@ -76,6 +76,8 @@ data modify storage teplus:ui Global append value {profile:"technical_anvil"}
 function teplus:core/ui/technical_anvil/merge_mode
 function teplus:core/ui/technical_anvil/extract_mode
 
+data modify storage teplus:ui Global append value {profile:"admin_box"}
+function teplus:core/ui/admin_box/main_menu
 
 
 tellraw @a ["",{text:"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*",color:"gold"}]

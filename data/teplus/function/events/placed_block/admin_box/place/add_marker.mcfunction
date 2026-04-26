@@ -13,4 +13,4 @@ tp @s ~0.5 ~ ~0.5
 setblock ~ ~ ~ minecraft:barrel[facing=up] replace
 
 # Initialize UI
-#data modify block ~ ~ ~ Items set from storage teplus:admin_box Profile.Main
+data modify block ~ ~ ~ Items set from storage teplus:ui Global[{profile:"admin_box"}].Main
