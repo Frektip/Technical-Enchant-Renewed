@@ -20,19 +20,11 @@ loot insert ~ ~ ~ loot teplus:items/isolated_core
 loot insert ~ ~ ~ loot teplus:items/blessed_orb
 
 # Xp Crystal needs previous config to be created (max tier possible)
-data modify storage teplus:xp_crystal Build set value {}
-data modify storage teplus:xp_crystal Build.Tier set value 5
-data modify storage teplus:xp_crystal Build.Value set value [1450,1450]
-
-scoreboard players set #teplus.xptier teplus.data 5
-scoreboard players set #teplus.xpvalue teplus.data 1450
-scoreboard players set #teplus.xpmax teplus.data 1450
+function teplus:admin/box/items_menu/callbacks/xp_crystal_prepare
 
 loot insert ~ ~ ~ loot teplus:items/xp_crystal
-data remove storage teplus:xp_crystal Build
-scoreboard players reset #teplus.xptier teplus.data
-scoreboard players reset #teplus.xpvalue teplus.data
-scoreboard players reset #teplus.xpmax teplus.data
+
+function teplus:admin/box/items_menu/callbacks/xp_crystal_clear
 
 # Finally add "admin box" item
 loot insert ~ ~ ~ loot teplus:items/admin_box
