@@ -27,5 +27,5 @@ execute if score $ui_changed teplus.admin_box.value matches 1.. run function tep
 execute unless data storage teplus:updates ABX.CurrentUI[{Slot:11b}].components.minecraft:custom_data.teplus.items_btn run return run function teplus:admin/box/main_menu/to_items_menu
 
 # Player clics on the Enchants Button item
-execute unless data storage teplus:updates ABX.CurrentUI[{Slot:15b}].components.minecraft:custom_data.teplus.enchants_btn run function teplus:admin/box/main_action/to_enchants_menu
+execute unless data storage teplus:updates ABX.CurrentUI[{Slot:15b}].components.minecraft:custom_data.teplus.enchants_btn run function teplus:admin/box/main_menu/to_enchants_menu
 #=============================================================================================#

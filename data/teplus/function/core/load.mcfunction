@@ -84,6 +84,9 @@ data modify storage teplus:ui Global append value {profile:"admin_box"}
 function teplus:core/ui/admin_box/main_menu
 function teplus:core/ui/admin_box/items_menu
 
+function teplus:core/ui/admin_box/ench_pages/vanilla
+function teplus:core/ui/admin_box/enchants_menu
+
 
 tellraw @a ["",{text:"*--*---*-----*---*---*--*-----*--*---*---*-----*---*--*",color:"gold"}]
 tellraw @a ["",{text:"[",color:"gold"},{text:"Technical Enchant+ is ready",color:"green"},{text:"]",color:"gold"},{text:" -- ",color:"gold"},{text:"By Frektip",color:"red"}]
