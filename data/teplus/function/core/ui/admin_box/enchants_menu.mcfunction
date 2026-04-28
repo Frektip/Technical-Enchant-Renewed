@@ -19,7 +19,3 @@ function teplus:core/ui/set_blank {slot:10,profile:"admin_box",type:"Enchants",c
 data modify storage teplus:ui Global[{profile:"admin_box"}].Enchants append value {id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_name":[{translate:"teplus.admin_box.enchants.vanilla_enchants_tittle",fallback:"Vanilla Enchantments",color:"#5CDDA8",italic:false,bold:true}],"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}],"minecraft:custom_data":{teplus:{ui:1b,vanilla_ench_btn:1b}}},Slot:18b}
 # Slot 19 : Blank
 function teplus:core/ui/set_blank {slot:19,profile:"admin_box",type:"Enchants",cmd:{strings:["teplus:blank_slot"]}}
-
-# Fill the enchantments page (custom ones to fill the page space)
-# (TEST) add vanilla enchantments for NOW
-data modify storage teplus:ui Global[{profile:"admin_box"}].Enchants append from storage teplus:ui Global[{profile:"admin_box"}].Vanilla[]

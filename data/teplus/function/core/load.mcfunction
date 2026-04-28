@@ -36,6 +36,8 @@ scoreboard objectives add teplus.anvil.inp2 dummy
 
 # Admin Box related
 scoreboard objectives add teplus.admin_box.value dummy
+scoreboard objectives add teplus.admin_box.data dummy
+scoreboard objectives add teplus.admin_box.page dummy
 
 # Villager related
 scoreboard objectives add teplus.trade_uses dummy
@@ -49,6 +51,7 @@ scoreboard players set #1const teplus.data 1
 scoreboard players set #2const teplus.data 2
 scoreboard players set #7const teplus.data 7
 scoreboard players set #10const teplus.data 10
+scoreboard players set #19const teplus.data 19
 scoreboard players set #25const teplus.data 25
 scoreboard players set #27const teplus.data 27
 scoreboard players set #50const teplus.data 50
@@ -84,6 +87,7 @@ data modify storage teplus:ui Global append value {profile:"admin_box"}
 function teplus:core/ui/admin_box/main_menu
 function teplus:core/ui/admin_box/items_menu
 
+function teplus:core/ui/admin_box/ench_pages/custom
 function teplus:core/ui/admin_box/ench_pages/vanilla
 function teplus:core/ui/admin_box/enchants_menu
 
