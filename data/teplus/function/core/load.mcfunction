@@ -49,6 +49,7 @@ scoreboard objectives add teplus.trigger.settings_dialogs trigger
 # Constants
 scoreboard players set #1const teplus.data 1
 scoreboard players set #2const teplus.data 2
+scoreboard players set #6const teplus.data 6
 scoreboard players set #7const teplus.data 7
 scoreboard players set #10const teplus.data 10
 scoreboard players set #19const teplus.data 19

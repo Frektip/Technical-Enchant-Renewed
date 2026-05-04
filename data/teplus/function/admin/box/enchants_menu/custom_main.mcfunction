@@ -1,0 +1,1 @@
+function teplus:admin/box/enchants_menu/common/update_static_ui
