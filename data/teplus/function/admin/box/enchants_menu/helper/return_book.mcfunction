@@ -10,7 +10,7 @@ data modify block ~ ~ ~ Items append from storage teplus:ui Global[{profile:"adm
 # Give the enchantment if the current player is the owner
 execute if score @s teplus.player.id = @p teplus.player.id run playsound minecraft:entity.item.pickup master @p ~ ~ ~ 5 .5
 execute if score @s teplus.player.id = @p teplus.player.id as @p run function teplus:utils/give_dynamic_loot with storage teplus:ui Global[{profile:"admin_box"}].Copy
-execute unless score @s teplus.player.id = @p teplus.player.id run tellraw @p [{"translate":"You are not the owner from this Admin Box","color":"red"}]
+execute unless score @s teplus.player.id = @p teplus.player.id run tellraw @p [{translate:"teplus.admin_box.not_owner_msg",fallback:"You are not the owner from this Admin Box",color:"red"}]
 
 # Clear the storage
 data remove storage teplus:ui Global[{profile:"admin_box"}].Copy
