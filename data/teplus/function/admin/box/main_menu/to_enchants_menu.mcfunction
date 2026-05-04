@@ -21,7 +21,7 @@ data modify storage teplus:ui Global[{profile:"admin_box"}].Build set value []
 function teplus:admin/box/enchants_menu/helper/get_19
 
 # Insert the enchantment books in the barrel
-#function teplus:admin/box/enchants_menu/helper/insert
+function teplus:admin/box/enchants_menu/helper/insert/loop
 
 # Add UI related components to the items
 data modify block ~ ~ ~ Items[{}].components merge value {"minecraft:bundle_contents":[{id:"minecraft:stick",count:64}]}
