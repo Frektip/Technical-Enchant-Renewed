@@ -31,12 +31,21 @@ execute unless data block ~ ~ ~ Items[{Slot:25b}].id run loot replace block ~ ~ 
 #----- First page (two posiblities) -----#
 # 1) Can have more pages: have two buttons "Return" and "Next"
 execute if score $page.lim teplus.admin_box.data matches 2.. if score @s teplus.admin_box.page matches 1 unless data block ~ ~ ~ Items[{Slot:25b}].components.minecraft:custom_data.teplus.main_return run function teplus:admin/box/enchants_menu/switch/to_main
-execute if score $page.lim teplus.admin_box.data matches 2.. if score @s teplus.admin_box.page matches 1 unless data block ~ ~ ~ Items[{Slot:26b}].components.minecraft:custom_data.teplus.next_pg run function teplus:admin/box/enchants_menu/helper/switch/to_next_page
+execute if score $page.lim teplus.admin_box.data matches 2.. if score @s teplus.admin_box.page matches 1 unless data block ~ ~ ~ Items[{Slot:26b}].components.minecraft:custom_data.teplus.next_pg run function teplus:admin/box/enchants_menu/switch/to_next_page
 
 # 2) The page limit is 1: only have "Return" button
 execute if score $page.lim teplus.admin_box.data matches ..1 if score @s teplus.admin_box.page matches 1 unless data block ~ ~ ~ Items[{Slot:26b}].components.minecraft:custom_data.teplus.main_return run function teplus:admin/box/enchants_menu/switch/to_main
 
+#----- Middle pages (less than the max page limit) -----#
+execute if score @s[tag=!teplus.admin_box.update] teplus.admin_box.page matches 2.. if score @s teplus.admin_box.page < $page.lim teplus.admin_box.data unless data block ~ ~ ~ Items[{Slot:25b}].components.minecraft:custom_data.teplus.prev_pg run function teplus:admin/box/enchants_menu/switch/to_prev_page
+execute if score @s[tag=!teplus.admin_box.update] teplus.admin_box.page matches 2.. if score @s teplus.admin_box.page < $page.lim teplus.admin_box.data unless data block ~ ~ ~ Items[{Slot:26b}].components.minecraft:custom_data.teplus.next_pg run function teplus:admin/box/enchants_menu/switch/to_next_page
+
+#----- Last page (prevent colliding with the first case) -----#
+execute if score $page.lim teplus.admin_box.data matches 2.. if score @s[tag=!teplus.admin_box.update] teplus.admin_box.page >= $page.lim teplus.admin_box.data unless data block ~ ~ ~ Items[{Slot:26b}].components.minecraft:custom_data.teplus.prev_pg run function teplus:admin/box/enchants_menu/switch/to_prev_page
 #================================================================================================#
 
 
+
+# Update operations
 function teplus:admin/box/enchants_menu/common/get_enchantments_from_page
+tag @s remove teplus.admin_box.update

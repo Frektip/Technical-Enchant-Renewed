@@ -2,7 +2,6 @@
 tag @s remove teplus.admin_box.ench
 tag @s remove teplus.admin_box.custom
 tag @s remove teplus.admin_box.vanilla
-tag @s remove teplus.admin_box.pages
 tag @s add teplus.admin_box.main
 
 # Make some noice
