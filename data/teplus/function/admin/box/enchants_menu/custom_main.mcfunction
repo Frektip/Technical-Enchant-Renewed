@@ -20,6 +20,23 @@ execute unless data block ~ ~ ~ Items[{Slot:21b}].id run function teplus:admin/b
 execute unless data block ~ ~ ~ Items[{Slot:22b}].id run function teplus:admin/box/enchants_menu/helper/return_book {index:16}
 execute unless data block ~ ~ ~ Items[{Slot:23b}].id run function teplus:admin/box/enchants_menu/helper/return_book {index:17}
 execute unless data block ~ ~ ~ Items[{Slot:24b}].id run function teplus:admin/box/enchants_menu/helper/return_book {index:18}
+
+# Slot 25 is special, it doesn't have any enchantments but it is updated with a blank slot anyways
+execute unless data block ~ ~ ~ Items[{Slot:25b}].id run loot replace block ~ ~ ~ container.25 loot teplus:empty_slot
 #==============================================================================================================#
+
+
+
+#====================================== NAVIGATION BUTTONS ======================================#
+#----- First page (two posiblities) -----#
+# 1) Can have more pages: have two buttons "Return" and "Next"
+execute if score $page.lim teplus.admin_box.data matches 2.. if score @s teplus.admin_box.page matches 1 unless data block ~ ~ ~ Items[{Slot:25b}].components.minecraft:custom_data.teplus.main_return run function teplus:admin/box/enchants_menu/switch/to_main
+execute if score $page.lim teplus.admin_box.data matches 2.. if score @s teplus.admin_box.page matches 1 unless data block ~ ~ ~ Items[{Slot:26b}].components.minecraft:custom_data.teplus.next_pg run function teplus:admin/box/enchants_menu/helper/switch/to_next_page
+
+# 2) The page limit is 1: only have "Return" button
+execute if score $page.lim teplus.admin_box.data matches ..1 if score @s teplus.admin_box.page matches 1 unless data block ~ ~ ~ Items[{Slot:26b}].components.minecraft:custom_data.teplus.main_return run function teplus:admin/box/enchants_menu/switch/to_main
+
+#================================================================================================#
+
 
 function teplus:admin/box/enchants_menu/common/get_enchantments_from_page
