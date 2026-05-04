@@ -1,6 +1,5 @@
 # Update tags
 tag @s remove teplus.admin_box.custom
-tag @s remove teplus.admin_box.pages
 tag @s add teplus.admin_box.vanilla
 
 
