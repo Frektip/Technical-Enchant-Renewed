@@ -14,5 +14,6 @@ execute unless entity @p[gamemode=creative,distance=..6] run loot spawn ~ ~ ~ lo
 
 # Kill the chest minecart
 kill @s
+
 # Kill UI items
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{teplus:{ui:1b}}}}}]

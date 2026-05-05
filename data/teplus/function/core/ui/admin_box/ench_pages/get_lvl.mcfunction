@@ -1,0 +1,2 @@
+# This function is inteded to be used for Vanilla enchantments that exceed the default max level
+$execute store result storage teplus:ui Global[{profile:"admin_box"}].Vanilla[{Slot:$(slot)b}].components.minecraft:stored_enchantments.minecraft:$(ench) int 1 run scoreboard players get #$(ench) teplus.maxlvl
