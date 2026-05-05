@@ -6,7 +6,7 @@ particle happy_villager ~ ~ ~ 0 3 0 0 100 force @a[tag=teplus.debug_mode]
 # Update the block placement ID
 scoreboard players add $current teplus.block_id 1
 
-# Update the storage specification for all decorative entities based on the facing direction pf th eplayer
+# Update the storage specification for all decorative entities based on the facing direction of the player
 # All of the values from the storage will be later used as arguments when summoning the decorative entities
 
 # {
