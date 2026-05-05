@@ -1,0 +1,85 @@
+{
+  "type": "minecraft:multi_action",
+  "title": [
+    {
+      "text": "Technical Enchant +",
+      "color": "aqua"
+    },
+    {
+      "text": " | ",
+      "color": "white"
+    },
+    {
+      "translate": "teplus.settings.extensions_tittle",
+      "fallback": "Extensions Manager",
+      "color": "white"
+    }
+  ],
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "translate": "teplus.settings.drops_tittle",
+        "fallback": "Mob drops settings",
+        "color": "#a7b056"
+      },
+      "tooltip": {
+        "translate": "teplus.hover.click_to_go",
+        "fallback": "Click here to go"
+      },
+      "width": 220,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/function teplus:admin/settings/drops/get_options"
+      }
+    },
+    {
+      "label": {
+        "translate": "teplus.settings.chests_tittle",
+        "fallback": "Chest loot settings",
+        "color": "#6cc685"
+      },
+      "tooltip": {
+        "translate": "teplus.hover.click_to_go",
+        "fallback": "Click here to go"
+      },
+      "width": 220,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/function teplus:admin/settings/chests/get_options"
+      }
+    },
+    {
+      "label": {
+        "translate": "teplus.settings.vanilla_ench_tittle",
+        "fallback": "Vanilla enchantments settings",
+        "color": "#6bccc9"
+      },
+      "tooltip": {
+        "translate": "teplus.hover.click_to_go",
+        "fallback": "Click here to go"
+      },
+      "width": 220,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/function teplus:admin/settings/vanench/get_options"
+      }
+    },
+    {
+      "label": {
+        "translate": "teplus.settings.advanced_enchanters_tittle",
+        "fallback": "Advanced enchanters settings",
+        "color": "#6c8cc7"
+      },
+      "tooltip": {
+        "translate": "teplus.hover.click_to_go",
+        "fallback": "Click here to go"
+      },
+      "width": 220,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/function teplus:admin/settings/enchanters/get_options"
+      }
+    }
+  ]
+}

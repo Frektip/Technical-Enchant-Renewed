@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:item_frame",
+    "slots": {
+      "container.*": {
+        "items": "#minecraft:shovels",
+        "count": 1
+      }
+    }
+  }
+}

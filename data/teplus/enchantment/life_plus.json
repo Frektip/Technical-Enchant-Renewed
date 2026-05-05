@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "teplus.enchantment.life_plus",
+    "fallback": "Life+"
+  },
+  "supported_items": "#minecraft:chest_armor",
+  "weight": 1,
+  "max_level": 5,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 9999999,
+  "slots": [
+    "chest"
+  ]
+}

@@ -1,0 +1,60 @@
+#============================= CREATE ITEM IN STORAGE =============================#
+# Always select the item from the left input slot (Section1 storage)
+data modify storage teplus:updates TAM.Output.Result set value {Slot:22b,id:"minecraft:air",count:1b}
+data modify storage teplus:updates TAM.Output.Result.id set from storage teplus:updates TAM.Inputs.Section1.id
+data modify storage teplus:updates TAM.Output.Result.components set from storage teplus:updates TAM.Inputs.Section1.components
+
+# Add "type" attribute in case it exists in 'Section1' storage
+data modify storage teplus:updates TAM.Output.Result.type set from storage teplus:updates TAM.Inputs.Section1.teplus.type
+
+#============================= COMBINATION TYPE CHECKS =============================#
+
+# Page of Power - Page of Power
+execute if entity @s[nbt={Items:[{Slot:2b,components:{"minecraft:custom_data":{teplus:{id:"page_of_power"}}}}]},nbt={Items:[{Slot:6b,components:{"minecraft:custom_data":{teplus:{id:"page_of_power"}}}}]}] run function teplus:anvil/merge/interaction/checks/power_pages
+
+# Item - Enchanted Book
+execute if entity @s[tag=!teplus.anvil.IsSameItem,tag=!teplus.anvil.output_book,tag=!teplus.anvil.output_page,nbt=!{Items:[{Slot:2b,id:"minecraft:enchanted_book",count:1}]}] run function #teplus:anvil/merge/interaction/check_for_items
+
+# Item - Item
+execute if entity @s[tag=teplus.anvil.IsSameItem] run function #teplus:anvil/merge/interaction/check_for_items
+
+# Enchanted Book - Enchanted Book
+execute if entity @s[nbt={Items:[{Slot:2b,id:"minecraft:enchanted_book",count:1}]}] run function teplus:anvil/merge/interaction/checks/book_with_book
+
+# Experience Crystal - Experience Crystal/Experience bottle
+execute if entity @s[tag=teplus.anvil.output_xp_crystal] run function teplus:anvil/merge/interaction/checks/xp_crystal
+
+#============================= UPDATE RESULT ITEM SLOT =============================#
+#-------BOOK - BOOK-------#
+execute if entity @s[tag=teplus.anvil.output_book,tag=!teplus.anvil.merge.error] if data storage teplus:updates TAM.Output.Result.components.minecraft:stored_enchantments run function teplus:anvil/merge/interaction/create_item/succeed
+
+#-------ITEM - BOOK/ ITEM - ITEM-------#
+execute if entity @s[tag=teplus.anvil.apply_on_item] if data storage teplus:updates TAM.Output.Result.components.minecraft:enchantments run function teplus:anvil/merge/interaction/create_item/succeed
+
+# Detect when an enchantment is not compatible with an item
+execute if entity @s[tag=teplus.anvil.output_item,tag=teplus.anvil.merge.error,tag=!teplus.anvil.output_xp_crystal,tag=!teplus.anvil.output_page] run function teplus:anvil/merge/interaction/create_item/failed {err:"invalid_enchant"}
+
+#-------PAGE OF POWER-------#
+execute if entity @s[tag=teplus.anvil.output_page,tag=!teplus.anvil.merge.error] run function teplus:anvil/merge/interaction/create_item/succeed
+
+#-------EXPERIENCE CRYSTAL-------#
+execute if entity @s[tag=teplus.anvil.output_xp_crystal,tag=!teplus.anvil.merge.error] run function teplus:anvil/merge/interaction/create_item/succeed
+
+#============================= REMOVE TAGS =============================#
+# Remove general merge error tag
+tag @s remove teplus.anvil.merge.error
+
+# Remove tags when an enchantment is applied to a book or item
+tag @s remove teplus.anvil.apply_on_book
+tag @s remove teplus.anvil.apply_on_item
+
+# If the output is an item, an enchanted book or page of power
+tag @s remove teplus.anvil.output_book
+tag @s remove teplus.anvil.output_page
+tag @s remove teplus.anvil.output_item
+
+# In case we merge item with the same item type
+tag @s remove teplus.anvil.IsSameItem
+
+# In case we merge for an experience crystal
+tag @s remove teplus.anvil.output_xp_crystal

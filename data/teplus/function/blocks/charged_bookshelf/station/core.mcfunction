@@ -1,0 +1,2 @@
+execute if block ~ ~1 ~ lectern if entity @s[tag=!teplus.set_station] run function teplus:blocks/charged_bookshelf/station/set
+execute unless block ~ ~1 ~ lectern if entity @s[tag=teplus.set_station] run function teplus:blocks/charged_bookshelf/station/reset

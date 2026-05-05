@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "teplus:poison_aspect": {
+                  "type": "minecraft:storage",
+                  "storage": "teplus:temp",
+                  "path": "targetench.teplus:poison_aspect"
+                }
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "teplus:set_book_lore/specific/sword_trident"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

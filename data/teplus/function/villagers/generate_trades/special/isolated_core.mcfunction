@@ -1,0 +1,7 @@
+# Modify the last vanilla trade
+data modify entity @s Offers.Recipes[-1].maxUses set value 3
+data modify entity @s Offers.Recipes[-1].xp set value 5
+data modify entity @s Offers.Recipes[-1].priceMultiplier set value 0.2f
+data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:blaze_powder",count:5}
+data modify entity @s Offers.Recipes[-1].buyB set value {id:"minecraft:redstone_block",count:1}
+data modify entity @s Offers.Recipes[-1].sell set value {id:"minecraft:player_head",count:1,components:{"minecraft:profile": {properties: [{value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRiMWVlMjgyOWU1YzE4OGUwZDU1NDRmMjkyZTMzZTVjOTY2ZGZiZmNkMDE4ZGFjNjA2MzcwMjU4N2VkZDc5ZiJ9fX0=", name: "textures"}]}, "minecraft:attribute_modifiers": [{type: "minecraft:block_interaction_range", operation: "add_value", amount: -5.0d, id: "teplus:range_zero", display: {type: "hidden"}, slot: "hand"}], "minecraft:lore": [{italic: 0b, fallback: "A rare item used to remove", translate: "teplus.isolated_core.desc.lore1", color: "white"}, {italic: 0b, fallback: "vanilla and custom curses", translate: "teplus.isolated_core.desc.lore2", color: "white"}, {italic: 1b, text: "Technical Enchant+", color: "#63C0E3"}], "minecraft:custom_name": {italic: 0b, fallback: "Isolated Core", translate: "teplus.item.isolated_core", color: "#D93262"}, "!minecraft:equippable": {}, "minecraft:custom_data": {teplus: {head: 1b, id: "isolated_core"}}}}

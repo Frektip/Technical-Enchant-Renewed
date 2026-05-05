@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#teplus:types/not_living",
+    "#teplus:types/boss",
+    "#teplus:types/tamable",
+    
+    "minecraft:creeper",
+    "minecraft:player",
+
+    "minecraft:villager",
+    "minecraft:allay",
+    "minecraft:fox",
+    "minecraft:panda",
+    "minecraft:axolotl",
+    "minecraft:sniffer",
+    "minecraft:copper_golem"
+  ]
+}

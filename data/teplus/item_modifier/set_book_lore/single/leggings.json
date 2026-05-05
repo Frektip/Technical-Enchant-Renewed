@@ -1,0 +1,18 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "blue"
+      },
+      {
+        "translate": "teplus.item.groups.leggings",
+        "fallback": "Leggings",
+        "color": "blue"
+      }
+    ]
+  ],
+  "mode": "insert"
+}

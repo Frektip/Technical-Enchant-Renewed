@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "teplus:enchant/set_enchant/clear_storage",
+      "required":false
+    }
+  ]
+}

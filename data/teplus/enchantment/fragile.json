@@ -1,0 +1,22 @@
+{
+  "description": {
+    "translate": "teplus.enchantment.fragile",
+    "fallback": "Curse of Fragile",
+    "color": "#FF4099"
+  },
+  "supported_items": "#teplus:enchantable/fragile",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 9999999,
+  "slots": [
+    "any"
+  ]
+}

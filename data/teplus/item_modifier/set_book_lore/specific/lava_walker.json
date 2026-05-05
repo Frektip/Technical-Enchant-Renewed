@@ -1,0 +1,29 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "blue"
+      },
+      {
+        "translate": "teplus.item.groups.boots",
+        "fallback": "Boots",
+        "color": "blue"
+      }
+    ],
+    [
+      {
+        "text": "► ",
+        "color": "green"
+      },
+      {
+        "translate": "teplus.item.groups.horse_armor",
+        "fallback": "Horse Armor",
+        "color": "green"
+      }
+    ]
+  ],
+  "mode": "insert"
+}

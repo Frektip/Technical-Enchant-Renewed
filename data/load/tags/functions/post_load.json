@@ -1,6 +1,0 @@
-{
-    "values": [
-        "teplus_exten:post_load",
-        "teplus_admin_box:load"
-    ]
-}

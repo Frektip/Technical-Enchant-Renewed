@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "teplus.enchantment.poison_aspect",
+    "fallback": "Poison Aspect"
+  },
+  "supported_items": "#teplus:enchantable/poison_aspect",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 9999999,
+  "slots": [
+    "hand"
+  ]
+}

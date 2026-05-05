@@ -1,0 +1,18 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "white"
+      },
+      {
+        "translate": "teplus.item.groups.tools",
+        "fallback": "Tools",
+        "color": "white"
+      }
+    ]
+  ],
+  "mode": "insert"
+}

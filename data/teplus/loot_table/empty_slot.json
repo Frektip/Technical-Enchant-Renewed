@@ -1,0 +1,52 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:black_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": true
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:stick",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": 64
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "strings": {
+                "values": [
+                  "teplus:blank_slot"
+                ],
+                "mode": "insert"
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{teplus:{ui:1b}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

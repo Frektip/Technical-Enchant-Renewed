@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:multi_action",
+  "title": [
+    {
+      "text": "Technical Enchant +",
+      "color": "aqua"
+    },
+    {
+      "text": " | ",
+      "color": "white"
+    },
+    {
+      "translate": "teplus.settings.main_tittle",
+      "fallback": "Settings Menu",
+      "color": "white"
+    }
+  ],
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "translate": "teplus.settings.gameplay_tittle",
+        "fallback": "Gameplay Options",
+        "color": "#cc90e7"
+      },
+      "tooltip": {
+        "translate": "teplus.hover.click_to_go",
+        "fallback": "Click here to go"
+      },
+      "width": 220,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger teplus.trigger.settings_dialogs set 1"
+      }
+    },
+    {
+      "label": {
+        "translate": "teplus.settings.custom_ench_tittle",
+        "fallback": "Custom enchantments options",
+        "color": "#e2a657"
+      },
+      "tooltip": {
+        "translate": "teplus.hover.click_to_go",
+        "fallback": "Click here to go"
+      },
+      "width": 220,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger teplus.trigger.settings_dialogs set 2"
+      }
+    },
+    {
+      "label": {
+        "translate": "teplus.settings.extensions_manager_tittle",
+        "fallback": "Extensions Manager",
+        "color": "#68ce82"
+      },
+      "tooltip": {
+        "translate": "teplus.hover.click_to_go",
+        "fallback": "Click here to go"
+      },
+      "width": 220,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger teplus.trigger.settings_dialogs set 3"
+      }
+    }
+  ]
+}

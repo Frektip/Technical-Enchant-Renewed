@@ -1,0 +1,7 @@
+# Modify the last vanilla trade
+data modify entity @s Offers.Recipes[-1].maxUses set value 3
+data modify entity @s Offers.Recipes[-1].xp set value 5
+data modify entity @s Offers.Recipes[-1].priceMultiplier set value 0.2f
+data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:diamond",count:5}
+data modify entity @s Offers.Recipes[-1].buyB set value {id:"minecraft:gold",count:7}
+data modify entity @s Offers.Recipes[-1].sell set value {id:"minecraft:player_head",count:1,components:{"minecraft:profile": {properties: [{value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODcyNWQxMWZlMWQ3YmUxNjdlYzVjYzc2OTdjZGZjMjU1NzM3NzRlZTQxYjhjM2IzNzI2MWU0M2Q1ZDMxOGZjMyJ9fX0=", name: "textures"}]}, "minecraft:attribute_modifiers": [{type: "minecraft:block_interaction_range", operation: "add_value", amount: -5.0d, id: "teplus:range_zero", display: {type: "hidden"}, slot: "hand"}], "minecraft:lore": [{italic: 0b, fallback: "Punch a mob with this orb to", translate: "teplus.blessed_orb.desc.lore1", color: "white"}, {italic: 0b, fallback: "convert it into an enchanted one", translate: "teplus.blessed_orb.desc.lore2", color: "white"}, {italic: 1b, text: "Technical Enchant+", color: "#63C0E3"}], "minecraft:custom_name": {italic: 0b, fallback: "Blessed Orb", translate: "teplus.item.blessed_orb", color: "#E2AE18"}, "!minecraft:equippable": {}, "minecraft:custom_data": {teplus: {head: 1b, id: "blessed_orb"}}}}

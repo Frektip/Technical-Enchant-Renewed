@@ -1,0 +1,1 @@
+$execute store result score $out teplus.rng run random value $(min)..$(max)

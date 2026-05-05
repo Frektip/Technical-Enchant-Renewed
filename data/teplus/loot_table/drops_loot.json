@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_button",
+          "functions": [
+            {
+              "function": "minecraft:copy_custom_data",
+              "source": "this",
+              "ops": [
+                {
+                  "source": "data.teplus",
+                  "target": "teplus",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+    }
+  ]
+}

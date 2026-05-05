@@ -1,0 +1,2 @@
+# Perform armor stand visual related actions only if there are player nearby
+execute if entity @s[tag=teplus.bookshelf_level] if entity @a[distance=..10] run function teplus:entity/armor_stand/table_rotate/core

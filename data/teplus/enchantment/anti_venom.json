@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "teplus.enchantment.anti_venom",
+    "fallback": "Anti Venom"
+  },
+  "supported_items": "#teplus:enchantable/anti_venom",
+  "weight": 1,
+  "max_level": 2,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 9999999,
+  "slots": [
+    "chest"
+  ]
+}

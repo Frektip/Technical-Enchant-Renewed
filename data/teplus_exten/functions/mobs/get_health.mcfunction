@@ -1,1 +1,0 @@
-execute store result score @s tepxm.health run data get entity @s Health

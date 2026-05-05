@@ -1,0 +1,48 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "red"
+      },
+      {
+        "translate": "teplus.item.groups.sword",
+        "fallback": "Sword",
+        "color": "red"
+      },
+      {
+        "text": "-",
+        "color": "red"
+      },
+      {
+        "translate": "item.minecraft.bow",
+        "color": "red"
+      }
+    ],
+    [
+      {
+        "text": "► ",
+        "color": "blue"
+      },
+      {
+        "translate": "teplus.item.groups.helmet",
+        "fallback": "Helmet",
+        "color": "blue"
+      }
+    ],
+    [
+      {
+        "text": "► ",
+        "color": "green"
+      },
+      {
+        "translate": "teplus.item.groups.horse_armor",
+        "fallback": "Horse Armor",
+        "color": "green"
+      }
+    ]
+  ],
+  "mode": "insert"
+}

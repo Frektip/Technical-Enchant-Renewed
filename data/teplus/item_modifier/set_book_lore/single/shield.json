@@ -1,0 +1,17 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "blue"
+      },
+      {
+        "translate": "item.minecraft.shield",
+        "color": "blue"
+      }
+    ]
+  ],
+  "mode": "insert"
+}

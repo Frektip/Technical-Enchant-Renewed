@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "teplus.enchantment.time_breaker",
+    "fallback": "Time Breaker"
+  },
+  "supported_items": "#minecraft:head_armor",
+  "weight": 1,
+  "max_level": 2,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 9999999,
+  "slots": [
+    "head"
+  ]
+}

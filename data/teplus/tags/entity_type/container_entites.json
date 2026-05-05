@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:chest_minecart",
+        "#teplus:types/chest_boats"
+    ]
+}

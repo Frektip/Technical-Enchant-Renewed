@@ -1,0 +1,36 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "yellow"
+      },
+      {
+        "translate": "teplus.item.groups.axe",
+        "fallback": "Axe",
+        "color": "yellow"
+      },
+      {
+        "text": "-",
+        "color": "yellow"
+      },
+      {
+        "translate": "teplus.item.groups.pickaxe",
+        "fallback": "Pickaxe",
+        "color": "yellow"
+      },
+      {
+        "text": "-",
+        "color": "yellow"
+      },
+      {
+        "translate": "teplus.item.groups.shovel",
+        "fallback": "Shovel",
+        "color": "yellow"
+      }
+    ]
+  ],
+  "mode": "insert"
+}

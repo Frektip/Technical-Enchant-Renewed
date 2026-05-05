@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "teplus.enchantment.anti_explosion",
+    "fallback": "Anti Explosion"
+  },
+  "supported_items": "#teplus:enchantable/anti_explosion",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 9999999,
+  "slots": [
+    "hand"
+  ]
+}

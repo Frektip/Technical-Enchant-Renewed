@@ -1,0 +1,37 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {
+        "text": "► ",
+        "color": "red"
+      },
+      {
+        "translate": "teplus.item.groups.sword",
+        "fallback": "Sword",
+        "color": "red"
+      },
+      {
+        "text": "-",
+        "color": "red"
+      },
+      {
+        "translate": "item.minecraft.trident",
+        "color": "red"
+      }
+    ],
+    [
+      {
+        "text": "► ",
+        "color": "yellow"
+      },
+      {
+        "translate": "teplus.item.groups.axe",
+        "fallback": "Axe",
+        "color": "yellow"
+      }
+    ]
+  ],
+  "mode": "insert"
+}

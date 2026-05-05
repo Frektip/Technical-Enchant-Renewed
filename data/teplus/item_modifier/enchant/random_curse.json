@@ -1,0 +1,4 @@
+{
+  "function": "minecraft:enchant_randomly",
+  "options": "#teplus:types/curses"
+}

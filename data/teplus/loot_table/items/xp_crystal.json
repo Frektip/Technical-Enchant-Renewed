@@ -1,0 +1,169 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "teplus.item.xp_crystal",
+                "fallback": "Experience Crystal",
+                "color": "#5FC187",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "teplus.xp_crystal.desc.lore1",
+                  "fallback": "Hold one in you offhand or",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "teplus.xp_crystal.desc.lore2",
+                  "fallback": "mainhand while sneaking to",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "teplus.xp_crystal.desc.lore3",
+                  "fallback": "obtain experience orbs",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text" : "-----------------------",
+                  "color":"#DEE8B8"
+                },
+                [
+                  {
+                    "text": " ⭐ ",
+					          "color": "#548256",
+					          "italic": false
+                  },
+                  {
+					        	"translate": "teplus.xp_crystal.desc.lore4.tier",
+                    "fallback": "Tier",
+					        	"color": "#D5EC86",
+					        	"italic": false
+					        },
+                  {
+                    "text":": ",
+                    "color": "#D5EC86",
+                    "italic": false
+                  },
+                  {
+                    "score": {
+                      "objective": "teplus.data",
+                      "name": "#teplus.xptier"
+                    },
+                    "color": "#ECB969",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+					          "text": " ✪ ",
+					          "color": "#548256",
+					          "italic": false
+					        },
+					        {
+					        	"translate": "teplus.xp_crystal.desc.lore5.value",
+                    "fallback": "Value",
+					        	"color": "#D5EC86",
+					        	"italic": false
+					        },
+                  {
+					        	"text": ": ",
+					        	"color": "#D5EC86",
+					        	"italic": false
+					        },
+					        {
+					        	"score": {
+					        	  "name": "#teplus.xpvalue",
+					        	  "objective": "teplus.data"
+					        	},
+					        	"color": "#72C45B",
+					        	"italic": false
+					        },
+					        {
+					        	"text": "/",
+					        	"color": "#D1CEA1",
+					        	"italic": false
+					        },
+					        {
+					        	"score": {
+					        	  "name": "#teplus.xpmax",
+					        	  "objective": "teplus.data"
+					        	},
+					        	"color": "#357D3A",
+					        	"italic": false
+					        }
+                ],
+                {
+                  "text" : "-----------------------",
+                  "color":"#DEE8B8"
+                },
+                {
+                  "text": "Technical Enchant+",
+                  "color": "#63C0E3",
+                  "italic": true
+                }
+              ],
+              "mode": "insert"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": "{teplus:{head:1b, id: \"xp_crystal\"}}",
+                "!minecraft:equippable": {},
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:block_interaction_range",
+                    "id": "teplus:range_zero",
+                    "amount": -5,
+                    "operation": "add_value",
+                    "slot": "hand",
+                    "display": {
+                      "type": "hidden"
+                    }
+                  }
+                ],
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmU2Y2EzY2U1ZDg5YWNiMDZhNjQzZjQ5ZjUyNzQ4NTVlZGVlNmVlYjFhNTQ1MTViMzA0MGExYjNmOGNiYjdhMSJ9fX0="
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:copy_custom_data",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "teplus:xp_crystal"
+              },
+              "ops": [
+                {
+                  "source": "Build",
+                  "target": "teplus.Content",
+                  "op": "merge"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
